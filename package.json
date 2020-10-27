@@ -1,0 +1,30 @@
+{
+  "name": "@uni/icn",
+  "version": "0.0.1",
+  "description": "Uni Icons",
+  "main": "dist/index.cjs.js",
+  "module": "dist/custom-elements/index.js",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "types": "dist/custom-elements/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/icn/icn.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build:dev": "stencil build --dev --watch ",
+    "build:prod": "stencil build",
+    "serve:dev": "stencil build --dev --watch --serve --no-open",
+    "serve:prod": "stencil build --watch --serve --no-open",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate"
+  },
+  "devDependencies": {
+    "@stencil/core": "2.1.2"
+  },
+  "license": "MIT"
+}
