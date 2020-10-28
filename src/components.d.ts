@@ -7,6 +7,8 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface UniIconsFilledMat {
+        "color": string;
+        "name": string;
     }
     interface UniIconsFilledMatShadow {
     }
@@ -15,7 +17,27 @@ export namespace Components {
         "all": boolean;
         "selector": string;
     }
+    interface UniIconsMat {
+        "color": string;
+        "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "name": string;
+    }
+    interface UniIconsMatShadow {
+        "color": string;
+        "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "name": string;
+    }
+    interface UniIconsMatWrap {
+        "active": boolean;
+        "all": boolean;
+        "color": string;
+        "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "name": string;
+        "selector": string;
+    }
     interface UniIconsOutlinedMat {
+        "color": string;
+        "name": string;
     }
     interface UniIconsOutlinedMatShadow {
     }
@@ -25,6 +47,8 @@ export namespace Components {
         "selector": string;
     }
     interface UniIconsRoundMat {
+        "color": string;
+        "name": string;
     }
     interface UniIconsRoundMatShadow {
     }
@@ -34,6 +58,8 @@ export namespace Components {
         "selector": string;
     }
     interface UniIconsSharpMat {
+        "color": string;
+        "name": string;
     }
     interface UniIconsSharpMatShadow {
     }
@@ -43,6 +69,8 @@ export namespace Components {
         "selector": string;
     }
     interface UniIconsTwoToneMat {
+        "color": string;
+        "name": string;
     }
     interface UniIconsTwoToneMatShadow {
     }
@@ -70,6 +98,24 @@ declare global {
     var HTMLUniIconsFilledMatWrapElement: {
         prototype: HTMLUniIconsFilledMatWrapElement;
         new (): HTMLUniIconsFilledMatWrapElement;
+    };
+    interface HTMLUniIconsMatElement extends Components.UniIconsMat, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatElement: {
+        prototype: HTMLUniIconsMatElement;
+        new (): HTMLUniIconsMatElement;
+    };
+    interface HTMLUniIconsMatShadowElement extends Components.UniIconsMatShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatShadowElement: {
+        prototype: HTMLUniIconsMatShadowElement;
+        new (): HTMLUniIconsMatShadowElement;
+    };
+    interface HTMLUniIconsMatWrapElement extends Components.UniIconsMatWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatWrapElement: {
+        prototype: HTMLUniIconsMatWrapElement;
+        new (): HTMLUniIconsMatWrapElement;
     };
     interface HTMLUniIconsOutlinedMatElement extends Components.UniIconsOutlinedMat, HTMLStencilElement {
     }
@@ -147,6 +193,9 @@ declare global {
         "uni-icons-filled-mat": HTMLUniIconsFilledMatElement;
         "uni-icons-filled-mat-shadow": HTMLUniIconsFilledMatShadowElement;
         "uni-icons-filled-mat-wrap": HTMLUniIconsFilledMatWrapElement;
+        "uni-icons-mat": HTMLUniIconsMatElement;
+        "uni-icons-mat-shadow": HTMLUniIconsMatShadowElement;
+        "uni-icons-mat-wrap": HTMLUniIconsMatWrapElement;
         "uni-icons-outlined-mat": HTMLUniIconsOutlinedMatElement;
         "uni-icons-outlined-mat-shadow": HTMLUniIconsOutlinedMatShadowElement;
         "uni-icons-outlined-mat-wrap": HTMLUniIconsOutlinedMatWrapElement;
@@ -163,6 +212,8 @@ declare global {
 }
 declare namespace LocalJSX {
     interface UniIconsFilledMat {
+        "color"?: string;
+        "name"?: string;
     }
     interface UniIconsFilledMatShadow {
     }
@@ -171,7 +222,27 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "selector"?: string;
     }
+    interface UniIconsMat {
+        "color"?: string;
+        "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "name"?: string;
+    }
+    interface UniIconsMatShadow {
+        "color"?: string;
+        "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "name"?: string;
+    }
+    interface UniIconsMatWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "color"?: string;
+        "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "name"?: string;
+        "selector"?: string;
+    }
     interface UniIconsOutlinedMat {
+        "color"?: string;
+        "name"?: string;
     }
     interface UniIconsOutlinedMatShadow {
     }
@@ -181,6 +252,8 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface UniIconsRoundMat {
+        "color"?: string;
+        "name"?: string;
     }
     interface UniIconsRoundMatShadow {
     }
@@ -190,6 +263,8 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface UniIconsSharpMat {
+        "color"?: string;
+        "name"?: string;
     }
     interface UniIconsSharpMatShadow {
     }
@@ -199,6 +274,8 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface UniIconsTwoToneMat {
+        "color"?: string;
+        "name"?: string;
     }
     interface UniIconsTwoToneMatShadow {
     }
@@ -211,6 +288,9 @@ declare namespace LocalJSX {
         "uni-icons-filled-mat": UniIconsFilledMat;
         "uni-icons-filled-mat-shadow": UniIconsFilledMatShadow;
         "uni-icons-filled-mat-wrap": UniIconsFilledMatWrap;
+        "uni-icons-mat": UniIconsMat;
+        "uni-icons-mat-shadow": UniIconsMatShadow;
+        "uni-icons-mat-wrap": UniIconsMatWrap;
         "uni-icons-outlined-mat": UniIconsOutlinedMat;
         "uni-icons-outlined-mat-shadow": UniIconsOutlinedMatShadow;
         "uni-icons-outlined-mat-wrap": UniIconsOutlinedMatWrap;
@@ -232,6 +312,9 @@ declare module "@stencil/core" {
             "uni-icons-filled-mat": LocalJSX.UniIconsFilledMat & JSXBase.HTMLAttributes<HTMLUniIconsFilledMatElement>;
             "uni-icons-filled-mat-shadow": LocalJSX.UniIconsFilledMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsFilledMatShadowElement>;
             "uni-icons-filled-mat-wrap": LocalJSX.UniIconsFilledMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsFilledMatWrapElement>;
+            "uni-icons-mat": LocalJSX.UniIconsMat & JSXBase.HTMLAttributes<HTMLUniIconsMatElement>;
+            "uni-icons-mat-shadow": LocalJSX.UniIconsMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatShadowElement>;
+            "uni-icons-mat-wrap": LocalJSX.UniIconsMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatWrapElement>;
             "uni-icons-outlined-mat": LocalJSX.UniIconsOutlinedMat & JSXBase.HTMLAttributes<HTMLUniIconsOutlinedMatElement>;
             "uni-icons-outlined-mat-shadow": LocalJSX.UniIconsOutlinedMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsOutlinedMatShadowElement>;
             "uni-icons-outlined-mat-wrap": LocalJSX.UniIconsOutlinedMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsOutlinedMatWrapElement>;

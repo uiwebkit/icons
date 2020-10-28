@@ -126,6 +126,9 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
+      copy: [
+        { src: 'assets/fonts', dest: 'assets/fonts', warn: true }
+      ],
       esmLoaderPath: '../loader',
       // polyfills: true,
       empty: true,
@@ -145,6 +148,9 @@ export const config: Config = {
     },
     {
       type: 'www',
+      copy: [
+        { src: 'assets/fonts', dest: 'assets/fonts', warn: true }
+      ],
       serviceWorker: null, // disable service workers
     },
   ],
