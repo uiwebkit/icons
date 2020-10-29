@@ -17,27 +17,6 @@
 | `selector` | `selector` |             | `string`                                                     | `undefined` |
 
 
-## Dependencies
-
-### Depends on
-
-- [uni-icons-filled-mat-wrap](../../icons-filled-mat/wrap)
-- [uni-icons-outlined-mat-wrap](../../icons-outlined-mat/wrap)
-- [uni-icons-round-mat-wrap](../../icons-round-mat/wrap)
-- [uni-icons-sharp-mat-wrap](../../icons-sharp-mat/wrap)
-- [uni-icons-two-tone-mat-wrap](../../icons-two-tone-mat/wrap)
-
-### Graph
-```mermaid
-graph TD;
-  uni-icons-mat-wrap --> uni-icons-filled-mat-wrap
-  uni-icons-mat-wrap --> uni-icons-outlined-mat-wrap
-  uni-icons-mat-wrap --> uni-icons-round-mat-wrap
-  uni-icons-mat-wrap --> uni-icons-sharp-mat-wrap
-  uni-icons-mat-wrap --> uni-icons-two-tone-mat-wrap
-  style uni-icons-mat-wrap fill:#f9f,stroke:#333,stroke-width:4px
-```
-
 ----------------------------------------------
 
 *Powered by [UiWebKit](https://uiwebkit.com/)*

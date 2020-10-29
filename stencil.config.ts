@@ -48,7 +48,7 @@ export const config: Config = {
      * Dynamic `import()` shim. This is only needed for Edge 18 and below, and Firefox 67
      * and below. Defaults to `false`.
      */
-    dynamicImportShim: false,
+    dynamicImportShim: true,
     /**
      * Safari 10 supports ES modules with `<script type="module">`, however, it did not implement
      * `<script nomodule>`. When set to `true`, the runtime will patch support for Safari 10
@@ -68,7 +68,7 @@ export const config: Config = {
      * it does not request the shim. When set to `false` it will avoid all shadow dom tests.
      * Defaults to `false`.
      */
-    shadowDomShim: false,
+    shadowDomShim: true,
     /**
      * When a component is first attached to the DOM, this setting will wait a single tick before
      * rendering. This worksaround an Angular issue, where Angular attaches the elements before
@@ -87,7 +87,7 @@ export const config: Config = {
      * Enables the tagNameTransform option of `defineCustomElements()`, so the component tagName
      * can be customized at runtime. Defaults to `false`.
      */
-    tagNameTransform: false
+    tagNameTransform: true
   },
   hydratedFlag: {
     /**

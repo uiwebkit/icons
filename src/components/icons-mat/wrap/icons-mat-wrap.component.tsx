@@ -17,38 +17,8 @@ export class UniIconsMatWrapComponent implements ComponentInterface {
   render(): VNode {
     const { active, selector, all, name, color } = this;
     const props = { active, selector, all, name, color };
+    const UniIconsWrapTag = `uni-icons-${this.mode}-mat-wrap`;
 
-    switch (this.mode) {
-      case 'filled':
-        return (
-          <uni-icons-filled-mat-wrap {...props}>
-            <slot />
-          </uni-icons-filled-mat-wrap>
-        );
-      case 'outlined':
-        return (
-          <uni-icons-outlined-mat-wrap {...props}>
-            <slot />
-          </uni-icons-outlined-mat-wrap>
-        );
-      case 'round':
-        return (
-          <uni-icons-round-mat-wrap {...props}>
-            <slot />
-          </uni-icons-round-mat-wrap>
-        );
-      case 'sharp':
-        return (
-          <uni-icons-sharp-mat-wrap {...props}>
-            <slot />
-          </uni-icons-sharp-mat-wrap>
-        );
-      case 'two-tone':
-        return (
-          <uni-icons-two-tone-mat-wrap {...props}>
-            <slot />
-          </uni-icons-two-tone-mat-wrap>
-        );
-    }
+    return <UniIconsWrapTag {...props}><slot/></UniIconsWrapTag>;
   }
 }

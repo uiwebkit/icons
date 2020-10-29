@@ -6,26 +6,89 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface UniIconsFilledMat {
+    interface UniIconsFa {
         "color": string;
+        "mode": 's' | 'r' | 'b';
         "name": string;
     }
-    interface UniIconsFilledMatShadow {
-    }
-    interface UniIconsFilledMatWrap {
-        "active": boolean;
-        "all": boolean;
-        "selector": string;
+    interface UniIconsFaSolid {
+        "color": string;
+        "name": string;
     }
     interface UniIconsMat {
         "color": string;
         "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
         "name": string;
     }
+    interface UniIconsMatFilled {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatFilledShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatFilledWrap {
+        "active": boolean;
+        "all": boolean;
+        "selector": string;
+    }
+    interface UniIconsMatOutlined {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatOutlinedShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatOutlinedWrap {
+        "active": boolean;
+        "all": boolean;
+        "selector": string;
+    }
+    interface UniIconsMatRound {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatRoundShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatRoundWrap {
+        "active": boolean;
+        "all": boolean;
+        "selector": string;
+    }
     interface UniIconsMatShadow {
         "color": string;
         "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
         "name": string;
+    }
+    interface UniIconsMatSharp {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatSharpShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatSharpWrap {
+        "active": boolean;
+        "all": boolean;
+        "selector": string;
+    }
+    interface UniIconsMatTwoTone {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatTwoToneShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsMatTwoToneWrap {
+        "active": boolean;
+        "all": boolean;
+        "selector": string;
     }
     interface UniIconsMatWrap {
         "active": boolean;
@@ -35,69 +98,19 @@ export namespace Components {
         "name": string;
         "selector": string;
     }
-    interface UniIconsOutlinedMat {
-        "color": string;
-        "name": string;
-    }
-    interface UniIconsOutlinedMatShadow {
-    }
-    interface UniIconsOutlinedMatWrap {
-        "active": boolean;
-        "all": boolean;
-        "selector": string;
-    }
-    interface UniIconsRoundMat {
-        "color": string;
-        "name": string;
-    }
-    interface UniIconsRoundMatShadow {
-    }
-    interface UniIconsRoundMatWrap {
-        "active": boolean;
-        "all": boolean;
-        "selector": string;
-    }
-    interface UniIconsSharpMat {
-        "color": string;
-        "name": string;
-    }
-    interface UniIconsSharpMatShadow {
-    }
-    interface UniIconsSharpMatWrap {
-        "active": boolean;
-        "all": boolean;
-        "selector": string;
-    }
-    interface UniIconsTwoToneMat {
-        "color": string;
-        "name": string;
-    }
-    interface UniIconsTwoToneMatShadow {
-    }
-    interface UniIconsTwoToneMatWrap {
-        "active": boolean;
-        "all": boolean;
-        "selector": string;
-    }
 }
 declare global {
-    interface HTMLUniIconsFilledMatElement extends Components.UniIconsFilledMat, HTMLStencilElement {
+    interface HTMLUniIconsFaElement extends Components.UniIconsFa, HTMLStencilElement {
     }
-    var HTMLUniIconsFilledMatElement: {
-        prototype: HTMLUniIconsFilledMatElement;
-        new (): HTMLUniIconsFilledMatElement;
+    var HTMLUniIconsFaElement: {
+        prototype: HTMLUniIconsFaElement;
+        new (): HTMLUniIconsFaElement;
     };
-    interface HTMLUniIconsFilledMatShadowElement extends Components.UniIconsFilledMatShadow, HTMLStencilElement {
+    interface HTMLUniIconsFaSolidElement extends Components.UniIconsFaSolid, HTMLStencilElement {
     }
-    var HTMLUniIconsFilledMatShadowElement: {
-        prototype: HTMLUniIconsFilledMatShadowElement;
-        new (): HTMLUniIconsFilledMatShadowElement;
-    };
-    interface HTMLUniIconsFilledMatWrapElement extends Components.UniIconsFilledMatWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconsFilledMatWrapElement: {
-        prototype: HTMLUniIconsFilledMatWrapElement;
-        new (): HTMLUniIconsFilledMatWrapElement;
+    var HTMLUniIconsFaSolidElement: {
+        prototype: HTMLUniIconsFaSolidElement;
+        new (): HTMLUniIconsFaSolidElement;
     };
     interface HTMLUniIconsMatElement extends Components.UniIconsMat, HTMLStencilElement {
     }
@@ -105,11 +118,101 @@ declare global {
         prototype: HTMLUniIconsMatElement;
         new (): HTMLUniIconsMatElement;
     };
+    interface HTMLUniIconsMatFilledElement extends Components.UniIconsMatFilled, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatFilledElement: {
+        prototype: HTMLUniIconsMatFilledElement;
+        new (): HTMLUniIconsMatFilledElement;
+    };
+    interface HTMLUniIconsMatFilledShadowElement extends Components.UniIconsMatFilledShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatFilledShadowElement: {
+        prototype: HTMLUniIconsMatFilledShadowElement;
+        new (): HTMLUniIconsMatFilledShadowElement;
+    };
+    interface HTMLUniIconsMatFilledWrapElement extends Components.UniIconsMatFilledWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatFilledWrapElement: {
+        prototype: HTMLUniIconsMatFilledWrapElement;
+        new (): HTMLUniIconsMatFilledWrapElement;
+    };
+    interface HTMLUniIconsMatOutlinedElement extends Components.UniIconsMatOutlined, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatOutlinedElement: {
+        prototype: HTMLUniIconsMatOutlinedElement;
+        new (): HTMLUniIconsMatOutlinedElement;
+    };
+    interface HTMLUniIconsMatOutlinedShadowElement extends Components.UniIconsMatOutlinedShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatOutlinedShadowElement: {
+        prototype: HTMLUniIconsMatOutlinedShadowElement;
+        new (): HTMLUniIconsMatOutlinedShadowElement;
+    };
+    interface HTMLUniIconsMatOutlinedWrapElement extends Components.UniIconsMatOutlinedWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatOutlinedWrapElement: {
+        prototype: HTMLUniIconsMatOutlinedWrapElement;
+        new (): HTMLUniIconsMatOutlinedWrapElement;
+    };
+    interface HTMLUniIconsMatRoundElement extends Components.UniIconsMatRound, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatRoundElement: {
+        prototype: HTMLUniIconsMatRoundElement;
+        new (): HTMLUniIconsMatRoundElement;
+    };
+    interface HTMLUniIconsMatRoundShadowElement extends Components.UniIconsMatRoundShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatRoundShadowElement: {
+        prototype: HTMLUniIconsMatRoundShadowElement;
+        new (): HTMLUniIconsMatRoundShadowElement;
+    };
+    interface HTMLUniIconsMatRoundWrapElement extends Components.UniIconsMatRoundWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatRoundWrapElement: {
+        prototype: HTMLUniIconsMatRoundWrapElement;
+        new (): HTMLUniIconsMatRoundWrapElement;
+    };
     interface HTMLUniIconsMatShadowElement extends Components.UniIconsMatShadow, HTMLStencilElement {
     }
     var HTMLUniIconsMatShadowElement: {
         prototype: HTMLUniIconsMatShadowElement;
         new (): HTMLUniIconsMatShadowElement;
+    };
+    interface HTMLUniIconsMatSharpElement extends Components.UniIconsMatSharp, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatSharpElement: {
+        prototype: HTMLUniIconsMatSharpElement;
+        new (): HTMLUniIconsMatSharpElement;
+    };
+    interface HTMLUniIconsMatSharpShadowElement extends Components.UniIconsMatSharpShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatSharpShadowElement: {
+        prototype: HTMLUniIconsMatSharpShadowElement;
+        new (): HTMLUniIconsMatSharpShadowElement;
+    };
+    interface HTMLUniIconsMatSharpWrapElement extends Components.UniIconsMatSharpWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatSharpWrapElement: {
+        prototype: HTMLUniIconsMatSharpWrapElement;
+        new (): HTMLUniIconsMatSharpWrapElement;
+    };
+    interface HTMLUniIconsMatTwoToneElement extends Components.UniIconsMatTwoTone, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatTwoToneElement: {
+        prototype: HTMLUniIconsMatTwoToneElement;
+        new (): HTMLUniIconsMatTwoToneElement;
+    };
+    interface HTMLUniIconsMatTwoToneShadowElement extends Components.UniIconsMatTwoToneShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatTwoToneShadowElement: {
+        prototype: HTMLUniIconsMatTwoToneShadowElement;
+        new (): HTMLUniIconsMatTwoToneShadowElement;
+    };
+    interface HTMLUniIconsMatTwoToneWrapElement extends Components.UniIconsMatTwoToneWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatTwoToneWrapElement: {
+        prototype: HTMLUniIconsMatTwoToneWrapElement;
+        new (): HTMLUniIconsMatTwoToneWrapElement;
     };
     interface HTMLUniIconsMatWrapElement extends Components.UniIconsMatWrap, HTMLStencilElement {
     }
@@ -117,120 +220,113 @@ declare global {
         prototype: HTMLUniIconsMatWrapElement;
         new (): HTMLUniIconsMatWrapElement;
     };
-    interface HTMLUniIconsOutlinedMatElement extends Components.UniIconsOutlinedMat, HTMLStencilElement {
-    }
-    var HTMLUniIconsOutlinedMatElement: {
-        prototype: HTMLUniIconsOutlinedMatElement;
-        new (): HTMLUniIconsOutlinedMatElement;
-    };
-    interface HTMLUniIconsOutlinedMatShadowElement extends Components.UniIconsOutlinedMatShadow, HTMLStencilElement {
-    }
-    var HTMLUniIconsOutlinedMatShadowElement: {
-        prototype: HTMLUniIconsOutlinedMatShadowElement;
-        new (): HTMLUniIconsOutlinedMatShadowElement;
-    };
-    interface HTMLUniIconsOutlinedMatWrapElement extends Components.UniIconsOutlinedMatWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconsOutlinedMatWrapElement: {
-        prototype: HTMLUniIconsOutlinedMatWrapElement;
-        new (): HTMLUniIconsOutlinedMatWrapElement;
-    };
-    interface HTMLUniIconsRoundMatElement extends Components.UniIconsRoundMat, HTMLStencilElement {
-    }
-    var HTMLUniIconsRoundMatElement: {
-        prototype: HTMLUniIconsRoundMatElement;
-        new (): HTMLUniIconsRoundMatElement;
-    };
-    interface HTMLUniIconsRoundMatShadowElement extends Components.UniIconsRoundMatShadow, HTMLStencilElement {
-    }
-    var HTMLUniIconsRoundMatShadowElement: {
-        prototype: HTMLUniIconsRoundMatShadowElement;
-        new (): HTMLUniIconsRoundMatShadowElement;
-    };
-    interface HTMLUniIconsRoundMatWrapElement extends Components.UniIconsRoundMatWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconsRoundMatWrapElement: {
-        prototype: HTMLUniIconsRoundMatWrapElement;
-        new (): HTMLUniIconsRoundMatWrapElement;
-    };
-    interface HTMLUniIconsSharpMatElement extends Components.UniIconsSharpMat, HTMLStencilElement {
-    }
-    var HTMLUniIconsSharpMatElement: {
-        prototype: HTMLUniIconsSharpMatElement;
-        new (): HTMLUniIconsSharpMatElement;
-    };
-    interface HTMLUniIconsSharpMatShadowElement extends Components.UniIconsSharpMatShadow, HTMLStencilElement {
-    }
-    var HTMLUniIconsSharpMatShadowElement: {
-        prototype: HTMLUniIconsSharpMatShadowElement;
-        new (): HTMLUniIconsSharpMatShadowElement;
-    };
-    interface HTMLUniIconsSharpMatWrapElement extends Components.UniIconsSharpMatWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconsSharpMatWrapElement: {
-        prototype: HTMLUniIconsSharpMatWrapElement;
-        new (): HTMLUniIconsSharpMatWrapElement;
-    };
-    interface HTMLUniIconsTwoToneMatElement extends Components.UniIconsTwoToneMat, HTMLStencilElement {
-    }
-    var HTMLUniIconsTwoToneMatElement: {
-        prototype: HTMLUniIconsTwoToneMatElement;
-        new (): HTMLUniIconsTwoToneMatElement;
-    };
-    interface HTMLUniIconsTwoToneMatShadowElement extends Components.UniIconsTwoToneMatShadow, HTMLStencilElement {
-    }
-    var HTMLUniIconsTwoToneMatShadowElement: {
-        prototype: HTMLUniIconsTwoToneMatShadowElement;
-        new (): HTMLUniIconsTwoToneMatShadowElement;
-    };
-    interface HTMLUniIconsTwoToneMatWrapElement extends Components.UniIconsTwoToneMatWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconsTwoToneMatWrapElement: {
-        prototype: HTMLUniIconsTwoToneMatWrapElement;
-        new (): HTMLUniIconsTwoToneMatWrapElement;
-    };
     interface HTMLElementTagNameMap {
-        "uni-icons-filled-mat": HTMLUniIconsFilledMatElement;
-        "uni-icons-filled-mat-shadow": HTMLUniIconsFilledMatShadowElement;
-        "uni-icons-filled-mat-wrap": HTMLUniIconsFilledMatWrapElement;
+        "uni-icons-fa": HTMLUniIconsFaElement;
+        "uni-icons-fa-solid": HTMLUniIconsFaSolidElement;
         "uni-icons-mat": HTMLUniIconsMatElement;
+        "uni-icons-mat-filled": HTMLUniIconsMatFilledElement;
+        "uni-icons-mat-filled-shadow": HTMLUniIconsMatFilledShadowElement;
+        "uni-icons-mat-filled-wrap": HTMLUniIconsMatFilledWrapElement;
+        "uni-icons-mat-outlined": HTMLUniIconsMatOutlinedElement;
+        "uni-icons-mat-outlined-shadow": HTMLUniIconsMatOutlinedShadowElement;
+        "uni-icons-mat-outlined-wrap": HTMLUniIconsMatOutlinedWrapElement;
+        "uni-icons-mat-round": HTMLUniIconsMatRoundElement;
+        "uni-icons-mat-round-shadow": HTMLUniIconsMatRoundShadowElement;
+        "uni-icons-mat-round-wrap": HTMLUniIconsMatRoundWrapElement;
         "uni-icons-mat-shadow": HTMLUniIconsMatShadowElement;
+        "uni-icons-mat-sharp": HTMLUniIconsMatSharpElement;
+        "uni-icons-mat-sharp-shadow": HTMLUniIconsMatSharpShadowElement;
+        "uni-icons-mat-sharp-wrap": HTMLUniIconsMatSharpWrapElement;
+        "uni-icons-mat-two-tone": HTMLUniIconsMatTwoToneElement;
+        "uni-icons-mat-two-tone-shadow": HTMLUniIconsMatTwoToneShadowElement;
+        "uni-icons-mat-two-tone-wrap": HTMLUniIconsMatTwoToneWrapElement;
         "uni-icons-mat-wrap": HTMLUniIconsMatWrapElement;
-        "uni-icons-outlined-mat": HTMLUniIconsOutlinedMatElement;
-        "uni-icons-outlined-mat-shadow": HTMLUniIconsOutlinedMatShadowElement;
-        "uni-icons-outlined-mat-wrap": HTMLUniIconsOutlinedMatWrapElement;
-        "uni-icons-round-mat": HTMLUniIconsRoundMatElement;
-        "uni-icons-round-mat-shadow": HTMLUniIconsRoundMatShadowElement;
-        "uni-icons-round-mat-wrap": HTMLUniIconsRoundMatWrapElement;
-        "uni-icons-sharp-mat": HTMLUniIconsSharpMatElement;
-        "uni-icons-sharp-mat-shadow": HTMLUniIconsSharpMatShadowElement;
-        "uni-icons-sharp-mat-wrap": HTMLUniIconsSharpMatWrapElement;
-        "uni-icons-two-tone-mat": HTMLUniIconsTwoToneMatElement;
-        "uni-icons-two-tone-mat-shadow": HTMLUniIconsTwoToneMatShadowElement;
-        "uni-icons-two-tone-mat-wrap": HTMLUniIconsTwoToneMatWrapElement;
     }
 }
 declare namespace LocalJSX {
-    interface UniIconsFilledMat {
+    interface UniIconsFa {
         "color"?: string;
-        "name"?: string;
+        "mode"?: 's' | 'r' | 'b';
+        "name": string;
     }
-    interface UniIconsFilledMatShadow {
-    }
-    interface UniIconsFilledMatWrap {
-        "active"?: boolean;
-        "all"?: boolean;
-        "selector"?: string;
+    interface UniIconsFaSolid {
+        "color"?: string;
+        "name": string;
     }
     interface UniIconsMat {
         "color"?: string;
         "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
         "name"?: string;
     }
+    interface UniIconsMatFilled {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatFilledShadow {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatFilledWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "selector"?: string;
+    }
+    interface UniIconsMatOutlined {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatOutlinedShadow {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatOutlinedWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "selector"?: string;
+    }
+    interface UniIconsMatRound {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatRoundShadow {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatRoundWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "selector"?: string;
+    }
     interface UniIconsMatShadow {
         "color"?: string;
         "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
         "name"?: string;
+    }
+    interface UniIconsMatSharp {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatSharpShadow {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatSharpWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "selector"?: string;
+    }
+    interface UniIconsMatTwoTone {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatTwoToneShadow {
+        "color"?: string;
+        "name"?: string;
+    }
+    interface UniIconsMatTwoToneWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "selector"?: string;
     }
     interface UniIconsMatWrap {
         "active"?: boolean;
@@ -240,93 +336,53 @@ declare namespace LocalJSX {
         "name"?: string;
         "selector"?: string;
     }
-    interface UniIconsOutlinedMat {
-        "color"?: string;
-        "name"?: string;
-    }
-    interface UniIconsOutlinedMatShadow {
-    }
-    interface UniIconsOutlinedMatWrap {
-        "active"?: boolean;
-        "all"?: boolean;
-        "selector"?: string;
-    }
-    interface UniIconsRoundMat {
-        "color"?: string;
-        "name"?: string;
-    }
-    interface UniIconsRoundMatShadow {
-    }
-    interface UniIconsRoundMatWrap {
-        "active"?: boolean;
-        "all"?: boolean;
-        "selector"?: string;
-    }
-    interface UniIconsSharpMat {
-        "color"?: string;
-        "name"?: string;
-    }
-    interface UniIconsSharpMatShadow {
-    }
-    interface UniIconsSharpMatWrap {
-        "active"?: boolean;
-        "all"?: boolean;
-        "selector"?: string;
-    }
-    interface UniIconsTwoToneMat {
-        "color"?: string;
-        "name"?: string;
-    }
-    interface UniIconsTwoToneMatShadow {
-    }
-    interface UniIconsTwoToneMatWrap {
-        "active"?: boolean;
-        "all"?: boolean;
-        "selector"?: string;
-    }
     interface IntrinsicElements {
-        "uni-icons-filled-mat": UniIconsFilledMat;
-        "uni-icons-filled-mat-shadow": UniIconsFilledMatShadow;
-        "uni-icons-filled-mat-wrap": UniIconsFilledMatWrap;
+        "uni-icons-fa": UniIconsFa;
+        "uni-icons-fa-solid": UniIconsFaSolid;
         "uni-icons-mat": UniIconsMat;
+        "uni-icons-mat-filled": UniIconsMatFilled;
+        "uni-icons-mat-filled-shadow": UniIconsMatFilledShadow;
+        "uni-icons-mat-filled-wrap": UniIconsMatFilledWrap;
+        "uni-icons-mat-outlined": UniIconsMatOutlined;
+        "uni-icons-mat-outlined-shadow": UniIconsMatOutlinedShadow;
+        "uni-icons-mat-outlined-wrap": UniIconsMatOutlinedWrap;
+        "uni-icons-mat-round": UniIconsMatRound;
+        "uni-icons-mat-round-shadow": UniIconsMatRoundShadow;
+        "uni-icons-mat-round-wrap": UniIconsMatRoundWrap;
         "uni-icons-mat-shadow": UniIconsMatShadow;
+        "uni-icons-mat-sharp": UniIconsMatSharp;
+        "uni-icons-mat-sharp-shadow": UniIconsMatSharpShadow;
+        "uni-icons-mat-sharp-wrap": UniIconsMatSharpWrap;
+        "uni-icons-mat-two-tone": UniIconsMatTwoTone;
+        "uni-icons-mat-two-tone-shadow": UniIconsMatTwoToneShadow;
+        "uni-icons-mat-two-tone-wrap": UniIconsMatTwoToneWrap;
         "uni-icons-mat-wrap": UniIconsMatWrap;
-        "uni-icons-outlined-mat": UniIconsOutlinedMat;
-        "uni-icons-outlined-mat-shadow": UniIconsOutlinedMatShadow;
-        "uni-icons-outlined-mat-wrap": UniIconsOutlinedMatWrap;
-        "uni-icons-round-mat": UniIconsRoundMat;
-        "uni-icons-round-mat-shadow": UniIconsRoundMatShadow;
-        "uni-icons-round-mat-wrap": UniIconsRoundMatWrap;
-        "uni-icons-sharp-mat": UniIconsSharpMat;
-        "uni-icons-sharp-mat-shadow": UniIconsSharpMatShadow;
-        "uni-icons-sharp-mat-wrap": UniIconsSharpMatWrap;
-        "uni-icons-two-tone-mat": UniIconsTwoToneMat;
-        "uni-icons-two-tone-mat-shadow": UniIconsTwoToneMatShadow;
-        "uni-icons-two-tone-mat-wrap": UniIconsTwoToneMatWrap;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "uni-icons-filled-mat": LocalJSX.UniIconsFilledMat & JSXBase.HTMLAttributes<HTMLUniIconsFilledMatElement>;
-            "uni-icons-filled-mat-shadow": LocalJSX.UniIconsFilledMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsFilledMatShadowElement>;
-            "uni-icons-filled-mat-wrap": LocalJSX.UniIconsFilledMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsFilledMatWrapElement>;
+            "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
+            "uni-icons-fa-solid": LocalJSX.UniIconsFaSolid & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidElement>;
             "uni-icons-mat": LocalJSX.UniIconsMat & JSXBase.HTMLAttributes<HTMLUniIconsMatElement>;
+            "uni-icons-mat-filled": LocalJSX.UniIconsMatFilled & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledElement>;
+            "uni-icons-mat-filled-shadow": LocalJSX.UniIconsMatFilledShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledShadowElement>;
+            "uni-icons-mat-filled-wrap": LocalJSX.UniIconsMatFilledWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledWrapElement>;
+            "uni-icons-mat-outlined": LocalJSX.UniIconsMatOutlined & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlinedElement>;
+            "uni-icons-mat-outlined-shadow": LocalJSX.UniIconsMatOutlinedShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlinedShadowElement>;
+            "uni-icons-mat-outlined-wrap": LocalJSX.UniIconsMatOutlinedWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlinedWrapElement>;
+            "uni-icons-mat-round": LocalJSX.UniIconsMatRound & JSXBase.HTMLAttributes<HTMLUniIconsMatRoundElement>;
+            "uni-icons-mat-round-shadow": LocalJSX.UniIconsMatRoundShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatRoundShadowElement>;
+            "uni-icons-mat-round-wrap": LocalJSX.UniIconsMatRoundWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatRoundWrapElement>;
             "uni-icons-mat-shadow": LocalJSX.UniIconsMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatShadowElement>;
+            "uni-icons-mat-sharp": LocalJSX.UniIconsMatSharp & JSXBase.HTMLAttributes<HTMLUniIconsMatSharpElement>;
+            "uni-icons-mat-sharp-shadow": LocalJSX.UniIconsMatSharpShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatSharpShadowElement>;
+            "uni-icons-mat-sharp-wrap": LocalJSX.UniIconsMatSharpWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatSharpWrapElement>;
+            "uni-icons-mat-two-tone": LocalJSX.UniIconsMatTwoTone & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneElement>;
+            "uni-icons-mat-two-tone-shadow": LocalJSX.UniIconsMatTwoToneShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneShadowElement>;
+            "uni-icons-mat-two-tone-wrap": LocalJSX.UniIconsMatTwoToneWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneWrapElement>;
             "uni-icons-mat-wrap": LocalJSX.UniIconsMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatWrapElement>;
-            "uni-icons-outlined-mat": LocalJSX.UniIconsOutlinedMat & JSXBase.HTMLAttributes<HTMLUniIconsOutlinedMatElement>;
-            "uni-icons-outlined-mat-shadow": LocalJSX.UniIconsOutlinedMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsOutlinedMatShadowElement>;
-            "uni-icons-outlined-mat-wrap": LocalJSX.UniIconsOutlinedMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsOutlinedMatWrapElement>;
-            "uni-icons-round-mat": LocalJSX.UniIconsRoundMat & JSXBase.HTMLAttributes<HTMLUniIconsRoundMatElement>;
-            "uni-icons-round-mat-shadow": LocalJSX.UniIconsRoundMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsRoundMatShadowElement>;
-            "uni-icons-round-mat-wrap": LocalJSX.UniIconsRoundMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsRoundMatWrapElement>;
-            "uni-icons-sharp-mat": LocalJSX.UniIconsSharpMat & JSXBase.HTMLAttributes<HTMLUniIconsSharpMatElement>;
-            "uni-icons-sharp-mat-shadow": LocalJSX.UniIconsSharpMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsSharpMatShadowElement>;
-            "uni-icons-sharp-mat-wrap": LocalJSX.UniIconsSharpMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsSharpMatWrapElement>;
-            "uni-icons-two-tone-mat": LocalJSX.UniIconsTwoToneMat & JSXBase.HTMLAttributes<HTMLUniIconsTwoToneMatElement>;
-            "uni-icons-two-tone-mat-shadow": LocalJSX.UniIconsTwoToneMatShadow & JSXBase.HTMLAttributes<HTMLUniIconsTwoToneMatShadowElement>;
-            "uni-icons-two-tone-mat-wrap": LocalJSX.UniIconsTwoToneMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsTwoToneMatWrapElement>;
         }
     }
 }
