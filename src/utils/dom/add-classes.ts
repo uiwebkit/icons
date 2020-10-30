@@ -1,26 +1,34 @@
-export function uniAddClasses(data, classNames: string[], elementName: string) {
-  if (data.selector) {
-    const targets = data.all ? data.el.querySelectorAll(data.selector) : [data.el.querySelector(data.selector)];
+export function uniAddClasses(target: Element, classNames: string[]): void {
+  classNames.forEach((className: string): void => {
+    target.classList.add(className);
+  });
+}
+
+export function uniReplaceContent(target: Element, content: string): void {
+  target.textContent = content;
+}
+
+export function uniModifyTarget(context, modifyFunc, data: string[] | string, name: string): void {
+  if (context.selector) {
+    const targets = context.all
+      ? context.el.querySelectorAll(context.selector)
+      : [context.el.querySelector(context.selector)];
 
     if (targets[0]) {
       targets.forEach((target: Element): void => {
-        classNames.forEach((className: string): void => {
-          target.classList.add(className);
-        });
+        modifyFunc(target, data);
       });
     } else {
-      console.warn(`Element(s) with CSS selector: '${data.selector}' was not found into ${elementName}.
+      console.warn(`Element(s) with CSS selector: '${context.selector}' was not found into ${name}.
 If the selected element is dynamic and when element appears - the 'active' property should be set again.`);
     }
   } else {
-    const firstChild = data.el.firstElementChild;
+    const firstChild = context.el.firstElementChild;
 
     if (firstChild) {
-      classNames.forEach((className: string): void => {
-        firstChild.classList.add(className);
-      });
+      modifyFunc(firstChild, data);
     } else {
-      console.warn(`${elementName} should have at least one child element.`);
+      console.warn(`${name} should have at least one child element.`);
     }
   }
 }

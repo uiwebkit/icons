@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Uni Icons</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/variables.css" />
+
+  <script type="module" src="/build/icn.esm.js"></script>
+  <script nomodule src="/build/icn.js"></script>
+</head>
+<body>
+<a href="/">Home</a>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-fa mode="solid" name="check-circle"></uni-icons-fa>
+<uni-icons-fa mode="regular" name="check-circle"></uni-icons-fa>
+<uni-icons-fa mode="brands" name="apple"></uni-icons-fa>
+
+<h4>Web Component + prop 'name':</h4>
+<uni-icons-fa-shadow mode="solid" name="check-circle"></uni-icons-fa-shadow>
+<uni-icons-fa-shadow mode="regular" name="check-circle"></uni-icons-fa-shadow>
+<uni-icons-fa-shadow mode="brands" name="apple"></uni-icons-fa-shadow>
+
+<h4>Custom Element Wrapper + first child:</h4>
+<uni-icons-fa-wrap active mode="solid" name="check-circle">
+  <i></i>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap active mode="regular" name="check-circle">
+  <i></i>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap active mode="brands" name="apple">
+  <i></i>
+</uni-icons-fa-wrap>
+
+<h4>Custom Element Wrapper + selector (all):</h4>
+<uni-icons-fa-wrap active mode="solid" name="check-circle" selector=".test" all>
+  <span>Text</span>
+  <span class="test"></span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap active mode="regular" name="check-circle" selector=".test" all>
+  <span>Text</span>
+  <span class="test"></span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap active mode="brands" name="apple" selector=".test" all>
+  <span>Text</span>
+  <span class="test"></span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-wrap>
+</body>
+</html>

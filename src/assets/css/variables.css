@@ -1,7 +1,10 @@
 :root {
-  --uni-icon-filled-mat-size: 44px;
-  --uni-icon-outlined-mat-size: 44px;
-  --uni-icon-round-mat-size: 44px;
-  --uni-icon-sharp-mat-size: 44px;
-  --uni-icon-two-tone-mat-size: 44px;
+  --uni-icons-fa-brands-size: 44px;
+  --uni-icons-fa-regular-size: 44px;
+  --uni-icons-fa-solid-size: 44px;
+  --uni-icons-mat-filled-size: 44px;
+  --uni-icons-mat-outlined-size: 44px;
+  --uni-icons-mat-round-size: 44px;
+  --uni-icons-mat-sharp-size: 44px;
+  --uni-icons-mat-two-tone-size: 44px;
 }

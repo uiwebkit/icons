@@ -5,19 +5,77 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { UniIconsFaMode } from "./components/fa/icons/models";
+import { UniIconsMatMode } from "./components/mat/icons/models";
 export namespace Components {
     interface UniIconsFa {
         "color": string;
-        "mode": 's' | 'r' | 'b';
+        "mode": UniIconsFaMode;
+        "name": string;
+    }
+    interface UniIconsFaBrands {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsFaBrandsShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsFaBrandsWrap {
+        "active": boolean;
+        "all": boolean;
+        "color": string;
+        "name": string;
+        "selector": string;
+    }
+    interface UniIconsFaCommon {
+    }
+    interface UniIconsFaRegular {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsFaRegularShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsFaRegularWrap {
+        "active": boolean;
+        "all": boolean;
+        "color": string;
+        "name": string;
+        "selector": string;
+    }
+    interface UniIconsFaShadow {
+        "color": string;
+        "mode": UniIconsFaMode;
         "name": string;
     }
     interface UniIconsFaSolid {
         "color": string;
         "name": string;
     }
+    interface UniIconsFaSolidShadow {
+        "color": string;
+        "name": string;
+    }
+    interface UniIconsFaSolidWrap {
+        "active": boolean;
+        "all": boolean;
+        "color": string;
+        "name": string;
+        "selector": string;
+    }
+    interface UniIconsFaWrap {
+        "active": boolean;
+        "all": boolean;
+        "color": string;
+        "mode": UniIconsFaMode;
+        "name": string;
+        "selector": string;
+    }
     interface UniIconsMat {
         "color": string;
-        "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "mode": UniIconsMatMode;
         "name": string;
     }
     interface UniIconsMatFilled {
@@ -31,6 +89,7 @@ export namespace Components {
     interface UniIconsMatFilledWrap {
         "active": boolean;
         "all": boolean;
+        "name": string;
         "selector": string;
     }
     interface UniIconsMatOutlined {
@@ -44,6 +103,7 @@ export namespace Components {
     interface UniIconsMatOutlinedWrap {
         "active": boolean;
         "all": boolean;
+        "name": string;
         "selector": string;
     }
     interface UniIconsMatRound {
@@ -57,11 +117,12 @@ export namespace Components {
     interface UniIconsMatRoundWrap {
         "active": boolean;
         "all": boolean;
+        "name": string;
         "selector": string;
     }
     interface UniIconsMatShadow {
         "color": string;
-        "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "mode": UniIconsMatMode;
         "name": string;
     }
     interface UniIconsMatSharp {
@@ -75,6 +136,7 @@ export namespace Components {
     interface UniIconsMatSharpWrap {
         "active": boolean;
         "all": boolean;
+        "name": string;
         "selector": string;
     }
     interface UniIconsMatTwoTone {
@@ -88,13 +150,14 @@ export namespace Components {
     interface UniIconsMatTwoToneWrap {
         "active": boolean;
         "all": boolean;
+        "name": string;
         "selector": string;
     }
     interface UniIconsMatWrap {
         "active": boolean;
         "all": boolean;
         "color": string;
-        "mode": 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "mode": UniIconsMatMode;
         "name": string;
         "selector": string;
     }
@@ -106,11 +169,77 @@ declare global {
         prototype: HTMLUniIconsFaElement;
         new (): HTMLUniIconsFaElement;
     };
+    interface HTMLUniIconsFaBrandsElement extends Components.UniIconsFaBrands, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaBrandsElement: {
+        prototype: HTMLUniIconsFaBrandsElement;
+        new (): HTMLUniIconsFaBrandsElement;
+    };
+    interface HTMLUniIconsFaBrandsShadowElement extends Components.UniIconsFaBrandsShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaBrandsShadowElement: {
+        prototype: HTMLUniIconsFaBrandsShadowElement;
+        new (): HTMLUniIconsFaBrandsShadowElement;
+    };
+    interface HTMLUniIconsFaBrandsWrapElement extends Components.UniIconsFaBrandsWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaBrandsWrapElement: {
+        prototype: HTMLUniIconsFaBrandsWrapElement;
+        new (): HTMLUniIconsFaBrandsWrapElement;
+    };
+    interface HTMLUniIconsFaCommonElement extends Components.UniIconsFaCommon, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaCommonElement: {
+        prototype: HTMLUniIconsFaCommonElement;
+        new (): HTMLUniIconsFaCommonElement;
+    };
+    interface HTMLUniIconsFaRegularElement extends Components.UniIconsFaRegular, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaRegularElement: {
+        prototype: HTMLUniIconsFaRegularElement;
+        new (): HTMLUniIconsFaRegularElement;
+    };
+    interface HTMLUniIconsFaRegularShadowElement extends Components.UniIconsFaRegularShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaRegularShadowElement: {
+        prototype: HTMLUniIconsFaRegularShadowElement;
+        new (): HTMLUniIconsFaRegularShadowElement;
+    };
+    interface HTMLUniIconsFaRegularWrapElement extends Components.UniIconsFaRegularWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaRegularWrapElement: {
+        prototype: HTMLUniIconsFaRegularWrapElement;
+        new (): HTMLUniIconsFaRegularWrapElement;
+    };
+    interface HTMLUniIconsFaShadowElement extends Components.UniIconsFaShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaShadowElement: {
+        prototype: HTMLUniIconsFaShadowElement;
+        new (): HTMLUniIconsFaShadowElement;
+    };
     interface HTMLUniIconsFaSolidElement extends Components.UniIconsFaSolid, HTMLStencilElement {
     }
     var HTMLUniIconsFaSolidElement: {
         prototype: HTMLUniIconsFaSolidElement;
         new (): HTMLUniIconsFaSolidElement;
+    };
+    interface HTMLUniIconsFaSolidShadowElement extends Components.UniIconsFaSolidShadow, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaSolidShadowElement: {
+        prototype: HTMLUniIconsFaSolidShadowElement;
+        new (): HTMLUniIconsFaSolidShadowElement;
+    };
+    interface HTMLUniIconsFaSolidWrapElement extends Components.UniIconsFaSolidWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaSolidWrapElement: {
+        prototype: HTMLUniIconsFaSolidWrapElement;
+        new (): HTMLUniIconsFaSolidWrapElement;
+    };
+    interface HTMLUniIconsFaWrapElement extends Components.UniIconsFaWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFaWrapElement: {
+        prototype: HTMLUniIconsFaWrapElement;
+        new (): HTMLUniIconsFaWrapElement;
     };
     interface HTMLUniIconsMatElement extends Components.UniIconsMat, HTMLStencilElement {
     }
@@ -222,7 +351,18 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "uni-icons-fa": HTMLUniIconsFaElement;
+        "uni-icons-fa-brands": HTMLUniIconsFaBrandsElement;
+        "uni-icons-fa-brands-shadow": HTMLUniIconsFaBrandsShadowElement;
+        "uni-icons-fa-brands-wrap": HTMLUniIconsFaBrandsWrapElement;
+        "uni-icons-fa-common": HTMLUniIconsFaCommonElement;
+        "uni-icons-fa-regular": HTMLUniIconsFaRegularElement;
+        "uni-icons-fa-regular-shadow": HTMLUniIconsFaRegularShadowElement;
+        "uni-icons-fa-regular-wrap": HTMLUniIconsFaRegularWrapElement;
+        "uni-icons-fa-shadow": HTMLUniIconsFaShadowElement;
         "uni-icons-fa-solid": HTMLUniIconsFaSolidElement;
+        "uni-icons-fa-solid-shadow": HTMLUniIconsFaSolidShadowElement;
+        "uni-icons-fa-solid-wrap": HTMLUniIconsFaSolidWrapElement;
+        "uni-icons-fa-wrap": HTMLUniIconsFaWrapElement;
         "uni-icons-mat": HTMLUniIconsMatElement;
         "uni-icons-mat-filled": HTMLUniIconsMatFilledElement;
         "uni-icons-mat-filled-shadow": HTMLUniIconsMatFilledShadowElement;
@@ -246,16 +386,72 @@ declare global {
 declare namespace LocalJSX {
     interface UniIconsFa {
         "color"?: string;
-        "mode"?: 's' | 'r' | 'b';
+        "mode"?: UniIconsFaMode;
+        "name": string;
+    }
+    interface UniIconsFaBrands {
+        "color"?: string;
+        "name": string;
+    }
+    interface UniIconsFaBrandsShadow {
+        "color"?: string;
+        "name": string;
+    }
+    interface UniIconsFaBrandsWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "color"?: string;
+        "name": string;
+        "selector"?: string;
+    }
+    interface UniIconsFaCommon {
+    }
+    interface UniIconsFaRegular {
+        "color"?: string;
+        "name": string;
+    }
+    interface UniIconsFaRegularShadow {
+        "color"?: string;
+        "name": string;
+    }
+    interface UniIconsFaRegularWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "color"?: string;
+        "name": string;
+        "selector"?: string;
+    }
+    interface UniIconsFaShadow {
+        "color"?: string;
+        "mode"?: UniIconsFaMode;
         "name": string;
     }
     interface UniIconsFaSolid {
         "color"?: string;
         "name": string;
     }
+    interface UniIconsFaSolidShadow {
+        "color"?: string;
+        "name": string;
+    }
+    interface UniIconsFaSolidWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "color"?: string;
+        "name": string;
+        "selector"?: string;
+    }
+    interface UniIconsFaWrap {
+        "active"?: boolean;
+        "all"?: boolean;
+        "color"?: string;
+        "mode"?: UniIconsFaMode;
+        "name": string;
+        "selector"?: string;
+    }
     interface UniIconsMat {
         "color"?: string;
-        "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "mode"?: UniIconsMatMode;
         "name"?: string;
     }
     interface UniIconsMatFilled {
@@ -269,6 +465,7 @@ declare namespace LocalJSX {
     interface UniIconsMatFilledWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatOutlined {
@@ -282,6 +479,7 @@ declare namespace LocalJSX {
     interface UniIconsMatOutlinedWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatRound {
@@ -295,11 +493,12 @@ declare namespace LocalJSX {
     interface UniIconsMatRoundWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatShadow {
         "color"?: string;
-        "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "mode"?: UniIconsMatMode;
         "name"?: string;
     }
     interface UniIconsMatSharp {
@@ -313,6 +512,7 @@ declare namespace LocalJSX {
     interface UniIconsMatSharpWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatTwoTone {
@@ -326,19 +526,31 @@ declare namespace LocalJSX {
     interface UniIconsMatTwoToneWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatWrap {
         "active"?: boolean;
         "all"?: boolean;
         "color"?: string;
-        "mode"?: 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+        "mode"?: UniIconsMatMode;
         "name"?: string;
         "selector"?: string;
     }
     interface IntrinsicElements {
         "uni-icons-fa": UniIconsFa;
+        "uni-icons-fa-brands": UniIconsFaBrands;
+        "uni-icons-fa-brands-shadow": UniIconsFaBrandsShadow;
+        "uni-icons-fa-brands-wrap": UniIconsFaBrandsWrap;
+        "uni-icons-fa-common": UniIconsFaCommon;
+        "uni-icons-fa-regular": UniIconsFaRegular;
+        "uni-icons-fa-regular-shadow": UniIconsFaRegularShadow;
+        "uni-icons-fa-regular-wrap": UniIconsFaRegularWrap;
+        "uni-icons-fa-shadow": UniIconsFaShadow;
         "uni-icons-fa-solid": UniIconsFaSolid;
+        "uni-icons-fa-solid-shadow": UniIconsFaSolidShadow;
+        "uni-icons-fa-solid-wrap": UniIconsFaSolidWrap;
+        "uni-icons-fa-wrap": UniIconsFaWrap;
         "uni-icons-mat": UniIconsMat;
         "uni-icons-mat-filled": UniIconsMatFilled;
         "uni-icons-mat-filled-shadow": UniIconsMatFilledShadow;
@@ -364,7 +576,18 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
+            "uni-icons-fa-brands": LocalJSX.UniIconsFaBrands & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsElement>;
+            "uni-icons-fa-brands-shadow": LocalJSX.UniIconsFaBrandsShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsShadowElement>;
+            "uni-icons-fa-brands-wrap": LocalJSX.UniIconsFaBrandsWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsWrapElement>;
+            "uni-icons-fa-common": LocalJSX.UniIconsFaCommon & JSXBase.HTMLAttributes<HTMLUniIconsFaCommonElement>;
+            "uni-icons-fa-regular": LocalJSX.UniIconsFaRegular & JSXBase.HTMLAttributes<HTMLUniIconsFaRegularElement>;
+            "uni-icons-fa-regular-shadow": LocalJSX.UniIconsFaRegularShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaRegularShadowElement>;
+            "uni-icons-fa-regular-wrap": LocalJSX.UniIconsFaRegularWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaRegularWrapElement>;
+            "uni-icons-fa-shadow": LocalJSX.UniIconsFaShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaShadowElement>;
             "uni-icons-fa-solid": LocalJSX.UniIconsFaSolid & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidElement>;
+            "uni-icons-fa-solid-shadow": LocalJSX.UniIconsFaSolidShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidShadowElement>;
+            "uni-icons-fa-solid-wrap": LocalJSX.UniIconsFaSolidWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidWrapElement>;
+            "uni-icons-fa-wrap": LocalJSX.UniIconsFaWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaWrapElement>;
             "uni-icons-mat": LocalJSX.UniIconsMat & JSXBase.HTMLAttributes<HTMLUniIconsMatElement>;
             "uni-icons-mat-filled": LocalJSX.UniIconsMatFilled & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledElement>;
             "uni-icons-mat-filled-shadow": LocalJSX.UniIconsMatFilledShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledShadowElement>;
