@@ -7,11 +7,24 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `color`  | `color`   |             | `string` | `undefined` |
-| `name`   | `name`    |             | `string` | `undefined` |
+| Property | Attribute | Description | Type                                                        | Default     |
+| -------- | --------- | ----------- | ----------------------------------------------------------- | ----------- |
+| `color`  | `color`   |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `'default'` |
+| `name`   | `name`    |             | `string`                                                    | `undefined` |
 
+
+## Dependencies
+
+### Depends on
+
+- [uni-icons-mat-common](../../common/element)
+
+### Graph
+```mermaid
+graph TD;
+  uni-icons-mat-filled-shadow --> uni-icons-mat-common
+  style uni-icons-mat-filled-shadow fill:#f9f,stroke:#333,stroke-width:4px
+```
 
 ----------------------------------------------
 

@@ -11,7 +11,7 @@
 | ---------- | ---------- | ----------- | ------------------------------------------------------------ | ----------- |
 | `active`   | `active`   |             | `boolean`                                                    | `false`     |
 | `all`      | `all`      |             | `boolean`                                                    | `false`     |
-| `color`    | `color`    |             | `string`                                                     | `undefined` |
+| `color`    | `color`    |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"`  | `'default'` |
 | `mode`     | `mode`     |             | `"filled" \| "outlined" \| "round" \| "sharp" \| "two-tone"` | `'filled'`  |
 | `name`     | `name`     |             | `string`                                                     | `undefined` |
 | `selector` | `selector` |             | `string`                                                     | `undefined` |

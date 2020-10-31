@@ -1,4 +1,6 @@
-import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
+import { Component, ComponentInterface, Fragment, h, Prop, VNode } from '@stencil/core';
+
+import { UniColor } from '../../../../models';
 
 @Component({
   tag: 'uni-icons-mat-two-tone-shadow',
@@ -8,14 +10,17 @@ import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
 export class UniIconsMatTwoToneShadowComponent implements ComponentInterface {
   @Prop({ reflect: true }) name: string;
 
-  @Prop({ reflect: true }) color: string;
+  @Prop({ reflect: true }) color: UniColor = 'default';
 
   render(): VNode {
     return (
-      <i class={'material-icons-two-tone'}>
-        {this.name}
-        <slot />
-      </i>
+      <Fragment>
+        <i class={`material-icons-two-tone uni-color-${this.color}-fix`}>
+          {this.name}
+          <slot />
+        </i>
+        <uni-icons-mat-common />
+      </Fragment>
     );
   }
 }

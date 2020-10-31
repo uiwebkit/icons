@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, h, VNode, Prop, Fragment, Element, Watch } from '@stencil/core';
 
 import { uniAddClasses, uniModifyTarget } from '../../../../utils';
+import { UniColor } from '../../../../models';
 
 @Component({
   tag: 'uni-icons-fa-regular-wrap',
@@ -13,11 +14,11 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) name!: string;
 
+  @Prop({ reflect: true }) color: UniColor = 'default';
+
   @Prop({ reflect: true }) selector: string;
 
   @Prop({ reflect: true }) all: boolean = false;
-
-  @Prop({ reflect: true }) color: string;
 
   private get data() {
     const { el, selector, all } = this;
@@ -27,7 +28,9 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
   @Watch('active')
   onActiveChanged(newValue: boolean): void {
     if (newValue) {
-      uniModifyTarget(this.data, uniAddClasses, ['far', `fa-${this.name}`], 'uni-icons-fa-regular-wrap');
+      const classes = ['far', `fa-${this.name}`, `uni-color-${this.color}`];
+
+      uniModifyTarget(this.data, uniAddClasses, classes, 'uni-icons-fa-regular-wrap');
       this.active = false;
     }
   }

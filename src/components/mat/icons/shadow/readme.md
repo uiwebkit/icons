@@ -9,7 +9,7 @@
 
 | Property | Attribute | Description | Type                                                         | Default     |
 | -------- | --------- | ----------- | ------------------------------------------------------------ | ----------- |
-| `color`  | `color`   |             | `string`                                                     | `undefined` |
+| `color`  | `color`   |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"`  | `'default'` |
 | `mode`   | `mode`    |             | `"filled" \| "outlined" \| "round" \| "sharp" \| "two-tone"` | `'filled'`  |
 | `name`   | `name`    |             | `string`                                                     | `undefined` |
 

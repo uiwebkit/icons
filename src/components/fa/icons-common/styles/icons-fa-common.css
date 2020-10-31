@@ -10,6 +10,7 @@
 .fab {
   font-style: normal;
   font-variant: normal;
+
   line-height: 1;
   display: inline-block;
   text-rendering: auto;
@@ -6088,4 +6089,30 @@ readers do not read off random characters that represent icons */
   overflow: visible;
   position: static;
   width: auto;
+}
+
+
+.uni-color-default {
+  color: #000;  /* Preferred color */
+  color: var(--uni-color-default, #000);
+}
+
+.uni-color-primary {
+  color: #3f51b5;  /* Preferred color */
+  color: var(--uni-color-primary, #3f51b5);
+}
+
+.uni-color-success {
+  color: #018786;  /* Preferred color */
+  color: var(--uni-color-success, #018786);
+}
+
+.uni-color-accent {
+  color: #ff4081;  /* Preferred color */
+  color: var(--uni-color-accent, #ff4081);
+}
+
+.uni-color-warn {
+  color: #f44336;  /* Preferred color */
+  color: var(--uni-color-warn, #f44336);
 }

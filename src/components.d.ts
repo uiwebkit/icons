@@ -6,157 +6,165 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniIconsFaMode } from "./components/fa/icons/models";
+import { UniColor } from "./models";
 import { UniIconsMatMode } from "./components/mat/icons/models";
 export namespace Components {
     interface UniIconsFa {
-        "color": string;
+        "color": UniColor;
         "mode": UniIconsFaMode;
         "name": string;
     }
     interface UniIconsFaBrands {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsFaBrandsShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsFaBrandsWrap {
         "active": boolean;
         "all": boolean;
-        "color": string;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsFaCommon {
     }
     interface UniIconsFaRegular {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsFaRegularShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsFaRegularWrap {
         "active": boolean;
         "all": boolean;
-        "color": string;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsFaShadow {
-        "color": string;
+        "color": UniColor;
         "mode": UniIconsFaMode;
         "name": string;
     }
     interface UniIconsFaSolid {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsFaSolidShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsFaSolidWrap {
         "active": boolean;
         "all": boolean;
-        "color": string;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsFaWrap {
         "active": boolean;
         "all": boolean;
-        "color": string;
+        "color": UniColor;
         "mode": UniIconsFaMode;
         "name": string;
         "selector": string;
     }
     interface UniIconsMat {
-        "color": string;
+        "color": UniColor;
         "mode": UniIconsMatMode;
         "name": string;
     }
+    interface UniIconsMatCommon {
+    }
     interface UniIconsMatFilled {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatFilledShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatFilledWrap {
         "active": boolean;
         "all": boolean;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsMatOutlined {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatOutlinedShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatOutlinedWrap {
         "active": boolean;
         "all": boolean;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsMatRound {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatRoundShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatRoundWrap {
         "active": boolean;
         "all": boolean;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsMatShadow {
-        "color": string;
+        "color": UniColor;
         "mode": UniIconsMatMode;
         "name": string;
     }
     interface UniIconsMatSharp {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatSharpShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatSharpWrap {
         "active": boolean;
         "all": boolean;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsMatTwoTone {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatTwoToneShadow {
-        "color": string;
+        "color": UniColor;
         "name": string;
     }
     interface UniIconsMatTwoToneWrap {
         "active": boolean;
         "all": boolean;
+        "color": UniColor;
         "name": string;
         "selector": string;
     }
     interface UniIconsMatWrap {
         "active": boolean;
         "all": boolean;
-        "color": string;
+        "color": UniColor;
         "mode": UniIconsMatMode;
         "name": string;
         "selector": string;
@@ -246,6 +254,12 @@ declare global {
     var HTMLUniIconsMatElement: {
         prototype: HTMLUniIconsMatElement;
         new (): HTMLUniIconsMatElement;
+    };
+    interface HTMLUniIconsMatCommonElement extends Components.UniIconsMatCommon, HTMLStencilElement {
+    }
+    var HTMLUniIconsMatCommonElement: {
+        prototype: HTMLUniIconsMatCommonElement;
+        new (): HTMLUniIconsMatCommonElement;
     };
     interface HTMLUniIconsMatFilledElement extends Components.UniIconsMatFilled, HTMLStencilElement {
     }
@@ -364,6 +378,7 @@ declare global {
         "uni-icons-fa-solid-wrap": HTMLUniIconsFaSolidWrapElement;
         "uni-icons-fa-wrap": HTMLUniIconsFaWrapElement;
         "uni-icons-mat": HTMLUniIconsMatElement;
+        "uni-icons-mat-common": HTMLUniIconsMatCommonElement;
         "uni-icons-mat-filled": HTMLUniIconsMatFilledElement;
         "uni-icons-mat-filled-shadow": HTMLUniIconsMatFilledShadowElement;
         "uni-icons-mat-filled-wrap": HTMLUniIconsMatFilledWrapElement;
@@ -385,154 +400,161 @@ declare global {
 }
 declare namespace LocalJSX {
     interface UniIconsFa {
-        "color"?: string;
+        "color"?: UniColor;
         "mode"?: UniIconsFaMode;
         "name": string;
     }
     interface UniIconsFaBrands {
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
     }
     interface UniIconsFaBrandsShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
     }
     interface UniIconsFaBrandsWrap {
         "active"?: boolean;
         "all"?: boolean;
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
         "selector"?: string;
     }
     interface UniIconsFaCommon {
     }
     interface UniIconsFaRegular {
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
     }
     interface UniIconsFaRegularShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
     }
     interface UniIconsFaRegularWrap {
         "active"?: boolean;
         "all"?: boolean;
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
         "selector"?: string;
     }
     interface UniIconsFaShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "mode"?: UniIconsFaMode;
         "name": string;
     }
     interface UniIconsFaSolid {
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
     }
     interface UniIconsFaSolidShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
     }
     interface UniIconsFaSolidWrap {
         "active"?: boolean;
         "all"?: boolean;
-        "color"?: string;
+        "color"?: UniColor;
         "name": string;
         "selector"?: string;
     }
     interface UniIconsFaWrap {
         "active"?: boolean;
         "all"?: boolean;
-        "color"?: string;
+        "color"?: UniColor;
         "mode"?: UniIconsFaMode;
         "name": string;
         "selector"?: string;
     }
     interface UniIconsMat {
-        "color"?: string;
+        "color"?: UniColor;
         "mode"?: UniIconsMatMode;
         "name"?: string;
     }
+    interface UniIconsMatCommon {
+    }
     interface UniIconsMatFilled {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatFilledShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatFilledWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "color"?: UniColor;
         "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatOutlined {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatOutlinedShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatOutlinedWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "color"?: UniColor;
         "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatRound {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatRoundShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatRoundWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "color"?: UniColor;
         "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "mode"?: UniIconsMatMode;
         "name"?: string;
     }
     interface UniIconsMatSharp {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatSharpShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatSharpWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "color"?: UniColor;
         "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatTwoTone {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatTwoToneShadow {
-        "color"?: string;
+        "color"?: UniColor;
         "name"?: string;
     }
     interface UniIconsMatTwoToneWrap {
         "active"?: boolean;
         "all"?: boolean;
+        "color"?: UniColor;
         "name"?: string;
         "selector"?: string;
     }
     interface UniIconsMatWrap {
         "active"?: boolean;
         "all"?: boolean;
-        "color"?: string;
+        "color"?: UniColor;
         "mode"?: UniIconsMatMode;
         "name"?: string;
         "selector"?: string;
@@ -552,6 +574,7 @@ declare namespace LocalJSX {
         "uni-icons-fa-solid-wrap": UniIconsFaSolidWrap;
         "uni-icons-fa-wrap": UniIconsFaWrap;
         "uni-icons-mat": UniIconsMat;
+        "uni-icons-mat-common": UniIconsMatCommon;
         "uni-icons-mat-filled": UniIconsMatFilled;
         "uni-icons-mat-filled-shadow": UniIconsMatFilledShadow;
         "uni-icons-mat-filled-wrap": UniIconsMatFilledWrap;
@@ -589,6 +612,7 @@ declare module "@stencil/core" {
             "uni-icons-fa-solid-wrap": LocalJSX.UniIconsFaSolidWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidWrapElement>;
             "uni-icons-fa-wrap": LocalJSX.UniIconsFaWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaWrapElement>;
             "uni-icons-mat": LocalJSX.UniIconsMat & JSXBase.HTMLAttributes<HTMLUniIconsMatElement>;
+            "uni-icons-mat-common": LocalJSX.UniIconsMatCommon & JSXBase.HTMLAttributes<HTMLUniIconsMatCommonElement>;
             "uni-icons-mat-filled": LocalJSX.UniIconsMatFilled & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledElement>;
             "uni-icons-mat-filled-shadow": LocalJSX.UniIconsMatFilledShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledShadowElement>;
             "uni-icons-mat-filled-wrap": LocalJSX.UniIconsMatFilledWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledWrapElement>;

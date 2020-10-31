@@ -7,13 +7,13 @@
 
 ## Properties
 
-| Property            | Attribute  | Description | Type      | Default     |
-| ------------------- | ---------- | ----------- | --------- | ----------- |
-| `active`            | `active`   |             | `boolean` | `false`     |
-| `all`               | `all`      |             | `boolean` | `false`     |
-| `color`             | `color`    |             | `string`  | `undefined` |
-| `name` _(required)_ | `name`     |             | `string`  | `undefined` |
-| `selector`          | `selector` |             | `string`  | `undefined` |
+| Property            | Attribute  | Description | Type                                                        | Default     |
+| ------------------- | ---------- | ----------- | ----------------------------------------------------------- | ----------- |
+| `active`            | `active`   |             | `boolean`                                                   | `false`     |
+| `all`               | `all`      |             | `boolean`                                                   | `false`     |
+| `color`             | `color`    |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `'default'` |
+| `name` _(required)_ | `name`     |             | `string`                                                    | `undefined` |
+| `selector`          | `selector` |             | `string`                                                    | `undefined` |
 
 
 ## Dependencies

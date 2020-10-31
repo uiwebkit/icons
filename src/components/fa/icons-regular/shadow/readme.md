@@ -7,10 +7,10 @@
 
 ## Properties
 
-| Property            | Attribute | Description | Type     | Default     |
-| ------------------- | --------- | ----------- | -------- | ----------- |
-| `color`             | `color`   |             | `string` | `undefined` |
-| `name` _(required)_ | `name`    |             | `string` | `undefined` |
+| Property            | Attribute | Description | Type                                                        | Default     |
+| ------------------- | --------- | ----------- | ----------------------------------------------------------- | ----------- |
+| `color`             | `color`   |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `'default'` |
+| `name` _(required)_ | `name`    |             | `string`                                                    | `undefined` |
 
 
 ## Dependencies

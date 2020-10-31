@@ -1,5 +1,6 @@
 import { Component, ComponentInterface, h, VNode, Prop, Fragment, Element, Watch } from '@stencil/core';
 
+import { UniColor } from '../../../../models';
 import { uniAddClasses, uniModifyTarget } from '../../../../utils';
 
 @Component({
@@ -13,11 +14,11 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) name!: string;
 
+  @Prop({ reflect: true }) color: UniColor = 'default';
+
   @Prop({ reflect: true }) selector: string;
 
   @Prop({ reflect: true }) all: boolean = false;
-
-  @Prop({ reflect: true }) color: string;
 
   private get data() {
     const { el, selector, all } = this;
@@ -27,7 +28,9 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
   @Watch('active')
   onActiveChanged(newValue: boolean): void {
     if (newValue) {
-      uniModifyTarget(this.data, uniAddClasses, ['fab', `fa-${this.name}`], 'uni-icons-fa-brands-wrap');
+      const classes = ['fab', `fa-${this.name}`, `uni-color-${this.color}`];
+
+      uniModifyTarget(this.data, uniAddClasses, classes, 'uni-icons-fa-brands-wrap');
       this.active = false;
     }
   }

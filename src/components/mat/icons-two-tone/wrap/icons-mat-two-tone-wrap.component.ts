@@ -1,5 +1,6 @@
 import { Component, ComponentInterface, Element, Prop, Watch } from '@stencil/core';
 
+import { UniColor } from '../../../../models';
 import { uniAddClasses, uniModifyTarget, uniReplaceContent } from '../../../../utils';
 
 @Component({
@@ -13,11 +14,13 @@ export class UniIconsMatTwoToneWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) name: string;
 
+  @Prop({ reflect: true }) color: UniColor = 'default';
+
   @Prop({ reflect: true }) selector: string;
 
   @Prop({ reflect: true }) all: boolean = false;
 
-  private get data() {
+  private get context() {
     const { el, selector, all } = this;
     return { el, selector, all };
   }
@@ -26,10 +29,11 @@ export class UniIconsMatTwoToneWrapComponent implements ComponentInterface {
   onActiveChanged(newValue: boolean): void {
     if (newValue) {
       if (this.name) {
-        uniModifyTarget(this.data, uniReplaceContent, this.name, 'uni-icons-mat-filled-wrap');
+        uniModifyTarget(this.context, uniReplaceContent, this.name, 'uni-icons-mat-filled-wrap');
       }
 
-      uniModifyTarget(this.data, uniAddClasses, ['material-icons-two-tone'], 'uni-icons-mat-two-tone-wrap');
+      const classes = ['material-icons-two-tone', `uni-color-${this.color}-fix`];
+      uniModifyTarget(this.context, uniAddClasses, classes, 'uni-icons-mat-two-tone-wrap');
       this.active = false;
     }
   }

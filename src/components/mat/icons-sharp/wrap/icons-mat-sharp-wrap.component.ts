@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, Element, Prop, Watch } from '@stencil/core';
 
 import { uniAddClasses, uniModifyTarget, uniReplaceContent } from '../../../../utils';
+import { UniColor } from '../../../../models';
 
 @Component({
   tag: 'uni-icons-mat-sharp-wrap',
@@ -12,6 +13,8 @@ export class UniIconsMatSharpWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) active: boolean = false;
 
   @Prop({ reflect: true }) name: string;
+
+  @Prop({ reflect: true }) color: UniColor = 'default';
 
   @Prop({ reflect: true }) selector: string;
 
@@ -29,7 +32,8 @@ export class UniIconsMatSharpWrapComponent implements ComponentInterface {
         uniModifyTarget(this.data, uniReplaceContent, this.name, 'uni-icons-mat-filled-wrap');
       }
 
-      uniModifyTarget(this.data, uniAddClasses, ['material-icons-sharp'], 'uni-icons-mat-sharp-wrap');
+      const classes = ['material-icons-sharp', `uni-color-${this.color}`];
+      uniModifyTarget(this.data, uniAddClasses, classes, 'uni-icons-mat-sharp-wrap');
       this.active = false;
     }
   }

@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, h, VNode, Prop, Fragment } from '@stencil/core';
 
 import { UniIconsMatMode } from '../models';
+import { UniColor } from '../../../../models';
 
 @Component({ tag: 'uni-icons-mat-shadow' })
 export class UniIconsMatShadowComponent implements ComponentInterface {
@@ -8,7 +9,7 @@ export class UniIconsMatShadowComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) name: string;
 
-  @Prop({ reflect: true }) color: string;
+  @Prop({ reflect: true }) color: UniColor = 'default';
 
   render(): VNode {
     const { name, color } = this;
