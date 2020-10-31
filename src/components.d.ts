@@ -5,10 +5,36 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { UniIconsFaMode } from "./components/fa/icons/models";
 import { UniColor } from "./models";
+import { UniIconsFaMode } from "./components/fa/icons/models";
 import { UniIconsMatMode } from "./components/mat/icons/models";
 export namespace Components {
+    interface UniIconFa {
+        "color": UniColor;
+        "name": string;
+    }
+    interface UniIconFaCopy {
+        "color": string;
+        "size": string;
+    }
+    interface UniIconFaDownload {
+        "color": string;
+        "size": string;
+    }
+    interface UniIconFaFileDownload {
+        "color": string;
+        "size": string;
+    }
+    interface UniIconMat {
+        "color": UniColor;
+        "name": string;
+    }
+    interface UniIconMat3dRotation {
+        "color": UniColor;
+    }
+    interface UniIconMatArrowDropDown {
+        "color": UniColor;
+    }
     interface UniIconsFa {
         "color": UniColor;
         "mode": UniIconsFaMode;
@@ -171,6 +197,48 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
+    }
+    var HTMLUniIconFaElement: {
+        prototype: HTMLUniIconFaElement;
+        new (): HTMLUniIconFaElement;
+    };
+    interface HTMLUniIconFaCopyElement extends Components.UniIconFaCopy, HTMLStencilElement {
+    }
+    var HTMLUniIconFaCopyElement: {
+        prototype: HTMLUniIconFaCopyElement;
+        new (): HTMLUniIconFaCopyElement;
+    };
+    interface HTMLUniIconFaDownloadElement extends Components.UniIconFaDownload, HTMLStencilElement {
+    }
+    var HTMLUniIconFaDownloadElement: {
+        prototype: HTMLUniIconFaDownloadElement;
+        new (): HTMLUniIconFaDownloadElement;
+    };
+    interface HTMLUniIconFaFileDownloadElement extends Components.UniIconFaFileDownload, HTMLStencilElement {
+    }
+    var HTMLUniIconFaFileDownloadElement: {
+        prototype: HTMLUniIconFaFileDownloadElement;
+        new (): HTMLUniIconFaFileDownloadElement;
+    };
+    interface HTMLUniIconMatElement extends Components.UniIconMat, HTMLStencilElement {
+    }
+    var HTMLUniIconMatElement: {
+        prototype: HTMLUniIconMatElement;
+        new (): HTMLUniIconMatElement;
+    };
+    interface HTMLUniIconMat3dRotationElement extends Components.UniIconMat3dRotation, HTMLStencilElement {
+    }
+    var HTMLUniIconMat3dRotationElement: {
+        prototype: HTMLUniIconMat3dRotationElement;
+        new (): HTMLUniIconMat3dRotationElement;
+    };
+    interface HTMLUniIconMatArrowDropDownElement extends Components.UniIconMatArrowDropDown, HTMLStencilElement {
+    }
+    var HTMLUniIconMatArrowDropDownElement: {
+        prototype: HTMLUniIconMatArrowDropDownElement;
+        new (): HTMLUniIconMatArrowDropDownElement;
+    };
     interface HTMLUniIconsFaElement extends Components.UniIconsFa, HTMLStencilElement {
     }
     var HTMLUniIconsFaElement: {
@@ -364,6 +432,13 @@ declare global {
         new (): HTMLUniIconsMatWrapElement;
     };
     interface HTMLElementTagNameMap {
+        "uni-icon-fa": HTMLUniIconFaElement;
+        "uni-icon-fa-copy": HTMLUniIconFaCopyElement;
+        "uni-icon-fa-download": HTMLUniIconFaDownloadElement;
+        "uni-icon-fa-file-download": HTMLUniIconFaFileDownloadElement;
+        "uni-icon-mat": HTMLUniIconMatElement;
+        "uni-icon-mat-3d-rotation": HTMLUniIconMat3dRotationElement;
+        "uni-icon-mat-arrow-drop-down": HTMLUniIconMatArrowDropDownElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
         "uni-icons-fa-brands": HTMLUniIconsFaBrandsElement;
         "uni-icons-fa-brands-shadow": HTMLUniIconsFaBrandsShadowElement;
@@ -399,6 +474,32 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface UniIconFa {
+        "color"?: UniColor;
+        "name"?: string;
+    }
+    interface UniIconFaCopy {
+        "color"?: string;
+        "size"?: string;
+    }
+    interface UniIconFaDownload {
+        "color"?: string;
+        "size"?: string;
+    }
+    interface UniIconFaFileDownload {
+        "color"?: string;
+        "size"?: string;
+    }
+    interface UniIconMat {
+        "color"?: UniColor;
+        "name"?: string;
+    }
+    interface UniIconMat3dRotation {
+        "color"?: UniColor;
+    }
+    interface UniIconMatArrowDropDown {
+        "color"?: UniColor;
+    }
     interface UniIconsFa {
         "color"?: UniColor;
         "mode"?: UniIconsFaMode;
@@ -560,6 +661,13 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface IntrinsicElements {
+        "uni-icon-fa": UniIconFa;
+        "uni-icon-fa-copy": UniIconFaCopy;
+        "uni-icon-fa-download": UniIconFaDownload;
+        "uni-icon-fa-file-download": UniIconFaFileDownload;
+        "uni-icon-mat": UniIconMat;
+        "uni-icon-mat-3d-rotation": UniIconMat3dRotation;
+        "uni-icon-mat-arrow-drop-down": UniIconMatArrowDropDown;
         "uni-icons-fa": UniIconsFa;
         "uni-icons-fa-brands": UniIconsFaBrands;
         "uni-icons-fa-brands-shadow": UniIconsFaBrandsShadow;
@@ -598,6 +706,13 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
+            "uni-icon-fa-copy": LocalJSX.UniIconFaCopy & JSXBase.HTMLAttributes<HTMLUniIconFaCopyElement>;
+            "uni-icon-fa-download": LocalJSX.UniIconFaDownload & JSXBase.HTMLAttributes<HTMLUniIconFaDownloadElement>;
+            "uni-icon-fa-file-download": LocalJSX.UniIconFaFileDownload & JSXBase.HTMLAttributes<HTMLUniIconFaFileDownloadElement>;
+            "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
+            "uni-icon-mat-3d-rotation": LocalJSX.UniIconMat3dRotation & JSXBase.HTMLAttributes<HTMLUniIconMat3dRotationElement>;
+            "uni-icon-mat-arrow-drop-down": LocalJSX.UniIconMatArrowDropDown & JSXBase.HTMLAttributes<HTMLUniIconMatArrowDropDownElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
             "uni-icons-fa-brands": LocalJSX.UniIconsFaBrands & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsElement>;
             "uni-icons-fa-brands-shadow": LocalJSX.UniIconsFaBrandsShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsShadowElement>;
