@@ -12,6 +12,7 @@ export namespace Components {
     interface UniIconFa {
         "color": UniColor;
         "name": string;
+        "size": string;
     }
     interface UniIconFaCopy {
         "color": string;
@@ -27,13 +28,31 @@ export namespace Components {
     }
     interface UniIconMat {
         "color": UniColor;
+        "degree": number;
         "name": string;
+        "rotate": boolean;
+        "size": string;
+        "speed": number;
+        "steps": number;
     }
     interface UniIconMat3dRotation {
         "color": UniColor;
+        "degree": number;
+        "rotate": boolean;
+        "size": string;
+        "speed": number;
+        "steps": number;
     }
     interface UniIconMatArrowDropDown {
         "color": UniColor;
+    }
+    interface UniIconWrap {
+        "color": UniColor;
+        "degree": number;
+        "rotate": boolean;
+        "size": string;
+        "speed": number;
+        "steps": number;
     }
     interface UniIconsFa {
         "color": UniColor;
@@ -239,6 +258,12 @@ declare global {
         prototype: HTMLUniIconMatArrowDropDownElement;
         new (): HTMLUniIconMatArrowDropDownElement;
     };
+    interface HTMLUniIconWrapElement extends Components.UniIconWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconWrapElement: {
+        prototype: HTMLUniIconWrapElement;
+        new (): HTMLUniIconWrapElement;
+    };
     interface HTMLUniIconsFaElement extends Components.UniIconsFa, HTMLStencilElement {
     }
     var HTMLUniIconsFaElement: {
@@ -439,6 +464,7 @@ declare global {
         "uni-icon-mat": HTMLUniIconMatElement;
         "uni-icon-mat-3d-rotation": HTMLUniIconMat3dRotationElement;
         "uni-icon-mat-arrow-drop-down": HTMLUniIconMatArrowDropDownElement;
+        "uni-icon-wrap": HTMLUniIconWrapElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
         "uni-icons-fa-brands": HTMLUniIconsFaBrandsElement;
         "uni-icons-fa-brands-shadow": HTMLUniIconsFaBrandsShadowElement;
@@ -477,6 +503,7 @@ declare namespace LocalJSX {
     interface UniIconFa {
         "color"?: UniColor;
         "name"?: string;
+        "size"?: string;
     }
     interface UniIconFaCopy {
         "color"?: string;
@@ -492,13 +519,31 @@ declare namespace LocalJSX {
     }
     interface UniIconMat {
         "color"?: UniColor;
+        "degree"?: number;
         "name"?: string;
+        "rotate"?: boolean;
+        "size"?: string;
+        "speed"?: number;
+        "steps"?: number;
     }
     interface UniIconMat3dRotation {
         "color"?: UniColor;
+        "degree"?: number;
+        "rotate"?: boolean;
+        "size"?: string;
+        "speed"?: number;
+        "steps"?: number;
     }
     interface UniIconMatArrowDropDown {
         "color"?: UniColor;
+    }
+    interface UniIconWrap {
+        "color"?: UniColor;
+        "degree"?: number;
+        "rotate"?: boolean;
+        "size"?: string;
+        "speed"?: number;
+        "steps"?: number;
     }
     interface UniIconsFa {
         "color"?: UniColor;
@@ -668,6 +713,7 @@ declare namespace LocalJSX {
         "uni-icon-mat": UniIconMat;
         "uni-icon-mat-3d-rotation": UniIconMat3dRotation;
         "uni-icon-mat-arrow-drop-down": UniIconMatArrowDropDown;
+        "uni-icon-wrap": UniIconWrap;
         "uni-icons-fa": UniIconsFa;
         "uni-icons-fa-brands": UniIconsFaBrands;
         "uni-icons-fa-brands-shadow": UniIconsFaBrandsShadow;
@@ -713,6 +759,7 @@ declare module "@stencil/core" {
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
             "uni-icon-mat-3d-rotation": LocalJSX.UniIconMat3dRotation & JSXBase.HTMLAttributes<HTMLUniIconMat3dRotationElement>;
             "uni-icon-mat-arrow-drop-down": LocalJSX.UniIconMatArrowDropDown & JSXBase.HTMLAttributes<HTMLUniIconMatArrowDropDownElement>;
+            "uni-icon-wrap": LocalJSX.UniIconWrap & JSXBase.HTMLAttributes<HTMLUniIconWrapElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
             "uni-icons-fa-brands": LocalJSX.UniIconsFaBrands & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsElement>;
             "uni-icons-fa-brands-shadow": LocalJSX.UniIconsFaBrandsShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsShadowElement>;

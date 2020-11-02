@@ -9,7 +9,6 @@
 
 ### Used by
 
- - [uni-icon-mat-3d-rotation](../../icon/components/3d-rotation)
  - [uni-icon-mat-arrow-drop-down](../../icon/components/arrow-drop-down)
  - [uni-icons-mat-filled](../../icons-filled/element)
  - [uni-icons-mat-filled-shadow](../../icons-filled/shadow)
@@ -25,7 +24,6 @@
 ### Graph
 ```mermaid
 graph TD;
-  uni-icon-mat-3d-rotation --> uni-icons-mat-common
   uni-icon-mat-arrow-drop-down --> uni-icons-mat-common
   uni-icons-mat-filled --> uni-icons-mat-common
   uni-icons-mat-filled-shadow --> uni-icons-mat-common

@@ -7,11 +7,23 @@ export class UniIconMatComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) color: UniColor = 'default';
 
+  @Prop({ reflect: true }) size: string = 'default';
+
+  @Prop({ reflect: true }) rotate: boolean = false;
+
+  @Prop({ reflect: true }) degree: number;
+
+  @Prop({ reflect: true }) speed: number;
+
+  @Prop({ reflect: true }) steps: number;
+
   render(): VNode {
+    const { color, size, rotate, degree, speed, steps } = this;
+    const props = { color, size, rotate, degree, speed, steps };
     const UniIconTag = `uni-icon-mat-${this.name}`;
 
     return (
-      <UniIconTag color={this.color}>
+      <UniIconTag {...props}>
         <slot />
       </UniIconTag>
     );

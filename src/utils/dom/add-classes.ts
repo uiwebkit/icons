@@ -1,3 +1,14 @@
+// export function uniModifyProp(target: Element, props: {key: string, value: number}[]): void {
+//   props.forEach((prop): void => {
+//     target[prop.key] = prop.value;
+//   });
+
+export function uniModifyStyle(target: HTMLElement, style: any): void {
+  for (const [key, value] of Object.entries(style)) {
+    target.style[key] = value;
+  }
+}
+
 export function uniAddClasses(target: Element, classNames: string[]): void {
   classNames.forEach((className: string): void => {
     target.classList.add(className);
@@ -8,7 +19,7 @@ export function uniReplaceContent(target: Element, content: string): void {
   target.textContent = content;
 }
 
-export function uniModifyTarget(context, modifyFunc, data: string[] | string, name: string): void {
+export function uniModifyTarget(context, modifyFunc, data: any, name: string): void {
   if (context.selector) {
     const targets = context.all
       ? context.el.querySelectorAll(context.selector)
