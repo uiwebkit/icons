@@ -1,0 +1,91 @@
+.uni-color-default {
+  color: #000;
+  color: var(--uni-color-default, #000);
+  fill: #000;
+  fill: var(--uni-color-default, #000);
+  filter: invert(0%) sepia(92%) saturate(21%) hue-rotate(59deg) brightness(100%) contrast(100%);
+  filter: var(--uni-color-default-fix, invert(0%) sepia(92%) saturate(21%) hue-rotate(59deg) brightness(100%) contrast(100%));
+}
+
+.uni-color-primary {
+  color: #3f51b5;
+  color: var(--uni-color-primary, #3f51b5);
+  fill: #3f51b5;
+  fill: var(--uni-color-primary, #3f51b5);
+  filter: invert(31%) sepia(10%) saturate(6644%) hue-rotate(204deg) brightness(95%) contrast(89%);
+  filter: var(--uni-color-primary-fix, invert(31%) sepia(10%) saturate(6644%) hue-rotate(204deg) brightness(95%) contrast(89%));
+}
+
+.uni-color-success {
+  color: #018786;
+  color: var(--uni-color-success, #018786);
+  fill: #018786;
+  fill: var(--uni-color-success, #018786);
+  filter: invert(26%) sepia(88%) saturate(1958%) hue-rotate(160deg) brightness(94%) contrast(99%);
+  filter: var(--uni-color-success-fix, invert(26%) sepia(88%) saturate(1958%) hue-rotate(160deg) brightness(94%) contrast(99%));
+}
+
+.uni-color-accent {
+  color: #ff4081;
+  color: var(--uni-color-accent, #ff4081);
+  fill: #ff4081;
+  fill: var(--uni-color-accent, #ff4081);
+  filter: invert(48%) sepia(88%) saturate(3768%) hue-rotate(315deg) brightness(99%) contrast(106%);
+  filter: var(--uni-color-accent-fix, invert(48%) sepia(88%) saturate(3768%) hue-rotate(315deg) brightness(99%) contrast(106%));
+}
+
+.uni-color-warn {
+  color: #f44336;
+  color: var(--uni-color-warn, #f44336);
+  fill: #f44336;
+  fill: var(--uni-color-warn, #f44336);
+  filter: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
+  filter: var(--uni-color-warn-fix, invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%));
+}
+
+.uni-icon-size-default {
+  width: 24px;
+  width: var(--uni-icon-size-default, 24px);
+  height: 24px;
+  height: var(--uni-icon-size-default, 24px);
+}
+
+.uni-icon-size-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em;
+}
+
+.uni-icon-size-md {
+  font-size: 1em;
+}
+
+.uni-icon-size-sm {
+  font-size: .875em;
+}
+
+.uni-icon-size-xs {
+  font-size: .75em;
+}
+
+@-webkit-keyframes uni-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes uni-rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

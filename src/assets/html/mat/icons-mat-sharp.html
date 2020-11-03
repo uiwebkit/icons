@@ -17,7 +17,7 @@
 <uni-icons-mat-sharp></uni-icons-mat-sharp>
 
 <h4>Custom Element:</h4>
-<uni-icons-mat-sharp>person_pin</uni-icons-mat-sharp>
+<uni-icons-mat-sharp color="primary">person_pin</uni-icons-mat-sharp>
 
 <h4>Custom Element + prop 'name':</h4>
 <uni-icons-mat-sharp name="person_pin"></uni-icons-mat-sharp>
@@ -29,17 +29,17 @@
 <uni-icons-mat-sharp-shadow name="person_pin"></uni-icons-mat-sharp-shadow>
 
 <h4>Custom Element Wrapper + first child:</h4>
-<uni-icons-mat-sharp-wrap active>
+<uni-icons-mat-wrap active font="sharp">
   <i>person_pin</i>
-</uni-icons-mat-sharp-wrap>
+</uni-icons-mat-wrap>
 
 <h4>Custom Element Wrapper + prop 'name' + first child:</h4>
-<uni-icons-mat-sharp-wrap active name="person_pin">
+<uni-icons-mat-wrap active font="sharp" name="person_pin">
   <i></i>
-</uni-icons-mat-sharp-wrap>
+</uni-icons-mat-wrap>
 
 <h4>Custom Element Wrapper + selector (all):</h4>
-<uni-icons-mat-sharp-wrap active selector=".test" all>
+<uni-icons-mat-wrap active font="sharp" selector=".test" all>
   <span>Text</span>
 
   <span class="test">stop_circle</span>
@@ -47,10 +47,10 @@
   <span>
     <i class="test">person_pin</i>
   </span>
-</uni-icons-mat-sharp-wrap>
+</uni-icons-mat-wrap>
 
 <h4>Custom Element Wrapper + prop 'name' + selector (all):</h4>
-<uni-icons-mat-sharp-wrap active name="person_pin" selector=".test" all>
+<uni-icons-mat-wrap active font="sharp" name="person_pin" selector=".test" all>
   <span>Text</span>
 
   <span class="test"></span>
@@ -58,6 +58,6 @@
   <span>
     <i class="test"></i>
   </span>
-</uni-icons-mat-sharp-wrap>
+</uni-icons-mat-wrap>
 </body>
 </html>

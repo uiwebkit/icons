@@ -1,1 +1,1 @@
-export * from './dom/add-classes'
+export * from './dom/modify';

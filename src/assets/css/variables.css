@@ -1,14 +1,4 @@
 :root {
-  --uni-icon-size-default: 44px;
-  --uni-icons-fa-brands-size: 44px;
-  --uni-icons-fa-regular-size: 44px;
-  --uni-icons-fa-solid-size: 44px;
-  --uni-icon-mat-size: 44px;
-  --uni-icons-mat-filled-size: 44px;
-  --uni-icons-mat-outlined-size: 44px;
-  --uni-icons-mat-round-size: 44px;
-  --uni-icons-mat-sharp-size: 44px;
-  --uni-icons-mat-two-tone-size: 44px;
   --uni-color-default: #000;
   --uni-color-default-fix: invert(0%) sepia(92%) saturate(21%) hue-rotate(59deg) brightness(100%) contrast(100%);
   --uni-color-primary: #3f51b5;
@@ -19,4 +9,5 @@
   --uni-color-accent-fix: invert(48%) sepia(88%) saturate(3768%) hue-rotate(315deg) brightness(99%) contrast(106%);
   --uni-color-warn: #f44336;
   --uni-color-warn-fix: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
+  --uni-icon-size-default: 44px;
 }

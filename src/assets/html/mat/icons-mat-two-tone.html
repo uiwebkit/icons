@@ -4,6 +4,7 @@
   <base href="/">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <meta name="Description" content="Uni Icons Mat Two Tone">
   <title>Uni Icons</title>
 
   <link rel="stylesheet" type="text/css" href="assets/css/variables.css" />
@@ -13,7 +14,7 @@
 </head>
 <body>
 <a href="/">Home</a>
-<!--Fix: Load fonts from shadow root does not work-->
+<!--Fix: Load fonts from shadow root does not work + load for wrap-->
 <uni-icons-mat-two-tone></uni-icons-mat-two-tone>
 
 <h4>Custom Element:</h4>
@@ -29,17 +30,17 @@
 <uni-icons-mat-two-tone-shadow name="person_pin"></uni-icons-mat-two-tone-shadow>
 
 <h4>Custom Element Wrapper + first child:</h4>
-<uni-icons-mat-two-tone-wrap active>
+<uni-icons-mat-wrap active font="two-tone">
   <i>person_pin</i>
-</uni-icons-mat-two-tone-wrap>
+</uni-icons-mat-wrap>
 
 <h4>Custom Element Wrapper + prop 'name' + first child:</h4>
-<uni-icons-mat-two-tone-wrap active name="person_pin">
+<uni-icons-mat-wrap active font="two-tone" name="person_pin">
   <i></i>
-</uni-icons-mat-two-tone-wrap>
+</uni-icons-mat-wrap>
 
 <h4>Custom Element Wrapper + selector (all):</h4>
-<uni-icons-mat-two-tone-wrap active selector=".test" all>
+<uni-icons-mat-wrap active font="two-tone" selector=".test" all>
   <span>Text</span>
 
   <span class="test">stop_circle</span>
@@ -47,10 +48,10 @@
   <span>
     <i class="test">person_pin</i>
   </span>
-</uni-icons-mat-two-tone-wrap>
+</uni-icons-mat-wrap>
 
 <h4>Custom Element Wrapper + prop 'name' + selector (all):</h4>
-<uni-icons-mat-two-tone-wrap active name="person_pin" selector=".test" all>
+<uni-icons-mat-wrap active font="two-tone" name="person_pin" selector=".test" all>
   <span>Text</span>
 
   <span class="test"></span>
@@ -58,6 +59,6 @@
   <span>
     <i class="test"></i>
   </span>
-</uni-icons-mat-two-tone-wrap>
+</uni-icons-mat-wrap>
 </body>
 </html>
