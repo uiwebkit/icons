@@ -10,6 +10,7 @@ export namespace Components {
     interface UniIconFa {
         "color": UniColor;
         "degree": number;
+        "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
         "size": UniSize;
@@ -518,6 +519,7 @@ declare namespace LocalJSX {
     interface UniIconFa {
         "color"?: UniColor;
         "degree"?: number;
+        "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
         "size"?: UniSize;

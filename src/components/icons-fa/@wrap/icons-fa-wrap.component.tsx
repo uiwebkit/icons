@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
 
 import { UniColor, UniIconDefault, UniIconsFaDefault, UniIconsFaFont, UniSize } from '../../../models';
+import { uniIconsFaFontClass } from '../../../utils';
 
 @Component({
   tag: 'uni-icons-fa-wrap',
@@ -45,18 +46,5 @@ export class UniIconsFaWrapComponent implements ComponentInterface {
         <slot />
       </uni-icon-wrap>
     );
-  }
-}
-
-function uniIconsFaFontClass(font: UniIconsFaFont): string {
-  switch (font) {
-    case 'brands':
-      return 'fab';
-    case 'regular':
-      return 'far';
-    case 'solid':
-      return 'fas';
-    default:
-      return '';
   }
 }

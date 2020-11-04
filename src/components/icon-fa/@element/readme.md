@@ -11,6 +11,7 @@
 | ------------------- | --------- | ----------- | ----------------------------------------------------------- | ---------------------------------- |
 | `color`             | `color`   |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `UniIconDefault.color as UniColor` |
 | `degree`            | `degree`  |             | `number`                                                    | `undefined`                        |
+| `font`              | `font`    |             | `"brands" \| "regular" \| "solid"`                          | `undefined`                        |
 | `name` _(required)_ | `name`    |             | `string`                                                    | `undefined`                        |
 | `rotate`            | `rotate`  |             | `boolean`                                                   | `false`                            |
 | `size`              | `size`    |             | `"default" \| "lg" \| "md" \| "sm" \| "xs"`                 | `UniIconDefault.size as UniSize`   |
