@@ -38,6 +38,7 @@ export class UniIconWrapComponent implements ComponentInterface {
     if (inColor) {
       classes.push(`uni-color-${this.color}`);
     } else {
+      styles.color = this.color;
       styles.fill = this.color;
     }
 

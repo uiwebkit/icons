@@ -21,7 +21,7 @@
 
 ### Depends on
 
-- [uni-icon-wrap](../../icon/@wrap)
+- [uni-icon-wrap](../../../icon/@wrap)
 
 ### Graph
 ```mermaid

@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Element, h, VNode, Prop } from '@stencil/core';
 
 import { UniColor, UniIconDefault, UniIconsMatDefault, UniIconsMatFont, UniSize } from '../../../models';
-import { uniModify, uniModifyContent } from '../../../utils';
+import { uniModify, uniModifyClass, uniModifyContent } from '../../../utils';
 
 @Component({
   tag: 'uni-icons-mat-wrap',
@@ -31,9 +31,16 @@ export class UniIconsMatWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
+    const { el, selector, all } = this;
+
     if (this.name) {
-      const { el, selector, all } = this;
       uniModify({ el, selector, all }, uniModifyContent, this.name, 'uni-icons-mat-wrap');
+    }
+
+    if (this.font === 'two-tone') {
+      const classes = [`uni-color-${this.color}-fix`];
+
+      uniModify({ el, selector, all }, uniModifyClass, classes, 'uni-icons-mat-wrap');
     }
   }
 

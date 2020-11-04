@@ -4,7 +4,8 @@ import { UniColor, UniIconDefault, UniSize } from '../../../models';
 
 @Component({ tag: 'uni-icon-mat' })
 export class UniIconMatComponent implements ComponentInterface {
-  @Prop({ reflect: true }) name: string;
+
+  @Prop({ reflect: true }) name!: string;
 
   @Prop({ reflect: true }) color: UniColor = UniIconDefault.color as UniColor;
 

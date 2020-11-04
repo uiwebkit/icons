@@ -32,7 +32,7 @@ export class UniIconsFaShadowComponent implements ComponentInterface {
           <slot />
         </UniIconsFaShadowTag>
         {/*To load font face (shadow root cannot)*/}
-        <UniIconsFaTag />
+        <UniIconsFaTag hidden />
       </Fragment>
     );
   }

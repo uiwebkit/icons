@@ -1,9 +1,10 @@
 import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
 
-import { UniColor, UniIconDefault, UniSize } from '../../../models';
+import { UniColor, UniIconDefault, UniSize } from '../../../../models';
 
 @Component({ tag: 'uni-icon-mat-3d-rotation' })
 export class UniIconMat3dRotationComponent implements ComponentInterface {
+
   @Prop({ reflect: true }) color: UniColor = UniIconDefault.color as UniColor;
 
   @Prop({ reflect: true }) size: UniSize = UniIconDefault.size as UniSize;
