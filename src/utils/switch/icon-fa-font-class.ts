@@ -1,6 +1,6 @@
 import { UniIconsFaFont } from '../../models';
 
-export function uniIconsFaFontClass(font: UniIconsFaFont): string {console.log(font);
+export function uniIconsFaFontClass(font: UniIconsFaFont): string {
   switch (font) {
     case 'brands':
       return 'fab';

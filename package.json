@@ -1,7 +1,8 @@
 {
-  "name": "@uni/icn",
-  "version": "0.0.1",
+  "name": "@uiwebkit/icn",
+  "version": "0.0.4",
   "description": "Uni Icons",
+  "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/custom-elements/index.js",
   "es2015": "dist/esm/index.js",
@@ -10,6 +11,7 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/icn/icn.js",
+  "jsdelivr": "dist/icn/icn.js",
   "files": [
     "dist/",
     "loader/"
@@ -26,5 +28,9 @@
   "devDependencies": {
     "@stencil/core": "2.1.2"
   },
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiwebkit/icn.git"
+  },
+  "homepage": "https://uiwebkit.com/?category=icn"
 }
