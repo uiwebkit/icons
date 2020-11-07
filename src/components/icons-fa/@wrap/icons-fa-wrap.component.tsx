@@ -8,6 +8,7 @@ import { uniIconsFaFontClass } from '../../../utils';
   styleUrl: 'icons-fa-wrap.css',
 })
 export class UniIconsFaWrapComponent implements ComponentInterface {
+
   @Prop({ reflect: true }) font: UniIconsFaFont = UniIconsFaDefault.font as UniIconsFaFont;
 
   @Prop({ reflect: true }) name!: string;

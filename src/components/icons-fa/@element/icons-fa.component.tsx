@@ -1,8 +1,10 @@
 import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
+
 import { UniColor, UniIconDefault, UniIconsFaDefault, UniIconsFaFont, UniSize } from '../../../models';
 
 @Component({ tag: 'uni-icons-fa' })
 export class UniIconsFaComponent implements ComponentInterface {
+
   @Prop({ reflect: true }) font: UniIconsFaFont = UniIconsFaDefault.font as UniIconsFaFont;
 
   @Prop({ reflect: true }) name!: string;
@@ -18,7 +20,6 @@ export class UniIconsFaComponent implements ComponentInterface {
   @Prop({ reflect: true }) speed: number;
 
   @Prop({ reflect: true }) steps: number;
-
 
   render(): VNode {
     const { name, color, size, rotate, degree, speed, steps } = this;

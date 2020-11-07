@@ -127,7 +127,7 @@ export const config: Config = {
     {
       type: 'dist',
       copy: [
-        { src: 'assets/fonts', dest: 'assets/fonts', warn: true }
+        { src: 'assets/fonts', dest: '../assets/fonts', warn: true }
       ],
       esmLoaderPath: '../loader',
       // polyfills: true,
@@ -142,9 +142,6 @@ export const config: Config = {
       footer: '*Powered by [UiWebKit](https://uiwebkit.com/)*',
       dependencies: true,
       // strict: true,
-    },
-    {
-      type: 'stats'
     },
     {
       type: 'www',
