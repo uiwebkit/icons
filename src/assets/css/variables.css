@@ -10,4 +10,8 @@
   --uni-color-warn: #f44336;
   --uni-color-warn-fix: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
   --uni-icon-size-default: 44px;
+  --uni-icon-size-lg: 48px;
+  --uni-icon-size-md: 36px;
+  --uni-icon-size-sm: 24px;
+  --uni-icon-size-xs: 12px;
 }

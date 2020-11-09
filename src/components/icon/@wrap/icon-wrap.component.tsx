@@ -49,19 +49,19 @@ export class UniIconWrapComponent implements ComponentInterface {
       styles.width = this.size;
     }
 
+    if (this.degree) {
+      const rotate = `rotate(${this.degree}deg)`;
+
+      styles.transform = rotate;
+      styles['-webkit-transform'] = rotate;
+    }
+
     if (this.rotate) {
-      if (this.degree) {
-        const rotate = `rotate(${this.degree}deg)`;
+      this.speed = this.speed || 1;
+      const rotation = `uni-rotate ${this.speed}s infinite ${this.steps ? 'steps(' + this.steps + ')' : 'linear'}`;
 
-        styles.transform = rotate;
-        styles['-webkit-transform'] = rotate;
-      } else {
-        this.speed = this.speed || 1;
-        const rotation = `uni-rotate ${this.speed}s infinite ${this.steps ? 'steps(' + this.steps + ')' : 'linear'}`;
-
-        styles.animation = rotation;
-        styles['-webkit-animation'] = rotation;
-      }
+      styles.animation = rotation;
+      styles['-webkit-animation'] = rotation;
     }
 
     if (classes.length > 0) {
