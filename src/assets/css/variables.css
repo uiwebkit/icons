@@ -1,17 +1,17 @@
 :root {
-  --uni-color-default: #000;
-  --uni-color-default-fix: invert(0%) sepia(92%) saturate(21%) hue-rotate(59deg) brightness(100%) contrast(100%);
-  --uni-color-primary: #3f51b5;
-  --uni-color-primary-fix: invert(31%) sepia(10%) saturate(6644%) hue-rotate(204deg) brightness(95%) contrast(89%);
-  --uni-color-succsess: #018786;
-  --uni-color-success-fix: invert(26%) sepia(88%) saturate(1958%) hue-rotate(160deg) brightness(94%) contrast(99%);
-  --uni-color-accent: #ff4081;
-  --uni-color-accent-fix: invert(48%) sepia(88%) saturate(3768%) hue-rotate(315deg) brightness(99%) contrast(106%);
-  --uni-color-warn: #f44336;
-  --uni-color-warn-fix: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
-  --uni-icon-size-default: 44px;
-  --uni-icon-size-lg: 48px;
-  --uni-icon-size-md: 36px;
-  --uni-icon-size-sm: 24px;
-  --uni-icon-size-xs: 12px;
+  --uni-theme-color-default: #000;
+  --uni-theme-color-default-fix: invert(0%) sepia(92%) saturate(21%) hue-rotate(59deg) brightness(100%) contrast(100%);
+  --uni-theme-color-primary: #3f51b5;
+  --uni-theme-color-primary-fix: invert(31%) sepia(10%) saturate(6644%) hue-rotate(204deg) brightness(95%) contrast(89%);
+  --uni-theme-color-succsess: #018786;
+  --uni-theme-color-success-fix: invert(26%) sepia(88%) saturate(1958%) hue-rotate(160deg) brightness(94%) contrast(99%);
+  --uni-theme-color-accent: #ff4081;
+  --uni-theme-color-accent-fix: invert(48%) sepia(88%) saturate(3768%) hue-rotate(315deg) brightness(99%) contrast(106%);
+  --uni-theme-color-warn: #f44336;
+  --uni-theme-color-warn-fix: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
+  --uni-theme-size-default: 44px;
+  --uni-theme-size-lg: 48px;
+  --uni-theme-size-md: 36px;
+  --uni-theme-size-sm: 24px;
+  --uni-theme-size-xs: 12px;
 }

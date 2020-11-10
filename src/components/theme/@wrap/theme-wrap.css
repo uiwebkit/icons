@@ -1,0 +1,75 @@
+.uni-theme-color-default {
+  color: #000;
+  color: var(--uni-theme-color-default, #000);
+  fill: #000;
+  fill: var(--uni-theme-color-default, #000);
+}
+
+.uni-theme-color-primary {
+  color: #3f51b5;
+  color: var(--uni-theme-color-primary, #3f51b5);
+  fill: #3f51b5;
+  fill: var(--uni-theme-color-primary, #3f51b5);
+}
+
+.uni-theme-color-success {
+  color: #018786;
+  color: var(--uni-theme-color-success, #018786);
+  fill: #018786;
+  fill: var(--uni-theme-color-success, #018786);
+}
+
+.uni-theme-color-accent {
+  color: #ff4081;
+  color: var(--uni-theme-color-accent, #ff4081);
+  fill: #ff4081;
+  fill: var(--uni-theme-color-accent, #ff4081);
+}
+
+.uni-theme-color-warn {
+  color: #f44336;
+  color: var(--uni-theme-color-warn, #f44336);
+  fill: #f44336;
+  fill: var(--uni-theme-color-warn, #f44336);
+}
+
+.uni-theme-size-default {
+  height: 24px;
+  height: var(--uni-theme-size-default, 24px);
+  width: 24px;
+  width: var(--uni-theme-size-default, 24px);
+}
+
+.uni-theme-size-lg {
+  height: 48px;
+  height: var(--uni-theme-size-lg, 48px);
+  width: 48px;
+  width: var(--uni-theme-size-lg, 48px);
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -.0667em;
+}
+
+.uni-theme-size-md {
+  height: 36px;
+  height: var(--uni-theme-size-md, 36px);
+  width: 36px;
+  width: var(--uni-theme-size-md, 48px);
+  font-size: 1em;
+}
+
+.uni-theme-size-sm {
+  height: 24px;
+  height: var(--uni-theme-size-sm, 24px);
+  width: 24px;
+  width: var(--uni-theme-size-sm, 24px);
+  font-size: .875em;
+}
+
+.uni-theme-size-xs {
+  height: 12px;
+  height: var(--uni-theme-size-xs, 12px);
+  width: 12px;
+  width: var(--uni-theme-size-xs, 12px);
+  font-size: .75em;
+}

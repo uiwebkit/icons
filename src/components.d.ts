@@ -293,6 +293,20 @@ export namespace Components {
         "speed": number;
         "steps": number;
     }
+    interface UniRotateWrap {
+        "all": boolean;
+        "degree": number;
+        "selector": string;
+        "speed": number;
+        "steps": number;
+    }
+    interface UniThemeWrap {
+        "all": boolean;
+        "classes": string;
+        "color": UniColor;
+        "selector": string;
+        "size": UniSize;
+    }
 }
 declare global {
     interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
@@ -481,6 +495,18 @@ declare global {
         prototype: HTMLUniIconsMatWrapElement;
         new (): HTMLUniIconsMatWrapElement;
     };
+    interface HTMLUniRotateWrapElement extends Components.UniRotateWrap, HTMLStencilElement {
+    }
+    var HTMLUniRotateWrapElement: {
+        prototype: HTMLUniRotateWrapElement;
+        new (): HTMLUniRotateWrapElement;
+    };
+    interface HTMLUniThemeWrapElement extends Components.UniThemeWrap, HTMLStencilElement {
+    }
+    var HTMLUniThemeWrapElement: {
+        prototype: HTMLUniThemeWrapElement;
+        new (): HTMLUniThemeWrapElement;
+    };
     interface HTMLElementTagNameMap {
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-far-copy": HTMLUniIconFarCopyElement;
@@ -513,6 +539,8 @@ declare global {
         "uni-icons-mat-two-tone": HTMLUniIconsMatTwoToneElement;
         "uni-icons-mat-two-tone-shadow": HTMLUniIconsMatTwoToneShadowElement;
         "uni-icons-mat-wrap": HTMLUniIconsMatWrapElement;
+        "uni-rotate-wrap": HTMLUniRotateWrapElement;
+        "uni-theme-wrap": HTMLUniThemeWrapElement;
     }
 }
 declare namespace LocalJSX {
@@ -802,6 +830,20 @@ declare namespace LocalJSX {
         "speed"?: number;
         "steps"?: number;
     }
+    interface UniRotateWrap {
+        "all"?: boolean;
+        "degree"?: number;
+        "selector"?: string;
+        "speed"?: number;
+        "steps"?: number;
+    }
+    interface UniThemeWrap {
+        "all"?: boolean;
+        "classes"?: string;
+        "color"?: UniColor;
+        "selector"?: string;
+        "size"?: UniSize;
+    }
     interface IntrinsicElements {
         "uni-icon-fa": UniIconFa;
         "uni-icon-far-copy": UniIconFarCopy;
@@ -834,6 +876,8 @@ declare namespace LocalJSX {
         "uni-icons-mat-two-tone": UniIconsMatTwoTone;
         "uni-icons-mat-two-tone-shadow": UniIconsMatTwoToneShadow;
         "uni-icons-mat-wrap": UniIconsMatWrap;
+        "uni-rotate-wrap": UniRotateWrap;
+        "uni-theme-wrap": UniThemeWrap;
     }
 }
 export { LocalJSX as JSX };
@@ -871,6 +915,8 @@ declare module "@stencil/core" {
             "uni-icons-mat-two-tone": LocalJSX.UniIconsMatTwoTone & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneElement>;
             "uni-icons-mat-two-tone-shadow": LocalJSX.UniIconsMatTwoToneShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneShadowElement>;
             "uni-icons-mat-wrap": LocalJSX.UniIconsMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatWrapElement>;
+            "uni-rotate-wrap": LocalJSX.UniRotateWrap & JSXBase.HTMLAttributes<HTMLUniRotateWrapElement>;
+            "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
         }
     }
 }
