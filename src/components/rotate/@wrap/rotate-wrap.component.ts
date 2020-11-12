@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 
-import { uniModify, uniModifyStyle } from '../../../utils';
+import { uniModifyAsync, uniModifyStyle } from '../../../utils';
 
 @Component({
   tag: 'uni-rotate-wrap',
@@ -37,7 +37,7 @@ export class UniRotateWrapComponent implements ComponentInterface {
     }
 
     if (Object.keys(styles).length > 0) {
-      uniModify({ el, selector, all }, uniModifyStyle, styles, 'uni-rotate-wrap');
+      uniModifyAsync({ el, selector, all }, styles, uniModifyStyle);
     }
   }
 }

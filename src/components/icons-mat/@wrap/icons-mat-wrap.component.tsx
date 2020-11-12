@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element, h, VNode, Prop } from '@stencil/core';
 
-import { UniColor, UniIconDefault, UniIconsMatDefault, UniIconsMatFont, UniSize } from '../../../models';
+import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
 import { uniModify, uniModifyClass, uniModifyContent } from '../../../utils';
 
 @Component({
@@ -8,15 +8,16 @@ import { uniModify, uniModifyClass, uniModifyContent } from '../../../utils';
   styleUrl: 'icons-mat-wrap.css',
 })
 export class UniIconsMatWrapComponent implements ComponentInterface {
+
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) font: UniIconsMatFont = UniIconsMatDefault.font as UniIconsMatFont;
+  @Prop({ reflect: true }) font: UniIconsMatFont = 'filled';
 
   @Prop({ reflect: true }) name!: string;
 
-  @Prop({ reflect: true }) color: UniColor = UniIconDefault.color as UniColor;
+  @Prop({ reflect: true }) color: UniColor;
 
-  @Prop({ reflect: true }) size: UniSize = UniIconDefault.size as UniSize;
+  @Prop({ reflect: true }) size: UniSize | number;
 
   @Prop({ reflect: true }) rotate: boolean = false;
 
@@ -34,13 +35,13 @@ export class UniIconsMatWrapComponent implements ComponentInterface {
     const { el, selector, all } = this;
 
     if (this.name) {
-      uniModify({ el, selector, all }, uniModifyContent, this.name, 'uni-icons-mat-wrap');
+      uniModify({ el, selector, all }, this.name, uniModifyContent);
     }
 
     if (this.font === 'two-tone') {
       const classes = [`uni-color-${this.color}-fix`];
 
-      uniModify({ el, selector, all }, uniModifyClass, classes, 'uni-icons-mat-wrap');
+      uniModify({ el, selector, all }, classes, uniModifyClass);
     }
   }
 

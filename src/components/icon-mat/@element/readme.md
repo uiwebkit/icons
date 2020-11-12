@@ -7,15 +7,15 @@
 
 ## Properties
 
-| Property            | Attribute | Description | Type                                                        | Default                            |
-| ------------------- | --------- | ----------- | ----------------------------------------------------------- | ---------------------------------- |
-| `color`             | `color`   |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `UniIconDefault.color as UniColor` |
-| `degree`            | `degree`  |             | `number`                                                    | `undefined`                        |
-| `name` _(required)_ | `name`    |             | `string`                                                    | `undefined`                        |
-| `rotate`            | `rotate`  |             | `boolean`                                                   | `false`                            |
-| `size`              | `size`    |             | `"default" \| "lg" \| "md" \| "sm" \| "xs"`                 | `UniIconDefault.size as UniSize`   |
-| `speed`             | `speed`   |             | `number`                                                    | `undefined`                        |
-| `steps`             | `steps`   |             | `number`                                                    | `undefined`                        |
+| Property            | Attribute | Description | Type                                           | Default     |
+| ------------------- | --------- | ----------- | ---------------------------------------------- | ----------- |
+| `color`             | `color`   |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
+| `degree`            | `degree`  |             | `number`                                       | `undefined` |
+| `name` _(required)_ | `name`    |             | `string`                                       | `undefined` |
+| `rotate`            | `rotate`  |             | `boolean`                                      | `false`     |
+| `size`              | `size`    |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
+| `speed`             | `speed`   |             | `number`                                       | `undefined` |
+| `steps`             | `steps`   |             | `number`                                       | `undefined` |
 
 
 ----------------------------------------------

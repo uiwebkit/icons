@@ -7,18 +7,18 @@
 
 ## Properties
 
-| Property            | Attribute  | Description | Type                                                        | Default                                    |
-| ------------------- | ---------- | ----------- | ----------------------------------------------------------- | ------------------------------------------ |
-| `all`               | `all`      |             | `boolean`                                                   | `false`                                    |
-| `color`             | `color`    |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `UniIconDefault.color as UniColor`         |
-| `degree`            | `degree`   |             | `number`                                                    | `undefined`                                |
-| `font`              | `font`     |             | `"brands" \| "regular" \| "solid"`                          | `UniIconsFaDefault.font as UniIconsFaFont` |
-| `name` _(required)_ | `name`     |             | `string`                                                    | `undefined`                                |
-| `rotate`            | `rotate`   |             | `boolean`                                                   | `false`                                    |
-| `selector`          | `selector` |             | `string`                                                    | `undefined`                                |
-| `size`              | `size`     |             | `"default" \| "lg" \| "md" \| "sm" \| "xs"`                 | `UniIconDefault.size as UniSize`           |
-| `speed`             | `speed`    |             | `number`                                                    | `undefined`                                |
-| `steps`             | `steps`    |             | `number`                                                    | `undefined`                                |
+| Property            | Attribute  | Description | Type                                           | Default     |
+| ------------------- | ---------- | ----------- | ---------------------------------------------- | ----------- |
+| `all`               | `all`      |             | `boolean`                                      | `false`     |
+| `color`             | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
+| `degree`            | `degree`   |             | `number`                                       | `undefined` |
+| `font`              | `font`     |             | `"brands" \| "regular" \| "solid"`             | `'solid'`   |
+| `name` _(required)_ | `name`     |             | `string`                                       | `undefined` |
+| `rotate`            | `rotate`   |             | `boolean`                                      | `false`     |
+| `selector`          | `selector` |             | `string`                                       | `undefined` |
+| `size`              | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
+| `speed`             | `speed`    |             | `number`                                       | `undefined` |
+| `steps`             | `steps`    |             | `number`                                       | `undefined` |
 
 
 ## Dependencies
@@ -32,14 +32,9 @@
  - [uni-icons-fa-solid](../solid/@element)
  - [uni-icons-fa-solid-shadow](../solid/@shadow)
 
-### Depends on
-
-- [uni-icon-wrap](../../icon/@wrap)
-
 ### Graph
 ```mermaid
 graph TD;
-  uni-icons-fa-wrap --> uni-icon-wrap
   uni-icons-fa-brands --> uni-icons-fa-wrap
   uni-icons-fa-brands-shadow --> uni-icons-fa-wrap
   uni-icons-fa-regular --> uni-icons-fa-wrap

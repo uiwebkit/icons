@@ -1,16 +1,17 @@
 import { Component, ComponentInterface, h, VNode, Prop, Fragment } from '@stencil/core';
 
-import { UniColor, UniIconDefault, UniIconsFaDefault, UniIconsFaFont, UniSize } from '../../../models';
+import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 
 @Component({ tag: 'uni-icons-fa-shadow' })
 export class UniIconsFaShadowComponent implements ComponentInterface {
-  @Prop({ reflect: true }) font: UniIconsFaFont = UniIconsFaDefault.font as UniIconsFaFont;
+
+  @Prop({ reflect: true }) font: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name!: string;
 
-  @Prop({ reflect: true }) color: UniColor = UniIconDefault.color as UniColor;
+  @Prop({ reflect: true }) color: UniColor;
 
-  @Prop({ reflect: true }) size: UniSize = UniIconDefault.size as UniSize;
+  @Prop({ reflect: true }) size: UniSize | number;
 
   @Prop({ reflect: true }) rotate: boolean = false;
 

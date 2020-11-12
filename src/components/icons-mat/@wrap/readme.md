@@ -7,18 +7,18 @@
 
 ## Properties
 
-| Property            | Attribute  | Description | Type                                                         | Default                                      |
-| ------------------- | ---------- | ----------- | ------------------------------------------------------------ | -------------------------------------------- |
-| `all`               | `all`      |             | `boolean`                                                    | `false`                                      |
-| `color`             | `color`    |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"`  | `UniIconDefault.color as UniColor`           |
-| `degree`            | `degree`   |             | `number`                                                     | `undefined`                                  |
-| `font`              | `font`     |             | `"filled" \| "outlined" \| "round" \| "sharp" \| "two-tone"` | `UniIconsMatDefault.font as UniIconsMatFont` |
-| `name` _(required)_ | `name`     |             | `string`                                                     | `undefined`                                  |
-| `rotate`            | `rotate`   |             | `boolean`                                                    | `false`                                      |
-| `selector`          | `selector` |             | `string`                                                     | `undefined`                                  |
-| `size`              | `size`     |             | `"default" \| "lg" \| "md" \| "sm" \| "xs"`                  | `UniIconDefault.size as UniSize`             |
-| `speed`             | `speed`    |             | `number`                                                     | `undefined`                                  |
-| `steps`             | `steps`    |             | `number`                                                     | `undefined`                                  |
+| Property            | Attribute  | Description | Type                                                         | Default     |
+| ------------------- | ---------- | ----------- | ------------------------------------------------------------ | ----------- |
+| `all`               | `all`      |             | `boolean`                                                    | `false`     |
+| `color`             | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"`               | `undefined` |
+| `degree`            | `degree`   |             | `number`                                                     | `undefined` |
+| `font`              | `font`     |             | `"filled" \| "outlined" \| "round" \| "sharp" \| "two-tone"` | `'filled'`  |
+| `name` _(required)_ | `name`     |             | `string`                                                     | `undefined` |
+| `rotate`            | `rotate`   |             | `boolean`                                                    | `false`     |
+| `selector`          | `selector` |             | `string`                                                     | `undefined` |
+| `size`              | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`                     | `undefined` |
+| `speed`             | `speed`    |             | `number`                                                     | `undefined` |
+| `steps`             | `steps`    |             | `number`                                                     | `undefined` |
 
 
 ## Dependencies
@@ -36,14 +36,9 @@
  - [uni-icons-mat-two-tone](../two-tone/@element)
  - [uni-icons-mat-two-tone-shadow](../two-tone/@shadow)
 
-### Depends on
-
-- [uni-icon-wrap](../../icon/@wrap)
-
 ### Graph
 ```mermaid
 graph TD;
-  uni-icons-mat-wrap --> uni-icon-wrap
   uni-icons-mat-filled --> uni-icons-mat-wrap
   uni-icons-mat-filled-shadow --> uni-icons-mat-wrap
   uni-icons-mat-outlined --> uni-icons-mat-wrap

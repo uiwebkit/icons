@@ -1,1 +1,1 @@
-export type UniColor = 'default' | 'primary' | 'success' | 'accent' | 'warn';
+export type UniColor = 'primary' | 'success' | 'accent' | 'warn';

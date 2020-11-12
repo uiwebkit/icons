@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 
-import { UniColor, UniIconDefault, UniSize } from '../../../models';
-import { uniModify, uniModifyClass, uniModifyStyle } from '../../../utils';
+import { UniColor, UniSize } from '../../../models';
+import { uniModifyAsync, uniModifyClass, uniModifyStyle } from '../../../utils';
 
 @Component({
   tag: 'uni-theme-wrap',
@@ -12,9 +12,9 @@ export class UniThemeWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) classes: string;
 
-  @Prop({ reflect: true }) color: UniColor = UniIconDefault.color as UniColor;
+  @Prop({ reflect: true }) color: UniColor;
 
-  @Prop({ reflect: true }) size: UniSize = UniIconDefault.size as UniSize;
+  @Prop({ reflect: true }) size: UniSize | number;
 
   @Prop({ reflect: true }) selector: string;
 
@@ -22,31 +22,31 @@ export class UniThemeWrapComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     const { el, selector, all } = this;
-    const inColor = ['default', 'primary', 'success', 'accent', 'warn'].includes(this.color);
-    const inSize = ['default', 'lg', 'md', 'sm', 'xs'].includes(this.size);
+    const inColor = ['primary', 'success', 'accent', 'warn'].includes(this.color);
+    const inSize = ['lg', 'md', 'sm', 'xs'].includes(this.size as UniSize);
     let classes: string[] = this.classes ? this.classes.split(' ') : [];
     let styles: any = {};
 
     if (inColor) {
-      classes.push(`uni-theme-color-${this.color}`);
-    } else {
+      classes.push(`uni-color-${this.color}`);
+    } else if (this.color) {
       styles.color = this.color;
       styles.fill = this.color;
     }
 
     if (inSize) {
-      classes.push(`uni-theme-size-${this.size}`);
-    } else {
+      classes.push(`uni-size-${this.size}`);
+    } else if (this.size) {
       styles.height = this.size;
       styles.width = this.size;
     }
 
     if (classes.length > 0) {
-      uniModify({ el, selector, all }, uniModifyClass, classes, 'uni-theme-wrap');
+      uniModifyAsync({ el, selector, all }, classes, uniModifyClass);
     }
 
     if (Object.keys(styles).length > 0) {
-      uniModify({ el, selector, all }, uniModifyStyle, styles, 'uni-theme-wrap');
+      uniModifyAsync({ el, selector, all }, styles, uniModifyStyle);
     }
   }
 }

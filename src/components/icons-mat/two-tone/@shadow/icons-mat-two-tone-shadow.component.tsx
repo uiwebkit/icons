@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
 
-import { UniColor, UniIconDefault, UniSize } from '../../../../models';
+import { UniColor, UniSize } from '../../../../models';
 
 @Component({
   tag: 'uni-icons-mat-two-tone-shadow',
@@ -10,9 +10,9 @@ import { UniColor, UniIconDefault, UniSize } from '../../../../models';
 export class UniIconsMatTwoToneShadowComponent implements ComponentInterface {
   @Prop({ reflect: true }) name: string;
 
-  @Prop({ reflect: true }) color: UniColor = UniIconDefault.color as UniColor;
+  @Prop({ reflect: true }) color: UniColor;
 
-  @Prop({ reflect: true }) size: UniSize = UniIconDefault.size as UniSize;
+  @Prop({ reflect: true }) size: UniSize | number;
 
   @Prop({ reflect: true }) rotate: boolean = false;
 

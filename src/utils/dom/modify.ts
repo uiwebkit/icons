@@ -1,9 +1,16 @@
-// export function uniModifyProp(target: Element, props: {key: string, value: number}[]): void {
-//   props.forEach((prop): void => {
-//     target[prop.key] = prop.value;
-//   });
+export function uniModifyAsync(context, data: any, cbFunction) {
+  if (isTargetElement(context.el, context.selector)) {
+    uniModify(context, data, cbFunction);
+  } else {
+    const observer = new MutationObserver(() => {
+      uniModify(context, data, cbFunction, observer);
+    });
 
-export function uniModify(context, modifyFunc, data: any, name: string): void {
+    observer.observe(context.el, { childList: true, subtree: true });
+  }
+}
+
+export function uniModify(context, data: any, cbFunction, observer?): void {
   if (context.selector) {
     const targets = context.all
       ? context.el.querySelectorAll(context.selector)
@@ -11,19 +18,17 @@ export function uniModify(context, modifyFunc, data: any, name: string): void {
 
     if (targets[0]) {
       targets.forEach((target: Element): void => {
-        modifyFunc(target, data);
+        cbFunction(target, data);
       });
-    } else {
-      console.warn(`Element(s) with CSS selector: '${context.selector}' was not found into ${name}.
-If the selected element is dynamic and when element appears - the 'active' property should be set again.`);
+
+      observer?.disconnect();
     }
   } else {
     const firstChild = context.el.firstElementChild;
 
     if (firstChild) {
-      modifyFunc(firstChild, data);
-    } else {
-      console.warn(`${name} should have at least one child element.`);
+      cbFunction(firstChild, data);
+      observer?.disconnect();
     }
   }
 }
@@ -38,8 +43,12 @@ export function uniModifyClass(target: Element, classNames: string[]): void {
   });
 }
 
-export function uniModifyStyle(target: HTMLElement, style: any): void {
-  for (const [key, value] of Object.entries(style)) {
+export function uniModifyStyle(target: HTMLElement, styles: any): void {
+  for (const [key, value] of Object.entries(styles)) {
     target.style[key] = value;
   }
+}
+
+export function isTargetElement(el: HTMLElement, selector: string): boolean {
+  return selector ? !!el.querySelector(selector) : !!el.firstElementChild;
 }

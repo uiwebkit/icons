@@ -13,7 +13,7 @@ export namespace Components {
         "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -21,15 +21,17 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
+    }
+    interface UniIconFasAngleDown {
     }
     interface UniIconFasDownload {
         "color": UniColor;
         "degree": number;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -37,7 +39,7 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -46,7 +48,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -54,7 +56,7 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -62,7 +64,7 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -70,18 +72,7 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "rotate": boolean;
-        "size": UniSize;
-        "speed": number;
-        "steps": number;
-    }
-    interface UniIconWrap {
-        "all": boolean;
-        "classes": string;
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "selector": string;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -91,7 +82,7 @@ export namespace Components {
         "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -100,7 +91,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -109,7 +100,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -118,7 +109,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -127,7 +118,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -137,7 +128,7 @@ export namespace Components {
         "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -146,7 +137,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -155,7 +146,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -167,7 +158,7 @@ export namespace Components {
         "name": string;
         "rotate": boolean;
         "selector": string;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -177,7 +168,7 @@ export namespace Components {
         "font": UniIconsMatFont;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -186,7 +177,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -195,7 +186,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -204,7 +195,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -213,7 +204,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -222,7 +213,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -231,7 +222,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -241,7 +232,7 @@ export namespace Components {
         "font": UniIconsMatFont;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -250,7 +241,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -259,7 +250,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -268,7 +259,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -277,7 +268,7 @@ export namespace Components {
         "degree": number;
         "name": string;
         "rotate": boolean;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -289,7 +280,7 @@ export namespace Components {
         "name": string;
         "rotate": boolean;
         "selector": string;
-        "size": UniSize;
+        "size": UniSize | number;
         "speed": number;
         "steps": number;
     }
@@ -305,7 +296,7 @@ export namespace Components {
         "classes": string;
         "color": UniColor;
         "selector": string;
-        "size": UniSize;
+        "size": UniSize | number;
     }
 }
 declare global {
@@ -320,6 +311,12 @@ declare global {
     var HTMLUniIconFarCopyElement: {
         prototype: HTMLUniIconFarCopyElement;
         new (): HTMLUniIconFarCopyElement;
+    };
+    interface HTMLUniIconFasAngleDownElement extends Components.UniIconFasAngleDown, HTMLStencilElement {
+    }
+    var HTMLUniIconFasAngleDownElement: {
+        prototype: HTMLUniIconFasAngleDownElement;
+        new (): HTMLUniIconFasAngleDownElement;
     };
     interface HTMLUniIconFasDownloadElement extends Components.UniIconFasDownload, HTMLStencilElement {
     }
@@ -356,12 +353,6 @@ declare global {
     var HTMLUniIconMatArrowDropDownElement: {
         prototype: HTMLUniIconMatArrowDropDownElement;
         new (): HTMLUniIconMatArrowDropDownElement;
-    };
-    interface HTMLUniIconWrapElement extends Components.UniIconWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconWrapElement: {
-        prototype: HTMLUniIconWrapElement;
-        new (): HTMLUniIconWrapElement;
     };
     interface HTMLUniIconsFaElement extends Components.UniIconsFa, HTMLStencilElement {
     }
@@ -510,13 +501,13 @@ declare global {
     interface HTMLElementTagNameMap {
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-far-copy": HTMLUniIconFarCopyElement;
+        "uni-icon-fas-angle-down": HTMLUniIconFasAngleDownElement;
         "uni-icon-fas-download": HTMLUniIconFasDownloadElement;
         "uni-icon-fas-file-download": HTMLUniIconFasFileDownloadElement;
         "uni-icon-mat": HTMLUniIconMatElement;
         "uni-icon-mat-3d-rotation": HTMLUniIconMat3dRotationElement;
         "uni-icon-mat-add-shopping-cart": HTMLUniIconMatAddShoppingCartElement;
         "uni-icon-mat-arrow-drop-down": HTMLUniIconMatArrowDropDownElement;
-        "uni-icon-wrap": HTMLUniIconWrapElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
         "uni-icons-fa-brands": HTMLUniIconsFaBrandsElement;
         "uni-icons-fa-brands-shadow": HTMLUniIconsFaBrandsShadowElement;
@@ -550,7 +541,7 @@ declare namespace LocalJSX {
         "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -558,15 +549,17 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
+    }
+    interface UniIconFasAngleDown {
     }
     interface UniIconFasDownload {
         "color"?: UniColor;
         "degree"?: number;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -574,7 +567,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -583,7 +576,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -591,7 +584,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -599,7 +592,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -607,18 +600,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "rotate"?: boolean;
-        "size"?: UniSize;
-        "speed"?: number;
-        "steps"?: number;
-    }
-    interface UniIconWrap {
-        "all"?: boolean;
-        "classes"?: string;
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "selector"?: string;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -628,7 +610,7 @@ declare namespace LocalJSX {
         "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -637,7 +619,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -646,7 +628,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -655,7 +637,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -664,7 +646,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -674,7 +656,7 @@ declare namespace LocalJSX {
         "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -683,7 +665,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -692,7 +674,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name": string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -704,7 +686,7 @@ declare namespace LocalJSX {
         "name": string;
         "rotate"?: boolean;
         "selector"?: string;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -714,7 +696,7 @@ declare namespace LocalJSX {
         "font"?: UniIconsMatFont;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -723,7 +705,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -732,7 +714,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -741,7 +723,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -750,7 +732,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -759,7 +741,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -768,7 +750,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -778,7 +760,7 @@ declare namespace LocalJSX {
         "font"?: UniIconsMatFont;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -787,7 +769,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -796,7 +778,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -805,7 +787,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -814,7 +796,7 @@ declare namespace LocalJSX {
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -826,7 +808,7 @@ declare namespace LocalJSX {
         "name": string;
         "rotate"?: boolean;
         "selector"?: string;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
     }
@@ -842,18 +824,18 @@ declare namespace LocalJSX {
         "classes"?: string;
         "color"?: UniColor;
         "selector"?: string;
-        "size"?: UniSize;
+        "size"?: UniSize | number;
     }
     interface IntrinsicElements {
         "uni-icon-fa": UniIconFa;
         "uni-icon-far-copy": UniIconFarCopy;
+        "uni-icon-fas-angle-down": UniIconFasAngleDown;
         "uni-icon-fas-download": UniIconFasDownload;
         "uni-icon-fas-file-download": UniIconFasFileDownload;
         "uni-icon-mat": UniIconMat;
         "uni-icon-mat-3d-rotation": UniIconMat3dRotation;
         "uni-icon-mat-add-shopping-cart": UniIconMatAddShoppingCart;
         "uni-icon-mat-arrow-drop-down": UniIconMatArrowDropDown;
-        "uni-icon-wrap": UniIconWrap;
         "uni-icons-fa": UniIconsFa;
         "uni-icons-fa-brands": UniIconsFaBrands;
         "uni-icons-fa-brands-shadow": UniIconsFaBrandsShadow;
@@ -886,13 +868,13 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-far-copy": LocalJSX.UniIconFarCopy & JSXBase.HTMLAttributes<HTMLUniIconFarCopyElement>;
+            "uni-icon-fas-angle-down": LocalJSX.UniIconFasAngleDown & JSXBase.HTMLAttributes<HTMLUniIconFasAngleDownElement>;
             "uni-icon-fas-download": LocalJSX.UniIconFasDownload & JSXBase.HTMLAttributes<HTMLUniIconFasDownloadElement>;
             "uni-icon-fas-file-download": LocalJSX.UniIconFasFileDownload & JSXBase.HTMLAttributes<HTMLUniIconFasFileDownloadElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
             "uni-icon-mat-3d-rotation": LocalJSX.UniIconMat3dRotation & JSXBase.HTMLAttributes<HTMLUniIconMat3dRotationElement>;
             "uni-icon-mat-add-shopping-cart": LocalJSX.UniIconMatAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniIconMatAddShoppingCartElement>;
             "uni-icon-mat-arrow-drop-down": LocalJSX.UniIconMatArrowDropDown & JSXBase.HTMLAttributes<HTMLUniIconMatArrowDropDownElement>;
-            "uni-icon-wrap": LocalJSX.UniIconWrap & JSXBase.HTMLAttributes<HTMLUniIconWrapElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
             "uni-icons-fa-brands": LocalJSX.UniIconsFaBrands & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsElement>;
             "uni-icons-fa-brands-shadow": LocalJSX.UniIconsFaBrandsShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsShadowElement>;
