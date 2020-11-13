@@ -6,7 +6,7 @@ import { uniIconsFaFontClass, UniRotateTemplate, UniThemeRotateTemplate, UniThem
 @Component({ tag: 'uni-icon-fa' })
 export class UniIconMatComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) category: UniIconsFaFont = 'solid';
+  @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name!: string;
 
@@ -25,7 +25,7 @@ export class UniIconMatComponent implements ComponentInterface {
   render(): VNode {
     const { color, size, degree, speed, steps } = this;
     const props = { color, size, degree, speed, steps, selector: 'svg' };
-    const UniIconTag = `uni-icon-${uniIconsFaFontClass(this.category)}-${this.name}`;
+    const UniIconTag = `uni-${uniIconsFaFontClass(this.type)}-${this.name}`;
 
     return this.rotate && (this.color || this.size)
       ? UniThemeRotateTemplate({ ...props }, <UniIconTag />)

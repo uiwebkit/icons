@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, VNode } from '@stencil/core';
 
-@Component({ tag: 'uni-icon-far-copy' })
-export class UniIconFarCopyComponent implements ComponentInterface {
+@Component({ tag: 'uni-far-copy' })
+export class UniFarCopyComponent implements ComponentInterface {
 
   render(): VNode {
     return (

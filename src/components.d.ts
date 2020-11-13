@@ -7,8 +7,15 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
+    interface UniFarCopy {
+    }
+    interface UniFasAngleDown {
+    }
+    interface UniFasDownload {
+    }
+    interface UniFasFileDownload {
+    }
     interface UniIconFa {
-        "category": UniIconsFaFont;
         "color": UniColor;
         "degree": number;
         "name": string;
@@ -16,14 +23,7 @@ export namespace Components {
         "size": UniSize | number;
         "speed": number;
         "steps": number;
-    }
-    interface UniIconFarCopy {
-    }
-    interface UniIconFasAngleDown {
-    }
-    interface UniIconFasDownload {
-    }
-    interface UniIconFasFileDownload {
+        "type": UniIconsFaFont;
     }
     interface UniIconMat {
         "color": UniColor;
@@ -33,30 +33,7 @@ export namespace Components {
         "size": UniSize | number;
         "speed": number;
         "steps": number;
-    }
-    interface UniIconMat3dRotation {
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
-    }
-    interface UniIconMatAddShoppingCart {
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
-    }
-    interface UniIconMatArrowDropDown {
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
+        "type": UniIconsMatFont;
     }
     interface UniIconsFa {
         "color": UniColor;
@@ -266,6 +243,12 @@ export namespace Components {
         "speed": number;
         "steps": number;
     }
+    interface UniMatF3dRotation {
+    }
+    interface UniMatFAddShoppingCart {
+    }
+    interface UniMatFArrowDropDown {
+    }
     interface UniRotateWrap {
         "all": boolean;
         "degree": number;
@@ -282,59 +265,41 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLUniFarCopyElement extends Components.UniFarCopy, HTMLStencilElement {
+    }
+    var HTMLUniFarCopyElement: {
+        prototype: HTMLUniFarCopyElement;
+        new (): HTMLUniFarCopyElement;
+    };
+    interface HTMLUniFasAngleDownElement extends Components.UniFasAngleDown, HTMLStencilElement {
+    }
+    var HTMLUniFasAngleDownElement: {
+        prototype: HTMLUniFasAngleDownElement;
+        new (): HTMLUniFasAngleDownElement;
+    };
+    interface HTMLUniFasDownloadElement extends Components.UniFasDownload, HTMLStencilElement {
+    }
+    var HTMLUniFasDownloadElement: {
+        prototype: HTMLUniFasDownloadElement;
+        new (): HTMLUniFasDownloadElement;
+    };
+    interface HTMLUniFasFileDownloadElement extends Components.UniFasFileDownload, HTMLStencilElement {
+    }
+    var HTMLUniFasFileDownloadElement: {
+        prototype: HTMLUniFasFileDownloadElement;
+        new (): HTMLUniFasFileDownloadElement;
+    };
     interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
     }
     var HTMLUniIconFaElement: {
         prototype: HTMLUniIconFaElement;
         new (): HTMLUniIconFaElement;
     };
-    interface HTMLUniIconFarCopyElement extends Components.UniIconFarCopy, HTMLStencilElement {
-    }
-    var HTMLUniIconFarCopyElement: {
-        prototype: HTMLUniIconFarCopyElement;
-        new (): HTMLUniIconFarCopyElement;
-    };
-    interface HTMLUniIconFasAngleDownElement extends Components.UniIconFasAngleDown, HTMLStencilElement {
-    }
-    var HTMLUniIconFasAngleDownElement: {
-        prototype: HTMLUniIconFasAngleDownElement;
-        new (): HTMLUniIconFasAngleDownElement;
-    };
-    interface HTMLUniIconFasDownloadElement extends Components.UniIconFasDownload, HTMLStencilElement {
-    }
-    var HTMLUniIconFasDownloadElement: {
-        prototype: HTMLUniIconFasDownloadElement;
-        new (): HTMLUniIconFasDownloadElement;
-    };
-    interface HTMLUniIconFasFileDownloadElement extends Components.UniIconFasFileDownload, HTMLStencilElement {
-    }
-    var HTMLUniIconFasFileDownloadElement: {
-        prototype: HTMLUniIconFasFileDownloadElement;
-        new (): HTMLUniIconFasFileDownloadElement;
-    };
     interface HTMLUniIconMatElement extends Components.UniIconMat, HTMLStencilElement {
     }
     var HTMLUniIconMatElement: {
         prototype: HTMLUniIconMatElement;
         new (): HTMLUniIconMatElement;
-    };
-    interface HTMLUniIconMat3dRotationElement extends Components.UniIconMat3dRotation, HTMLStencilElement {
-    }
-    var HTMLUniIconMat3dRotationElement: {
-        prototype: HTMLUniIconMat3dRotationElement;
-        new (): HTMLUniIconMat3dRotationElement;
-    };
-    interface HTMLUniIconMatAddShoppingCartElement extends Components.UniIconMatAddShoppingCart, HTMLStencilElement {
-    }
-    var HTMLUniIconMatAddShoppingCartElement: {
-        prototype: HTMLUniIconMatAddShoppingCartElement;
-        new (): HTMLUniIconMatAddShoppingCartElement;
-    };
-    interface HTMLUniIconMatArrowDropDownElement extends Components.UniIconMatArrowDropDown, HTMLStencilElement {
-    }
-    var HTMLUniIconMatArrowDropDownElement: {
-        prototype: HTMLUniIconMatArrowDropDownElement;
-        new (): HTMLUniIconMatArrowDropDownElement;
     };
     interface HTMLUniIconsFaElement extends Components.UniIconsFa, HTMLStencilElement {
     }
@@ -468,6 +433,24 @@ declare global {
         prototype: HTMLUniIconsMatWrapElement;
         new (): HTMLUniIconsMatWrapElement;
     };
+    interface HTMLUniMatF3dRotationElement extends Components.UniMatF3dRotation, HTMLStencilElement {
+    }
+    var HTMLUniMatF3dRotationElement: {
+        prototype: HTMLUniMatF3dRotationElement;
+        new (): HTMLUniMatF3dRotationElement;
+    };
+    interface HTMLUniMatFAddShoppingCartElement extends Components.UniMatFAddShoppingCart, HTMLStencilElement {
+    }
+    var HTMLUniMatFAddShoppingCartElement: {
+        prototype: HTMLUniMatFAddShoppingCartElement;
+        new (): HTMLUniMatFAddShoppingCartElement;
+    };
+    interface HTMLUniMatFArrowDropDownElement extends Components.UniMatFArrowDropDown, HTMLStencilElement {
+    }
+    var HTMLUniMatFArrowDropDownElement: {
+        prototype: HTMLUniMatFArrowDropDownElement;
+        new (): HTMLUniMatFArrowDropDownElement;
+    };
     interface HTMLUniRotateWrapElement extends Components.UniRotateWrap, HTMLStencilElement {
     }
     var HTMLUniRotateWrapElement: {
@@ -481,15 +464,12 @@ declare global {
         new (): HTMLUniThemeWrapElement;
     };
     interface HTMLElementTagNameMap {
+        "uni-far-copy": HTMLUniFarCopyElement;
+        "uni-fas-angle-down": HTMLUniFasAngleDownElement;
+        "uni-fas-download": HTMLUniFasDownloadElement;
+        "uni-fas-file-download": HTMLUniFasFileDownloadElement;
         "uni-icon-fa": HTMLUniIconFaElement;
-        "uni-icon-far-copy": HTMLUniIconFarCopyElement;
-        "uni-icon-fas-angle-down": HTMLUniIconFasAngleDownElement;
-        "uni-icon-fas-download": HTMLUniIconFasDownloadElement;
-        "uni-icon-fas-file-download": HTMLUniIconFasFileDownloadElement;
         "uni-icon-mat": HTMLUniIconMatElement;
-        "uni-icon-mat-3d-rotation": HTMLUniIconMat3dRotationElement;
-        "uni-icon-mat-add-shopping-cart": HTMLUniIconMatAddShoppingCartElement;
-        "uni-icon-mat-arrow-drop-down": HTMLUniIconMatArrowDropDownElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
         "uni-icons-fa-brands": HTMLUniIconsFaBrandsElement;
         "uni-icons-fa-brands-shadow": HTMLUniIconsFaBrandsShadowElement;
@@ -512,13 +492,23 @@ declare global {
         "uni-icons-mat-two-tone": HTMLUniIconsMatTwoToneElement;
         "uni-icons-mat-two-tone-shadow": HTMLUniIconsMatTwoToneShadowElement;
         "uni-icons-mat-wrap": HTMLUniIconsMatWrapElement;
+        "uni-mat-f-3d-rotation": HTMLUniMatF3dRotationElement;
+        "uni-mat-f-add-shopping-cart": HTMLUniMatFAddShoppingCartElement;
+        "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-rotate-wrap": HTMLUniRotateWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
     }
 }
 declare namespace LocalJSX {
+    interface UniFarCopy {
+    }
+    interface UniFasAngleDown {
+    }
+    interface UniFasDownload {
+    }
+    interface UniFasFileDownload {
+    }
     interface UniIconFa {
-        "category"?: UniIconsFaFont;
         "color"?: UniColor;
         "degree"?: number;
         "name": string;
@@ -526,14 +516,7 @@ declare namespace LocalJSX {
         "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
-    }
-    interface UniIconFarCopy {
-    }
-    interface UniIconFasAngleDown {
-    }
-    interface UniIconFasDownload {
-    }
-    interface UniIconFasFileDownload {
+        "type"?: UniIconsFaFont;
     }
     interface UniIconMat {
         "color"?: UniColor;
@@ -543,30 +526,7 @@ declare namespace LocalJSX {
         "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
-    }
-    interface UniIconMat3dRotation {
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
-    }
-    interface UniIconMatAddShoppingCart {
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
-    }
-    interface UniIconMatArrowDropDown {
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
+        "type"?: UniIconsMatFont;
     }
     interface UniIconsFa {
         "color"?: UniColor;
@@ -776,6 +736,12 @@ declare namespace LocalJSX {
         "speed"?: number;
         "steps"?: number;
     }
+    interface UniMatF3dRotation {
+    }
+    interface UniMatFAddShoppingCart {
+    }
+    interface UniMatFArrowDropDown {
+    }
     interface UniRotateWrap {
         "all"?: boolean;
         "degree"?: number;
@@ -791,15 +757,12 @@ declare namespace LocalJSX {
         "size"?: UniSize | number;
     }
     interface IntrinsicElements {
+        "uni-far-copy": UniFarCopy;
+        "uni-fas-angle-down": UniFasAngleDown;
+        "uni-fas-download": UniFasDownload;
+        "uni-fas-file-download": UniFasFileDownload;
         "uni-icon-fa": UniIconFa;
-        "uni-icon-far-copy": UniIconFarCopy;
-        "uni-icon-fas-angle-down": UniIconFasAngleDown;
-        "uni-icon-fas-download": UniIconFasDownload;
-        "uni-icon-fas-file-download": UniIconFasFileDownload;
         "uni-icon-mat": UniIconMat;
-        "uni-icon-mat-3d-rotation": UniIconMat3dRotation;
-        "uni-icon-mat-add-shopping-cart": UniIconMatAddShoppingCart;
-        "uni-icon-mat-arrow-drop-down": UniIconMatArrowDropDown;
         "uni-icons-fa": UniIconsFa;
         "uni-icons-fa-brands": UniIconsFaBrands;
         "uni-icons-fa-brands-shadow": UniIconsFaBrandsShadow;
@@ -822,6 +785,9 @@ declare namespace LocalJSX {
         "uni-icons-mat-two-tone": UniIconsMatTwoTone;
         "uni-icons-mat-two-tone-shadow": UniIconsMatTwoToneShadow;
         "uni-icons-mat-wrap": UniIconsMatWrap;
+        "uni-mat-f-3d-rotation": UniMatF3dRotation;
+        "uni-mat-f-add-shopping-cart": UniMatFAddShoppingCart;
+        "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-rotate-wrap": UniRotateWrap;
         "uni-theme-wrap": UniThemeWrap;
     }
@@ -830,15 +796,12 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "uni-far-copy": LocalJSX.UniFarCopy & JSXBase.HTMLAttributes<HTMLUniFarCopyElement>;
+            "uni-fas-angle-down": LocalJSX.UniFasAngleDown & JSXBase.HTMLAttributes<HTMLUniFasAngleDownElement>;
+            "uni-fas-download": LocalJSX.UniFasDownload & JSXBase.HTMLAttributes<HTMLUniFasDownloadElement>;
+            "uni-fas-file-download": LocalJSX.UniFasFileDownload & JSXBase.HTMLAttributes<HTMLUniFasFileDownloadElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
-            "uni-icon-far-copy": LocalJSX.UniIconFarCopy & JSXBase.HTMLAttributes<HTMLUniIconFarCopyElement>;
-            "uni-icon-fas-angle-down": LocalJSX.UniIconFasAngleDown & JSXBase.HTMLAttributes<HTMLUniIconFasAngleDownElement>;
-            "uni-icon-fas-download": LocalJSX.UniIconFasDownload & JSXBase.HTMLAttributes<HTMLUniIconFasDownloadElement>;
-            "uni-icon-fas-file-download": LocalJSX.UniIconFasFileDownload & JSXBase.HTMLAttributes<HTMLUniIconFasFileDownloadElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
-            "uni-icon-mat-3d-rotation": LocalJSX.UniIconMat3dRotation & JSXBase.HTMLAttributes<HTMLUniIconMat3dRotationElement>;
-            "uni-icon-mat-add-shopping-cart": LocalJSX.UniIconMatAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniIconMatAddShoppingCartElement>;
-            "uni-icon-mat-arrow-drop-down": LocalJSX.UniIconMatArrowDropDown & JSXBase.HTMLAttributes<HTMLUniIconMatArrowDropDownElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
             "uni-icons-fa-brands": LocalJSX.UniIconsFaBrands & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsElement>;
             "uni-icons-fa-brands-shadow": LocalJSX.UniIconsFaBrandsShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsShadowElement>;
@@ -861,6 +824,9 @@ declare module "@stencil/core" {
             "uni-icons-mat-two-tone": LocalJSX.UniIconsMatTwoTone & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneElement>;
             "uni-icons-mat-two-tone-shadow": LocalJSX.UniIconsMatTwoToneShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatTwoToneShadowElement>;
             "uni-icons-mat-wrap": LocalJSX.UniIconsMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatWrapElement>;
+            "uni-mat-f-3d-rotation": LocalJSX.UniMatF3dRotation & JSXBase.HTMLAttributes<HTMLUniMatF3dRotationElement>;
+            "uni-mat-f-add-shopping-cart": LocalJSX.UniMatFAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatFAddShoppingCartElement>;
+            "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-rotate-wrap": LocalJSX.UniRotateWrap & JSXBase.HTMLAttributes<HTMLUniRotateWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
         }

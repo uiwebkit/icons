@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, VNode } from '@stencil/core';
 
-@Component({ tag: 'uni-icon-fas-download' })
-export class UniIconFasDownloadComponent implements ComponentInterface {
+@Component({ tag: 'uni-fas-download' })
+export class UniFasDownloadComponent implements ComponentInterface {
 
   render(): VNode {
     return (

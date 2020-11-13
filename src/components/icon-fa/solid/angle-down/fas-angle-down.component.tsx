@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, VNode } from '@stencil/core';
 
-@Component({ tag: 'uni-icon-fas-angle-down' })
-export class UniIconFasAngleDownComponent implements ComponentInterface {
+@Component({ tag: 'uni-fas-angle-down' })
+export class UniFasAngleDownComponent implements ComponentInterface {
 
   render(): VNode {
     return (
