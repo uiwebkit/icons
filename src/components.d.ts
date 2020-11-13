@@ -8,9 +8,9 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
     interface UniIconFa {
+        "category": UniIconsFaFont;
         "color": UniColor;
         "degree": number;
-        "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
@@ -18,30 +18,12 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconFarCopy {
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
     }
     interface UniIconFasAngleDown {
     }
     interface UniIconFasDownload {
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
     }
     interface UniIconFasFileDownload {
-        "color": UniColor;
-        "degree": number;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
     }
     interface UniIconMat {
         "color": UniColor;
@@ -536,9 +518,9 @@ declare global {
 }
 declare namespace LocalJSX {
     interface UniIconFa {
+        "category"?: UniIconsFaFont;
         "color"?: UniColor;
         "degree"?: number;
-        "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
@@ -546,30 +528,12 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconFarCopy {
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
     }
     interface UniIconFasAngleDown {
     }
     interface UniIconFasDownload {
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
     }
     interface UniIconFasFileDownload {
-        "color"?: UniColor;
-        "degree"?: number;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
     }
     interface UniIconMat {
         "color"?: UniColor;
