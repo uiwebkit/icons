@@ -8,6 +8,7 @@ import { uniModifyAsync, uniModifyClass, uniModifyStyle } from '../../../utils';
   styleUrl: 'theme-wrap.css',
 })
 export class UniThemeWrapComponent implements ComponentInterface {
+
   @Element() el!: HTMLElement;
 
   @Prop({ reflect: true }) classes: string;
