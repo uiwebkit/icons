@@ -29,7 +29,6 @@
  - [uni-icons-fa-brands-shadow](../brands/@shadow)
  - [uni-icons-fa-regular](../regular/@element)
  - [uni-icons-fa-regular-shadow](../regular/@shadow)
- - [uni-icons-fa-solid](../solid/@element)
  - [uni-icons-fa-solid-shadow](../solid/@shadow)
 
 ### Graph
@@ -39,7 +38,6 @@ graph TD;
   uni-icons-fa-brands-shadow --> uni-icons-fa-wrap
   uni-icons-fa-regular --> uni-icons-fa-wrap
   uni-icons-fa-regular-shadow --> uni-icons-fa-wrap
-  uni-icons-fa-solid --> uni-icons-fa-wrap
   uni-icons-fa-solid-shadow --> uni-icons-fa-wrap
   style uni-icons-fa-wrap fill:#f9f,stroke:#333,stroke-width:4px
 ```

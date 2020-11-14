@@ -11,12 +11,12 @@
 | ------------------- | --------- | ----------- | ---------------------------------------------- | ----------- |
 | `color`             | `color`   |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
 | `degree`            | `degree`  |             | `number`                                       | `undefined` |
-| `font`              | `font`    |             | `"brands" \| "regular" \| "solid"`             | `'solid'`   |
 | `name` _(required)_ | `name`    |             | `string`                                       | `undefined` |
 | `rotate`            | `rotate`  |             | `boolean`                                      | `false`     |
 | `size`              | `size`    |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
 | `speed`             | `speed`   |             | `number`                                       | `undefined` |
 | `steps`             | `steps`   |             | `number`                                       | `undefined` |
+| `type`              | `type`    |             | `"brands" \| "regular" \| "solid"`             | `'solid'`   |
 
 
 ----------------------------------------------

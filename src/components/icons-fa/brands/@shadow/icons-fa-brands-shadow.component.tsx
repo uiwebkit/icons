@@ -25,7 +25,7 @@ export class UniIconsFaBrandsShadowComponent implements ComponentInterface {
   render(): VNode {
     return (
     <uni-icons-fa-wrap
-      font={'brands'}
+      type={'brands'}
       name={this.name}
       color={this.color}
       size={this.size}

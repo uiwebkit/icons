@@ -17,6 +17,8 @@ export class UniThemeWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
+  @Prop({ reflect: true }) fontSize: UniSize | number;
+
   @Prop({ reflect: true }) selector: string;
 
   @Prop({ reflect: true }) all: boolean = false;
@@ -25,6 +27,7 @@ export class UniThemeWrapComponent implements ComponentInterface {
     const { el, selector, all } = this;
     const inColor = ['primary', 'success', 'accent', 'warn'].includes(this.color);
     const inSize = ['lg', 'md', 'sm', 'xs'].includes(this.size as UniSize);
+    const inFontSize = ['lg', 'md', 'sm', 'xs'].includes(this.fontSize as UniSize);
     let classes: string[] = this.classes ? this.classes.split(' ') : [];
     let styles: any = {};
 
@@ -40,6 +43,12 @@ export class UniThemeWrapComponent implements ComponentInterface {
     } else if (this.size) {
       styles.height = this.size;
       styles.width = this.size;
+    }
+
+    if (inFontSize) {
+      classes.push(`uni-font-size-${this.fontSize}`);
+    } else if (this.fontSize) {
+      styles.fontSize = `${this.fontSize}px`;
     }
 
     if (classes.length > 0) {

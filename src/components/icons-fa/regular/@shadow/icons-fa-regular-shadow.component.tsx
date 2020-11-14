@@ -25,7 +25,7 @@ export class UniIconsFaRegularShadowComponent implements ComponentInterface {
   render(): VNode {
     return (
       <uni-icons-fa-wrap
-        font={'regular'}
+        type={'regular'}
         name={this.name}
         color={this.color}
         size={this.size}

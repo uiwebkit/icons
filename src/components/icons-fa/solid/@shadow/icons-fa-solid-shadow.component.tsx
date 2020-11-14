@@ -8,6 +8,7 @@ import { UniColor, UniSize } from '../../../../models';
   shadow: true,
 })
 export class UniIconsFaSolidShadowComponent implements ComponentInterface {
+
   @Prop({ reflect: true }) name!: string;
 
   @Prop({ reflect: true }) color: UniColor;
@@ -25,7 +26,7 @@ export class UniIconsFaSolidShadowComponent implements ComponentInterface {
   render(): VNode {
     return (
       <uni-icons-fa-wrap
-        font={'solid'}
+        type={'solid'}
         name={this.name}
         color={this.color}
         size={this.size}

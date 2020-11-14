@@ -5,7 +5,7 @@ import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 @Component({ tag: 'uni-icons-fa-shadow' })
 export class UniIconsFaShadowComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) font: UniIconsFaFont = 'solid';
+  @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name!: string;
 
@@ -24,8 +24,8 @@ export class UniIconsFaShadowComponent implements ComponentInterface {
   render(): VNode {
     const { name, color, size, rotate, degree, speed, steps } = this;
     const props = { name, color, size, rotate, degree, speed, steps };
-    const UniIconsFaShadowTag = `uni-icons-fa-${this.font}-shadow`;
-    const UniIconsFaTag = `uni-icons-fa-${this.font}`;
+    const UniIconsFaShadowTag = `uni-icons-fa-${this.type}-shadow`;
+    const UniIconsFaTag = `uni-icons-fa-${this.type}`;
 
     return (
       <Fragment>

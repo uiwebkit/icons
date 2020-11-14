@@ -45,9 +45,6 @@
   height: var(--uni-size-lg, 48px);
   width: 48px;
   width: var(--uni-size-lg, 48px);
-  font-size: 1.33333em;
-  line-height: 0.75em;
-  vertical-align: -.0667em;
 }
 
 .uni-size-md {
@@ -55,7 +52,6 @@
   height: var(--uni-size-md, 36px);
   width: 36px;
   width: var(--uni-size-md, 48px);
-  font-size: 1em;
 }
 
 .uni-size-sm {
@@ -63,7 +59,6 @@
   height: var(--uni-size-sm, 24px);
   width: 24px;
   width: var(--uni-size-sm, 24px);
-  font-size: .875em;
 }
 
 .uni-size-xs {
@@ -71,5 +66,24 @@
   height: var(--uni-size-xs, 12px);
   width: 12px;
   width: var(--uni-size-xs, 12px);
-  font-size: .75em;
+}
+
+.uni-font-size-lg {
+  font-size: 48px;
+  font-size: var(--uni-size-lg, 48px);
+}
+
+.uni-font-size-md {
+  font-size: 36px;
+  font-size: var(--uni-size-md, 36px);
+}
+
+.uni-font-size-sm {
+  font-size: 24px;
+  font-size: var(--uni-size-sm, 24px);
+}
+
+.uni-font-size-xs {
+  font-size: 12px;
+  font-size: var(--uni-size-xs, 12px);
 }

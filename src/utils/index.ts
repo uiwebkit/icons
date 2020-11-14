@@ -1,6 +1,8 @@
 export * from './dom/modify';
 
-export * from './switch/icon-fa-font-class';
+export * from './switch/fa-type-class';
+export * from './switch/mat-type-short';
+export * from './switch/smart-wrap';
 
 export * from './templates/rotate.template';
 export * from './templates/theme.template';

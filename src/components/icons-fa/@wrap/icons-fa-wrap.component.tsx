@@ -9,7 +9,7 @@ import { uniIconsFaFontClass } from '../../../utils';
 })
 export class UniIconsFaWrapComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) font: UniIconsFaFont = 'solid';
+  @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name!: string;
 
@@ -30,22 +30,14 @@ export class UniIconsFaWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   render(): VNode {
-    const classes = `${uniIconsFaFontClass(this.font)} fa-${this.name}`;
+    const { name, color, size, rotate, degree, speed, steps, selector, all } = this;
+    const props = { name, color, size, rotate, degree, speed, steps, selector, all };
+    const UniIconsFaTag = `uni-icons-${uniIconsFaFontClass(this.type)}-wrap`;
 
     return (
-      <uni-icon-wrap
-        classes={classes}
-        color={this.color}
-        size={this.size}
-        rotate={this.rotate}
-        degree={this.degree}
-        speed={this.speed}
-        steps={this.steps}
-        selector={this.selector}
-        all={this.all}
-      >
+      <UniIconsFaTag {...props}>
         <slot />
-      </uni-icon-wrap>
+      </UniIconsFaTag>
     );
   }
 }

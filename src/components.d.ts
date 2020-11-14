@@ -38,32 +38,14 @@ export namespace Components {
     interface UniIconsFa {
         "color": UniColor;
         "degree": number;
-        "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
         "steps": number;
-    }
-    interface UniIconsFaBrands {
-        "color": UniColor;
-        "degree": number;
-        "name": string;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
+        "type": UniIconsFaFont;
     }
     interface UniIconsFaBrandsShadow {
-        "color": UniColor;
-        "degree": number;
-        "name": string;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
-    }
-    interface UniIconsFaRegular {
         "color": UniColor;
         "degree": number;
         "name": string;
@@ -84,21 +66,12 @@ export namespace Components {
     interface UniIconsFaShadow {
         "color": UniColor;
         "degree": number;
-        "font": UniIconsFaFont;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
         "steps": number;
-    }
-    interface UniIconsFaSolid {
-        "color": UniColor;
-        "degree": number;
-        "name": string;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
+        "type": UniIconsFaFont;
     }
     interface UniIconsFaSolidShadow {
         "color": UniColor;
@@ -113,7 +86,68 @@ export namespace Components {
         "all": boolean;
         "color": UniColor;
         "degree": number;
-        "font": UniIconsFaFont;
+        "name": string;
+        "rotate": boolean;
+        "selector": string;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
+        "type": UniIconsFaFont;
+    }
+    interface UniIconsFab {
+        "color": UniColor;
+        "degree": number;
+        "name": string;
+        "rotate": boolean;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
+        "type": UniIconsFaFont;
+    }
+    interface UniIconsFabWrap {
+        "all": boolean;
+        "color": UniColor;
+        "degree": number;
+        "name": string;
+        "rotate": boolean;
+        "selector": string;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
+    }
+    interface UniIconsFar {
+        "color": UniColor;
+        "degree": number;
+        "name": string;
+        "rotate": boolean;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
+    }
+    interface UniIconsFarWrap {
+        "all": boolean;
+        "color": UniColor;
+        "degree": number;
+        "name": string;
+        "rotate": boolean;
+        "selector": string;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
+    }
+    interface UniIconsFas {
+        "color": UniColor;
+        "degree": number;
+        "name": string;
+        "rotate": boolean;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
+    }
+    interface UniIconsFasWrap {
+        "all": boolean;
+        "color": UniColor;
+        "degree": number;
         "name": string;
         "rotate": boolean;
         "selector": string;
@@ -260,6 +294,7 @@ export namespace Components {
         "all": boolean;
         "classes": string;
         "color": UniColor;
+        "fontSize": UniSize | number;
         "selector": string;
         "size": UniSize | number;
     }
@@ -307,23 +342,11 @@ declare global {
         prototype: HTMLUniIconsFaElement;
         new (): HTMLUniIconsFaElement;
     };
-    interface HTMLUniIconsFaBrandsElement extends Components.UniIconsFaBrands, HTMLStencilElement {
-    }
-    var HTMLUniIconsFaBrandsElement: {
-        prototype: HTMLUniIconsFaBrandsElement;
-        new (): HTMLUniIconsFaBrandsElement;
-    };
     interface HTMLUniIconsFaBrandsShadowElement extends Components.UniIconsFaBrandsShadow, HTMLStencilElement {
     }
     var HTMLUniIconsFaBrandsShadowElement: {
         prototype: HTMLUniIconsFaBrandsShadowElement;
         new (): HTMLUniIconsFaBrandsShadowElement;
-    };
-    interface HTMLUniIconsFaRegularElement extends Components.UniIconsFaRegular, HTMLStencilElement {
-    }
-    var HTMLUniIconsFaRegularElement: {
-        prototype: HTMLUniIconsFaRegularElement;
-        new (): HTMLUniIconsFaRegularElement;
     };
     interface HTMLUniIconsFaRegularShadowElement extends Components.UniIconsFaRegularShadow, HTMLStencilElement {
     }
@@ -337,12 +360,6 @@ declare global {
         prototype: HTMLUniIconsFaShadowElement;
         new (): HTMLUniIconsFaShadowElement;
     };
-    interface HTMLUniIconsFaSolidElement extends Components.UniIconsFaSolid, HTMLStencilElement {
-    }
-    var HTMLUniIconsFaSolidElement: {
-        prototype: HTMLUniIconsFaSolidElement;
-        new (): HTMLUniIconsFaSolidElement;
-    };
     interface HTMLUniIconsFaSolidShadowElement extends Components.UniIconsFaSolidShadow, HTMLStencilElement {
     }
     var HTMLUniIconsFaSolidShadowElement: {
@@ -354,6 +371,42 @@ declare global {
     var HTMLUniIconsFaWrapElement: {
         prototype: HTMLUniIconsFaWrapElement;
         new (): HTMLUniIconsFaWrapElement;
+    };
+    interface HTMLUniIconsFabElement extends Components.UniIconsFab, HTMLStencilElement {
+    }
+    var HTMLUniIconsFabElement: {
+        prototype: HTMLUniIconsFabElement;
+        new (): HTMLUniIconsFabElement;
+    };
+    interface HTMLUniIconsFabWrapElement extends Components.UniIconsFabWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFabWrapElement: {
+        prototype: HTMLUniIconsFabWrapElement;
+        new (): HTMLUniIconsFabWrapElement;
+    };
+    interface HTMLUniIconsFarElement extends Components.UniIconsFar, HTMLStencilElement {
+    }
+    var HTMLUniIconsFarElement: {
+        prototype: HTMLUniIconsFarElement;
+        new (): HTMLUniIconsFarElement;
+    };
+    interface HTMLUniIconsFarWrapElement extends Components.UniIconsFarWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFarWrapElement: {
+        prototype: HTMLUniIconsFarWrapElement;
+        new (): HTMLUniIconsFarWrapElement;
+    };
+    interface HTMLUniIconsFasElement extends Components.UniIconsFas, HTMLStencilElement {
+    }
+    var HTMLUniIconsFasElement: {
+        prototype: HTMLUniIconsFasElement;
+        new (): HTMLUniIconsFasElement;
+    };
+    interface HTMLUniIconsFasWrapElement extends Components.UniIconsFasWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsFasWrapElement: {
+        prototype: HTMLUniIconsFasWrapElement;
+        new (): HTMLUniIconsFasWrapElement;
     };
     interface HTMLUniIconsMatElement extends Components.UniIconsMat, HTMLStencilElement {
     }
@@ -471,14 +524,17 @@ declare global {
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
-        "uni-icons-fa-brands": HTMLUniIconsFaBrandsElement;
         "uni-icons-fa-brands-shadow": HTMLUniIconsFaBrandsShadowElement;
-        "uni-icons-fa-regular": HTMLUniIconsFaRegularElement;
         "uni-icons-fa-regular-shadow": HTMLUniIconsFaRegularShadowElement;
         "uni-icons-fa-shadow": HTMLUniIconsFaShadowElement;
-        "uni-icons-fa-solid": HTMLUniIconsFaSolidElement;
         "uni-icons-fa-solid-shadow": HTMLUniIconsFaSolidShadowElement;
         "uni-icons-fa-wrap": HTMLUniIconsFaWrapElement;
+        "uni-icons-fab": HTMLUniIconsFabElement;
+        "uni-icons-fab-wrap": HTMLUniIconsFabWrapElement;
+        "uni-icons-far": HTMLUniIconsFarElement;
+        "uni-icons-far-wrap": HTMLUniIconsFarWrapElement;
+        "uni-icons-fas": HTMLUniIconsFasElement;
+        "uni-icons-fas-wrap": HTMLUniIconsFasWrapElement;
         "uni-icons-mat": HTMLUniIconsMatElement;
         "uni-icons-mat-filled": HTMLUniIconsMatFilledElement;
         "uni-icons-mat-filled-shadow": HTMLUniIconsMatFilledShadowElement;
@@ -531,32 +587,14 @@ declare namespace LocalJSX {
     interface UniIconsFa {
         "color"?: UniColor;
         "degree"?: number;
-        "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
-    }
-    interface UniIconsFaBrands {
-        "color"?: UniColor;
-        "degree"?: number;
-        "name": string;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
+        "type"?: UniIconsFaFont;
     }
     interface UniIconsFaBrandsShadow {
-        "color"?: UniColor;
-        "degree"?: number;
-        "name": string;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
-    }
-    interface UniIconsFaRegular {
         "color"?: UniColor;
         "degree"?: number;
         "name": string;
@@ -577,21 +615,12 @@ declare namespace LocalJSX {
     interface UniIconsFaShadow {
         "color"?: UniColor;
         "degree"?: number;
-        "font"?: UniIconsFaFont;
         "name": string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
-    }
-    interface UniIconsFaSolid {
-        "color"?: UniColor;
-        "degree"?: number;
-        "name": string;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
+        "type"?: UniIconsFaFont;
     }
     interface UniIconsFaSolidShadow {
         "color"?: UniColor;
@@ -606,7 +635,68 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
-        "font"?: UniIconsFaFont;
+        "name": string;
+        "rotate"?: boolean;
+        "selector"?: string;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+        "type"?: UniIconsFaFont;
+    }
+    interface UniIconsFab {
+        "color"?: UniColor;
+        "degree"?: number;
+        "name": string;
+        "rotate"?: boolean;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+        "type"?: UniIconsFaFont;
+    }
+    interface UniIconsFabWrap {
+        "all"?: boolean;
+        "color"?: UniColor;
+        "degree"?: number;
+        "name": string;
+        "rotate"?: boolean;
+        "selector"?: string;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+    }
+    interface UniIconsFar {
+        "color"?: UniColor;
+        "degree"?: number;
+        "name": string;
+        "rotate"?: boolean;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+    }
+    interface UniIconsFarWrap {
+        "all"?: boolean;
+        "color"?: UniColor;
+        "degree"?: number;
+        "name": string;
+        "rotate"?: boolean;
+        "selector"?: string;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+    }
+    interface UniIconsFas {
+        "color"?: UniColor;
+        "degree"?: number;
+        "name": string;
+        "rotate"?: boolean;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+    }
+    interface UniIconsFasWrap {
+        "all"?: boolean;
+        "color"?: UniColor;
+        "degree"?: number;
         "name": string;
         "rotate"?: boolean;
         "selector"?: string;
@@ -753,6 +843,7 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "classes"?: string;
         "color"?: UniColor;
+        "fontSize"?: UniSize | number;
         "selector"?: string;
         "size"?: UniSize | number;
     }
@@ -764,14 +855,17 @@ declare namespace LocalJSX {
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
         "uni-icons-fa": UniIconsFa;
-        "uni-icons-fa-brands": UniIconsFaBrands;
         "uni-icons-fa-brands-shadow": UniIconsFaBrandsShadow;
-        "uni-icons-fa-regular": UniIconsFaRegular;
         "uni-icons-fa-regular-shadow": UniIconsFaRegularShadow;
         "uni-icons-fa-shadow": UniIconsFaShadow;
-        "uni-icons-fa-solid": UniIconsFaSolid;
         "uni-icons-fa-solid-shadow": UniIconsFaSolidShadow;
         "uni-icons-fa-wrap": UniIconsFaWrap;
+        "uni-icons-fab": UniIconsFab;
+        "uni-icons-fab-wrap": UniIconsFabWrap;
+        "uni-icons-far": UniIconsFar;
+        "uni-icons-far-wrap": UniIconsFarWrap;
+        "uni-icons-fas": UniIconsFas;
+        "uni-icons-fas-wrap": UniIconsFasWrap;
         "uni-icons-mat": UniIconsMat;
         "uni-icons-mat-filled": UniIconsMatFilled;
         "uni-icons-mat-filled-shadow": UniIconsMatFilledShadow;
@@ -803,14 +897,17 @@ declare module "@stencil/core" {
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
-            "uni-icons-fa-brands": LocalJSX.UniIconsFaBrands & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsElement>;
             "uni-icons-fa-brands-shadow": LocalJSX.UniIconsFaBrandsShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaBrandsShadowElement>;
-            "uni-icons-fa-regular": LocalJSX.UniIconsFaRegular & JSXBase.HTMLAttributes<HTMLUniIconsFaRegularElement>;
             "uni-icons-fa-regular-shadow": LocalJSX.UniIconsFaRegularShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaRegularShadowElement>;
             "uni-icons-fa-shadow": LocalJSX.UniIconsFaShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaShadowElement>;
-            "uni-icons-fa-solid": LocalJSX.UniIconsFaSolid & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidElement>;
             "uni-icons-fa-solid-shadow": LocalJSX.UniIconsFaSolidShadow & JSXBase.HTMLAttributes<HTMLUniIconsFaSolidShadowElement>;
             "uni-icons-fa-wrap": LocalJSX.UniIconsFaWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaWrapElement>;
+            "uni-icons-fab": LocalJSX.UniIconsFab & JSXBase.HTMLAttributes<HTMLUniIconsFabElement>;
+            "uni-icons-fab-wrap": LocalJSX.UniIconsFabWrap & JSXBase.HTMLAttributes<HTMLUniIconsFabWrapElement>;
+            "uni-icons-far": LocalJSX.UniIconsFar & JSXBase.HTMLAttributes<HTMLUniIconsFarElement>;
+            "uni-icons-far-wrap": LocalJSX.UniIconsFarWrap & JSXBase.HTMLAttributes<HTMLUniIconsFarWrapElement>;
+            "uni-icons-fas": LocalJSX.UniIconsFas & JSXBase.HTMLAttributes<HTMLUniIconsFasElement>;
+            "uni-icons-fas-wrap": LocalJSX.UniIconsFasWrap & JSXBase.HTMLAttributes<HTMLUniIconsFasWrapElement>;
             "uni-icons-mat": LocalJSX.UniIconsMat & JSXBase.HTMLAttributes<HTMLUniIconsMatElement>;
             "uni-icons-mat-filled": LocalJSX.UniIconsMatFilled & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledElement>;
             "uni-icons-mat-filled-shadow": LocalJSX.UniIconsMatFilledShadow & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledShadowElement>;
