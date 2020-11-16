@@ -3,7 +3,6 @@ import { h, VNode } from '@stencil/core';
 export const UniThemeTemplate = function(props, template: VNode): VNode {
   return (
     <uni-theme-wrap
-      classes={props.classes}
       color={props.color}
       size={props.size}
       font-size={props.fontSize}

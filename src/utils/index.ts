@@ -1,4 +1,6 @@
 export * from './dom/modify';
+export * from './dom/get-rotation';
+export * from './dom/get-theme';
 
 export * from './switch/fa-type-class';
 export * from './switch/mat-type-short';

@@ -292,11 +292,15 @@ export namespace Components {
     }
     interface UniThemeWrap {
         "all": boolean;
-        "classes": string;
         "color": UniColor;
         "fontSize": UniSize | number;
         "selector": string;
         "size": UniSize | number;
+    }
+    interface UniWrap {
+        "all": boolean;
+        "classes": string;
+        "selector": string;
     }
 }
 declare global {
@@ -516,6 +520,12 @@ declare global {
         prototype: HTMLUniThemeWrapElement;
         new (): HTMLUniThemeWrapElement;
     };
+    interface HTMLUniWrapElement extends Components.UniWrap, HTMLStencilElement {
+    }
+    var HTMLUniWrapElement: {
+        prototype: HTMLUniWrapElement;
+        new (): HTMLUniWrapElement;
+    };
     interface HTMLElementTagNameMap {
         "uni-far-copy": HTMLUniFarCopyElement;
         "uni-fas-angle-down": HTMLUniFasAngleDownElement;
@@ -553,6 +563,7 @@ declare global {
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-rotate-wrap": HTMLUniRotateWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
+        "uni-wrap": HTMLUniWrapElement;
     }
 }
 declare namespace LocalJSX {
@@ -841,11 +852,15 @@ declare namespace LocalJSX {
     }
     interface UniThemeWrap {
         "all"?: boolean;
-        "classes"?: string;
         "color"?: UniColor;
         "fontSize"?: UniSize | number;
         "selector"?: string;
         "size"?: UniSize | number;
+    }
+    interface UniWrap {
+        "all"?: boolean;
+        "classes"?: string;
+        "selector"?: string;
     }
     interface IntrinsicElements {
         "uni-far-copy": UniFarCopy;
@@ -884,6 +899,7 @@ declare namespace LocalJSX {
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-rotate-wrap": UniRotateWrap;
         "uni-theme-wrap": UniThemeWrap;
+        "uni-wrap": UniWrap;
     }
 }
 export { LocalJSX as JSX };
@@ -926,6 +942,7 @@ declare module "@stencil/core" {
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-rotate-wrap": LocalJSX.UniRotateWrap & JSXBase.HTMLAttributes<HTMLUniRotateWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
+            "uni-wrap": LocalJSX.UniWrap & JSXBase.HTMLAttributes<HTMLUniWrapElement>;
         }
     }
 }

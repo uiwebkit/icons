@@ -1,13 +1,15 @@
-import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
-import { uniSmartWrap } from '../../../../utils';
+import { uniModifyStart } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-far-wrap',
   styleUrl: '../styles/icons-fa-regular.css',
 })
 export class UniIconsFaRegularWrapComponent implements ComponentInterface {
+
+  @Element() el!: HTMLElement;
 
   @Prop({ reflect: true }) name!: string;
 
@@ -27,9 +29,10 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) all: boolean = false;
 
-  render(): VNode {
-    const { color, rotate, degree, speed, steps, selector, all } = this;
+  componentDidLoad(): void {
+    const { el, color, rotate, degree, speed, steps, selector, all } = this;
     const props = {
+      el,
       classes: `far fa-${this.name}`,
       color,
       fontSize: this.size,
@@ -38,9 +41,13 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
       speed,
       steps,
       selector,
-      all
+      all,
     };
 
-    return uniSmartWrap(props, <slot />);
+    uniModifyStart(props);
+  }
+
+  render(): VNode {
+    return <slot />;
   }
 }

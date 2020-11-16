@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 
-import { uniModifyAsync, uniModifyStyle } from '../../../utils';
+import { uniGetRotation, uniModifyAsync, uniModifyStyle } from '../../../utils';
 
 @Component({
   tag: 'uni-rotate-wrap',
@@ -20,24 +20,8 @@ export class UniRotateWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
-    const { el, selector, all } = this;
-    let styles: any = {};
+    const { el, degree, speed, steps, selector, all } = this;
 
-    if (this.degree) {
-      const rotate = `rotate(${this.degree}deg)`;
-
-      styles.transform = rotate;
-      styles['-webkit-transform'] = rotate;
-    } else {
-      this.speed = this.speed || 1;
-      const rotation = `uni-rotate ${this.speed}s infinite ${this.steps ? 'steps(' + this.steps + ')' : 'linear'}`;
-
-      styles.animation = rotation;
-      styles['-webkit-animation'] = rotation;
-    }
-
-    if (Object.keys(styles).length > 0) {
-      uniModifyAsync({ el, selector, all }, styles, uniModifyStyle);
-    }
+    uniModifyAsync({ el, selector, all }, uniGetRotation({ degree, speed, steps }).styles, uniModifyStyle);
   }
 }
