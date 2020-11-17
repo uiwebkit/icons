@@ -1,10 +1,12 @@
-import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
+import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { uniIconsFaFontClass, uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icon-fa' })
 export class UniIconMatComponent implements ComponentInterface {
+
+  @Element() el!: HTMLElement;
 
   @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
@@ -23,10 +25,15 @@ export class UniIconMatComponent implements ComponentInterface {
   @Prop({ reflect: true }) steps: number;
 
   render(): VNode {
-    const { color, size, rotate, degree, speed, steps } = this;
-    const props = { color, size, rotate, degree, speed, steps, selector: 'svg' };
     const UniIconTag = `uni-${uniIconsFaFontClass(this.type)}-${this.name}`;
 
-    return uniSmartWrap(props, <UniIconTag />);
+    return <UniIconTag />;
+  }
+
+  componentDidLoad(): void {
+    const { el, color, size, rotate, degree, speed, steps } = this;
+    const props = { el, color, size, rotate, degree, speed, steps, selector: 'svg' };
+
+    uniSmartWrap(props);
   }
 }

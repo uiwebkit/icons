@@ -1,6 +1,6 @@
-import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
+import { Component, ComponentInterface, h, Host, VNode, Prop, Element } from '@stencil/core';
 
-import { UniColor, UniIconsFaFont, UniSize } from '../../../../models';
+import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
 
 @Component({
@@ -9,7 +9,9 @@ import { uniSmartWrap } from '../../../../utils';
 })
 export class UniIconsFaBrandsComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
+  @Element() el!: HTMLElement;
+
+  @Prop({ reflect: true }) init: boolean = false;
 
   @Prop({ reflect: true }) name!: string;
 
@@ -26,9 +28,17 @@ export class UniIconsFaBrandsComponent implements ComponentInterface {
   @Prop({ reflect: true }) steps: number;
 
   render(): VNode {
-    const { color, rotate, degree, speed, steps } = this;
-    const props = { color, fontSize: this.size, rotate, degree, speed, steps, selector: `.fa-${this.name}` };
+    return (
+      <Host class={`fab fa-${this.name}`}>
+        {this.init ? <uni-fa-styles-load/> : ''}
+      </Host>
+    );
+  }
 
-    return uniSmartWrap(props, <span class={`fab fa-${this.name}`} />);
+  componentDidLoad(): void {
+    const { el, color, rotate, degree, speed, steps } = this;
+    const props = { el, color, fontSize: this.size, rotate, degree, speed, steps, selector: `Host` };
+
+    uniSmartWrap(props);
   }
 }

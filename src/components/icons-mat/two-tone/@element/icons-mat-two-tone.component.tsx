@@ -1,12 +1,16 @@
-import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Host, Element } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
+import { uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-mat-two-tone',
   styleUrl: '../styles/icons-mat-two-tone.css',
 })
 export class UniIconsMatTwoToneComponent implements ComponentInterface {
+
+  @Element() el!: HTMLElement;
+
   @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
@@ -23,21 +27,17 @@ export class UniIconsMatTwoToneComponent implements ComponentInterface {
 
   render(): VNode {
     return (
-      <uni-icons-mat-wrap
-        font={'two-tone'}
-        name={this.name}
-        color={this.color}
-        size={this.size}
-        rotate={this.rotate}
-        degree={this.degree}
-        speed={this.speed}
-        steps={this.steps}
-      >
-        <i>
-          {this.name}
-          <slot />
-        </i>
-      </uni-icons-mat-wrap>
+      <Host class={'material-icons-two-tone'}>
+        <slot />
+        {this.name}
+      </Host>
     );
+  }
+
+  componentDidLoad(): void {
+    const { el, color, rotate, degree, speed, steps } = this;
+    const props = { el, color, fontSize: this.size, rotate, degree, speed, steps, selector: `Host` };
+
+    uniSmartWrap(props);
   }
 }

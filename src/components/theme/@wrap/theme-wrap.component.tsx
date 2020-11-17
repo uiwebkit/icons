@@ -1,12 +1,9 @@
 import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../models';
-import { uniGetTheme, uniModifyAsync, uniModifyClass, uniModifyStyle } from '../../../utils';
+import { uniSmartWrap } from '../../../utils';
 
-@Component({
-  tag: 'uni-theme-wrap',
-  styleUrl: 'theme-wrap.css',
-})
+@Component({ tag: 'uni-theme-wrap' })
 export class UniThemeWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
@@ -23,9 +20,8 @@ export class UniThemeWrapComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     const { el, color, size, fontSize, selector, all } = this;
-    const { classes, styles } = uniGetTheme({ color, size, fontSize });
+    const props = { el, color, size, fontSize, selector, all };
 
-    uniModifyAsync({ el, selector, all }, classes, uniModifyClass);
-    uniModifyAsync({ el, selector, all }, styles, uniModifyStyle);
+    uniSmartWrap(props);
   }
 }

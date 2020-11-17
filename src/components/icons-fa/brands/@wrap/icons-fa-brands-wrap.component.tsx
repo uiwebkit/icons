@@ -1,7 +1,7 @@
-import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Element, Fragment } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
-import { uniModifyStart } from '../../../../utils';
+import { uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-fab-wrap',
@@ -10,6 +10,8 @@ import { uniModifyStart } from '../../../../utils';
 export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
+
+  @Prop({ reflect: true }) init: boolean = false;
 
   @Prop({ reflect: true }) name!: string;
 
@@ -29,6 +31,15 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) all: boolean = false;
 
+  render(): VNode {
+    return (
+      <Fragment>
+        <slot />
+        {this.init ? <uni-fa-styles-load/> : ''}
+      </Fragment>
+    );
+  }
+
   componentDidLoad(): void {
     const { el, color, rotate, degree, speed, steps, selector, all } = this;
     const props = {
@@ -44,10 +55,6 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
       all,
     };
 
-    uniModifyStart(props);
-  }
-
-  render(): VNode {
-    return <slot />;
+    uniSmartWrap(props);
   }
 }

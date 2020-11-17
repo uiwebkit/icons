@@ -5,7 +5,7 @@ import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
 @Component({ tag: 'uni-icons-mat' })
 export class UniIconsMatComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) font: UniIconsMatFont = 'filled';
+  @Prop({ reflect: true }) type: UniIconsMatFont = 'filled';
 
   @Prop({ reflect: true }) name: string;
 
@@ -24,7 +24,7 @@ export class UniIconsMatComponent implements ComponentInterface {
   render(): VNode {
     const { name, color, size, rotate, degree, speed, steps } = this;
     const props = { name, color, size, rotate, degree, speed, steps };
-    const UniIconsMatTag = `uni-icons-mat-${this.font}`;
+    const UniIconsMatTag = `uni-icons-mat-${this.type}`;
 
     return (
       <UniIconsMatTag {...props}>

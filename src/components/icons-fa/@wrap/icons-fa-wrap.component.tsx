@@ -3,11 +3,10 @@ import { Component, ComponentInterface, h, Prop, VNode } from '@stencil/core';
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { uniIconsFaFontClass } from '../../../utils';
 
-@Component({
-  tag: 'uni-icons-fa-wrap',
-  styleUrl: 'icons-fa-wrap.css',
-})
+@Component({ tag: 'uni-icons-fa-wrap' })
 export class UniIconsFaWrapComponent implements ComponentInterface {
+
+  @Prop({ reflect: true }) init: boolean = false;
 
   @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
@@ -30,8 +29,8 @@ export class UniIconsFaWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   render(): VNode {
-    const { name, color, size, rotate, degree, speed, steps, selector, all } = this;
-    const props = { name, color, size, rotate, degree, speed, steps, selector, all };
+    const { init, name, color, size, rotate, degree, speed, steps, selector, all } = this;
+    const props = { init, name, color, size, rotate, degree, speed, steps, selector, all };
     const UniIconsFaTag = `uni-icons-${uniIconsFaFontClass(this.type)}-wrap`;
 
     return (
