@@ -10,6 +10,8 @@ export class UniThemeWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) color: UniColor;
 
+  @Prop({ reflect: true }) filter: UniColor;
+
   @Prop({ reflect: true }) size: UniSize | number;
 
   @Prop({ reflect: true }) fontSize: UniSize | number;
@@ -19,8 +21,8 @@ export class UniThemeWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
-    const { el, color, size, fontSize, selector, all } = this;
-    const props = { el, color, size, fontSize, selector, all };
+    const { el, color, filter, size, fontSize, selector, all } = this;
+    const props = { el, color, filter, size, fontSize, selector, all };
 
     uniSmartWrap(props);
   }

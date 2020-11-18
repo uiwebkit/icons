@@ -30,7 +30,9 @@ export function uniModify(context, data: any, cbFunction, observer?): void {
 }
 
 export function uniModifyContent(target: Element, content: string): void {
-  target.textContent = content;
+  if (!!content) {
+    target.textContent = content;
+  }
 }
 
 export function uniModifyClass(target: Element, classNames: string[]): void {

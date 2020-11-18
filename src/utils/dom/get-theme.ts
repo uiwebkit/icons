@@ -1,28 +1,31 @@
-import { UniSize } from '../../models';
-
-export function uniGetTheme({ color, size, fontSize }) {
-  const inColor = ['primary', 'success', 'accent', 'warn'].includes(color);
-  const inSize = ['lg', 'md', 'sm', 'xs'].includes(size as UniSize);
-  const inFontSize = ['lg', 'md', 'sm', 'xs'].includes(fontSize as UniSize);
+export function uniGetTheme({ color, filter, size, fontSize }) {
+  const colors = ['primary', 'success', 'accent', 'warn'];
+  const sizes = ['lg', 'md', 'sm', 'xs'];
 
   let classes: string[] = [];
   let styles: any = {};
 
-  if (inColor) {
+  if (colors.includes(color)) {
     classes.push(`uni-color-${color}`);
   } else if (color) {
     styles.color = color;
     styles.fill = color;
   }
 
-  if (inSize) {
+  if (colors.includes(filter)) {
+    classes.push(`uni-filter-${filter}`);
+  } else if (filter) {
+    styles.filter = filter;
+  }
+
+  if (sizes.includes(size)) {
     classes.push(`uni-size-${size}`);
   } else if (size) {
     styles.height = size;
     styles.width = size;
   }
 
-  if (inFontSize) {
+  if (sizes.includes(fontSize)) {
     classes.push(`uni-font-size-${fontSize}`);
   } else if (fontSize) {
     styles.fontSize = `${fontSize}px`;

@@ -35,8 +35,8 @@ export class UniIconsMatTwoToneComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, rotate, degree, speed, steps } = this;
-    const props = { el, color, fontSize: this.size, rotate, degree, speed, steps, selector: `Host` };
+    const { el, rotate, degree, speed, steps } = this;
+    const props = { el, filter: this.color, fontSize: this.size, rotate, degree, speed, steps, selector: `Host` };
 
     uniSmartWrap(props);
   }

@@ -16,9 +16,9 @@ export class UniIconsFaWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
-
   @Prop({ reflect: true }) degree: number;
+
+  @Prop({ reflect: true }) rotate: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
