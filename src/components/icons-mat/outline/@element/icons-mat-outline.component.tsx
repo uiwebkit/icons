@@ -4,10 +4,10 @@ import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
 
 @Component({
-  tag: 'uni-icons-mat-filled',
-  styleUrl: '../styles/icons-mat-filled.css',
+  tag: 'uni-icons-mat-outline',
+  styleUrl: '../styles/icons-mat-outline.css',
 })
-export class UniIconsMatFilledComponent implements ComponentInterface {
+export class UniIconsMatOutlineComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
@@ -27,7 +27,7 @@ export class UniIconsMatFilledComponent implements ComponentInterface {
 
   render(): VNode {
     return (
-      <Host class={'material-icons'}>
+      <Host class={'material-icons-outlined'}>
         <slot />
         {this.name}
       </Host>

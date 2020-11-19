@@ -2,9 +2,9 @@ import { UniIconsMatFont } from '../../models';
 
 export function uniMatTypeShort(type: UniIconsMatFont): string {
   switch (type) {
-    case 'filled':
+    case 'fill':
       return 'f';
-    case 'outlined':
+    case 'outline':
       return 'o';
     case 'round':
       return 'r';

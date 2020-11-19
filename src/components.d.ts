@@ -135,9 +135,8 @@ export namespace Components {
         "size": UniSize | number;
         "speed": number;
         "steps": number;
-        "type": UniIconsMatFont;
     }
-    interface UniIconsMatFilled {
+    interface UniIconsMatOutline {
         "color": UniColor;
         "degree": number;
         "name": string;
@@ -146,27 +145,7 @@ export namespace Components {
         "speed": number;
         "steps": number;
     }
-    interface UniIconsMatFilledWrap {
-        "all": boolean;
-        "color": UniColor;
-        "degree": number;
-        "name": string;
-        "rotate": boolean;
-        "selector": string;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
-    }
-    interface UniIconsMatOutlined {
-        "color": UniColor;
-        "degree": number;
-        "name": string;
-        "rotate": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "steps": number;
-    }
-    interface UniIconsMatOutlinedWrap {
+    interface UniIconsMatOutlineWrap {
         "all": boolean;
         "color": UniColor;
         "degree": number;
@@ -238,14 +217,15 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsMatWrap {
+        "all": boolean;
         "color": UniColor;
         "degree": number;
         "name": string;
         "rotate": boolean;
+        "selector": string;
         "size": UniSize | number;
         "speed": number;
         "steps": number;
-        "type": UniIconsMatFont;
     }
     interface UniMatF3dRotation {
     }
@@ -371,29 +351,17 @@ declare global {
         prototype: HTMLUniIconsMatElement;
         new (): HTMLUniIconsMatElement;
     };
-    interface HTMLUniIconsMatFilledElement extends Components.UniIconsMatFilled, HTMLStencilElement {
+    interface HTMLUniIconsMatOutlineElement extends Components.UniIconsMatOutline, HTMLStencilElement {
     }
-    var HTMLUniIconsMatFilledElement: {
-        prototype: HTMLUniIconsMatFilledElement;
-        new (): HTMLUniIconsMatFilledElement;
+    var HTMLUniIconsMatOutlineElement: {
+        prototype: HTMLUniIconsMatOutlineElement;
+        new (): HTMLUniIconsMatOutlineElement;
     };
-    interface HTMLUniIconsMatFilledWrapElement extends Components.UniIconsMatFilledWrap, HTMLStencilElement {
+    interface HTMLUniIconsMatOutlineWrapElement extends Components.UniIconsMatOutlineWrap, HTMLStencilElement {
     }
-    var HTMLUniIconsMatFilledWrapElement: {
-        prototype: HTMLUniIconsMatFilledWrapElement;
-        new (): HTMLUniIconsMatFilledWrapElement;
-    };
-    interface HTMLUniIconsMatOutlinedElement extends Components.UniIconsMatOutlined, HTMLStencilElement {
-    }
-    var HTMLUniIconsMatOutlinedElement: {
-        prototype: HTMLUniIconsMatOutlinedElement;
-        new (): HTMLUniIconsMatOutlinedElement;
-    };
-    interface HTMLUniIconsMatOutlinedWrapElement extends Components.UniIconsMatOutlinedWrap, HTMLStencilElement {
-    }
-    var HTMLUniIconsMatOutlinedWrapElement: {
-        prototype: HTMLUniIconsMatOutlinedWrapElement;
-        new (): HTMLUniIconsMatOutlinedWrapElement;
+    var HTMLUniIconsMatOutlineWrapElement: {
+        prototype: HTMLUniIconsMatOutlineWrapElement;
+        new (): HTMLUniIconsMatOutlineWrapElement;
     };
     interface HTMLUniIconsMatRoundElement extends Components.UniIconsMatRound, HTMLStencilElement {
     }
@@ -490,10 +458,8 @@ declare global {
         "uni-icons-fas": HTMLUniIconsFasElement;
         "uni-icons-fas-wrap": HTMLUniIconsFasWrapElement;
         "uni-icons-mat": HTMLUniIconsMatElement;
-        "uni-icons-mat-filled": HTMLUniIconsMatFilledElement;
-        "uni-icons-mat-filled-wrap": HTMLUniIconsMatFilledWrapElement;
-        "uni-icons-mat-outlined": HTMLUniIconsMatOutlinedElement;
-        "uni-icons-mat-outlined-wrap": HTMLUniIconsMatOutlinedWrapElement;
+        "uni-icons-mat-outline": HTMLUniIconsMatOutlineElement;
+        "uni-icons-mat-outline-wrap": HTMLUniIconsMatOutlineWrapElement;
         "uni-icons-mat-round": HTMLUniIconsMatRoundElement;
         "uni-icons-mat-round-wrap": HTMLUniIconsMatRoundWrapElement;
         "uni-icons-mat-sharp": HTMLUniIconsMatSharpElement;
@@ -638,9 +604,8 @@ declare namespace LocalJSX {
         "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
-        "type"?: UniIconsMatFont;
     }
-    interface UniIconsMatFilled {
+    interface UniIconsMatOutline {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
@@ -649,27 +614,7 @@ declare namespace LocalJSX {
         "speed"?: number;
         "steps"?: number;
     }
-    interface UniIconsMatFilledWrap {
-        "all"?: boolean;
-        "color"?: UniColor;
-        "degree"?: number;
-        "name"?: string;
-        "rotate"?: boolean;
-        "selector"?: string;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
-    }
-    interface UniIconsMatOutlined {
-        "color"?: UniColor;
-        "degree"?: number;
-        "name"?: string;
-        "rotate"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "steps"?: number;
-    }
-    interface UniIconsMatOutlinedWrap {
+    interface UniIconsMatOutlineWrap {
         "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
@@ -741,14 +686,15 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsMatWrap {
+        "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
         "rotate"?: boolean;
+        "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
         "steps"?: number;
-        "type"?: UniIconsMatFont;
     }
     interface UniMatF3dRotation {
     }
@@ -793,10 +739,8 @@ declare namespace LocalJSX {
         "uni-icons-fas": UniIconsFas;
         "uni-icons-fas-wrap": UniIconsFasWrap;
         "uni-icons-mat": UniIconsMat;
-        "uni-icons-mat-filled": UniIconsMatFilled;
-        "uni-icons-mat-filled-wrap": UniIconsMatFilledWrap;
-        "uni-icons-mat-outlined": UniIconsMatOutlined;
-        "uni-icons-mat-outlined-wrap": UniIconsMatOutlinedWrap;
+        "uni-icons-mat-outline": UniIconsMatOutline;
+        "uni-icons-mat-outline-wrap": UniIconsMatOutlineWrap;
         "uni-icons-mat-round": UniIconsMatRound;
         "uni-icons-mat-round-wrap": UniIconsMatRoundWrap;
         "uni-icons-mat-sharp": UniIconsMatSharp;
@@ -832,10 +776,8 @@ declare module "@stencil/core" {
             "uni-icons-fas": LocalJSX.UniIconsFas & JSXBase.HTMLAttributes<HTMLUniIconsFasElement>;
             "uni-icons-fas-wrap": LocalJSX.UniIconsFasWrap & JSXBase.HTMLAttributes<HTMLUniIconsFasWrapElement>;
             "uni-icons-mat": LocalJSX.UniIconsMat & JSXBase.HTMLAttributes<HTMLUniIconsMatElement>;
-            "uni-icons-mat-filled": LocalJSX.UniIconsMatFilled & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledElement>;
-            "uni-icons-mat-filled-wrap": LocalJSX.UniIconsMatFilledWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatFilledWrapElement>;
-            "uni-icons-mat-outlined": LocalJSX.UniIconsMatOutlined & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlinedElement>;
-            "uni-icons-mat-outlined-wrap": LocalJSX.UniIconsMatOutlinedWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlinedWrapElement>;
+            "uni-icons-mat-outline": LocalJSX.UniIconsMatOutline & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlineElement>;
+            "uni-icons-mat-outline-wrap": LocalJSX.UniIconsMatOutlineWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatOutlineWrapElement>;
             "uni-icons-mat-round": LocalJSX.UniIconsMatRound & JSXBase.HTMLAttributes<HTMLUniIconsMatRoundElement>;
             "uni-icons-mat-round-wrap": LocalJSX.UniIconsMatRoundWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatRoundWrapElement>;
             "uni-icons-mat-sharp": LocalJSX.UniIconsMatSharp & JSXBase.HTMLAttributes<HTMLUniIconsMatSharpElement>;

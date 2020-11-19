@@ -4,10 +4,10 @@ import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
 
 @Component({
-  tag: 'uni-icons-mat-outlined-wrap',
-  styleUrl: '../styles/icons-mat-outlined.css',
+  tag: 'uni-icons-mat-wrap',
+  styleUrl: '../styles/icons-mat-base.css',
 })
-export class UniIconsMatOutlinedWrapComponent implements ComponentInterface {
+export class UniIconsMatBaseWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
@@ -30,14 +30,14 @@ export class UniIconsMatOutlinedWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   render(): VNode {
-    return <slot />;
+    return <slot/>;
   }
 
   componentDidLoad(): void {
     const { el, color, rotate, degree, speed, steps, selector, all } = this;
     const props = {
       el,
-      classes: `material-icons-outlined`,
+      classes: `material-icons`,
       content: this.name,
       color,
       fontSize: this.size,

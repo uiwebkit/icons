@@ -1,1 +1,1 @@
-export type UniIconsMatFont = 'filled' | 'outlined' | 'round' | 'sharp' | 'two-tone';
+export type UniIconsMatFont = 'fill' | 'outline' | 'round' | 'sharp' | 'two-tone';
