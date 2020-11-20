@@ -4,7 +4,7 @@ import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
 
 @Component({
-  tag: 'uni-icons-fas-wrap',
+  tag: 'uni-icons-fa-wrap',
   styleUrl: '../styles/icons-fa-solid.css',
 })
 export class UniIconsFaSolidWrapComponent implements ComponentInterface {

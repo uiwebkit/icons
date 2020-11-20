@@ -4,7 +4,7 @@ import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
 
 @Component({
-  tag: 'uni-icons-mat-round',
+  tag: 'uni-icons-mat-r',
   styleUrl: '../styles/icons-mat-round.css',
 })
 export class UniIconsMatRoundComponent implements ComponentInterface {
