@@ -7,26 +7,31 @@
 
 ## Properties
 
-| Property            | Attribute  | Description | Type                                                        | Default     |
-| ------------------- | ---------- | ----------- | ----------------------------------------------------------- | ----------- |
-| `active`            | `active`   |             | `boolean`                                                   | `false`     |
-| `all`               | `all`      |             | `boolean`                                                   | `false`     |
-| `color`             | `color`    |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `'default'` |
-| `name` _(required)_ | `name`     |             | `string`                                                    | `undefined` |
-| `selector`          | `selector` |             | `string`                                                    | `undefined` |
+| Property            | Attribute  | Description | Type                                           | Default     |
+| ------------------- | ---------- | ----------- | ---------------------------------------------- | ----------- |
+| `all`               | `all`      |             | `boolean`                                      | `false`     |
+| `color`             | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
+| `degree`            | `degree`   |             | `number`                                       | `undefined` |
+| `init`              | `init`     |             | `boolean`                                      | `false`     |
+| `name` _(required)_ | `name`     |             | `string`                                       | `undefined` |
+| `rotate`            | `rotate`   |             | `boolean`                                      | `false`     |
+| `selector`          | `selector` |             | `string`                                       | `undefined` |
+| `size`              | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
+| `speed`             | `speed`    |             | `number`                                       | `undefined` |
+| `steps`             | `steps`    |             | `number`                                       | `undefined` |
 
 
 ## Dependencies
 
 ### Depends on
 
-- [uni-icons-fa-common](../../icons-common/element)
+- [uni-fa-styles-load](../../styles)
 
 ### Graph
 ```mermaid
 graph TD;
-  uni-icons-fa-solid-wrap --> uni-icons-fa-common
-  style uni-icons-fa-solid-wrap fill:#f9f,stroke:#333,stroke-width:4px
+  uni-icons-fa-wrap --> uni-fa-styles-load
+  style uni-icons-fa-wrap fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -18,19 +18,6 @@
 | `steps`  | `steps`   |             | `number`                                       | `undefined` |
 
 
-## Dependencies
-
-### Depends on
-
-- [uni-icons-mat-wrap](../../@wrap)
-
-### Graph
-```mermaid
-graph TD;
-  uni-icons-mat-two-tone --> uni-icons-mat-wrap
-  style uni-icons-mat-two-tone fill:#f9f,stroke:#333,stroke-width:4px
-```
-
 ----------------------------------------------
 
 *Powered by [UiWebKit](https://uiwebkit.com/)*

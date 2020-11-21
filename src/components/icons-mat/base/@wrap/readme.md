@@ -7,13 +7,17 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type                                                        | Default     |
-| ---------- | ---------- | ----------- | ----------------------------------------------------------- | ----------- |
-| `active`   | `active`   |             | `boolean`                                                   | `false`     |
-| `all`      | `all`      |             | `boolean`                                                   | `false`     |
-| `color`    | `color`    |             | `"accent" \| "default" \| "primary" \| "success" \| "warn"` | `'default'` |
-| `name`     | `name`     |             | `string`                                                    | `undefined` |
-| `selector` | `selector` |             | `string`                                                    | `undefined` |
+| Property   | Attribute  | Description | Type                                           | Default     |
+| ---------- | ---------- | ----------- | ---------------------------------------------- | ----------- |
+| `all`      | `all`      |             | `boolean`                                      | `false`     |
+| `color`    | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
+| `degree`   | `degree`   |             | `number`                                       | `undefined` |
+| `name`     | `name`     |             | `string`                                       | `undefined` |
+| `rotate`   | `rotate`   |             | `boolean`                                      | `false`     |
+| `selector` | `selector` |             | `string`                                       | `undefined` |
+| `size`     | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
+| `speed`    | `speed`    |             | `number`                                       | `undefined` |
+| `steps`    | `steps`    |             | `number`                                       | `undefined` |
 
 
 ----------------------------------------------

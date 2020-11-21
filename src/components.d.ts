@@ -9,9 +9,15 @@ import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
     interface UniFaStylesLoad {
     }
+    interface UniFabGithub {
+    }
+    interface UniFabNpm {
+    }
     interface UniFarCopy {
     }
     interface UniFasAngleDown {
+    }
+    interface UniFasChartLine {
     }
     interface UniFasDownload {
     }
@@ -237,6 +243,18 @@ declare global {
         prototype: HTMLUniFaStylesLoadElement;
         new (): HTMLUniFaStylesLoadElement;
     };
+    interface HTMLUniFabGithubElement extends Components.UniFabGithub, HTMLStencilElement {
+    }
+    var HTMLUniFabGithubElement: {
+        prototype: HTMLUniFabGithubElement;
+        new (): HTMLUniFabGithubElement;
+    };
+    interface HTMLUniFabNpmElement extends Components.UniFabNpm, HTMLStencilElement {
+    }
+    var HTMLUniFabNpmElement: {
+        prototype: HTMLUniFabNpmElement;
+        new (): HTMLUniFabNpmElement;
+    };
     interface HTMLUniFarCopyElement extends Components.UniFarCopy, HTMLStencilElement {
     }
     var HTMLUniFarCopyElement: {
@@ -248,6 +266,12 @@ declare global {
     var HTMLUniFasAngleDownElement: {
         prototype: HTMLUniFasAngleDownElement;
         new (): HTMLUniFasAngleDownElement;
+    };
+    interface HTMLUniFasChartLineElement extends Components.UniFasChartLine, HTMLStencilElement {
+    }
+    var HTMLUniFasChartLineElement: {
+        prototype: HTMLUniFasChartLineElement;
+        new (): HTMLUniFasChartLineElement;
     };
     interface HTMLUniFasDownloadElement extends Components.UniFasDownload, HTMLStencilElement {
     }
@@ -407,8 +431,11 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "uni-fa-styles-load": HTMLUniFaStylesLoadElement;
+        "uni-fab-github": HTMLUniFabGithubElement;
+        "uni-fab-npm": HTMLUniFabNpmElement;
         "uni-far-copy": HTMLUniFarCopyElement;
         "uni-fas-angle-down": HTMLUniFasAngleDownElement;
+        "uni-fas-chart-line": HTMLUniFasChartLineElement;
         "uni-fas-download": HTMLUniFasDownloadElement;
         "uni-fas-file-download": HTMLUniFasFileDownloadElement;
         "uni-icon-fa": HTMLUniIconFaElement;
@@ -440,9 +467,15 @@ declare global {
 declare namespace LocalJSX {
     interface UniFaStylesLoad {
     }
+    interface UniFabGithub {
+    }
+    interface UniFabNpm {
+    }
     interface UniFarCopy {
     }
     interface UniFasAngleDown {
+    }
+    interface UniFasChartLine {
     }
     interface UniFasDownload {
     }
@@ -662,8 +695,11 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "uni-fa-styles-load": UniFaStylesLoad;
+        "uni-fab-github": UniFabGithub;
+        "uni-fab-npm": UniFabNpm;
         "uni-far-copy": UniFarCopy;
         "uni-fas-angle-down": UniFasAngleDown;
+        "uni-fas-chart-line": UniFasChartLine;
         "uni-fas-download": UniFasDownload;
         "uni-fas-file-download": UniFasFileDownload;
         "uni-icon-fa": UniIconFa;
@@ -697,8 +733,11 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "uni-fa-styles-load": LocalJSX.UniFaStylesLoad & JSXBase.HTMLAttributes<HTMLUniFaStylesLoadElement>;
+            "uni-fab-github": LocalJSX.UniFabGithub & JSXBase.HTMLAttributes<HTMLUniFabGithubElement>;
+            "uni-fab-npm": LocalJSX.UniFabNpm & JSXBase.HTMLAttributes<HTMLUniFabNpmElement>;
             "uni-far-copy": LocalJSX.UniFarCopy & JSXBase.HTMLAttributes<HTMLUniFarCopyElement>;
             "uni-fas-angle-down": LocalJSX.UniFasAngleDown & JSXBase.HTMLAttributes<HTMLUniFasAngleDownElement>;
+            "uni-fas-chart-line": LocalJSX.UniFasChartLine & JSXBase.HTMLAttributes<HTMLUniFasChartLineElement>;
             "uni-fas-download": LocalJSX.UniFasDownload & JSXBase.HTMLAttributes<HTMLUniFasDownloadElement>;
             "uni-fas-file-download": LocalJSX.UniFasFileDownload & JSXBase.HTMLAttributes<HTMLUniFasFileDownloadElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
