@@ -9,7 +9,7 @@ export function uniMatTypeShort(type: UniIconsMatFont): string {
     case 'round':
       return 'r';
     case 'two-tone':
-      return 't';
+      return 'tt';
     case 'sharp':
       return 's';
     default:

@@ -3,7 +3,10 @@ import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { uniIconsFaFontClass, uniSmartWrap } from '../../../utils';
 
-@Component({ tag: 'uni-icon-fa' })
+@Component({
+  tag: 'uni-icon-fa',
+  styles: 'uni-icon-fa {line-height: 1}'
+})
 export class UniIconMatComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;

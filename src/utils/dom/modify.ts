@@ -14,10 +14,10 @@ export function uniModify(context, data: any, cbFunction, observer?): void {
           targets.forEach((target: Element): void => {
             cbFunction(target, data);
           });
+
+          observer?.disconnect();
         }
       }
-
-      observer?.disconnect();
     } else {
       const firstChild = context.el.firstElementChild;
 

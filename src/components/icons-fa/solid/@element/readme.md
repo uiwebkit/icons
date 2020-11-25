@@ -28,8 +28,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  uni-icons-fa --> uni-fa-styles-load
-  style uni-icons-fa fill:#f9f,stroke:#333,stroke-width:4px
+  uni-icons-fa-s --> uni-fa-styles-load
+  style uni-icons-fa-s fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

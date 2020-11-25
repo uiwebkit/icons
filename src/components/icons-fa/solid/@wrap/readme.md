@@ -30,8 +30,8 @@
 ### Graph
 ```mermaid
 graph TD;
-  uni-icons-fa-wrap --> uni-fa-styles-load
-  style uni-icons-fa-wrap fill:#f9f,stroke:#333,stroke-width:4px
+  uni-icons-fa-s-wrap --> uni-fa-styles-load
+  style uni-icons-fa-s-wrap fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

@@ -4,8 +4,8 @@ import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
 
 @Component({
-  tag: 'uni-icons-mat',
-  styleUrl: '../styles/icons-mat-base.css',
+  tag: 'uni-icons-mat-f',
+  styleUrl: '../styles/icons-mat-fill.css',
 })
 export class UniIconsMatBaseComponent implements ComponentInterface {
 

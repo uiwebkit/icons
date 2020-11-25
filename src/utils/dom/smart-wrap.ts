@@ -24,19 +24,19 @@ export function uniSmartWrap(props) {
     ...(props.classes ? props.classes.split(' ') : []),
   ];
 
-  if (props.color) {
+  if (!!color) {
     uniAppendStyle(UniColorCSS);
   }
 
-  if (props.filter) {
+  if (filter) {
     uniAppendStyle(UniFilterCSS);
   }
 
-  if (props.size) {
+  if (size) {
     uniAppendStyle(UniSizeCSS);
   }
 
-  if (props.fontSize) {
+  if (fontSize) {
     uniAppendStyle(UniFontSizeCSS);
   }
 

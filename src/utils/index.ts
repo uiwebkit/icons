@@ -15,9 +15,5 @@ export * from './styles/rotate';
 export * from './styles/size';
 
 export * from './switch/fa-type-class';
+export * from './switch/fa-type-short';
 export * from './switch/mat-type-short';
-// export * from './switch/smart-wrap';
-
-export * from './templates/rotate.template';
-export * from './templates/theme.template';
-export * from './templates/theme-rotate.template';
