@@ -11,7 +11,7 @@ export class UniIconMatComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) type: UniIconsMatFont = 'fill';
+  @Prop({ reflect: true }) type: UniIconsMatFont = 'filled';
 
   @Prop({ reflect: true }) name!: string;
 

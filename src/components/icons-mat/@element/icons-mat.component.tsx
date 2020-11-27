@@ -6,7 +6,7 @@ import { uniMatTypeShort } from '../../../utils';
 @Component({ tag: 'uni-icons-mat' })
 export class UniIconsMatComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) type: UniIconsMatFont = 'fill';
+  @Prop({ reflect: true }) type: UniIconsMatFont = 'filled';
 
   @Prop({ reflect: true }) name: string;
 
