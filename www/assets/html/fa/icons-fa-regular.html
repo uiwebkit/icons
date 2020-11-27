@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Uni Icons</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/variables.css" />
+
+  <script type="module" src="/build/icn.esm.js"></script>
+  <script nomodule src="/build/icn.js"></script>
+</head>
+<body>
+<a href="/">Home</a>
+
+<h4>Custom Element:</h4>
+<uni-icons-fa-r init name="check-circle"></uni-icons-fa-r>
+
+<h4>Wrapper + first child:</h4>
+<uni-icons-fa-r-wrap name="check-circle">
+  <i></i>
+</uni-icons-fa-r-wrap>
+
+<h4>Wrapper + selector (all):</h4>
+<uni-icons-fa-r-wrap name="check-circle" selector=".test" all>
+  <span>Text</span>
+
+  <span class="test"></span>
+
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-r-wrap>
+</body>
+</html>

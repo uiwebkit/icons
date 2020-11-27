@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <base href="/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>Uni Icons</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/variables.css" />
+
+  <script type="module" src="/build/icn.esm.js"></script>
+  <script nomodule src="/build/icn.js"></script>
+</head>
+<body>
+<a href="/">Home</a>
+
+<h4>Custom Element:</h4>
+<uni-icons-mat-s>person_pin</uni-icons-mat-s>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-mat-s name="person_pin"></uni-icons-mat-s>
+
+<h4>Wrapper + first child:</h4>
+<uni-icons-mat-s-wrap>
+  <i>person_pin</i>
+</uni-icons-mat-s-wrap>
+
+<h4>Wrapper + prop 'name' + first child:</h4>
+<uni-icons-mat-s-wrap name="person_pin">
+  <i></i>
+</uni-icons-mat-s-wrap>
+
+<h4>Wrapper + selector (all):</h4>
+<uni-icons-mat-s-wrap all>
+  <span>stop_circle</span>
+  <i>person_pin</i>
+</uni-icons-mat-s-wrap>
+
+<h4>Wrapper + prop 'name' + selector (all):</h4>
+<uni-icons-mat-s-wrap name="person_pin" selector=".test" all>
+  <span>Text</span>
+
+  <span class="test"></span>
+
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-mat-s-wrap>
+</body>
+</html>
