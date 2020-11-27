@@ -13,22 +13,17 @@
 </head>
 <body>
 <a href="/">Home</a>
-<!--Fix: Load fonts from shadow root does not work-->
-<uni-icons-fa-solid></uni-icons-fa-solid>
 
 <h4>Custom Element:</h4>
-<uni-icons-fa-solid name="check-circle"></uni-icons-fa-solid>
+<uni-icons-fa-s init name="check-circle"></uni-icons-fa-s>
 
-<h4>Web Component:</h4>
-<uni-icons-fa-solid-shadow name="check-circle"></uni-icons-fa-solid-shadow>
-
-<h4>Custom Element Wrapper + first child:</h4>
-<uni-icons-fa-wrap active font="solid" name="check-circle">
+<h4>Wrapper + first child:</h4>
+<uni-icons-fa-s-wrap name="check-circle">
   <i></i>
-</uni-icons-fa-wrap>
+</uni-icons-fa-s-wrap>
 
-<h4>Custom Element Wrapper + selector (all):</h4>
-<uni-icons-fa-wrap active font="solid" name="check-circle" selector=".test" all>
+<h4>Wrapper + selector (all):</h4>
+<uni-icons-fa-s-wrap name="check-circle" selector=".test" all>
   <span>Text</span>
 
   <span class="test"></span>
@@ -36,6 +31,6 @@
   <span>
     <i class="test"></i>
   </span>
-</uni-icons-fa-wrap>
+</uni-icons-fa-s-wrap>
 </body>
 </html>

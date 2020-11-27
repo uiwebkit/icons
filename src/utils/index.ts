@@ -4,8 +4,12 @@ export * from './dom/appent-style';
 export * from './dom/get-degree';
 export * from './dom/get-rotation';
 export * from './dom/get-theme';
+export * from './dom/is-target-element';
 export * from './dom/modify';
 export * from './dom/modify-async';
+export * from './dom/modify-class';
+export * from './dom/modify-content';
+export * from './dom/modify-style';
 export * from './dom/smart-wrap';
 
 export * from './styles/color';

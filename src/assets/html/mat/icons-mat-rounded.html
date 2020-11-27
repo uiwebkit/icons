@@ -15,15 +15,29 @@
 <a href="/">Home</a>
 
 <h4>Custom Element:</h4>
-<uni-icons-fa-r init name="check-circle"></uni-icons-fa-r>
+<uni-icons-mat-r>person_pin</uni-icons-mat-r>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-mat-r name="person_pin"></uni-icons-mat-r>
 
 <h4>Wrapper + first child:</h4>
-<uni-icons-fa-r-wrap name="check-circle">
+<uni-icons-mat-r-wrap>
+  <i>person_pin</i>
+</uni-icons-mat-r-wrap>
+
+<h4>Wrapper + prop 'name' + first child:</h4>
+<uni-icons-mat-r-wrap name="person_pin">
   <i></i>
-</uni-icons-fa-r-wrap>
+</uni-icons-mat-r-wrap>
 
 <h4>Wrapper + selector (all):</h4>
-<uni-icons-fa-r-wrap name="check-circle" selector=".test" all>
+<uni-icons-mat-r-wrap all>
+  <span>stop_circle</span>
+  <i>person_pin</i>
+</uni-icons-mat-r-wrap>
+
+<h4>Wrapper + prop 'name' + selector (all):</h4>
+<uni-icons-mat-r-wrap name="person_pin" selector=".test" all>
   <span>Text</span>
 
   <span class="test"></span>
@@ -31,6 +45,6 @@
   <span>
     <i class="test"></i>
   </span>
-</uni-icons-fa-r-wrap>
+</uni-icons-mat-r-wrap>
 </body>
 </html>

@@ -13,44 +13,31 @@
 </head>
 <body>
 <a href="/">Home</a>
-<!--Fix: Load fonts from shadow root does not work-->
-<uni-icons-mat-outlined></uni-icons-mat-outlined>
 
 <h4>Custom Element:</h4>
-<uni-icons-mat-outlined>person_pin</uni-icons-mat-outlined>
+<uni-icons-mat-o>person_pin</uni-icons-mat-o>
 
 <h4>Custom Element + prop 'name':</h4>
-<uni-icons-mat-outlined name="person_pin"></uni-icons-mat-outlined>
+<uni-icons-mat-o name="person_pin"></uni-icons-mat-o>
 
-<h4>Web Component:</h4>
-<uni-icons-mat-outlined-shadow>person_pin</uni-icons-mat-outlined-shadow>
-
-<h4>Web Component + prop 'name':</h4>
-<uni-icons-mat-outlined-shadow name="person_pin"></uni-icons-mat-outlined-shadow>
-
-<h4>Custom Element Wrapper + first child:</h4>
-<uni-icons-mat-wrap active font="outlined">
+<h4>Wrapper + first child:</h4>
+<uni-icons-mat-o-wrap>
   <i>person_pin</i>
-</uni-icons-mat-wrap>
+</uni-icons-mat-o-wrap>
 
-<h4>Custom Element Wrapper + prop 'name' + first child:</h4>
-<uni-icons-mat-wrap active font="outlined" name="person_pin">
+<h4>Wrapper + prop 'name' + first child:</h4>
+<uni-icons-mat-o-wrap name="person_pin">
   <i></i>
-</uni-icons-mat-wrap>
+</uni-icons-mat-o-wrap>
 
-<h4>Custom Element Wrapper + selector (all):</h4>
-<uni-icons-mat-wrap active font="outlined" selector=".test" all>
-  <span>Text</span>
+<h4>Wrapper + selector (all):</h4>
+<uni-icons-mat-o-wrap all>
+  <span>stop_circle</span>
+  <i>person_pin</i>
+</uni-icons-mat-o-wrap>
 
-  <span class="test">stop_circle</span>
-
-  <span>
-    <i class="test">person_pin</i>
-  </span>
-</uni-icons-mat-wrap>
-
-<h4>Custom Element Wrapper + prop 'name' + selector (all):</h4>
-<uni-icons-mat-wrap active font="outlined" name="person_pin" selector=".test" all>
+<h4>Wrapper + prop 'name' + selector (all):</h4>
+<uni-icons-mat-o-wrap name="person_pin" selector=".test" all>
   <span>Text</span>
 
   <span class="test"></span>
@@ -58,6 +45,6 @@
   <span>
     <i class="test"></i>
   </span>
-</uni-icons-mat-wrap>
+</uni-icons-mat-o-wrap>
 </body>
 </html>

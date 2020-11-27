@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html lang="en">
 <head>
   <base href="/">
   <meta charset="utf-8" />
@@ -14,23 +14,14 @@
 <body>
 <a href="/">Home</a>
 
-<h4>Custom Element:</h4>
-<uni-icons-fa-r init name="check-circle"></uni-icons-fa-r>
+<p>Default:</p>
+<uni-tilt-wrap selector="svg">
+  <uni-icon-mat type="two-tone" name="rotate-degrees"></uni-icon-mat>
+</uni-tilt-wrap>
 
-<h4>Wrapper + first child:</h4>
-<uni-icons-fa-r-wrap name="check-circle">
-  <i></i>
-</uni-icons-fa-r-wrap>
-
-<h4>Wrapper + selector (all):</h4>
-<uni-icons-fa-r-wrap name="check-circle" selector=".test" all>
-  <span>Text</span>
-
-  <span class="test"></span>
-
-  <span>
-    <i class="test"></i>
-  </span>
-</uni-icons-fa-r-wrap>
+<p>Degree 135:</p>
+<uni-tilt-wrap degree="315" selector="svg">
+  <uni-icon-mat type="two-tone" name="rotate-degrees"></uni-icon-mat>
+</uni-tilt-wrap>
 </body>
 </html>

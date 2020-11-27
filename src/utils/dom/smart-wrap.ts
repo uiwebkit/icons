@@ -1,6 +1,5 @@
 import { uniGetTheme } from './get-theme';
 import { uniGetRotation } from './get-rotation';
-import { uniModifyClass, uniModifyContent, uniModifyStyle } from './modify';
 import {
   uniAppendStyle,
   UniColorCSS,
@@ -8,16 +7,18 @@ import {
   UniFontSizeCSS,
   uniGetDegree,
   uniModifyAsync,
+  uniModifyClass,
+  uniModifyContent,
+  uniModifyStyle,
   UniRotateCSS,
   UniSizeCSS,
 } from '..';
 
 export function uniSmartWrap(props) {
-  const { el, selector, all } = props;
-  const { color, filter, size, fontSize } = props;
+  const { el, color, filter, size, fontSize, selector, all } = props;
   let { classes, styles } = color || filter || size || fontSize
     ? uniGetTheme({ color, filter, size, fontSize })
-    : { classes: [], styles: {}};
+    : { classes: [], styles: {} };
 
   classes = [
     ...classes,

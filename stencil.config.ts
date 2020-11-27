@@ -43,7 +43,7 @@ export const config: Config = {
      * Include the CSS Custom Property polyfill/shim for legacy browsers. ESM builds will
      * not include the css vars shim. Defaults to `false`
      */
-    cssVarsShim: false,
+    cssVarsShim: true,
     /**
      * Dynamic `import()` shim. This is only needed for Edge 18 and below, and Firefox 67
      * and below. Defaults to `false`.
@@ -55,7 +55,7 @@ export const config: Config = {
      * due to its lack of `nomodule` support.
      * Defaults to `false`.
      */
-    safari10: false,
+    safari10: true,
     /**
      * It is possible to assign data to the actual `<script>` element's `data-opts` property,
      * which then gets passed to Stencil's initial bootstrap. This feature is only required
@@ -75,7 +75,7 @@ export const config: Config = {
      * settings their initial state, leading to double renders and unnecesary event dispatchs.
      * Defaults to `false`.
      */
-    initializeNextTick: false,
+    initializeNextTick: true,
     /**
      * For browsers that do not support shadow dom (IE11 and Edge 18 and below), slot is polyfilled
      * to simulate the same behavior. However, the host element's `childNodes` and `children`
@@ -87,7 +87,7 @@ export const config: Config = {
      * Enables the tagNameTransform option of `defineCustomElements()`, so the component tagName
      * can be customized at runtime. Defaults to `false`.
      */
-    tagNameTransform: true
+    tagNameTransform: true,
   },
   hydratedFlag: {
     /**
@@ -118,19 +118,19 @@ export const config: Config = {
   },
   devServer: {
     openBrowser: false,
-    // experimentalDevModules: true,
     reloadStrategy: 'pageReload',
     port: 1111,
-    // logRequests: true
+    // logRequests: true,
+    // experimentalDevModules: true,
   },
   outputTargets: [
     {
       type: 'dist',
       copy: [
-        { src: 'assets/fonts', dest: '../assets/fonts', warn: true }
+        { src: 'assets/fonts', dest: '../assets/fonts', warn: true },
       ],
       esmLoaderPath: '../loader',
-      // polyfills: true,
+      polyfills: true,
       empty: true,
     },
     {
@@ -146,7 +146,7 @@ export const config: Config = {
     {
       type: 'www',
       copy: [
-        { src: 'assets/fonts', dest: 'assets/fonts', warn: true }
+        { src: 'assets/fonts', dest: 'assets/fonts', warn: true },
       ],
       serviceWorker: null, // disable service workers
     },
