@@ -1,0 +1,1 @@
+import{r,h as t}from"./p-ba77ed68.js";const o=class{constructor(t){r(this,t)}render(){return t("svg",{xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 24 24",width:"24",height:"24"},t("path",{d:"M0 0h24v24H0z",fill:"none"}),t("path",{d:"M7 14l5-5 5 5z"}))}};export{o as uni_mat_f_arrow_drop_up}
