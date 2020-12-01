@@ -117,18 +117,16 @@ export const config: Config = {
     hydratedValue: `inherit`,
   },
   devServer: {
+    port: 1111,
     openBrowser: false,
     reloadStrategy: 'pageReload',
-    port: 1111,
-    // logRequests: true,
     // experimentalDevModules: true,
+    // logRequests: true,
   },
   outputTargets: [
     {
       type: 'dist',
-      copy: [
-        { src: 'assets/fonts', dest: '../assets/fonts', warn: true },
-      ],
+      copy: [{ src: 'assets/fonts', dest: '../assets/fonts', warn: true }],
       esmLoaderPath: '../loader',
       polyfills: true,
       empty: true,
@@ -145,9 +143,7 @@ export const config: Config = {
     },
     {
       type: 'www',
-      copy: [
-        { src: 'assets/fonts', dest: 'assets/fonts', warn: true },
-      ],
+      copy: [{ src: 'assets/fonts', dest: 'assets/fonts', warn: true }],
       serviceWorker: null, // disable service workers
     },
   ],

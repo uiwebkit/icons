@@ -2,14 +2,14 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.3/dist/icn/assets/fonts/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/icn/assets/fonts/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/icn/assets/fonts/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff) format('woff');
 }
 
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
   font-size: var(--uni-size, 24px);
   line-height: 1;
   letter-spacing: normal;
