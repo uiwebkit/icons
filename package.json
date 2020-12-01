@@ -28,7 +28,7 @@
     "pack": "npm pack",
     "publish": "npm publish --public"
   },
-  "devDependencies": {
+  "dependencies": {
     "@stencil/core": "2.3.0"
   },
   "repository": {
