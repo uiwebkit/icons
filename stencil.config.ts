@@ -118,7 +118,7 @@ export const config: Config = {
   },
   devServer: {
     port: 1111,
-    openBrowser: false,
+    openBrowser: true,
     reloadStrategy: 'pageReload',
     // experimentalDevModules: true,
     // logRequests: true,

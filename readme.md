@@ -4,7 +4,7 @@
 
 Uni Icons Kit is a set of Web Components (Custom Elements) to use Material Design Icons and FA Icons in declarative style.
 
-Uni Icons Kit components have two modes of Custom Elements:
+Uni Icons Kit components have two modes:
 1. Custom Element with Uni template - `100%` convenience;
 2. Custom Element Wrapper for you own html template - `100%` customization;
 
@@ -42,23 +42,18 @@ Check out our docs [here](https://uiwebkit.com/?category=icn).
 When creating new component tags, use `uni` in the component name (ex: `<uni-flag>`) or use a prefix that fits your company or any name for a group of related components. For example, all of the UiWebKit generated web components use the prefix `uni`.
 
 
-## Using this component
+## Using components
 
-There are three strategies we recommend for using web components built with Stencil.
-
-The first step for all three of these strategies is to [publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages).
+There are two strategies we recommend for using Uni Icons Kit Web Components:
 
 ### Script tag
 
-- Put a script tag similar to this `<script src='https://unpkg.com/my-component@0.0.1/dist/mycomponent.js'></script>` in the head of your index.html
+- Put a script tag `<script type="module" src='https://cdn.jsdelivr.net/npm/@uiwebkit/icn'></script>` in the head of your index.html
+- To support old browsers, also put a script tag `<script nomodule src='https://cdn.jsdelivr.net/npm/@uiwebkit/icn/dist/icn/icn.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
-- Run `npm install my-component --save`
-- Put a script tag similar to this `<script src='node_modules/my-component/dist/mycomponent.js'></script>` in the head of your index.html
-- Then you can use the element anywhere in your template, JSX, html etc
-
-### In a stencil-starter app
-- Run `npm install my-component --save`
-- Add an import to the npm packages `import my-component;`
+- Run `npm i @uiwebkit/icn --save`
+- Put a script tag similar to this `<script type="module" src='node_modules/@uiwebkit/icn/dist/icn/icn.esm.js'></script>` in the head of your index.html
+- To support old browsers, also put a script tag `<script nomodule src='node_modules/@uiwebkit/icn/dist/icn/icn.js'></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
