@@ -2,55 +2,44 @@
 
 # Uni Icons Kit
 
-This is a starter project for building a standalone Web Component using Stencil.
+Uni Icons Kit is a set of Web Components (Custom Elements) to use Material Design Icons and FA Icons in declarative style.
 
-Stencil is also great for building entire apps. For that, use the [stencil-app-starter](https://github.com/ionic-team/stencil-app-starter) instead.
+Uni Icons Kit components have two modes of Custom Elements:
+1. Custom Element with Uni template - `100%` convenience;
+2. Custom Element Wrapper for you own html template - `100%` customization;
 
-# Stencil
+Uni Icons Kit takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components (Custom Elements) that run in any browser supporting the Custom Elements v1 spec.
 
-Stencil is a compiler for building fast web apps using Web Components.
-
-Stencil combines the best concepts of the most popular frontend frameworks into a compile-time rather than run-time tool.  Stencil takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components that run in any browser supporting the Custom Elements v1 spec.
-
-Stencil components are just Web Components, so they work in any major framework or with no framework at all.
+Uni Icons Kit components are just Web Components (Custom Elements), so they work in any major framework or with no framework at all.
 
 ## Getting Started
 
 To start building a new web component using Stencil, clone this repo to a new directory:
 
 ```bash
-git clone https://github.com/uiwebkit/icn.git my-component
-cd my-component
-git remote rm origin
+git clone https://github.com/uiwebkit/icn.git uni-icons
+cd uni-icons
 ```
 
 and run:
 
 ```bash
-npm install
-npm serve:dev
+npm i
+npm run serve:dev
 ```
 
 To build the component for production, run:
 
 ```bash
-npm run build
+npm run build:prod
 ```
 
-To run the unit tests for the components, run:
-
-```bash
-npm test
-```
-
-Need help? Check out our docs [here](https://stenciljs.com/docs/my-first-component).
+Check out our docs [here](https://uiwebkit.com/?category=icn).
 
 
 ## Naming Components
 
-When creating new component tags, we recommend _not_ using `stencil` in the component name (ex: `<stencil-datepicker>`). This is because the generated component has little to nothing to do with Stencil; it's just a web component!
-
-Instead, use a prefix that fits your company or any name for a group of related components. For example, all of the Ionic generated web components use the prefix `ion`.
+When creating new component tags, use `uni` in the component name (ex: `<uni-flag>`) or use a prefix that fits your company or any name for a group of related components. For example, all of the UiWebKit generated web components use the prefix `uni`.
 
 
 ## Using this component
