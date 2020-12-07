@@ -42,18 +42,18 @@ Check out our docs [here](https://uiwebkit.com/?category=icn).
 When creating new component tags, use `uni` in the component name (ex: `<uni-flag>`) or use a prefix that fits your company or any name for a group of related components. For example, all of the UiWebKit generated web components use the prefix `uni`.
 
 
-## Using components
+## Using Components
 
-There are two strategies we recommend for using Uni Icons Kit Web Components:
+There are two strategies we recommend for using Uni Icons Kit:
 
 ### Script tag
 
-- Put a script tag `<script type="module" src='https://cdn.jsdelivr.net/npm/@uiwebkit/icn'></script>` in the head of your index.html
-- To support old browsers, also put a script tag `<script nomodule src='https://cdn.jsdelivr.net/npm/@uiwebkit/icn/dist/icn/icn.js'></script>` in the head of your index.html
+- Put a script tag `<script type="module" src="https://cdn.jsdelivr.net/npm/@uiwebkit/icn"></script>` in the head of your index.html
+- To support old browsers, also put a script tag `<script nomodule src="https://cdn.jsdelivr.net/npm/@uiwebkit/icn/dist/icn/icn.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
 - Run `npm i @uiwebkit/icn --save`
-- Put a script tag similar to this `<script type="module" src='node_modules/@uiwebkit/icn/dist/icn/icn.esm.js'></script>` in the head of your index.html
-- To support old browsers, also put a script tag `<script nomodule src='node_modules/@uiwebkit/icn/dist/icn/icn.js'></script>` in the head of your index.html
+- Put a script tag similar to this `<script type="module" src="node_modules/@uiwebkit/icn/dist/icn/icn.esm.js"></script>` in the head of your index.html
+- To support old browsers, also put a script tag `<script nomodule src="node_modules/@uiwebkit/icn/dist/icn/icn.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc

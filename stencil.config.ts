@@ -1,5 +1,7 @@
 import { Config } from '@stencil/core';
 
+import { inlineSvg } from 'stencil-inline-svg';
+
 export const config: Config = {
   /**
    * The namespace config is a string representing a namespace for the app.
@@ -123,10 +125,14 @@ export const config: Config = {
     // experimentalDevModules: true,
     // logRequests: true,
   },
+  plugins: [ inlineSvg() ],
   outputTargets: [
     {
       type: 'dist',
-      copy: [{ src: 'assets/fonts', dest: '../assets/fonts', warn: true }],
+      copy: [
+        { src: 'assets/fonts', dest: '../assets/fonts', warn: true },
+        { src: 'assets/svg', dest: 'assets/svg', warn: true },
+      ],
       esmLoaderPath: '../loader',
       polyfills: true,
       empty: true,
@@ -143,7 +149,10 @@ export const config: Config = {
     },
     {
       type: 'www',
-      copy: [{ src: 'assets/fonts', dest: 'assets/fonts', warn: true }],
+      copy: [
+        { src: 'assets/fonts', dest: 'assets/fonts', warn: true },
+        { src: 'assets/svg', dest: 'assets/svg', warn: true },
+      ],
       serviceWorker: null, // disable service workers
     },
   ],
