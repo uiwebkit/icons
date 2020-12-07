@@ -1,1 +1,0 @@
-System.register([],(function(e){"use strict";return{execute:function(){e("u",t);function t(e){switch(e){case"filled":return"f";case"outlined":return"o";case"rounded":return"r";case"two-tone":return"tt";case"sharp":return"s";default:return"f"}}}}}));
