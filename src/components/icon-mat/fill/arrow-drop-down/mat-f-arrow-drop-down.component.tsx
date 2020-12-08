@@ -1,13 +1,13 @@
-import { Component, ComponentInterface, h, VNode } from '@stencil/core';
+import { Component, ComponentInterface, Element } from '@stencil/core';
+
+import svg from '../../../../assets/svg/mat/arrow-drop-down/filled.svg';
 
 @Component({ tag: 'uni-mat-f-arrow-drop-down' })
 export class UniMatFArrowDropDownComponent implements ComponentInterface {
 
-  render(): VNode {
-    return (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-        <path d="M7 10l5 5 5-5z" />
-      </svg>
-    );
+  @Element() el!: HTMLElement;
+
+  componentWillLoad(): Promise<void> | void {
+    this.el.innerHTML = svg;
   }
 }

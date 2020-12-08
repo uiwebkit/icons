@@ -130,7 +130,7 @@ export const config: Config = {
     {
       type: 'dist',
       copy: [
-        { src: 'assets/fonts', dest: '../assets/fonts', warn: true },
+        { src: 'assets/font', dest: '../assets/font', warn: true },
         { src: 'assets/svg', dest: 'assets/svg', warn: true },
       ],
       esmLoaderPath: '../loader',
@@ -150,7 +150,7 @@ export const config: Config = {
     {
       type: 'www',
       copy: [
-        { src: 'assets/fonts', dest: 'assets/fonts', warn: true },
+        { src: 'assets/font', dest: 'assets/font', warn: true },
         { src: 'assets/svg', dest: 'assets/svg', warn: true },
       ],
       serviceWorker: null, // disable service workers

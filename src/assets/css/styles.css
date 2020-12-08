@@ -1,0 +1,27 @@
+.app-api-table {
+  background: #fff;
+  border-collapse: collapse;
+  border-radius: 2px;
+  border-spacing: 0;
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+}
+
+.app-api-table th {
+  background: #f9f9f9;
+  font-weight: 400;
+  max-width: 100px;
+  padding: 13px 16px;
+  text-align: left;
+}
+
+.app-api-table td {
+  border: 1px solid rgba(0,0,0,.1);
+  font-weight: 400;
+  padding: 8px 16px;
+}
+
+.app-api-table th:not(:first-child),
+.app-api-table td:not(:first-child) {
+  text-align: center;
+}

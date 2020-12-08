@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
 import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
-import { uniMatTypeShort, uniSmartWrap } from '../../../utils';
+import { isEmpty, uniMatTypeShort, uniSmartWrap } from '../../../utils';
 
 @Component({
   tag: 'uni-icon-mat',
@@ -30,7 +30,7 @@ export class UniIconMatComponent implements ComponentInterface {
   render(): VNode {
     const UniIconTag = `uni-mat-${uniMatTypeShort(this.type)}-${this.name}`;
 
-    return <UniIconTag />;
+    return !isEmpty(this.name) ? <UniIconTag /> : null;
   }
 
   componentDidLoad(): void {
