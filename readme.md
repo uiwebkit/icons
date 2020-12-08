@@ -48,8 +48,8 @@ There are two strategies we recommend for using Uni Icons Kit:
 
 ### Script tag
 
-- Put a script tag `<script type="module" src="https://cdn.jsdelivr.net/npm/@uiwebkit/icn"></script>` in the head of your index.html
-- To support old browsers, also put a script tag `<script nomodule src="https://cdn.jsdelivr.net/npm/@uiwebkit/icn/dist/icn/icn.js"></script>` in the head of your index.html
+- Put a script tag `<script type="module" src="https://cdn.jsdelivr.net/npm/@uiwebkit/icn@latest/dist/icn/icn.esm.js"></script>` in the head of your index.html
+- To support old browsers, also put a script tag `<script nomodule src="https://cdn.jsdelivr.net/npm/@uiwebkit/icn@latest/dist/icn/icn.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
