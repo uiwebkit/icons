@@ -1,10 +1,12 @@
-import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { uniFaTypeShort } from '../../../utils';
 
 @Component({ tag: 'uni-icons-fa' })
 export class UniIconsFaComponent implements ComponentInterface {
+
+  @Element() el!: HTMLElement;
 
   @Prop({ reflect: true }) init: boolean = false;
 
@@ -23,6 +25,11 @@ export class UniIconsFaComponent implements ComponentInterface {
   @Prop({ reflect: true }) speed: number;
 
   @Prop({ reflect: true }) steps: number;
+
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || this.el.textContent;
+    this.el.innerHTML = '';
+  }
 
   render(): VNode {
     const { init, name, color, size, rotate, degree, speed, steps } = this;

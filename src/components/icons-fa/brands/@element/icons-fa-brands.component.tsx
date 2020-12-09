@@ -27,6 +27,11 @@ export class UniIconsFaBrandsComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || this.el.textContent;
+    this.el.innerHTML = '';
+  }
+
   render(): VNode {
     return (
       <Host class={`fab fa-${this.name}`}>

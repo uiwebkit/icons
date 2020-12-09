@@ -1,1 +1,0 @@
-import{r as t,g as s}from"./p-46c6540d.js";const o=class{constructor(s){t(this,s)}componentWillLoad(){this.el.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M7 10l5 5 5-5z" /></svg>\n'}get el(){return s(this)}};export{o as uni_mat_f_arrow_drop_down}

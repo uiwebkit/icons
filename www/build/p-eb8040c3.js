@@ -1,1 +1,0 @@
-function r(r){switch(r){case"solid":return"s";case"regular":return"r";case"brands":return"b";default:return"s"}}export{r as u}

@@ -13,7 +13,7 @@ export class UniIconMatComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) type: UniIconsMatFont = 'filled';
 
-  @Prop({ reflect: true }) name!: string;
+  @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
 
@@ -26,6 +26,11 @@ export class UniIconMatComponent implements ComponentInterface {
   @Prop({ reflect: true }) speed: number;
 
   @Prop({ reflect: true }) steps: number;
+
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || this.el.textContent;
+    this.el.innerHTML = '';
+  }
 
   render(): VNode {
     const UniIconTag = `uni-mat-${uniMatTypeShort(this.type)}-${this.name}`;

@@ -1,17 +1,15 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
-import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
-import { isEmpty, uniIconsFaFontClass, uniSmartWrap } from '../../../utils';
+import { UniColor, UniSize } from '../../../models';
+import { isEmpty, uniSmartWrap } from '../../../utils';
 
 @Component({
-  tag: 'uni-icon-fa',
-  styles: 'uni-icon-fa {line-height: 1}'
+  tag: 'uni-icon-bs',
+  styles: 'uni-icon-bs {line-height: 1}'
 })
-export class UniIconMatComponent implements ComponentInterface {
+export class UniIconBsComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
-
-  @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name: string;
 
@@ -33,7 +31,7 @@ export class UniIconMatComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    const UniIconTag = `uni-${uniIconsFaFontClass(this.type)}-${this.name}`;
+    const UniIconTag = `uni-bs-${this.name}`;
 
     return !isEmpty(this.name) ? <UniIconTag /> : null;
   }

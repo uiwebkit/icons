@@ -7,7 +7,19 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
+    interface UniBsAlarm {
+    }
+    interface UniBsAlarmFill {
+    }
+    interface UniBsStar {
+    }
+    interface UniBsStarFill {
+    }
+    interface UniBsStarHalf {
+    }
     interface UniFaStylesLoad {
+    }
+    interface UniFabBootstrap {
     }
     interface UniFabFacebook {
     }
@@ -46,6 +58,15 @@ export namespace Components {
     interface UniFasQuestionCircle {
     }
     interface UniFasUserSecret {
+    }
+    interface UniIconBs {
+        "color": UniColor;
+        "degree": number;
+        "name": string;
+        "rotate": boolean;
+        "size": UniSize | number;
+        "speed": number;
+        "steps": number;
     }
     interface UniIconFa {
         "color": UniColor;
@@ -287,6 +308,8 @@ export namespace Components {
     }
     interface UniMatFArrowDropUp {
     }
+    interface UniMatFClose {
+    }
     interface UniMatFFavorite {
     }
     interface UniMatFHome {
@@ -349,11 +372,47 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLUniBsAlarmElement extends Components.UniBsAlarm, HTMLStencilElement {
+    }
+    var HTMLUniBsAlarmElement: {
+        prototype: HTMLUniBsAlarmElement;
+        new (): HTMLUniBsAlarmElement;
+    };
+    interface HTMLUniBsAlarmFillElement extends Components.UniBsAlarmFill, HTMLStencilElement {
+    }
+    var HTMLUniBsAlarmFillElement: {
+        prototype: HTMLUniBsAlarmFillElement;
+        new (): HTMLUniBsAlarmFillElement;
+    };
+    interface HTMLUniBsStarElement extends Components.UniBsStar, HTMLStencilElement {
+    }
+    var HTMLUniBsStarElement: {
+        prototype: HTMLUniBsStarElement;
+        new (): HTMLUniBsStarElement;
+    };
+    interface HTMLUniBsStarFillElement extends Components.UniBsStarFill, HTMLStencilElement {
+    }
+    var HTMLUniBsStarFillElement: {
+        prototype: HTMLUniBsStarFillElement;
+        new (): HTMLUniBsStarFillElement;
+    };
+    interface HTMLUniBsStarHalfElement extends Components.UniBsStarHalf, HTMLStencilElement {
+    }
+    var HTMLUniBsStarHalfElement: {
+        prototype: HTMLUniBsStarHalfElement;
+        new (): HTMLUniBsStarHalfElement;
+    };
     interface HTMLUniFaStylesLoadElement extends Components.UniFaStylesLoad, HTMLStencilElement {
     }
     var HTMLUniFaStylesLoadElement: {
         prototype: HTMLUniFaStylesLoadElement;
         new (): HTMLUniFaStylesLoadElement;
+    };
+    interface HTMLUniFabBootstrapElement extends Components.UniFabBootstrap, HTMLStencilElement {
+    }
+    var HTMLUniFabBootstrapElement: {
+        prototype: HTMLUniFabBootstrapElement;
+        new (): HTMLUniFabBootstrapElement;
     };
     interface HTMLUniFabFacebookElement extends Components.UniFabFacebook, HTMLStencilElement {
     }
@@ -468,6 +527,12 @@ declare global {
     var HTMLUniFasUserSecretElement: {
         prototype: HTMLUniFasUserSecretElement;
         new (): HTMLUniFasUserSecretElement;
+    };
+    interface HTMLUniIconBsElement extends Components.UniIconBs, HTMLStencilElement {
+    }
+    var HTMLUniIconBsElement: {
+        prototype: HTMLUniIconBsElement;
+        new (): HTMLUniIconBsElement;
     };
     interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
     }
@@ -625,6 +690,12 @@ declare global {
         prototype: HTMLUniMatFArrowDropUpElement;
         new (): HTMLUniMatFArrowDropUpElement;
     };
+    interface HTMLUniMatFCloseElement extends Components.UniMatFClose, HTMLStencilElement {
+    }
+    var HTMLUniMatFCloseElement: {
+        prototype: HTMLUniMatFCloseElement;
+        new (): HTMLUniMatFCloseElement;
+    };
     interface HTMLUniMatFFavoriteElement extends Components.UniMatFFavorite, HTMLStencilElement {
     }
     var HTMLUniMatFFavoriteElement: {
@@ -758,7 +829,13 @@ declare global {
         new (): HTMLUniWrapElement;
     };
     interface HTMLElementTagNameMap {
+        "uni-bs-alarm": HTMLUniBsAlarmElement;
+        "uni-bs-alarm-fill": HTMLUniBsAlarmFillElement;
+        "uni-bs-star": HTMLUniBsStarElement;
+        "uni-bs-star-fill": HTMLUniBsStarFillElement;
+        "uni-bs-star-half": HTMLUniBsStarHalfElement;
         "uni-fa-styles-load": HTMLUniFaStylesLoadElement;
+        "uni-fab-bootstrap": HTMLUniFabBootstrapElement;
         "uni-fab-facebook": HTMLUniFabFacebookElement;
         "uni-fab-font-awesome": HTMLUniFabFontAwesomeElement;
         "uni-fab-font-awesome-alt": HTMLUniFabFontAwesomeAltElement;
@@ -778,6 +855,7 @@ declare global {
         "uni-fas-lightbulb": HTMLUniFasLightbulbElement;
         "uni-fas-question-circle": HTMLUniFasQuestionCircleElement;
         "uni-fas-user-secret": HTMLUniFasUserSecretElement;
+        "uni-icon-bs": HTMLUniIconBsElement;
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
@@ -804,6 +882,7 @@ declare global {
         "uni-mat-f-add-shopping-cart": HTMLUniMatFAddShoppingCartElement;
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-mat-f-arrow-drop-up": HTMLUniMatFArrowDropUpElement;
+        "uni-mat-f-close": HTMLUniMatFCloseElement;
         "uni-mat-f-favorite": HTMLUniMatFFavoriteElement;
         "uni-mat-f-home": HTMLUniMatFHomeElement;
         "uni-mat-f-play-circle": HTMLUniMatFPlayCircleElement;
@@ -829,7 +908,19 @@ declare global {
     }
 }
 declare namespace LocalJSX {
+    interface UniBsAlarm {
+    }
+    interface UniBsAlarmFill {
+    }
+    interface UniBsStar {
+    }
+    interface UniBsStarFill {
+    }
+    interface UniBsStarHalf {
+    }
     interface UniFaStylesLoad {
+    }
+    interface UniFabBootstrap {
     }
     interface UniFabFacebook {
     }
@@ -869,10 +960,19 @@ declare namespace LocalJSX {
     }
     interface UniFasUserSecret {
     }
+    interface UniIconBs {
+        "color"?: UniColor;
+        "degree"?: number;
+        "name"?: string;
+        "rotate"?: boolean;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "steps"?: number;
+    }
     interface UniIconFa {
         "color"?: UniColor;
         "degree"?: number;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -882,7 +982,7 @@ declare namespace LocalJSX {
     interface UniIconMat {
         "color"?: UniColor;
         "degree"?: number;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -915,7 +1015,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "init"?: boolean;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1109,6 +1209,8 @@ declare namespace LocalJSX {
     }
     interface UniMatFArrowDropUp {
     }
+    interface UniMatFClose {
+    }
     interface UniMatFFavorite {
     }
     interface UniMatFHome {
@@ -1170,7 +1272,13 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface IntrinsicElements {
+        "uni-bs-alarm": UniBsAlarm;
+        "uni-bs-alarm-fill": UniBsAlarmFill;
+        "uni-bs-star": UniBsStar;
+        "uni-bs-star-fill": UniBsStarFill;
+        "uni-bs-star-half": UniBsStarHalf;
         "uni-fa-styles-load": UniFaStylesLoad;
+        "uni-fab-bootstrap": UniFabBootstrap;
         "uni-fab-facebook": UniFabFacebook;
         "uni-fab-font-awesome": UniFabFontAwesome;
         "uni-fab-font-awesome-alt": UniFabFontAwesomeAlt;
@@ -1190,6 +1298,7 @@ declare namespace LocalJSX {
         "uni-fas-lightbulb": UniFasLightbulb;
         "uni-fas-question-circle": UniFasQuestionCircle;
         "uni-fas-user-secret": UniFasUserSecret;
+        "uni-icon-bs": UniIconBs;
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
         "uni-icons-fa": UniIconsFa;
@@ -1216,6 +1325,7 @@ declare namespace LocalJSX {
         "uni-mat-f-add-shopping-cart": UniMatFAddShoppingCart;
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-mat-f-arrow-drop-up": UniMatFArrowDropUp;
+        "uni-mat-f-close": UniMatFClose;
         "uni-mat-f-favorite": UniMatFFavorite;
         "uni-mat-f-home": UniMatFHome;
         "uni-mat-f-play-circle": UniMatFPlayCircle;
@@ -1244,7 +1354,13 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "uni-bs-alarm": LocalJSX.UniBsAlarm & JSXBase.HTMLAttributes<HTMLUniBsAlarmElement>;
+            "uni-bs-alarm-fill": LocalJSX.UniBsAlarmFill & JSXBase.HTMLAttributes<HTMLUniBsAlarmFillElement>;
+            "uni-bs-star": LocalJSX.UniBsStar & JSXBase.HTMLAttributes<HTMLUniBsStarElement>;
+            "uni-bs-star-fill": LocalJSX.UniBsStarFill & JSXBase.HTMLAttributes<HTMLUniBsStarFillElement>;
+            "uni-bs-star-half": LocalJSX.UniBsStarHalf & JSXBase.HTMLAttributes<HTMLUniBsStarHalfElement>;
             "uni-fa-styles-load": LocalJSX.UniFaStylesLoad & JSXBase.HTMLAttributes<HTMLUniFaStylesLoadElement>;
+            "uni-fab-bootstrap": LocalJSX.UniFabBootstrap & JSXBase.HTMLAttributes<HTMLUniFabBootstrapElement>;
             "uni-fab-facebook": LocalJSX.UniFabFacebook & JSXBase.HTMLAttributes<HTMLUniFabFacebookElement>;
             "uni-fab-font-awesome": LocalJSX.UniFabFontAwesome & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeElement>;
             "uni-fab-font-awesome-alt": LocalJSX.UniFabFontAwesomeAlt & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeAltElement>;
@@ -1264,6 +1380,7 @@ declare module "@stencil/core" {
             "uni-fas-lightbulb": LocalJSX.UniFasLightbulb & JSXBase.HTMLAttributes<HTMLUniFasLightbulbElement>;
             "uni-fas-question-circle": LocalJSX.UniFasQuestionCircle & JSXBase.HTMLAttributes<HTMLUniFasQuestionCircleElement>;
             "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
+            "uni-icon-bs": LocalJSX.UniIconBs & JSXBase.HTMLAttributes<HTMLUniIconBsElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
@@ -1290,6 +1407,7 @@ declare module "@stencil/core" {
             "uni-mat-f-add-shopping-cart": LocalJSX.UniMatFAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatFAddShoppingCartElement>;
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-mat-f-arrow-drop-up": LocalJSX.UniMatFArrowDropUp & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropUpElement>;
+            "uni-mat-f-close": LocalJSX.UniMatFClose & JSXBase.HTMLAttributes<HTMLUniMatFCloseElement>;
             "uni-mat-f-favorite": LocalJSX.UniMatFFavorite & JSXBase.HTMLAttributes<HTMLUniMatFFavoriteElement>;
             "uni-mat-f-home": LocalJSX.UniMatFHome & JSXBase.HTMLAttributes<HTMLUniMatFHomeElement>;
             "uni-mat-f-play-circle": LocalJSX.UniMatFPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatFPlayCircleElement>;

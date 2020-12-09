@@ -13,7 +13,7 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) init: boolean = false;
 
-  @Prop({ reflect: true }) name!: string;
+  @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
 
@@ -31,11 +31,16 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) all: boolean = false;
 
+  componentWillLoad(): Promise<void> | void {
+    console.log(this.name, this.el);
+    this.name = this.name || (!this.selector ? test(this.el.firstElementChild) : null);
+  }
+
   render(): VNode {
     return (
       <Fragment>
         <slot />
-        {this.init ? <uni-fa-styles-load/> : ''}
+        {this.init ? <uni-fa-styles-load /> : ''}
       </Fragment>
     );
   }
@@ -56,5 +61,16 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
     };
 
     uniSmartWrap(props);
+  }
+}
+
+function test(el) {
+  if (el) {
+    const content = el.textContent;
+    el.textContent = '';
+
+    return content;
+  } else {
+    return null;
   }
 }
