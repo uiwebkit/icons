@@ -2,6 +2,7 @@ import { Component, ComponentInterface, Element } from '@stencil/core';
 
 import svg from '../../../../assets/svg/fa/regular/copy.svg';
 import { uniModifyStyle } from '../../../../utils';
+import { uniIconFaDimensions } from '../../../../models';
 
 @Component({ tag: 'uni-far-copy' })
 export class UniFarCopyComponent implements ComponentInterface {
@@ -10,6 +11,6 @@ export class UniFarCopyComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     this.el.innerHTML = svg;
-    uniModifyStyle([this.el.firstElementChild as HTMLElement], {height: '20px', width: '20px'});
+    uniModifyStyle([this.el.firstElementChild as HTMLElement], uniIconFaDimensions);
   }
 }

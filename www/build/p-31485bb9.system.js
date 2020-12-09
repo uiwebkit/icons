@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){e("u",r);function r(e){switch(e){case"solid":return"s";case"regular":return"r";case"brands":return"b";default:return"s"}}}}}));

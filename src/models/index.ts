@@ -1,3 +1,5 @@
+export * from './states/icon-fa-dimensions.state';
+
 export * from './types/color.type';
 export * from './types/fa-font.type';
 export * from './types/mat-font.type';

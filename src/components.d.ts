@@ -9,23 +9,43 @@ import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
     interface UniFaStylesLoad {
     }
+    interface UniFabFacebook {
+    }
     interface UniFabFontAwesome {
     }
     interface UniFabFontAwesomeAlt {
     }
     interface UniFabGithub {
     }
+    interface UniFabInstagram {
+    }
     interface UniFabNpm {
+    }
+    interface UniFabTwitter {
     }
     interface UniFarCopy {
     }
+    interface UniFarEnvelope {
+    }
+    interface UniFarFileAlt {
+    }
     interface UniFasAngleDown {
+    }
+    interface UniFasBalanceScale {
+    }
+    interface UniFasBug {
     }
     interface UniFasChartLine {
     }
     interface UniFasDownload {
     }
     interface UniFasFileDownload {
+    }
+    interface UniFasLightbulb {
+    }
+    interface UniFasQuestionCircle {
+    }
+    interface UniFasUserSecret {
     }
     interface UniIconFa {
         "color": UniColor;
@@ -335,6 +355,12 @@ declare global {
         prototype: HTMLUniFaStylesLoadElement;
         new (): HTMLUniFaStylesLoadElement;
     };
+    interface HTMLUniFabFacebookElement extends Components.UniFabFacebook, HTMLStencilElement {
+    }
+    var HTMLUniFabFacebookElement: {
+        prototype: HTMLUniFabFacebookElement;
+        new (): HTMLUniFabFacebookElement;
+    };
     interface HTMLUniFabFontAwesomeElement extends Components.UniFabFontAwesome, HTMLStencilElement {
     }
     var HTMLUniFabFontAwesomeElement: {
@@ -353,11 +379,23 @@ declare global {
         prototype: HTMLUniFabGithubElement;
         new (): HTMLUniFabGithubElement;
     };
+    interface HTMLUniFabInstagramElement extends Components.UniFabInstagram, HTMLStencilElement {
+    }
+    var HTMLUniFabInstagramElement: {
+        prototype: HTMLUniFabInstagramElement;
+        new (): HTMLUniFabInstagramElement;
+    };
     interface HTMLUniFabNpmElement extends Components.UniFabNpm, HTMLStencilElement {
     }
     var HTMLUniFabNpmElement: {
         prototype: HTMLUniFabNpmElement;
         new (): HTMLUniFabNpmElement;
+    };
+    interface HTMLUniFabTwitterElement extends Components.UniFabTwitter, HTMLStencilElement {
+    }
+    var HTMLUniFabTwitterElement: {
+        prototype: HTMLUniFabTwitterElement;
+        new (): HTMLUniFabTwitterElement;
     };
     interface HTMLUniFarCopyElement extends Components.UniFarCopy, HTMLStencilElement {
     }
@@ -365,11 +403,35 @@ declare global {
         prototype: HTMLUniFarCopyElement;
         new (): HTMLUniFarCopyElement;
     };
+    interface HTMLUniFarEnvelopeElement extends Components.UniFarEnvelope, HTMLStencilElement {
+    }
+    var HTMLUniFarEnvelopeElement: {
+        prototype: HTMLUniFarEnvelopeElement;
+        new (): HTMLUniFarEnvelopeElement;
+    };
+    interface HTMLUniFarFileAltElement extends Components.UniFarFileAlt, HTMLStencilElement {
+    }
+    var HTMLUniFarFileAltElement: {
+        prototype: HTMLUniFarFileAltElement;
+        new (): HTMLUniFarFileAltElement;
+    };
     interface HTMLUniFasAngleDownElement extends Components.UniFasAngleDown, HTMLStencilElement {
     }
     var HTMLUniFasAngleDownElement: {
         prototype: HTMLUniFasAngleDownElement;
         new (): HTMLUniFasAngleDownElement;
+    };
+    interface HTMLUniFasBalanceScaleElement extends Components.UniFasBalanceScale, HTMLStencilElement {
+    }
+    var HTMLUniFasBalanceScaleElement: {
+        prototype: HTMLUniFasBalanceScaleElement;
+        new (): HTMLUniFasBalanceScaleElement;
+    };
+    interface HTMLUniFasBugElement extends Components.UniFasBug, HTMLStencilElement {
+    }
+    var HTMLUniFasBugElement: {
+        prototype: HTMLUniFasBugElement;
+        new (): HTMLUniFasBugElement;
     };
     interface HTMLUniFasChartLineElement extends Components.UniFasChartLine, HTMLStencilElement {
     }
@@ -388,6 +450,24 @@ declare global {
     var HTMLUniFasFileDownloadElement: {
         prototype: HTMLUniFasFileDownloadElement;
         new (): HTMLUniFasFileDownloadElement;
+    };
+    interface HTMLUniFasLightbulbElement extends Components.UniFasLightbulb, HTMLStencilElement {
+    }
+    var HTMLUniFasLightbulbElement: {
+        prototype: HTMLUniFasLightbulbElement;
+        new (): HTMLUniFasLightbulbElement;
+    };
+    interface HTMLUniFasQuestionCircleElement extends Components.UniFasQuestionCircle, HTMLStencilElement {
+    }
+    var HTMLUniFasQuestionCircleElement: {
+        prototype: HTMLUniFasQuestionCircleElement;
+        new (): HTMLUniFasQuestionCircleElement;
+    };
+    interface HTMLUniFasUserSecretElement extends Components.UniFasUserSecret, HTMLStencilElement {
+    }
+    var HTMLUniFasUserSecretElement: {
+        prototype: HTMLUniFasUserSecretElement;
+        new (): HTMLUniFasUserSecretElement;
     };
     interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
     }
@@ -679,15 +759,25 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "uni-fa-styles-load": HTMLUniFaStylesLoadElement;
+        "uni-fab-facebook": HTMLUniFabFacebookElement;
         "uni-fab-font-awesome": HTMLUniFabFontAwesomeElement;
         "uni-fab-font-awesome-alt": HTMLUniFabFontAwesomeAltElement;
         "uni-fab-github": HTMLUniFabGithubElement;
+        "uni-fab-instagram": HTMLUniFabInstagramElement;
         "uni-fab-npm": HTMLUniFabNpmElement;
+        "uni-fab-twitter": HTMLUniFabTwitterElement;
         "uni-far-copy": HTMLUniFarCopyElement;
+        "uni-far-envelope": HTMLUniFarEnvelopeElement;
+        "uni-far-file-alt": HTMLUniFarFileAltElement;
         "uni-fas-angle-down": HTMLUniFasAngleDownElement;
+        "uni-fas-balance-scale": HTMLUniFasBalanceScaleElement;
+        "uni-fas-bug": HTMLUniFasBugElement;
         "uni-fas-chart-line": HTMLUniFasChartLineElement;
         "uni-fas-download": HTMLUniFasDownloadElement;
         "uni-fas-file-download": HTMLUniFasFileDownloadElement;
+        "uni-fas-lightbulb": HTMLUniFasLightbulbElement;
+        "uni-fas-question-circle": HTMLUniFasQuestionCircleElement;
+        "uni-fas-user-secret": HTMLUniFasUserSecretElement;
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
@@ -741,23 +831,43 @@ declare global {
 declare namespace LocalJSX {
     interface UniFaStylesLoad {
     }
+    interface UniFabFacebook {
+    }
     interface UniFabFontAwesome {
     }
     interface UniFabFontAwesomeAlt {
     }
     interface UniFabGithub {
     }
+    interface UniFabInstagram {
+    }
     interface UniFabNpm {
+    }
+    interface UniFabTwitter {
     }
     interface UniFarCopy {
     }
+    interface UniFarEnvelope {
+    }
+    interface UniFarFileAlt {
+    }
     interface UniFasAngleDown {
+    }
+    interface UniFasBalanceScale {
+    }
+    interface UniFasBug {
     }
     interface UniFasChartLine {
     }
     interface UniFasDownload {
     }
     interface UniFasFileDownload {
+    }
+    interface UniFasLightbulb {
+    }
+    interface UniFasQuestionCircle {
+    }
+    interface UniFasUserSecret {
     }
     interface UniIconFa {
         "color"?: UniColor;
@@ -1061,15 +1171,25 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "uni-fa-styles-load": UniFaStylesLoad;
+        "uni-fab-facebook": UniFabFacebook;
         "uni-fab-font-awesome": UniFabFontAwesome;
         "uni-fab-font-awesome-alt": UniFabFontAwesomeAlt;
         "uni-fab-github": UniFabGithub;
+        "uni-fab-instagram": UniFabInstagram;
         "uni-fab-npm": UniFabNpm;
+        "uni-fab-twitter": UniFabTwitter;
         "uni-far-copy": UniFarCopy;
+        "uni-far-envelope": UniFarEnvelope;
+        "uni-far-file-alt": UniFarFileAlt;
         "uni-fas-angle-down": UniFasAngleDown;
+        "uni-fas-balance-scale": UniFasBalanceScale;
+        "uni-fas-bug": UniFasBug;
         "uni-fas-chart-line": UniFasChartLine;
         "uni-fas-download": UniFasDownload;
         "uni-fas-file-download": UniFasFileDownload;
+        "uni-fas-lightbulb": UniFasLightbulb;
+        "uni-fas-question-circle": UniFasQuestionCircle;
+        "uni-fas-user-secret": UniFasUserSecret;
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
         "uni-icons-fa": UniIconsFa;
@@ -1125,15 +1245,25 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "uni-fa-styles-load": LocalJSX.UniFaStylesLoad & JSXBase.HTMLAttributes<HTMLUniFaStylesLoadElement>;
+            "uni-fab-facebook": LocalJSX.UniFabFacebook & JSXBase.HTMLAttributes<HTMLUniFabFacebookElement>;
             "uni-fab-font-awesome": LocalJSX.UniFabFontAwesome & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeElement>;
             "uni-fab-font-awesome-alt": LocalJSX.UniFabFontAwesomeAlt & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeAltElement>;
             "uni-fab-github": LocalJSX.UniFabGithub & JSXBase.HTMLAttributes<HTMLUniFabGithubElement>;
+            "uni-fab-instagram": LocalJSX.UniFabInstagram & JSXBase.HTMLAttributes<HTMLUniFabInstagramElement>;
             "uni-fab-npm": LocalJSX.UniFabNpm & JSXBase.HTMLAttributes<HTMLUniFabNpmElement>;
+            "uni-fab-twitter": LocalJSX.UniFabTwitter & JSXBase.HTMLAttributes<HTMLUniFabTwitterElement>;
             "uni-far-copy": LocalJSX.UniFarCopy & JSXBase.HTMLAttributes<HTMLUniFarCopyElement>;
+            "uni-far-envelope": LocalJSX.UniFarEnvelope & JSXBase.HTMLAttributes<HTMLUniFarEnvelopeElement>;
+            "uni-far-file-alt": LocalJSX.UniFarFileAlt & JSXBase.HTMLAttributes<HTMLUniFarFileAltElement>;
             "uni-fas-angle-down": LocalJSX.UniFasAngleDown & JSXBase.HTMLAttributes<HTMLUniFasAngleDownElement>;
+            "uni-fas-balance-scale": LocalJSX.UniFasBalanceScale & JSXBase.HTMLAttributes<HTMLUniFasBalanceScaleElement>;
+            "uni-fas-bug": LocalJSX.UniFasBug & JSXBase.HTMLAttributes<HTMLUniFasBugElement>;
             "uni-fas-chart-line": LocalJSX.UniFasChartLine & JSXBase.HTMLAttributes<HTMLUniFasChartLineElement>;
             "uni-fas-download": LocalJSX.UniFasDownload & JSXBase.HTMLAttributes<HTMLUniFasDownloadElement>;
             "uni-fas-file-download": LocalJSX.UniFasFileDownload & JSXBase.HTMLAttributes<HTMLUniFasFileDownloadElement>;
+            "uni-fas-lightbulb": LocalJSX.UniFasLightbulb & JSXBase.HTMLAttributes<HTMLUniFasLightbulbElement>;
+            "uni-fas-question-circle": LocalJSX.UniFasQuestionCircle & JSXBase.HTMLAttributes<HTMLUniFasQuestionCircleElement>;
+            "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;

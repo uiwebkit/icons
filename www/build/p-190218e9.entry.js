@@ -1,0 +1,1 @@
+import{r as t,g as o}from"./p-46c6540d.js";import"./p-9e0a5aac.js";import{u as e}from"./p-0a52069a.js";import"./p-b80ea12f.js";const s=class{constructor(o){t(this,o),this.all=!1}componentWillLoad(){const{el:t,color:o,filter:s,size:r,fontSize:i,selector:l,all:a}=this;e({el:t,color:o,filter:s,size:r,fontSize:i,selector:l,all:a})}get el(){return o(this)}};export{s as uni_theme_wrap}
