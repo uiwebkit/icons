@@ -7,6 +7,7 @@ export * from './dom/get-theme';
 export * from './dom/is-target-element';
 export * from './dom/modify';
 export * from './dom/modify-async';
+export * from './dom/modify-attr';
 export * from './dom/modify-class';
 export * from './dom/modify-content';
 export * from './dom/modify-style';
