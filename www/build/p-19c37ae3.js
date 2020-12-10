@@ -1,0 +1,1 @@
+const t={height:"20px",width:"20px"};export{t as u}

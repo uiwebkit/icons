@@ -13,7 +13,7 @@ export class UniIconsFaRegularComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) init: boolean = false;
 
-  @Prop({ reflect: true }) name!: string;
+  @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
 

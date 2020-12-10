@@ -1,0 +1,1 @@
+System.register([],(function(e){"use strict";return{execute:function(){e("u",r);function r(e){switch(e){case"brands":return"fab";case"regular":return"far";case"solid":return"fas";default:return"fas"}}}}}));

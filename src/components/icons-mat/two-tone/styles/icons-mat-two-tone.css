@@ -2,8 +2,8 @@
   font-family: 'Material Icons Two Tone';
   font-style: normal;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/mat/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2) format('woff2'),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/mat/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCuy.woff) format('woff');
+  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/mat/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCu0.woff2) format('woff2'),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/mat/hESh6WRmNCxEqUmNyh3JDeGxjVVyMg4tHGctNCuy.woff) format('woff');
 }
 
 .material-icons-two-tone {

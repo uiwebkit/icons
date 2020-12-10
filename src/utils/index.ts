@@ -11,6 +11,7 @@ export * from './dom/modify-class';
 export * from './dom/modify-content';
 export * from './dom/modify-style';
 export * from './dom/smart-wrap';
+export * from './dom/text-content';
 
 export * from './styles/color';
 export * from './styles/filter';

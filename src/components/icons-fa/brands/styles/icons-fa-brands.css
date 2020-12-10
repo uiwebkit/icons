@@ -7,12 +7,12 @@
   font-style: normal;
   font-weight: 400;
   font-display: block;
-  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/fa/fa-brands-400.eot);
-  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/fa/fa-brands-400.eot?#iefix) format("embedded-opentype"),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/fa/fa-brands-400.woff2) format("woff2"),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/fa/fa-brands-400.woff) format("woff"),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/fa/fa-brands-400.ttf) format("truetype"),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/fa/fa-brands-400.svg#fontawesome) format("svg");
+  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/fa/fa-brands-400.eot);
+  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/fa/fa-brands-400.eot?#iefix) format("embedded-opentype"),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/fa/fa-brands-400.woff2) format("woff2"),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/fa/fa-brands-400.woff) format("woff"),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/fa/fa-brands-400.ttf) format("truetype"),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/fa/fa-brands-400.svg#fontawesome) format("svg");
 }
 
 .fab {

@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, VNode, Prop, Element, Fragment } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
-import { uniSmartWrap } from '../../../../utils';
+import { uniGetCleanContent, uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-fa-b-wrap',
@@ -32,8 +32,7 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
-    console.log(this.name, this.el);
-    this.name = this.name || (!this.selector ? test(this.el.firstElementChild) : null);
+    this.name = this.name || uniGetCleanContent(this.el.firstElementChild);
   }
 
   render(): VNode {
@@ -64,13 +63,3 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
   }
 }
 
-function test(el) {
-  if (el) {
-    const content = el.textContent;
-    el.textContent = '';
-
-    return content;
-  } else {
-    return null;
-  }
-}

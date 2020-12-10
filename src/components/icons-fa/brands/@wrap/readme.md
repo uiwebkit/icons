@@ -7,18 +7,18 @@
 
 ## Properties
 
-| Property            | Attribute  | Description | Type                                           | Default     |
-| ------------------- | ---------- | ----------- | ---------------------------------------------- | ----------- |
-| `all`               | `all`      |             | `boolean`                                      | `false`     |
-| `color`             | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
-| `degree`            | `degree`   |             | `number`                                       | `undefined` |
-| `init`              | `init`     |             | `boolean`                                      | `false`     |
-| `name` _(required)_ | `name`     |             | `string`                                       | `undefined` |
-| `rotate`            | `rotate`   |             | `boolean`                                      | `false`     |
-| `selector`          | `selector` |             | `string`                                       | `undefined` |
-| `size`              | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
-| `speed`             | `speed`    |             | `number`                                       | `undefined` |
-| `steps`             | `steps`    |             | `number`                                       | `undefined` |
+| Property   | Attribute  | Description | Type                                           | Default     |
+| ---------- | ---------- | ----------- | ---------------------------------------------- | ----------- |
+| `all`      | `all`      |             | `boolean`                                      | `false`     |
+| `color`    | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
+| `degree`   | `degree`   |             | `number`                                       | `undefined` |
+| `init`     | `init`     |             | `boolean`                                      | `false`     |
+| `name`     | `name`     |             | `string`                                       | `undefined` |
+| `rotate`   | `rotate`   |             | `boolean`                                      | `false`     |
+| `selector` | `selector` |             | `string`                                       | `undefined` |
+| `size`     | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
+| `speed`    | `speed`    |             | `number`                                       | `undefined` |
+| `steps`    | `steps`    |             | `number`                                       | `undefined` |
 
 
 ## Dependencies

@@ -1004,7 +1004,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "init"?: boolean;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1026,7 +1026,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "init"?: boolean;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1037,7 +1037,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "init"?: boolean;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1048,7 +1048,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "init"?: boolean;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1059,7 +1059,7 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "init"?: boolean;
-        "name": string;
+        "name"?: string;
         "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;

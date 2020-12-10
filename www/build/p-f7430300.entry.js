@@ -1,0 +1,1 @@
+import{r as s,g as t}from"./p-46c6540d.js";import"./p-d8f3608d.js";import{e}from"./p-24ae7c7b.js";import"./p-b80ea12f.js";const o=class{constructor(t){s(this,t),this.all=!1}componentWillLoad(){const{el:s,speed:t,steps:o,selector:r,all:p}=this;e({el:s,rotate:!0,speed:t,steps:o,selector:r,all:p})}get el(){return t(this)}};export{o as uni_rotate_wrap}
