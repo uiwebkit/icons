@@ -91,7 +91,6 @@ export namespace Components {
     interface UniIconsFa {
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
@@ -102,7 +101,6 @@ export namespace Components {
     interface UniIconsFaB {
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
@@ -113,7 +111,6 @@ export namespace Components {
         "all": boolean;
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "selector": string;
@@ -124,7 +121,6 @@ export namespace Components {
     interface UniIconsFaR {
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
@@ -135,7 +131,6 @@ export namespace Components {
         "all": boolean;
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "selector": string;
@@ -146,7 +141,6 @@ export namespace Components {
     interface UniIconsFaS {
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "size": UniSize | number;
@@ -157,7 +151,6 @@ export namespace Components {
         "all": boolean;
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "selector": string;
@@ -169,7 +162,6 @@ export namespace Components {
         "all": boolean;
         "color": UniColor;
         "degree": number;
-        "init": boolean;
         "name": string;
         "rotate": boolean;
         "selector": string;
@@ -992,7 +984,6 @@ declare namespace LocalJSX {
     interface UniIconsFa {
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name": string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
@@ -1003,7 +994,6 @@ declare namespace LocalJSX {
     interface UniIconsFaB {
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
@@ -1014,7 +1004,6 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name"?: string;
         "rotate"?: boolean;
         "selector"?: string;
@@ -1025,7 +1014,6 @@ declare namespace LocalJSX {
     interface UniIconsFaR {
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
@@ -1036,7 +1024,6 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name"?: string;
         "rotate"?: boolean;
         "selector"?: string;
@@ -1047,7 +1034,6 @@ declare namespace LocalJSX {
     interface UniIconsFaS {
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name"?: string;
         "rotate"?: boolean;
         "size"?: UniSize | number;
@@ -1058,7 +1044,6 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name"?: string;
         "rotate"?: boolean;
         "selector"?: string;
@@ -1070,7 +1055,6 @@ declare namespace LocalJSX {
         "all"?: boolean;
         "color"?: UniColor;
         "degree"?: number;
-        "init"?: boolean;
         "name": string;
         "rotate"?: boolean;
         "selector"?: string;

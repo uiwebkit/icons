@@ -11,8 +11,6 @@ export class UniIconsFaSolidComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) init: boolean = false;
-
   @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
@@ -33,11 +31,7 @@ export class UniIconsFaSolidComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    return (
-      <Host class={`fas fa-${this.name}`}>
-        {this.init ? <uni-fa-styles-load/> : ''}
-      </Host>
-    );
+    return <Host class={`fas fa-${this.name}`} />;
   }
 
   componentDidLoad(): void {

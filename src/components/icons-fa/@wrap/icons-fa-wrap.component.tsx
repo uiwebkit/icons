@@ -6,8 +6,6 @@ import { uniFaTypeShort } from '../../../utils';
 @Component({ tag: 'uni-icons-fa-wrap' })
 export class UniIconsFaWrapComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) init: boolean = false;
-
   @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name!: string;
@@ -29,8 +27,8 @@ export class UniIconsFaWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   render(): VNode {
-    const { init, name, color, size, rotate, degree, speed, steps, selector, all } = this;
-    const props = { init, name, color, size, rotate, degree, speed, steps, selector, all };
+    const { name, color, size, rotate, degree, speed, steps, selector, all } = this;
+    const props = { name, color, size, rotate, degree, speed, steps, selector, all };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}-wrap`;
 
     return (

@@ -8,8 +8,6 @@ export class UniIconsFaComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) init: boolean = false;
-
   @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
   @Prop({ reflect: true }) name!: string;
@@ -32,8 +30,8 @@ export class UniIconsFaComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    const { init, name, color, size, rotate, degree, speed, steps } = this;
-    const props = { init, name, color, size, rotate, degree, speed, steps };
+    const { name, color, size, rotate, degree, speed, steps } = this;
+    const props = { name, color, size, rotate, degree, speed, steps };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}`;
 
     return <UniIconsFaTag {...props} />;

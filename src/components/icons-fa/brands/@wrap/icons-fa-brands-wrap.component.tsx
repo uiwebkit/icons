@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, VNode, Prop, Element, Fragment } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Element } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
 import { uniGetCleanContent, uniSmartWrap } from '../../../../utils';
@@ -10,8 +10,6 @@ import { uniGetCleanContent, uniSmartWrap } from '../../../../utils';
 export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
-
-  @Prop({ reflect: true }) init: boolean = false;
 
   @Prop({ reflect: true }) name: string;
 
@@ -33,15 +31,6 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     this.name = this.name || uniGetCleanContent(this.el.firstElementChild);
-  }
-
-  render(): VNode {
-    return (
-      <Fragment>
-        <slot />
-        {this.init ? <uni-fa-styles-load /> : ''}
-      </Fragment>
-    );
   }
 
   componentDidLoad(): void {

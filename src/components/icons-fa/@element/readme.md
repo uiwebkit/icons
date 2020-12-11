@@ -11,7 +11,6 @@
 | ------------------- | --------- | ----------- | ---------------------------------------------- | ----------- |
 | `color`             | `color`   |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
 | `degree`            | `degree`  |             | `number`                                       | `undefined` |
-| `init`              | `init`    |             | `boolean`                                      | `false`     |
 | `name` _(required)_ | `name`    |             | `string`                                       | `undefined` |
 | `rotate`            | `rotate`  |             | `boolean`                                      | `false`     |
 | `size`              | `size`    |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |

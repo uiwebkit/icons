@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
+import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
 import { uniSmartWrap } from '../../../../utils';
@@ -28,10 +28,6 @@ export class UniIconsMatOutlineWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) selector: string;
 
   @Prop({ reflect: true }) all: boolean = false;
-
-  render(): VNode {
-    return <slot />;
-  }
 
   componentDidLoad(): void {
     const { el, color, rotate, degree, speed, steps, selector, all } = this;
