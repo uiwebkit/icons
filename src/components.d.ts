@@ -57,6 +57,8 @@ export namespace Components {
     }
     interface UniFasQuestionCircle {
     }
+    interface UniFasRocket {
+    }
     interface UniFasUserSecret {
     }
     interface UniIconBs {
@@ -514,6 +516,12 @@ declare global {
         prototype: HTMLUniFasQuestionCircleElement;
         new (): HTMLUniFasQuestionCircleElement;
     };
+    interface HTMLUniFasRocketElement extends Components.UniFasRocket, HTMLStencilElement {
+    }
+    var HTMLUniFasRocketElement: {
+        prototype: HTMLUniFasRocketElement;
+        new (): HTMLUniFasRocketElement;
+    };
     interface HTMLUniFasUserSecretElement extends Components.UniFasUserSecret, HTMLStencilElement {
     }
     var HTMLUniFasUserSecretElement: {
@@ -846,6 +854,7 @@ declare global {
         "uni-fas-file-download": HTMLUniFasFileDownloadElement;
         "uni-fas-lightbulb": HTMLUniFasLightbulbElement;
         "uni-fas-question-circle": HTMLUniFasQuestionCircleElement;
+        "uni-fas-rocket": HTMLUniFasRocketElement;
         "uni-fas-user-secret": HTMLUniFasUserSecretElement;
         "uni-icon-bs": HTMLUniIconBsElement;
         "uni-icon-fa": HTMLUniIconFaElement;
@@ -949,6 +958,8 @@ declare namespace LocalJSX {
     interface UniFasLightbulb {
     }
     interface UniFasQuestionCircle {
+    }
+    interface UniFasRocket {
     }
     interface UniFasUserSecret {
     }
@@ -1281,6 +1292,7 @@ declare namespace LocalJSX {
         "uni-fas-file-download": UniFasFileDownload;
         "uni-fas-lightbulb": UniFasLightbulb;
         "uni-fas-question-circle": UniFasQuestionCircle;
+        "uni-fas-rocket": UniFasRocket;
         "uni-fas-user-secret": UniFasUserSecret;
         "uni-icon-bs": UniIconBs;
         "uni-icon-fa": UniIconFa;
@@ -1363,6 +1375,7 @@ declare module "@stencil/core" {
             "uni-fas-file-download": LocalJSX.UniFasFileDownload & JSXBase.HTMLAttributes<HTMLUniFasFileDownloadElement>;
             "uni-fas-lightbulb": LocalJSX.UniFasLightbulb & JSXBase.HTMLAttributes<HTMLUniFasLightbulbElement>;
             "uni-fas-question-circle": LocalJSX.UniFasQuestionCircle & JSXBase.HTMLAttributes<HTMLUniFasQuestionCircleElement>;
+            "uni-fas-rocket": LocalJSX.UniFasRocket & JSXBase.HTMLAttributes<HTMLUniFasRocketElement>;
             "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
             "uni-icon-bs": LocalJSX.UniIconBs & JSXBase.HTMLAttributes<HTMLUniIconBsElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
