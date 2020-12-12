@@ -7,6 +7,11 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
+    interface UniAngleWrap {
+        "all": boolean;
+        "degree": number;
+        "selector": string;
+    }
     interface UniBsAlarm {
     }
     interface UniBsAlarmFill {
@@ -340,7 +345,7 @@ export namespace Components {
     }
     interface UniMatTtWeb {
     }
-    interface UniRotateWrap {
+    interface UniSpinWrap {
         "all": boolean;
         "selector": string;
         "speed": number;
@@ -354,11 +359,6 @@ export namespace Components {
         "selector": string;
         "size": UniSize | number;
     }
-    interface UniTiltWrap {
-        "all": boolean;
-        "degree": number;
-        "selector": string;
-    }
     interface UniWrap {
         "all": boolean;
         "classes": string;
@@ -366,6 +366,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLUniAngleWrapElement extends Components.UniAngleWrap, HTMLStencilElement {
+    }
+    var HTMLUniAngleWrapElement: {
+        prototype: HTMLUniAngleWrapElement;
+        new (): HTMLUniAngleWrapElement;
+    };
     interface HTMLUniBsAlarmElement extends Components.UniBsAlarm, HTMLStencilElement {
     }
     var HTMLUniBsAlarmElement: {
@@ -804,23 +810,17 @@ declare global {
         prototype: HTMLUniMatTtWebElement;
         new (): HTMLUniMatTtWebElement;
     };
-    interface HTMLUniRotateWrapElement extends Components.UniRotateWrap, HTMLStencilElement {
+    interface HTMLUniSpinWrapElement extends Components.UniSpinWrap, HTMLStencilElement {
     }
-    var HTMLUniRotateWrapElement: {
-        prototype: HTMLUniRotateWrapElement;
-        new (): HTMLUniRotateWrapElement;
+    var HTMLUniSpinWrapElement: {
+        prototype: HTMLUniSpinWrapElement;
+        new (): HTMLUniSpinWrapElement;
     };
     interface HTMLUniThemeWrapElement extends Components.UniThemeWrap, HTMLStencilElement {
     }
     var HTMLUniThemeWrapElement: {
         prototype: HTMLUniThemeWrapElement;
         new (): HTMLUniThemeWrapElement;
-    };
-    interface HTMLUniTiltWrapElement extends Components.UniTiltWrap, HTMLStencilElement {
-    }
-    var HTMLUniTiltWrapElement: {
-        prototype: HTMLUniTiltWrapElement;
-        new (): HTMLUniTiltWrapElement;
     };
     interface HTMLUniWrapElement extends Components.UniWrap, HTMLStencilElement {
     }
@@ -829,6 +829,7 @@ declare global {
         new (): HTMLUniWrapElement;
     };
     interface HTMLElementTagNameMap {
+        "uni-angle-wrap": HTMLUniAngleWrapElement;
         "uni-bs-alarm": HTMLUniBsAlarmElement;
         "uni-bs-alarm-fill": HTMLUniBsAlarmFillElement;
         "uni-bs-star": HTMLUniBsStarElement;
@@ -902,13 +903,17 @@ declare global {
         "uni-mat-tt-play-circle": HTMLUniMatTtPlayCircleElement;
         "uni-mat-tt-rotate-degrees": HTMLUniMatTtRotateDegreesElement;
         "uni-mat-tt-web": HTMLUniMatTtWebElement;
-        "uni-rotate-wrap": HTMLUniRotateWrapElement;
+        "uni-spin-wrap": HTMLUniSpinWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
-        "uni-tilt-wrap": HTMLUniTiltWrapElement;
         "uni-wrap": HTMLUniWrapElement;
     }
 }
 declare namespace LocalJSX {
+    interface UniAngleWrap {
+        "all"?: boolean;
+        "degree"?: number;
+        "selector"?: string;
+    }
     interface UniBsAlarm {
     }
     interface UniBsAlarmFill {
@@ -1242,7 +1247,7 @@ declare namespace LocalJSX {
     }
     interface UniMatTtWeb {
     }
-    interface UniRotateWrap {
+    interface UniSpinWrap {
         "all"?: boolean;
         "selector"?: string;
         "speed"?: number;
@@ -1256,17 +1261,13 @@ declare namespace LocalJSX {
         "selector"?: string;
         "size"?: UniSize | number;
     }
-    interface UniTiltWrap {
-        "all"?: boolean;
-        "degree"?: number;
-        "selector"?: string;
-    }
     interface UniWrap {
         "all"?: boolean;
         "classes"?: string;
         "selector"?: string;
     }
     interface IntrinsicElements {
+        "uni-angle-wrap": UniAngleWrap;
         "uni-bs-alarm": UniBsAlarm;
         "uni-bs-alarm-fill": UniBsAlarmFill;
         "uni-bs-star": UniBsStar;
@@ -1340,9 +1341,8 @@ declare namespace LocalJSX {
         "uni-mat-tt-play-circle": UniMatTtPlayCircle;
         "uni-mat-tt-rotate-degrees": UniMatTtRotateDegrees;
         "uni-mat-tt-web": UniMatTtWeb;
-        "uni-rotate-wrap": UniRotateWrap;
+        "uni-spin-wrap": UniSpinWrap;
         "uni-theme-wrap": UniThemeWrap;
-        "uni-tilt-wrap": UniTiltWrap;
         "uni-wrap": UniWrap;
     }
 }
@@ -1350,6 +1350,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "uni-angle-wrap": LocalJSX.UniAngleWrap & JSXBase.HTMLAttributes<HTMLUniAngleWrapElement>;
             "uni-bs-alarm": LocalJSX.UniBsAlarm & JSXBase.HTMLAttributes<HTMLUniBsAlarmElement>;
             "uni-bs-alarm-fill": LocalJSX.UniBsAlarmFill & JSXBase.HTMLAttributes<HTMLUniBsAlarmFillElement>;
             "uni-bs-star": LocalJSX.UniBsStar & JSXBase.HTMLAttributes<HTMLUniBsStarElement>;
@@ -1423,9 +1424,8 @@ declare module "@stencil/core" {
             "uni-mat-tt-play-circle": LocalJSX.UniMatTtPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatTtPlayCircleElement>;
             "uni-mat-tt-rotate-degrees": LocalJSX.UniMatTtRotateDegrees & JSXBase.HTMLAttributes<HTMLUniMatTtRotateDegreesElement>;
             "uni-mat-tt-web": LocalJSX.UniMatTtWeb & JSXBase.HTMLAttributes<HTMLUniMatTtWebElement>;
-            "uni-rotate-wrap": LocalJSX.UniRotateWrap & JSXBase.HTMLAttributes<HTMLUniRotateWrapElement>;
+            "uni-spin-wrap": LocalJSX.UniSpinWrap & JSXBase.HTMLAttributes<HTMLUniSpinWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
-            "uni-tilt-wrap": LocalJSX.UniTiltWrap & JSXBase.HTMLAttributes<HTMLUniTiltWrapElement>;
             "uni-wrap": LocalJSX.UniWrap & JSXBase.HTMLAttributes<HTMLUniWrapElement>;
         }
     }
