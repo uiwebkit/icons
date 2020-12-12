@@ -17,7 +17,7 @@ export class UniSpinWrapComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     const { el, speed, steps, selector, all } = this;
-    const props = { el, rotate: true, speed, steps, selector, all };
+    const props = { el, spin: true, speed, steps, selector, all };
 
     uniSmartWrap(props);
   }
