@@ -1,0 +1,1 @@
+import{r as e,g as s}from"./p-a8d474fb.js";import"./p-d8f3608d.js";import{f as t}from"./p-307b9fa2.js";const r=class{constructor(s){e(this,s),this.all=!1}componentWillLoad(){const{el:e,degree:s,selector:r,all:o}=this;t({el:e,degree:s,selector:r,all:o})}get el(){return s(this)}};export{r as uni_angle_wrap}

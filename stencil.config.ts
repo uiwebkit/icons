@@ -153,6 +153,7 @@ export const config: Config = {
         { src: 'assets/font', dest: 'assets/font', warn: true },
         { src: 'assets/svg', dest: 'assets/svg', warn: true },
       ],
+      empty: true,
       serviceWorker: null, // disable service workers
     },
   ],
