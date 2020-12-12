@@ -19,9 +19,9 @@ export class UniIconMatComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
-
   @Prop({ reflect: true }) degree: number;
+
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
@@ -39,8 +39,8 @@ export class UniIconMatComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, size, rotate, degree, speed, steps } = this;
-    const props = { el, color, size, rotate, degree, speed, steps, selector: 'svg' };
+    const { el, color, size, degree, spin, speed, steps } = this;
+    const props = { el, color, size, degree, spin, speed, steps, selector: 'svg' };
 
     uniSmartWrap(props);
   }

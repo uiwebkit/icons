@@ -48,7 +48,7 @@ export function uniSmartWrap(props) {
     };
   }
 
-  if (props.rotate) {
+  if (props.spin) {
     uniAppendStyle(UniRotateCSS);
 
     styles = {

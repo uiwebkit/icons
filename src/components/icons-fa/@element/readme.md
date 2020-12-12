@@ -12,9 +12,9 @@
 | `color`             | `color`   |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
 | `degree`            | `degree`  |             | `number`                                       | `undefined` |
 | `name` _(required)_ | `name`    |             | `string`                                       | `undefined` |
-| `rotate`            | `rotate`  |             | `boolean`                                      | `false`     |
 | `size`              | `size`    |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |
 | `speed`             | `speed`   |             | `number`                                       | `undefined` |
+| `spin`              | `spin`    |             | `boolean`                                      | `false`     |
 | `steps`             | `steps`   |             | `number`                                       | `undefined` |
 | `type`              | `type`    |             | `"brands" \| "regular" \| "solid"`             | `'solid'`   |
 

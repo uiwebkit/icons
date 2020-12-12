@@ -70,18 +70,18 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconFa {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsFaFont;
     }
@@ -89,9 +89,9 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
     }
@@ -99,9 +99,9 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsFaFont;
     }
@@ -109,9 +109,9 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaBWrap {
@@ -119,19 +119,19 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaR {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaRWrap {
@@ -139,19 +139,19 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaS {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaSWrap {
@@ -159,10 +159,10 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaWrap {
@@ -170,10 +170,10 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsFaFont;
     }
@@ -181,9 +181,9 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
     }
@@ -191,9 +191,9 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatFWrap {
@@ -201,19 +201,19 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatO {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatOWrap {
@@ -221,19 +221,19 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatR {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatRWrap {
@@ -241,19 +241,19 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatS {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatSWrap {
@@ -261,19 +261,19 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatTt {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatTtWrap {
@@ -281,10 +281,10 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatWrap {
@@ -292,10 +292,10 @@ export namespace Components {
         "color": UniColor;
         "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
     }
@@ -972,18 +972,18 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconFa {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsFaFont;
     }
@@ -991,9 +991,9 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
     }
@@ -1001,9 +1001,9 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name": string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsFaFont;
     }
@@ -1011,9 +1011,9 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaBWrap {
@@ -1021,19 +1021,19 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaR {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaRWrap {
@@ -1041,19 +1041,19 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaS {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaSWrap {
@@ -1061,10 +1061,10 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaWrap {
@@ -1072,10 +1072,10 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name": string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsFaFont;
     }
@@ -1083,9 +1083,9 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
     }
@@ -1093,9 +1093,9 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatFWrap {
@@ -1103,19 +1103,19 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatO {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatOWrap {
@@ -1123,19 +1123,19 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatR {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatRWrap {
@@ -1143,19 +1143,19 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatS {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatSWrap {
@@ -1163,19 +1163,19 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatTt {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatTtWrap {
@@ -1183,10 +1183,10 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatWrap {
@@ -1194,10 +1194,10 @@ declare namespace LocalJSX {
         "color"?: UniColor;
         "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
     }

@@ -19,7 +19,7 @@ export class UniIconsMatTwoToneWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) degree: number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
@@ -30,15 +30,15 @@ export class UniIconsMatTwoToneWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   componentDidLoad(): void {
-    const { el, rotate, degree, speed, steps, selector, all } = this;
+    const { el, degree, spin, speed, steps, selector, all } = this;
     const props = {
       el,
       classes: `material-icons-two-tone`,
       content: this.name,
       filter: this.color,
       fontSize: this.size,
-      rotate,
       degree,
+      spin,
       speed,
       steps,
       selector,

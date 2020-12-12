@@ -3,7 +3,7 @@ import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 import { uniModifyAsync, uniModifyClass } from '../../utils';
 
 @Component({ tag: 'uni-wrap' })
-export class UniThemeWrapComponent implements ComponentInterface {
+export class UniWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 

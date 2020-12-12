@@ -19,7 +19,7 @@ export class UniIconsFaSolidWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) degree: number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
@@ -34,14 +34,14 @@ export class UniIconsFaSolidWrapComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, rotate, degree, speed, steps, selector, all } = this;
+    const { el, color, degree, spin, speed, steps, selector, all } = this;
     const props = {
       el,
       classes: `fas fa-${this.name}`,
       color,
       fontSize: this.size,
-      rotate,
       degree,
+      spin,
       speed,
       steps,
       selector,
