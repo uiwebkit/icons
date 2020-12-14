@@ -1,0 +1,17 @@
+:root {
+  --uni-color: #000;
+  --uni-color-fix: invert(0%) sepia(92%) saturate(21%) hue-rotate(59deg) brightness(100%) contrast(100%);
+  --uni-color-primary: #3f51b5;
+  --uni-color-primary-fix: invert(31%) sepia(10%) saturate(6644%) hue-rotate(204deg) brightness(95%) contrast(89%);
+  --uni-color-succsess: #018786;
+  --uni-color-success-fix: invert(26%) sepia(88%) saturate(1958%) hue-rotate(160deg) brightness(94%) contrast(99%);
+  --uni-color-accent: #ff4081;
+  --uni-color-accent-fix: invert(48%) sepia(88%) saturate(3768%) hue-rotate(315deg) brightness(99%) contrast(106%);
+  --uni-color-warn: #f44336;
+  --uni-color-warn-fix: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
+  --uni-size: 24px;
+  --uni-size-lg: 48px;
+  --uni-size-md: 36px;
+  --uni-size-sm: 24px;
+  --uni-size-xs: 12px;
+}
