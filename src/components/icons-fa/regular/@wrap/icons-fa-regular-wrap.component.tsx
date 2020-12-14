@@ -17,7 +17,7 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
   @Prop({ reflect: true }) spin: boolean = false;
 
@@ -34,13 +34,13 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, degree, spin, speed, steps, selector, all } = this;
+    const { el, color, angle, spin, speed, steps, selector, all } = this;
     const props = {
       el,
       classes: `far fa-${this.name}`,
       color,
       fontSize: this.size,
-      degree,
+      angle,
       spin,
       speed,
       steps,

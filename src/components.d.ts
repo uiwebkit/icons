@@ -7,11 +7,6 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
-    interface UniAngleWrap {
-        "all": boolean;
-        "degree": number;
-        "selector": string;
-    }
     interface UniBsAlarm {
     }
     interface UniBsAlarmFill {
@@ -67,8 +62,8 @@ export namespace Components {
     interface UniFasUserSecret {
     }
     interface UniIconBs {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -76,8 +71,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconFa {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -86,8 +81,8 @@ export namespace Components {
         "type": UniIconsFaFont;
     }
     interface UniIconMat {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -96,8 +91,8 @@ export namespace Components {
         "type": UniIconsMatFont;
     }
     interface UniIconsFa {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -106,8 +101,8 @@ export namespace Components {
         "type": UniIconsFaFont;
     }
     interface UniIconsFaB {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -116,8 +111,8 @@ export namespace Components {
     }
     interface UniIconsFaBWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -126,8 +121,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsFaR {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -136,8 +131,8 @@ export namespace Components {
     }
     interface UniIconsFaRWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -146,8 +141,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsFaS {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -156,8 +151,8 @@ export namespace Components {
     }
     interface UniIconsFaSWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -167,8 +162,8 @@ export namespace Components {
     }
     interface UniIconsFaWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -178,8 +173,8 @@ export namespace Components {
         "type": UniIconsFaFont;
     }
     interface UniIconsMat {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -188,8 +183,8 @@ export namespace Components {
         "type": UniIconsMatFont;
     }
     interface UniIconsMatF {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -198,8 +193,8 @@ export namespace Components {
     }
     interface UniIconsMatFWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -208,8 +203,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsMatO {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -218,8 +213,8 @@ export namespace Components {
     }
     interface UniIconsMatOWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -228,8 +223,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsMatR {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -238,8 +233,8 @@ export namespace Components {
     }
     interface UniIconsMatRWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -248,8 +243,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsMatS {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -258,8 +253,8 @@ export namespace Components {
     }
     interface UniIconsMatSWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -268,8 +263,8 @@ export namespace Components {
         "steps": number;
     }
     interface UniIconsMatTt {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -278,8 +273,8 @@ export namespace Components {
     }
     interface UniIconsMatTtWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -289,8 +284,8 @@ export namespace Components {
     }
     interface UniIconsMatWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
         "selector": string;
         "size": UniSize | number;
@@ -359,6 +354,11 @@ export namespace Components {
         "selector": string;
         "size": UniSize | number;
     }
+    interface UniTiltWrap {
+        "all": boolean;
+        "angle": number;
+        "selector": string;
+    }
     interface UniWrap {
         "all": boolean;
         "classes": string;
@@ -366,12 +366,6 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLUniAngleWrapElement extends Components.UniAngleWrap, HTMLStencilElement {
-    }
-    var HTMLUniAngleWrapElement: {
-        prototype: HTMLUniAngleWrapElement;
-        new (): HTMLUniAngleWrapElement;
-    };
     interface HTMLUniBsAlarmElement extends Components.UniBsAlarm, HTMLStencilElement {
     }
     var HTMLUniBsAlarmElement: {
@@ -822,6 +816,12 @@ declare global {
         prototype: HTMLUniThemeWrapElement;
         new (): HTMLUniThemeWrapElement;
     };
+    interface HTMLUniTiltWrapElement extends Components.UniTiltWrap, HTMLStencilElement {
+    }
+    var HTMLUniTiltWrapElement: {
+        prototype: HTMLUniTiltWrapElement;
+        new (): HTMLUniTiltWrapElement;
+    };
     interface HTMLUniWrapElement extends Components.UniWrap, HTMLStencilElement {
     }
     var HTMLUniWrapElement: {
@@ -829,7 +829,6 @@ declare global {
         new (): HTMLUniWrapElement;
     };
     interface HTMLElementTagNameMap {
-        "uni-angle-wrap": HTMLUniAngleWrapElement;
         "uni-bs-alarm": HTMLUniBsAlarmElement;
         "uni-bs-alarm-fill": HTMLUniBsAlarmFillElement;
         "uni-bs-star": HTMLUniBsStarElement;
@@ -905,15 +904,11 @@ declare global {
         "uni-mat-tt-web": HTMLUniMatTtWebElement;
         "uni-spin-wrap": HTMLUniSpinWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
+        "uni-tilt-wrap": HTMLUniTiltWrapElement;
         "uni-wrap": HTMLUniWrapElement;
     }
 }
 declare namespace LocalJSX {
-    interface UniAngleWrap {
-        "all"?: boolean;
-        "degree"?: number;
-        "selector"?: string;
-    }
     interface UniBsAlarm {
     }
     interface UniBsAlarmFill {
@@ -969,8 +964,8 @@ declare namespace LocalJSX {
     interface UniFasUserSecret {
     }
     interface UniIconBs {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -978,8 +973,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconFa {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -988,8 +983,8 @@ declare namespace LocalJSX {
         "type"?: UniIconsFaFont;
     }
     interface UniIconMat {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -998,8 +993,8 @@ declare namespace LocalJSX {
         "type"?: UniIconsMatFont;
     }
     interface UniIconsFa {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name": string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1008,8 +1003,8 @@ declare namespace LocalJSX {
         "type"?: UniIconsFaFont;
     }
     interface UniIconsFaB {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1018,8 +1013,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsFaBWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1028,8 +1023,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsFaR {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1038,8 +1033,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsFaRWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1048,8 +1043,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsFaS {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1058,8 +1053,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsFaSWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1069,8 +1064,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsFaWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name": string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1080,8 +1075,8 @@ declare namespace LocalJSX {
         "type"?: UniIconsFaFont;
     }
     interface UniIconsMat {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1090,8 +1085,8 @@ declare namespace LocalJSX {
         "type"?: UniIconsMatFont;
     }
     interface UniIconsMatF {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1100,8 +1095,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsMatFWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1110,8 +1105,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsMatO {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1120,8 +1115,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsMatOWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1130,8 +1125,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsMatR {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1140,8 +1135,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsMatRWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1150,8 +1145,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsMatS {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1160,8 +1155,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsMatSWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1170,8 +1165,8 @@ declare namespace LocalJSX {
         "steps"?: number;
     }
     interface UniIconsMatTt {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1180,8 +1175,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsMatTtWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1191,8 +1186,8 @@ declare namespace LocalJSX {
     }
     interface UniIconsMatWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
@@ -1261,13 +1256,17 @@ declare namespace LocalJSX {
         "selector"?: string;
         "size"?: UniSize | number;
     }
+    interface UniTiltWrap {
+        "all"?: boolean;
+        "angle"?: number;
+        "selector"?: string;
+    }
     interface UniWrap {
         "all"?: boolean;
         "classes"?: string;
         "selector"?: string;
     }
     interface IntrinsicElements {
-        "uni-angle-wrap": UniAngleWrap;
         "uni-bs-alarm": UniBsAlarm;
         "uni-bs-alarm-fill": UniBsAlarmFill;
         "uni-bs-star": UniBsStar;
@@ -1343,6 +1342,7 @@ declare namespace LocalJSX {
         "uni-mat-tt-web": UniMatTtWeb;
         "uni-spin-wrap": UniSpinWrap;
         "uni-theme-wrap": UniThemeWrap;
+        "uni-tilt-wrap": UniTiltWrap;
         "uni-wrap": UniWrap;
     }
 }
@@ -1350,7 +1350,6 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "uni-angle-wrap": LocalJSX.UniAngleWrap & JSXBase.HTMLAttributes<HTMLUniAngleWrapElement>;
             "uni-bs-alarm": LocalJSX.UniBsAlarm & JSXBase.HTMLAttributes<HTMLUniBsAlarmElement>;
             "uni-bs-alarm-fill": LocalJSX.UniBsAlarmFill & JSXBase.HTMLAttributes<HTMLUniBsAlarmFillElement>;
             "uni-bs-star": LocalJSX.UniBsStar & JSXBase.HTMLAttributes<HTMLUniBsStarElement>;
@@ -1426,6 +1425,7 @@ declare module "@stencil/core" {
             "uni-mat-tt-web": LocalJSX.UniMatTtWeb & JSXBase.HTMLAttributes<HTMLUniMatTtWebElement>;
             "uni-spin-wrap": LocalJSX.UniSpinWrap & JSXBase.HTMLAttributes<HTMLUniSpinWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
+            "uni-tilt-wrap": LocalJSX.UniTiltWrap & JSXBase.HTMLAttributes<HTMLUniTiltWrapElement>;
             "uni-wrap": LocalJSX.UniWrap & JSXBase.HTMLAttributes<HTMLUniWrapElement>;
         }
     }

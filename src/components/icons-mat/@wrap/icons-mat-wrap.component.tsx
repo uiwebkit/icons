@@ -14,7 +14,7 @@ export class UniIconsMatWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
   @Prop({ reflect: true }) spin: boolean = false;
 
@@ -27,8 +27,8 @@ export class UniIconsMatWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   render(): VNode {
-    const { name, color, size, degree, spin, speed, steps, selector, all } = this;
-    const props = { name, color, size, degree, spin, speed, steps, selector, all };
+    const { name, color, size, angle, spin, speed, steps, selector, all } = this;
+    const props = { name, color, size, angle, spin, speed, steps, selector, all };
     const UniIconsMatTag = `uni-icons-mat-${uniMatTypeShort(this.type)}-wrap`;
 
     return (

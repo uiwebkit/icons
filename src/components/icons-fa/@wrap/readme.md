@@ -10,8 +10,8 @@
 | Property            | Attribute  | Description | Type                                           | Default     |
 | ------------------- | ---------- | ----------- | ---------------------------------------------- | ----------- |
 | `all`               | `all`      |             | `boolean`                                      | `false`     |
+| `angle`             | `angle`    |             | `number`                                       | `undefined` |
 | `color`             | `color`    |             | `"accent" \| "primary" \| "success" \| "warn"` | `undefined` |
-| `degree`            | `degree`   |             | `number`                                       | `undefined` |
 | `name` _(required)_ | `name`     |             | `string`                                       | `undefined` |
 | `selector`          | `selector` |             | `string`                                       | `undefined` |
 | `size`              | `size`     |             | `"lg" \| "md" \| "sm" \| "xs" \| number`       | `undefined` |

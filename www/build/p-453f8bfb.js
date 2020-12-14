@@ -1,1 +1,0 @@
-import{d as n}from"./p-d8f3608d.js";function o(o){const r=t(o);return n(r)||u(o),r||null}function t(n){return null==n?void 0:n.textContent}function u(n){n.textContent=""}export{t as a,u as b,o as u}

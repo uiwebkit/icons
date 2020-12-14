@@ -17,7 +17,7 @@ export class UniIconsMatOutlineComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
   @Prop({ reflect: true }) spin: boolean = false;
 
@@ -35,8 +35,8 @@ export class UniIconsMatOutlineComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, degree, spin, speed, steps } = this;
-    const props = { el, color, fontSize: this.size, degree, spin, speed, steps, selector: `Host` };
+    const { el, color, angle, spin, speed, steps } = this;
+    const props = { el, color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 
     uniSmartWrap(props);
   }

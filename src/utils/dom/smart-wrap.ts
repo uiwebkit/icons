@@ -5,7 +5,7 @@ import {
   UniColorCSS,
   UniFilterCSS,
   UniFontSizeCSS,
-  uniGetDegree,
+  uniGetAngle,
   uniModifyAsync,
   uniModifyClass,
   uniModifyContent,
@@ -41,10 +41,10 @@ export function uniSmartWrap(props) {
     uniAppendStyle(UniFontSizeCSS);
   }
 
-  if (props.degree) {
+  if (props.angle) {
     styles = {
       ...styles,
-      ...uniGetDegree(props.degree).styles,
+      ...uniGetAngle(props.angle).styles,
     };
   }
 

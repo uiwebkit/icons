@@ -17,7 +17,7 @@ export class UniIconBsComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
   @Prop({ reflect: true }) spin: boolean = false;
 
@@ -37,8 +37,8 @@ export class UniIconBsComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, size, degree, spin, speed, steps } = this;
-    const props = { el, color, size, degree, spin, speed, steps, selector: 'svg' };
+    const { el, color, size, angle, spin, speed, steps } = this;
+    const props = { el, color, size, angle, spin, speed, steps, selector: 'svg' };
 
     uniSmartWrap(props);
   }

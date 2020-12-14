@@ -1,7 +1,7 @@
 export * from './coercion/is';
 
 export * from './dom/appent-style';
-export * from './dom/get-degree';
+export * from './dom/get-angle';
 export * from './dom/get-rotation';
 export * from './dom/get-theme';
 export * from './dom/is-target-element';

@@ -16,7 +16,7 @@ export class UniIconsFaComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
   @Prop({ reflect: true }) spin: boolean = false;
 
@@ -30,8 +30,8 @@ export class UniIconsFaComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    const { name, color, size, degree, spin, speed, steps } = this;
-    const props = { name, color, size, degree, spin, speed, steps };
+    const { name, color, size, angle, spin, speed, steps } = this;
+    const props = { name, color, size, angle, spin, speed, steps };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}`;
 
     return <UniIconsFaTag {...props} />;
