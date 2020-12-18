@@ -1,4 +1,4 @@
-# uni-tilt-wrap
+# uni-angle-wrap
 
 
 
@@ -10,7 +10,7 @@
 | Property   | Attribute  | Description | Type      | Default     |
 | ---------- | ---------- | ----------- | --------- | ----------- |
 | `all`      | `all`      |             | `boolean` | `false`     |
-| `degree`   | `degree`   |             | `number`  | `undefined` |
+| `angle`    | `angle`    |             | `number`  | `undefined` |
 | `selector` | `selector` |             | `string`  | `undefined` |
 
 

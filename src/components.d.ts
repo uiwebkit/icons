@@ -7,7 +7,21 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
+    interface UniBsAlarm {
+    }
+    interface UniBsAlarmFill {
+    }
+    interface UniBsStar {
+    }
+    interface UniBsStarFill {
+    }
+    interface UniBsStarHalf {
+    }
     interface UniFaStylesLoad {
+    }
+    interface UniFabBootstrap {
+    }
+    interface UniFabFacebook {
     }
     interface UniFabFontAwesome {
     }
@@ -15,11 +29,23 @@ export namespace Components {
     }
     interface UniFabGithub {
     }
+    interface UniFabInstagram {
+    }
     interface UniFabNpm {
+    }
+    interface UniFabTwitter {
     }
     interface UniFarCopy {
     }
+    interface UniFarEnvelope {
+    }
+    interface UniFarFileAlt {
+    }
     interface UniFasAngleDown {
+    }
+    interface UniFasBalanceScale {
+    }
+    interface UniFasBug {
     }
     interface UniFasChartLine {
     }
@@ -27,235 +53,244 @@ export namespace Components {
     }
     interface UniFasFileDownload {
     }
-    interface UniIconFa {
+    interface UniFasLightbulb {
+    }
+    interface UniFasQuestionCircle {
+    }
+    interface UniFasRocket {
+    }
+    interface UniFasUserSecret {
+    }
+    interface UniIconBs {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
+        "steps": number;
+    }
+    interface UniIconFa {
+        "angle": number;
+        "color": UniColor;
+        "name": string;
+        "size": UniSize | number;
+        "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsFaFont;
     }
     interface UniIconMat {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
     }
     interface UniIconsFa {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsFaFont;
     }
     interface UniIconsFaB {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaBWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaR {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaRWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaS {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaSWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsFaWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
-        "init": boolean;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsFaFont;
     }
     interface UniIconsMat {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
     }
     interface UniIconsMatF {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatFWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatO {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatOWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatR {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatRWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatS {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatSWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatTt {
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatTtWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
     }
     interface UniIconsMatWrap {
         "all": boolean;
+        "angle": number;
         "color": UniColor;
-        "degree": number;
         "name": string;
-        "rotate": boolean;
         "selector": string;
         "size": UniSize | number;
         "speed": number;
+        "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
     }
@@ -266,6 +301,8 @@ export namespace Components {
     interface UniMatFArrowDropDown {
     }
     interface UniMatFArrowDropUp {
+    }
+    interface UniMatFClose {
     }
     interface UniMatFFavorite {
     }
@@ -303,7 +340,7 @@ export namespace Components {
     }
     interface UniMatTtWeb {
     }
-    interface UniRotateWrap {
+    interface UniSpinWrap {
         "all": boolean;
         "selector": string;
         "speed": number;
@@ -319,7 +356,7 @@ export namespace Components {
     }
     interface UniTiltWrap {
         "all": boolean;
-        "degree": number;
+        "angle": number;
         "selector": string;
     }
     interface UniWrap {
@@ -329,11 +366,53 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLUniBsAlarmElement extends Components.UniBsAlarm, HTMLStencilElement {
+    }
+    var HTMLUniBsAlarmElement: {
+        prototype: HTMLUniBsAlarmElement;
+        new (): HTMLUniBsAlarmElement;
+    };
+    interface HTMLUniBsAlarmFillElement extends Components.UniBsAlarmFill, HTMLStencilElement {
+    }
+    var HTMLUniBsAlarmFillElement: {
+        prototype: HTMLUniBsAlarmFillElement;
+        new (): HTMLUniBsAlarmFillElement;
+    };
+    interface HTMLUniBsStarElement extends Components.UniBsStar, HTMLStencilElement {
+    }
+    var HTMLUniBsStarElement: {
+        prototype: HTMLUniBsStarElement;
+        new (): HTMLUniBsStarElement;
+    };
+    interface HTMLUniBsStarFillElement extends Components.UniBsStarFill, HTMLStencilElement {
+    }
+    var HTMLUniBsStarFillElement: {
+        prototype: HTMLUniBsStarFillElement;
+        new (): HTMLUniBsStarFillElement;
+    };
+    interface HTMLUniBsStarHalfElement extends Components.UniBsStarHalf, HTMLStencilElement {
+    }
+    var HTMLUniBsStarHalfElement: {
+        prototype: HTMLUniBsStarHalfElement;
+        new (): HTMLUniBsStarHalfElement;
+    };
     interface HTMLUniFaStylesLoadElement extends Components.UniFaStylesLoad, HTMLStencilElement {
     }
     var HTMLUniFaStylesLoadElement: {
         prototype: HTMLUniFaStylesLoadElement;
         new (): HTMLUniFaStylesLoadElement;
+    };
+    interface HTMLUniFabBootstrapElement extends Components.UniFabBootstrap, HTMLStencilElement {
+    }
+    var HTMLUniFabBootstrapElement: {
+        prototype: HTMLUniFabBootstrapElement;
+        new (): HTMLUniFabBootstrapElement;
+    };
+    interface HTMLUniFabFacebookElement extends Components.UniFabFacebook, HTMLStencilElement {
+    }
+    var HTMLUniFabFacebookElement: {
+        prototype: HTMLUniFabFacebookElement;
+        new (): HTMLUniFabFacebookElement;
     };
     interface HTMLUniFabFontAwesomeElement extends Components.UniFabFontAwesome, HTMLStencilElement {
     }
@@ -353,11 +432,23 @@ declare global {
         prototype: HTMLUniFabGithubElement;
         new (): HTMLUniFabGithubElement;
     };
+    interface HTMLUniFabInstagramElement extends Components.UniFabInstagram, HTMLStencilElement {
+    }
+    var HTMLUniFabInstagramElement: {
+        prototype: HTMLUniFabInstagramElement;
+        new (): HTMLUniFabInstagramElement;
+    };
     interface HTMLUniFabNpmElement extends Components.UniFabNpm, HTMLStencilElement {
     }
     var HTMLUniFabNpmElement: {
         prototype: HTMLUniFabNpmElement;
         new (): HTMLUniFabNpmElement;
+    };
+    interface HTMLUniFabTwitterElement extends Components.UniFabTwitter, HTMLStencilElement {
+    }
+    var HTMLUniFabTwitterElement: {
+        prototype: HTMLUniFabTwitterElement;
+        new (): HTMLUniFabTwitterElement;
     };
     interface HTMLUniFarCopyElement extends Components.UniFarCopy, HTMLStencilElement {
     }
@@ -365,11 +456,35 @@ declare global {
         prototype: HTMLUniFarCopyElement;
         new (): HTMLUniFarCopyElement;
     };
+    interface HTMLUniFarEnvelopeElement extends Components.UniFarEnvelope, HTMLStencilElement {
+    }
+    var HTMLUniFarEnvelopeElement: {
+        prototype: HTMLUniFarEnvelopeElement;
+        new (): HTMLUniFarEnvelopeElement;
+    };
+    interface HTMLUniFarFileAltElement extends Components.UniFarFileAlt, HTMLStencilElement {
+    }
+    var HTMLUniFarFileAltElement: {
+        prototype: HTMLUniFarFileAltElement;
+        new (): HTMLUniFarFileAltElement;
+    };
     interface HTMLUniFasAngleDownElement extends Components.UniFasAngleDown, HTMLStencilElement {
     }
     var HTMLUniFasAngleDownElement: {
         prototype: HTMLUniFasAngleDownElement;
         new (): HTMLUniFasAngleDownElement;
+    };
+    interface HTMLUniFasBalanceScaleElement extends Components.UniFasBalanceScale, HTMLStencilElement {
+    }
+    var HTMLUniFasBalanceScaleElement: {
+        prototype: HTMLUniFasBalanceScaleElement;
+        new (): HTMLUniFasBalanceScaleElement;
+    };
+    interface HTMLUniFasBugElement extends Components.UniFasBug, HTMLStencilElement {
+    }
+    var HTMLUniFasBugElement: {
+        prototype: HTMLUniFasBugElement;
+        new (): HTMLUniFasBugElement;
     };
     interface HTMLUniFasChartLineElement extends Components.UniFasChartLine, HTMLStencilElement {
     }
@@ -388,6 +503,36 @@ declare global {
     var HTMLUniFasFileDownloadElement: {
         prototype: HTMLUniFasFileDownloadElement;
         new (): HTMLUniFasFileDownloadElement;
+    };
+    interface HTMLUniFasLightbulbElement extends Components.UniFasLightbulb, HTMLStencilElement {
+    }
+    var HTMLUniFasLightbulbElement: {
+        prototype: HTMLUniFasLightbulbElement;
+        new (): HTMLUniFasLightbulbElement;
+    };
+    interface HTMLUniFasQuestionCircleElement extends Components.UniFasQuestionCircle, HTMLStencilElement {
+    }
+    var HTMLUniFasQuestionCircleElement: {
+        prototype: HTMLUniFasQuestionCircleElement;
+        new (): HTMLUniFasQuestionCircleElement;
+    };
+    interface HTMLUniFasRocketElement extends Components.UniFasRocket, HTMLStencilElement {
+    }
+    var HTMLUniFasRocketElement: {
+        prototype: HTMLUniFasRocketElement;
+        new (): HTMLUniFasRocketElement;
+    };
+    interface HTMLUniFasUserSecretElement extends Components.UniFasUserSecret, HTMLStencilElement {
+    }
+    var HTMLUniFasUserSecretElement: {
+        prototype: HTMLUniFasUserSecretElement;
+        new (): HTMLUniFasUserSecretElement;
+    };
+    interface HTMLUniIconBsElement extends Components.UniIconBs, HTMLStencilElement {
+    }
+    var HTMLUniIconBsElement: {
+        prototype: HTMLUniIconBsElement;
+        new (): HTMLUniIconBsElement;
     };
     interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
     }
@@ -545,6 +690,12 @@ declare global {
         prototype: HTMLUniMatFArrowDropUpElement;
         new (): HTMLUniMatFArrowDropUpElement;
     };
+    interface HTMLUniMatFCloseElement extends Components.UniMatFClose, HTMLStencilElement {
+    }
+    var HTMLUniMatFCloseElement: {
+        prototype: HTMLUniMatFCloseElement;
+        new (): HTMLUniMatFCloseElement;
+    };
     interface HTMLUniMatFFavoriteElement extends Components.UniMatFFavorite, HTMLStencilElement {
     }
     var HTMLUniMatFFavoriteElement: {
@@ -653,11 +804,11 @@ declare global {
         prototype: HTMLUniMatTtWebElement;
         new (): HTMLUniMatTtWebElement;
     };
-    interface HTMLUniRotateWrapElement extends Components.UniRotateWrap, HTMLStencilElement {
+    interface HTMLUniSpinWrapElement extends Components.UniSpinWrap, HTMLStencilElement {
     }
-    var HTMLUniRotateWrapElement: {
-        prototype: HTMLUniRotateWrapElement;
-        new (): HTMLUniRotateWrapElement;
+    var HTMLUniSpinWrapElement: {
+        prototype: HTMLUniSpinWrapElement;
+        new (): HTMLUniSpinWrapElement;
     };
     interface HTMLUniThemeWrapElement extends Components.UniThemeWrap, HTMLStencilElement {
     }
@@ -678,16 +829,34 @@ declare global {
         new (): HTMLUniWrapElement;
     };
     interface HTMLElementTagNameMap {
+        "uni-bs-alarm": HTMLUniBsAlarmElement;
+        "uni-bs-alarm-fill": HTMLUniBsAlarmFillElement;
+        "uni-bs-star": HTMLUniBsStarElement;
+        "uni-bs-star-fill": HTMLUniBsStarFillElement;
+        "uni-bs-star-half": HTMLUniBsStarHalfElement;
         "uni-fa-styles-load": HTMLUniFaStylesLoadElement;
+        "uni-fab-bootstrap": HTMLUniFabBootstrapElement;
+        "uni-fab-facebook": HTMLUniFabFacebookElement;
         "uni-fab-font-awesome": HTMLUniFabFontAwesomeElement;
         "uni-fab-font-awesome-alt": HTMLUniFabFontAwesomeAltElement;
         "uni-fab-github": HTMLUniFabGithubElement;
+        "uni-fab-instagram": HTMLUniFabInstagramElement;
         "uni-fab-npm": HTMLUniFabNpmElement;
+        "uni-fab-twitter": HTMLUniFabTwitterElement;
         "uni-far-copy": HTMLUniFarCopyElement;
+        "uni-far-envelope": HTMLUniFarEnvelopeElement;
+        "uni-far-file-alt": HTMLUniFarFileAltElement;
         "uni-fas-angle-down": HTMLUniFasAngleDownElement;
+        "uni-fas-balance-scale": HTMLUniFasBalanceScaleElement;
+        "uni-fas-bug": HTMLUniFasBugElement;
         "uni-fas-chart-line": HTMLUniFasChartLineElement;
         "uni-fas-download": HTMLUniFasDownloadElement;
         "uni-fas-file-download": HTMLUniFasFileDownloadElement;
+        "uni-fas-lightbulb": HTMLUniFasLightbulbElement;
+        "uni-fas-question-circle": HTMLUniFasQuestionCircleElement;
+        "uni-fas-rocket": HTMLUniFasRocketElement;
+        "uni-fas-user-secret": HTMLUniFasUserSecretElement;
+        "uni-icon-bs": HTMLUniIconBsElement;
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
@@ -714,6 +883,7 @@ declare global {
         "uni-mat-f-add-shopping-cart": HTMLUniMatFAddShoppingCartElement;
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-mat-f-arrow-drop-up": HTMLUniMatFArrowDropUpElement;
+        "uni-mat-f-close": HTMLUniMatFCloseElement;
         "uni-mat-f-favorite": HTMLUniMatFFavoriteElement;
         "uni-mat-f-home": HTMLUniMatFHomeElement;
         "uni-mat-f-play-circle": HTMLUniMatFPlayCircleElement;
@@ -732,14 +902,28 @@ declare global {
         "uni-mat-tt-play-circle": HTMLUniMatTtPlayCircleElement;
         "uni-mat-tt-rotate-degrees": HTMLUniMatTtRotateDegreesElement;
         "uni-mat-tt-web": HTMLUniMatTtWebElement;
-        "uni-rotate-wrap": HTMLUniRotateWrapElement;
+        "uni-spin-wrap": HTMLUniSpinWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
         "uni-tilt-wrap": HTMLUniTiltWrapElement;
         "uni-wrap": HTMLUniWrapElement;
     }
 }
 declare namespace LocalJSX {
+    interface UniBsAlarm {
+    }
+    interface UniBsAlarmFill {
+    }
+    interface UniBsStar {
+    }
+    interface UniBsStarFill {
+    }
+    interface UniBsStarHalf {
+    }
     interface UniFaStylesLoad {
+    }
+    interface UniFabBootstrap {
+    }
+    interface UniFabFacebook {
     }
     interface UniFabFontAwesome {
     }
@@ -747,11 +931,23 @@ declare namespace LocalJSX {
     }
     interface UniFabGithub {
     }
+    interface UniFabInstagram {
+    }
     interface UniFabNpm {
+    }
+    interface UniFabTwitter {
     }
     interface UniFarCopy {
     }
+    interface UniFarEnvelope {
+    }
+    interface UniFarFileAlt {
+    }
     interface UniFasAngleDown {
+    }
+    interface UniFasBalanceScale {
+    }
+    interface UniFasBug {
     }
     interface UniFasChartLine {
     }
@@ -759,235 +955,244 @@ declare namespace LocalJSX {
     }
     interface UniFasFileDownload {
     }
-    interface UniIconFa {
+    interface UniFasLightbulb {
+    }
+    interface UniFasQuestionCircle {
+    }
+    interface UniFasRocket {
+    }
+    interface UniFasUserSecret {
+    }
+    interface UniIconBs {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
+        "steps"?: number;
+    }
+    interface UniIconFa {
+        "angle"?: number;
+        "color"?: UniColor;
+        "name"?: string;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsFaFont;
     }
     interface UniIconMat {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
     }
     interface UniIconsFa {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
         "name": string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsFaFont;
     }
     interface UniIconsFaB {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaBWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaR {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaRWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaS {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaSWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
-        "name": string;
-        "rotate"?: boolean;
+        "name"?: string;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsFaWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
-        "init"?: boolean;
         "name": string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsFaFont;
     }
     interface UniIconsMat {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
     }
     interface UniIconsMatF {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatFWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatO {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatOWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatR {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatRWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatS {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatSWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatTt {
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatTtWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
     }
     interface UniIconsMatWrap {
         "all"?: boolean;
+        "angle"?: number;
         "color"?: UniColor;
-        "degree"?: number;
         "name"?: string;
-        "rotate"?: boolean;
         "selector"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
+        "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
     }
@@ -998,6 +1203,8 @@ declare namespace LocalJSX {
     interface UniMatFArrowDropDown {
     }
     interface UniMatFArrowDropUp {
+    }
+    interface UniMatFClose {
     }
     interface UniMatFFavorite {
     }
@@ -1035,7 +1242,7 @@ declare namespace LocalJSX {
     }
     interface UniMatTtWeb {
     }
-    interface UniRotateWrap {
+    interface UniSpinWrap {
         "all"?: boolean;
         "selector"?: string;
         "speed"?: number;
@@ -1051,7 +1258,7 @@ declare namespace LocalJSX {
     }
     interface UniTiltWrap {
         "all"?: boolean;
-        "degree"?: number;
+        "angle"?: number;
         "selector"?: string;
     }
     interface UniWrap {
@@ -1060,16 +1267,34 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface IntrinsicElements {
+        "uni-bs-alarm": UniBsAlarm;
+        "uni-bs-alarm-fill": UniBsAlarmFill;
+        "uni-bs-star": UniBsStar;
+        "uni-bs-star-fill": UniBsStarFill;
+        "uni-bs-star-half": UniBsStarHalf;
         "uni-fa-styles-load": UniFaStylesLoad;
+        "uni-fab-bootstrap": UniFabBootstrap;
+        "uni-fab-facebook": UniFabFacebook;
         "uni-fab-font-awesome": UniFabFontAwesome;
         "uni-fab-font-awesome-alt": UniFabFontAwesomeAlt;
         "uni-fab-github": UniFabGithub;
+        "uni-fab-instagram": UniFabInstagram;
         "uni-fab-npm": UniFabNpm;
+        "uni-fab-twitter": UniFabTwitter;
         "uni-far-copy": UniFarCopy;
+        "uni-far-envelope": UniFarEnvelope;
+        "uni-far-file-alt": UniFarFileAlt;
         "uni-fas-angle-down": UniFasAngleDown;
+        "uni-fas-balance-scale": UniFasBalanceScale;
+        "uni-fas-bug": UniFasBug;
         "uni-fas-chart-line": UniFasChartLine;
         "uni-fas-download": UniFasDownload;
         "uni-fas-file-download": UniFasFileDownload;
+        "uni-fas-lightbulb": UniFasLightbulb;
+        "uni-fas-question-circle": UniFasQuestionCircle;
+        "uni-fas-rocket": UniFasRocket;
+        "uni-fas-user-secret": UniFasUserSecret;
+        "uni-icon-bs": UniIconBs;
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
         "uni-icons-fa": UniIconsFa;
@@ -1096,6 +1321,7 @@ declare namespace LocalJSX {
         "uni-mat-f-add-shopping-cart": UniMatFAddShoppingCart;
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-mat-f-arrow-drop-up": UniMatFArrowDropUp;
+        "uni-mat-f-close": UniMatFClose;
         "uni-mat-f-favorite": UniMatFFavorite;
         "uni-mat-f-home": UniMatFHome;
         "uni-mat-f-play-circle": UniMatFPlayCircle;
@@ -1114,7 +1340,7 @@ declare namespace LocalJSX {
         "uni-mat-tt-play-circle": UniMatTtPlayCircle;
         "uni-mat-tt-rotate-degrees": UniMatTtRotateDegrees;
         "uni-mat-tt-web": UniMatTtWeb;
-        "uni-rotate-wrap": UniRotateWrap;
+        "uni-spin-wrap": UniSpinWrap;
         "uni-theme-wrap": UniThemeWrap;
         "uni-tilt-wrap": UniTiltWrap;
         "uni-wrap": UniWrap;
@@ -1124,16 +1350,34 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "uni-bs-alarm": LocalJSX.UniBsAlarm & JSXBase.HTMLAttributes<HTMLUniBsAlarmElement>;
+            "uni-bs-alarm-fill": LocalJSX.UniBsAlarmFill & JSXBase.HTMLAttributes<HTMLUniBsAlarmFillElement>;
+            "uni-bs-star": LocalJSX.UniBsStar & JSXBase.HTMLAttributes<HTMLUniBsStarElement>;
+            "uni-bs-star-fill": LocalJSX.UniBsStarFill & JSXBase.HTMLAttributes<HTMLUniBsStarFillElement>;
+            "uni-bs-star-half": LocalJSX.UniBsStarHalf & JSXBase.HTMLAttributes<HTMLUniBsStarHalfElement>;
             "uni-fa-styles-load": LocalJSX.UniFaStylesLoad & JSXBase.HTMLAttributes<HTMLUniFaStylesLoadElement>;
+            "uni-fab-bootstrap": LocalJSX.UniFabBootstrap & JSXBase.HTMLAttributes<HTMLUniFabBootstrapElement>;
+            "uni-fab-facebook": LocalJSX.UniFabFacebook & JSXBase.HTMLAttributes<HTMLUniFabFacebookElement>;
             "uni-fab-font-awesome": LocalJSX.UniFabFontAwesome & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeElement>;
             "uni-fab-font-awesome-alt": LocalJSX.UniFabFontAwesomeAlt & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeAltElement>;
             "uni-fab-github": LocalJSX.UniFabGithub & JSXBase.HTMLAttributes<HTMLUniFabGithubElement>;
+            "uni-fab-instagram": LocalJSX.UniFabInstagram & JSXBase.HTMLAttributes<HTMLUniFabInstagramElement>;
             "uni-fab-npm": LocalJSX.UniFabNpm & JSXBase.HTMLAttributes<HTMLUniFabNpmElement>;
+            "uni-fab-twitter": LocalJSX.UniFabTwitter & JSXBase.HTMLAttributes<HTMLUniFabTwitterElement>;
             "uni-far-copy": LocalJSX.UniFarCopy & JSXBase.HTMLAttributes<HTMLUniFarCopyElement>;
+            "uni-far-envelope": LocalJSX.UniFarEnvelope & JSXBase.HTMLAttributes<HTMLUniFarEnvelopeElement>;
+            "uni-far-file-alt": LocalJSX.UniFarFileAlt & JSXBase.HTMLAttributes<HTMLUniFarFileAltElement>;
             "uni-fas-angle-down": LocalJSX.UniFasAngleDown & JSXBase.HTMLAttributes<HTMLUniFasAngleDownElement>;
+            "uni-fas-balance-scale": LocalJSX.UniFasBalanceScale & JSXBase.HTMLAttributes<HTMLUniFasBalanceScaleElement>;
+            "uni-fas-bug": LocalJSX.UniFasBug & JSXBase.HTMLAttributes<HTMLUniFasBugElement>;
             "uni-fas-chart-line": LocalJSX.UniFasChartLine & JSXBase.HTMLAttributes<HTMLUniFasChartLineElement>;
             "uni-fas-download": LocalJSX.UniFasDownload & JSXBase.HTMLAttributes<HTMLUniFasDownloadElement>;
             "uni-fas-file-download": LocalJSX.UniFasFileDownload & JSXBase.HTMLAttributes<HTMLUniFasFileDownloadElement>;
+            "uni-fas-lightbulb": LocalJSX.UniFasLightbulb & JSXBase.HTMLAttributes<HTMLUniFasLightbulbElement>;
+            "uni-fas-question-circle": LocalJSX.UniFasQuestionCircle & JSXBase.HTMLAttributes<HTMLUniFasQuestionCircleElement>;
+            "uni-fas-rocket": LocalJSX.UniFasRocket & JSXBase.HTMLAttributes<HTMLUniFasRocketElement>;
+            "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
+            "uni-icon-bs": LocalJSX.UniIconBs & JSXBase.HTMLAttributes<HTMLUniIconBsElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
@@ -1160,6 +1404,7 @@ declare module "@stencil/core" {
             "uni-mat-f-add-shopping-cart": LocalJSX.UniMatFAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatFAddShoppingCartElement>;
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-mat-f-arrow-drop-up": LocalJSX.UniMatFArrowDropUp & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropUpElement>;
+            "uni-mat-f-close": LocalJSX.UniMatFClose & JSXBase.HTMLAttributes<HTMLUniMatFCloseElement>;
             "uni-mat-f-favorite": LocalJSX.UniMatFFavorite & JSXBase.HTMLAttributes<HTMLUniMatFFavoriteElement>;
             "uni-mat-f-home": LocalJSX.UniMatFHome & JSXBase.HTMLAttributes<HTMLUniMatFHomeElement>;
             "uni-mat-f-play-circle": LocalJSX.UniMatFPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatFPlayCircleElement>;
@@ -1178,7 +1423,7 @@ declare module "@stencil/core" {
             "uni-mat-tt-play-circle": LocalJSX.UniMatTtPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatTtPlayCircleElement>;
             "uni-mat-tt-rotate-degrees": LocalJSX.UniMatTtRotateDegrees & JSXBase.HTMLAttributes<HTMLUniMatTtRotateDegreesElement>;
             "uni-mat-tt-web": LocalJSX.UniMatTtWeb & JSXBase.HTMLAttributes<HTMLUniMatTtWebElement>;
-            "uni-rotate-wrap": LocalJSX.UniRotateWrap & JSXBase.HTMLAttributes<HTMLUniRotateWrapElement>;
+            "uni-spin-wrap": LocalJSX.UniSpinWrap & JSXBase.HTMLAttributes<HTMLUniSpinWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
             "uni-tilt-wrap": LocalJSX.UniTiltWrap & JSXBase.HTMLAttributes<HTMLUniTiltWrapElement>;
             "uni-wrap": LocalJSX.UniWrap & JSXBase.HTMLAttributes<HTMLUniWrapElement>;

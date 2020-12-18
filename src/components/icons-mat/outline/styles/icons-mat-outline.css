@@ -2,8 +2,8 @@
   font-family: 'Material Icons Outlined';
   font-style: normal;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/mat/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2'),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.6/dist/assets/fonts/mat/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcY.woff) format('woff');
+  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/mat/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2'),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/mat/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUcY.woff) format('woff');
 }
 
 .material-icons-outlined {

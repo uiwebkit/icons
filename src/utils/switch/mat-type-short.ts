@@ -8,10 +8,10 @@ export function uniMatTypeShort(type: UniIconsMatFont): string {
       return 'o';
     case 'rounded':
       return 'r';
-    case 'two-tone':
-      return 'tt';
     case 'sharp':
       return 's';
+    case 'two-tone':
+      return 'tt';
     default:
       return 'f';
   }

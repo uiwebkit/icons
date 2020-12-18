@@ -17,9 +17,9 @@ export class UniIconsMatTwoToneComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
@@ -35,8 +35,8 @@ export class UniIconsMatTwoToneComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, rotate, degree, speed, steps } = this;
-    const props = { el, filter: this.color, fontSize: this.size, rotate, degree, speed, steps, selector: `Host` };
+    const { el, angle, spin, speed, steps } = this;
+    const props = { el, filter: this.color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 
     uniSmartWrap(props);
   }

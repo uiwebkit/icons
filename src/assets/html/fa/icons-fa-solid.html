@@ -14,17 +14,32 @@
 <a href="../../../">Home</a>
 
 <h4>Custom Element:</h4>
-<uni-icons-fa-s init name="check-circle"></uni-icons-fa-s>
+<uni-icons-fa-s init>check-circle</uni-icons-fa-s>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-fa-s name="check-circle"></uni-icons-fa-s>
 
 <h4>Wrapper + first child:</h4>
+<uni-icons-fa-s-wrap>
+  <i>check-circle</i>
+</uni-icons-fa-s-wrap>
+
+<h4>Wrapper + prop 'name' + first child:</h4>
 <uni-icons-fa-s-wrap name="check-circle">
   <i></i>
 </uni-icons-fa-s-wrap>
 
 <h4>Wrapper + selector (all):</h4>
-<uni-icons-fa-s-wrap name="check-circle" selector=".test" all>
-  <span>Text</span>
+<uni-icons-fa-s-wrap selector=".test" all>
+  <span class="test">check-circle</span>
 
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-s-wrap>
+
+<h4>Wrapper + prop 'name' + selector (all):</h4>
+<uni-icons-fa-s-wrap name="check-circle" selector=".test" all>
   <span class="test"></span>
 
   <span>

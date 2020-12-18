@@ -7,15 +7,15 @@ export class UniTiltWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
   @Prop({ reflect: true }) selector: string;
 
   @Prop({ reflect: true }) all: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
-    const { el, degree, selector, all } = this;
-    const props = { el, degree, selector, all };
+    const { el, angle, selector, all } = this;
+    const props = { el, angle, selector, all };
 
     uniSmartWrap(props);
   }

@@ -1,7 +1,7 @@
-import { Component, ComponentInterface, h, VNode, Prop, Element, Fragment } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Element } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../../models';
-import { uniSmartWrap } from '../../../../utils';
+import { uniGetCleanContent, uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-fa-r-wrap',
@@ -11,17 +11,15 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) init: boolean = false;
-
-  @Prop({ reflect: true }) name!: string;
+  @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
@@ -31,24 +29,19 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) all: boolean = false;
 
-  render(): VNode {
-    return (
-      <Fragment>
-        <slot />
-        {this.init ? <uni-fa-styles-load/> : ''}
-      </Fragment>
-    );
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || uniGetCleanContent(this.el.firstElementChild);
   }
 
   componentDidLoad(): void {
-    const { el, color, rotate, degree, speed, steps, selector, all } = this;
+    const { el, color, angle, spin, speed, steps, selector, all } = this;
     const props = {
       el,
       classes: `far fa-${this.name}`,
       color,
       fontSize: this.size,
-      rotate,
-      degree,
+      angle,
+      spin,
       speed,
       steps,
       selector,

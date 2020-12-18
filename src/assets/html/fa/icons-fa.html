@@ -14,11 +14,27 @@
 <a href="../../../">Home</a>
 
 <h4>Custom Element:</h4>
-<uni-icons-fa init name="check-circle"></uni-icons-fa>
+<uni-icons-fa init>check-circle</uni-icons-fa>
+<uni-icons-fa type="regular">check-circle</uni-icons-fa>
+<uni-icons-fa type="brands">github</uni-icons-fa>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-fa name="check-circle"></uni-icons-fa>
 <uni-icons-fa type="regular" name="check-circle"></uni-icons-fa>
 <uni-icons-fa type="brands" name="github"></uni-icons-fa>
 
 <h4>Wrapper + first child:</h4>
+<uni-icons-fa-wrap>
+  <i>check-circle</i>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap type="regular">
+  <i>check-circle</i>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap type="brands">
+  <i>github</i>
+</uni-icons-fa-wrap>
+
+<h4>Wrapper + prop 'name' + first child:</h4>
 <uni-icons-fa-wrap name="check-circle">
   <i></i>
 </uni-icons-fa-wrap>
@@ -30,22 +46,39 @@
 </uni-icons-fa-wrap>
 
 <h4>Wrapper + selector (all):</h4>
+<uni-icons-fa-wrap selector=".test" all>
+  <span class="test">check-circle</span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap type="regular" selector=".test" all>
+  <span class="test">check-circle</span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-wrap>
+<uni-icons-fa-wrap type="brands" selector=".test" all>
+  <span class="test">github</span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-wrap>
+
+<h4>Wrapper + prop 'name' + selector (all):</h4>
 <uni-icons-fa-wrap name="check-circle" selector=".test" all>
-  <span>Text</span>
   <span class="test"></span>
   <span>
     <i class="test"></i>
   </span>
 </uni-icons-fa-wrap>
 <uni-icons-fa-wrap type="regular" name="check-circle" selector=".test" all>
-  <span>Text</span>
   <span class="test"></span>
   <span>
     <i class="test"></i>
   </span>
 </uni-icons-fa-wrap>
 <uni-icons-fa-wrap type="brands" name="github" selector=".test" all>
-  <span>Text</span>
   <span class="test"></span>
   <span>
     <i class="test"></i>

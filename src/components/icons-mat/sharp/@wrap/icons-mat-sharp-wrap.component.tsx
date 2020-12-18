@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
+import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
 
 import { uniSmartWrap } from '../../../../utils';
 import { UniColor, UniSize } from '../../../../models';
@@ -17,9 +17,9 @@ export class UniIconsMatSharpWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
@@ -29,20 +29,16 @@ export class UniIconsMatSharpWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) all: boolean = false;
 
-  render(): VNode {
-    return <slot />;
-  }
-
   componentDidLoad(): void {
-    const { el, color, rotate, degree, speed, steps, selector, all } = this;
+    const { el, color, angle, spin, speed, steps, selector, all } = this;
     const props = {
       el,
       classes: `material-icons-sharp`,
       content: this.name,
       color,
       fontSize: this.size,
-      rotate,
-      degree,
+      angle,
+      spin,
       speed,
       steps,
       selector,

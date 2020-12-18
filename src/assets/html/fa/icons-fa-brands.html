@@ -14,17 +14,32 @@
 <a href="../../../">Home</a>
 
 <h4>Custom Element:</h4>
-<uni-icons-fa-b init name="github"></uni-icons-fa-b>
+<uni-icons-fa-b init>github</uni-icons-fa-b>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-fa-b name="github"></uni-icons-fa-b>
 
 <h4>Wrapper + first child:</h4>
+<uni-icons-fa-b-wrap>
+  <i>github</i>
+</uni-icons-fa-b-wrap>
+
+<h4>Wrapper + prop 'name' + first child:</h4>
 <uni-icons-fa-b-wrap name="github">
   <i></i>
 </uni-icons-fa-b-wrap>
 
 <h4>Wrapper + selector (all):</h4>
-<uni-icons-fa-b-wrap name="github" selector=".test" all>
-  <span>Text</span>
+<uni-icons-fa-b-wrap selector=".test" all>
+  <span class="test">github</span>
 
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-fa-b-wrap>
+
+<h4>Wrapper + prop 'name' + selector (all):</h4>
+<uni-icons-fa-b-wrap name="github" selector=".test" all>
   <span class="test"></span>
 
   <span>

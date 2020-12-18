@@ -13,19 +13,24 @@ export class UniIconMatComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) type: UniIconsMatFont = 'filled';
 
-  @Prop({ reflect: true }) name!: string;
+  @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
   @Prop({ reflect: true }) steps: number;
+
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || this.el.textContent;
+    this.el.innerHTML = '';
+  }
 
   render(): VNode {
     const UniIconTag = `uni-mat-${uniMatTypeShort(this.type)}-${this.name}`;
@@ -34,8 +39,8 @@ export class UniIconMatComponent implements ComponentInterface {
   }
 
   componentDidLoad(): void {
-    const { el, color, size, rotate, degree, speed, steps } = this;
-    const props = { el, color, size, rotate, degree, speed, steps, selector: 'svg' };
+    const { el, color, size, angle, spin, speed, steps } = this;
+    const props = { el, color, size, angle, spin, speed, steps, selector: 'svg' };
 
     uniSmartWrap(props);
   }

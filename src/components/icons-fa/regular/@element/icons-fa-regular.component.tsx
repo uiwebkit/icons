@@ -11,33 +11,32 @@ export class UniIconsFaRegularComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
-  @Prop({ reflect: true }) init: boolean = false;
-
-  @Prop({ reflect: true }) name!: string;
+  @Prop({ reflect: true }) name: string;
 
   @Prop({ reflect: true }) color: UniColor;
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
   @Prop({ reflect: true }) steps: number;
 
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || this.el.textContent;
+    this.el.innerHTML = '';
+  }
+
   render(): VNode {
-    return (
-      <Host class={`far fa-${this.name}`}>
-        {this.init ? <uni-fa-styles-load/> : ''}
-      </Host>
-    );
+    return <Host class={`far fa-${this.name}`} />;
   }
 
   componentDidLoad(): void {
-    const { el, color, rotate, degree, speed, steps } = this;
-    const props = { el, color, fontSize: this.size, rotate, degree, speed, steps, selector: `Host` };
+    const { el, color, angle, spin, speed, steps } = this;
+    const props = { el, color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 
     uniSmartWrap(props);
   }

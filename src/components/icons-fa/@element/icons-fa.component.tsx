@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { uniFaTypeShort } from '../../../utils';
@@ -6,7 +6,7 @@ import { uniFaTypeShort } from '../../../utils';
 @Component({ tag: 'uni-icons-fa' })
 export class UniIconsFaComponent implements ComponentInterface {
 
-  @Prop({ reflect: true }) init: boolean = false;
+  @Element() el!: HTMLElement;
 
   @Prop({ reflect: true }) type: UniIconsFaFont = 'solid';
 
@@ -16,17 +16,22 @@ export class UniIconsFaComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) size: UniSize | number;
 
-  @Prop({ reflect: true }) degree: number;
+  @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) rotate: boolean = false;
+  @Prop({ reflect: true }) spin: boolean = false;
 
   @Prop({ reflect: true }) speed: number;
 
   @Prop({ reflect: true }) steps: number;
 
+  componentWillLoad(): Promise<void> | void {
+    this.name = this.name || this.el.textContent;
+    this.el.innerHTML = '';
+  }
+
   render(): VNode {
-    const { init, name, color, size, rotate, degree, speed, steps } = this;
-    const props = { init, name, color, size, rotate, degree, speed, steps };
+    const { name, color, size, angle, spin, speed, steps } = this;
+    const props = { name, color, size, angle, spin, speed, steps };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}`;
 
     return <UniIconsFaTag {...props} />;

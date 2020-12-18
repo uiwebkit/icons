@@ -1,6 +1,6 @@
 {
   "name": "@uiwebkit/icn",
-  "version": "0.0.7",
+  "version": "0.0.13",
   "description": "Uni Icons Kit",
   "author": "UiWebKit",
   "license": "MIT",
@@ -29,7 +29,10 @@
     "publish": "npm publish --public"
   },
   "dependencies": {
-    "@stencil/core": "2.3.0"
+    "@stencil/core": "2.3.0",
+    "@fortawesome/fontawesome-free": "5.15.1",
+    "bootstrap-icons": "1.2.0",
+    "material-design-icons": "3.0.1"
   },
   "devDependencies": {
     "stencil-inline-svg": "1.0.1"
