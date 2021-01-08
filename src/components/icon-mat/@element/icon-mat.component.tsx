@@ -3,10 +3,7 @@ import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil
 import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
 import { isEmpty, uniMatTypeShort, uniSmartWrap } from '../../../utils';
 
-@Component({
-  tag: 'uni-icon-mat',
-  styles: 'uni-icon-mat {line-height: 1}'
-})
+@Component({ tag: 'uni-icon-mat' })
 export class UniIconMatComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
@@ -33,9 +30,9 @@ export class UniIconMatComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    const UniIconTag = `uni-mat-${uniMatTypeShort(this.type)}-${this.name}`;
+    const UniIconTag = !isEmpty(this.name) ? `uni-mat-${uniMatTypeShort(this.type)}-${this.name}` : null;
 
-    return !isEmpty(this.name) ? <UniIconTag /> : null;
+    return <UniIconTag />;
   }
 
   componentDidLoad(): void {

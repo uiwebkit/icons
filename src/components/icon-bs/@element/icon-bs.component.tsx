@@ -3,10 +3,7 @@ import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil
 import { UniColor, UniSize } from '../../../models';
 import { isEmpty, uniSmartWrap } from '../../../utils';
 
-@Component({
-  tag: 'uni-icon-bs',
-  styles: 'uni-icon-bs {line-height: 1}'
-})
+@Component({ tag: 'uni-icon-bs' })
 export class UniIconBsComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
@@ -31,9 +28,9 @@ export class UniIconBsComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    const UniIconTag = `uni-bs-${this.name}`;
+    const UniIconTag = !isEmpty(this.name) ? `uni-bs-${this.name}` : null;
 
-    return !isEmpty(this.name) ? <UniIconTag /> : null;
+    return <UniIconTag />;
   }
 
   componentDidLoad(): void {

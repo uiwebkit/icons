@@ -61,6 +61,36 @@ export namespace Components {
     }
     interface UniFasUserSecret {
     }
+    interface UniFlag {
+        "angle": number;
+        "name": string;
+        "round": boolean;
+        "size": UniSize | number;
+        "speed": number;
+        "spin": boolean;
+        "square": boolean;
+        "steps": number;
+    }
+    interface UniFlagCn {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagEs {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagGb {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagRu {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagUs {
+        "round": boolean;
+        "square": boolean;
+    }
     interface UniIconBs {
         "angle": number;
         "color": UniColor;
@@ -528,6 +558,42 @@ declare global {
         prototype: HTMLUniFasUserSecretElement;
         new (): HTMLUniFasUserSecretElement;
     };
+    interface HTMLUniFlagElement extends Components.UniFlag, HTMLStencilElement {
+    }
+    var HTMLUniFlagElement: {
+        prototype: HTMLUniFlagElement;
+        new (): HTMLUniFlagElement;
+    };
+    interface HTMLUniFlagCnElement extends Components.UniFlagCn, HTMLStencilElement {
+    }
+    var HTMLUniFlagCnElement: {
+        prototype: HTMLUniFlagCnElement;
+        new (): HTMLUniFlagCnElement;
+    };
+    interface HTMLUniFlagEsElement extends Components.UniFlagEs, HTMLStencilElement {
+    }
+    var HTMLUniFlagEsElement: {
+        prototype: HTMLUniFlagEsElement;
+        new (): HTMLUniFlagEsElement;
+    };
+    interface HTMLUniFlagGbElement extends Components.UniFlagGb, HTMLStencilElement {
+    }
+    var HTMLUniFlagGbElement: {
+        prototype: HTMLUniFlagGbElement;
+        new (): HTMLUniFlagGbElement;
+    };
+    interface HTMLUniFlagRuElement extends Components.UniFlagRu, HTMLStencilElement {
+    }
+    var HTMLUniFlagRuElement: {
+        prototype: HTMLUniFlagRuElement;
+        new (): HTMLUniFlagRuElement;
+    };
+    interface HTMLUniFlagUsElement extends Components.UniFlagUs, HTMLStencilElement {
+    }
+    var HTMLUniFlagUsElement: {
+        prototype: HTMLUniFlagUsElement;
+        new (): HTMLUniFlagUsElement;
+    };
     interface HTMLUniIconBsElement extends Components.UniIconBs, HTMLStencilElement {
     }
     var HTMLUniIconBsElement: {
@@ -856,6 +922,12 @@ declare global {
         "uni-fas-question-circle": HTMLUniFasQuestionCircleElement;
         "uni-fas-rocket": HTMLUniFasRocketElement;
         "uni-fas-user-secret": HTMLUniFasUserSecretElement;
+        "uni-flag": HTMLUniFlagElement;
+        "uni-flag-cn": HTMLUniFlagCnElement;
+        "uni-flag-es": HTMLUniFlagEsElement;
+        "uni-flag-gb": HTMLUniFlagGbElement;
+        "uni-flag-ru": HTMLUniFlagRuElement;
+        "uni-flag-us": HTMLUniFlagUsElement;
         "uni-icon-bs": HTMLUniIconBsElement;
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
@@ -962,6 +1034,36 @@ declare namespace LocalJSX {
     interface UniFasRocket {
     }
     interface UniFasUserSecret {
+    }
+    interface UniFlag {
+        "angle"?: number;
+        "name"?: string;
+        "round"?: boolean;
+        "size"?: UniSize | number;
+        "speed"?: number;
+        "spin"?: boolean;
+        "square"?: boolean;
+        "steps"?: number;
+    }
+    interface UniFlagCn {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagEs {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagGb {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagRu {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagUs {
+        "round"?: boolean;
+        "square"?: boolean;
     }
     interface UniIconBs {
         "angle"?: number;
@@ -1294,6 +1396,12 @@ declare namespace LocalJSX {
         "uni-fas-question-circle": UniFasQuestionCircle;
         "uni-fas-rocket": UniFasRocket;
         "uni-fas-user-secret": UniFasUserSecret;
+        "uni-flag": UniFlag;
+        "uni-flag-cn": UniFlagCn;
+        "uni-flag-es": UniFlagEs;
+        "uni-flag-gb": UniFlagGb;
+        "uni-flag-ru": UniFlagRu;
+        "uni-flag-us": UniFlagUs;
         "uni-icon-bs": UniIconBs;
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
@@ -1377,6 +1485,12 @@ declare module "@stencil/core" {
             "uni-fas-question-circle": LocalJSX.UniFasQuestionCircle & JSXBase.HTMLAttributes<HTMLUniFasQuestionCircleElement>;
             "uni-fas-rocket": LocalJSX.UniFasRocket & JSXBase.HTMLAttributes<HTMLUniFasRocketElement>;
             "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
+            "uni-flag": LocalJSX.UniFlag & JSXBase.HTMLAttributes<HTMLUniFlagElement>;
+            "uni-flag-cn": LocalJSX.UniFlagCn & JSXBase.HTMLAttributes<HTMLUniFlagCnElement>;
+            "uni-flag-es": LocalJSX.UniFlagEs & JSXBase.HTMLAttributes<HTMLUniFlagEsElement>;
+            "uni-flag-gb": LocalJSX.UniFlagGb & JSXBase.HTMLAttributes<HTMLUniFlagGbElement>;
+            "uni-flag-ru": LocalJSX.UniFlagRu & JSXBase.HTMLAttributes<HTMLUniFlagRuElement>;
+            "uni-flag-us": LocalJSX.UniFlagUs & JSXBase.HTMLAttributes<HTMLUniFlagUsElement>;
             "uni-icon-bs": LocalJSX.UniIconBs & JSXBase.HTMLAttributes<HTMLUniIconBsElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
