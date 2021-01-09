@@ -1,0 +1,1 @@
+function r(r){switch(r){case"brands":return"fab";case"regular":return"far";case"solid":default:return"fas"}}export{r as u}
