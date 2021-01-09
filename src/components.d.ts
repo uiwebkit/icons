@@ -62,14 +62,9 @@ export namespace Components {
     interface UniFasUserSecret {
     }
     interface UniFlag {
-        "angle": number;
         "name": string;
         "round": boolean;
-        "size": UniSize | number;
-        "speed": number;
-        "spin": boolean;
         "square": boolean;
-        "steps": number;
     }
     interface UniFlagCn {
         "round": boolean;
@@ -1036,14 +1031,9 @@ declare namespace LocalJSX {
     interface UniFasUserSecret {
     }
     interface UniFlag {
-        "angle"?: number;
         "name"?: string;
         "round"?: boolean;
-        "size"?: UniSize | number;
-        "speed"?: number;
-        "spin"?: boolean;
         "square"?: boolean;
-        "steps"?: number;
     }
     interface UniFlagCn {
         "round"?: boolean;
