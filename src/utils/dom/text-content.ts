@@ -1,19 +1,18 @@
-import { isEmpty } from '../coercion/is';
+import { isDefined } from '../coercion/is';
 
-export function uniGetCleanContent(el): string {
+export function uniGetCleanContent(el: HTMLElement): string {
   const content = uniGetContent(el);
-
-  if (!isEmpty(content)) {
-    uniClearContent(el);
-  }
+  uniClearContent(el);
 
   return content || null;
 }
 
-export function uniGetContent(el): string {
-  return el?.textContent;
+export function uniGetContent(el: HTMLElement): string {
+  return el?.textContent.trim();
 }
 
-export function uniClearContent(el): void {
-  el.textContent = '';
+export function uniClearContent(el: HTMLElement): void {
+  if (isDefined(el)) {
+    el.textContent = '';
+  }
 }

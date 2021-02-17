@@ -17,7 +17,7 @@ export namespace Components {
     }
     interface UniBsStarHalf {
     }
-    interface UniFaStylesLoad {
+    interface UniFaStyles {
     }
     interface UniFabBootstrap {
     }
@@ -421,11 +421,11 @@ declare global {
         prototype: HTMLUniBsStarHalfElement;
         new (): HTMLUniBsStarHalfElement;
     };
-    interface HTMLUniFaStylesLoadElement extends Components.UniFaStylesLoad, HTMLStencilElement {
+    interface HTMLUniFaStylesElement extends Components.UniFaStyles, HTMLStencilElement {
     }
-    var HTMLUniFaStylesLoadElement: {
-        prototype: HTMLUniFaStylesLoadElement;
-        new (): HTMLUniFaStylesLoadElement;
+    var HTMLUniFaStylesElement: {
+        prototype: HTMLUniFaStylesElement;
+        new (): HTMLUniFaStylesElement;
     };
     interface HTMLUniFabBootstrapElement extends Components.UniFabBootstrap, HTMLStencilElement {
     }
@@ -895,7 +895,7 @@ declare global {
         "uni-bs-star": HTMLUniBsStarElement;
         "uni-bs-star-fill": HTMLUniBsStarFillElement;
         "uni-bs-star-half": HTMLUniBsStarHalfElement;
-        "uni-fa-styles-load": HTMLUniFaStylesLoadElement;
+        "uni-fa-styles": HTMLUniFaStylesElement;
         "uni-fab-bootstrap": HTMLUniFabBootstrapElement;
         "uni-fab-facebook": HTMLUniFabFacebookElement;
         "uni-fab-font-awesome": HTMLUniFabFontAwesomeElement;
@@ -986,7 +986,7 @@ declare namespace LocalJSX {
     }
     interface UniBsStarHalf {
     }
-    interface UniFaStylesLoad {
+    interface UniFaStyles {
     }
     interface UniFabBootstrap {
     }
@@ -1364,7 +1364,7 @@ declare namespace LocalJSX {
         "uni-bs-star": UniBsStar;
         "uni-bs-star-fill": UniBsStarFill;
         "uni-bs-star-half": UniBsStarHalf;
-        "uni-fa-styles-load": UniFaStylesLoad;
+        "uni-fa-styles": UniFaStyles;
         "uni-fab-bootstrap": UniFabBootstrap;
         "uni-fab-facebook": UniFabFacebook;
         "uni-fab-font-awesome": UniFabFontAwesome;
@@ -1453,7 +1453,7 @@ declare module "@stencil/core" {
             "uni-bs-star": LocalJSX.UniBsStar & JSXBase.HTMLAttributes<HTMLUniBsStarElement>;
             "uni-bs-star-fill": LocalJSX.UniBsStarFill & JSXBase.HTMLAttributes<HTMLUniBsStarFillElement>;
             "uni-bs-star-half": LocalJSX.UniBsStarHalf & JSXBase.HTMLAttributes<HTMLUniBsStarHalfElement>;
-            "uni-fa-styles-load": LocalJSX.UniFaStylesLoad & JSXBase.HTMLAttributes<HTMLUniFaStylesLoadElement>;
+            "uni-fa-styles": LocalJSX.UniFaStyles & JSXBase.HTMLAttributes<HTMLUniFaStylesElement>;
             "uni-fab-bootstrap": LocalJSX.UniFabBootstrap & JSXBase.HTMLAttributes<HTMLUniFabBootstrapElement>;
             "uni-fab-facebook": LocalJSX.UniFabFacebook & JSXBase.HTMLAttributes<HTMLUniFabFacebookElement>;
             "uni-fab-font-awesome": LocalJSX.UniFabFontAwesome & JSXBase.HTMLAttributes<HTMLUniFabFontAwesomeElement>;

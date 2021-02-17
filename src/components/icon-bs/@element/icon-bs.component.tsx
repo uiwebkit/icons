@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../models';
-import { isEmpty, uniSmartWrap } from '../../../utils';
+import { isEmptyString, uniGetCleanContent, uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icon-bs' })
 export class UniIconBsComponent implements ComponentInterface {
@@ -23,12 +23,11 @@ export class UniIconBsComponent implements ComponentInterface {
   @Prop({ reflect: true }) steps: number;
 
   componentWillLoad(): Promise<void> | void {
-    this.name = this.name || this.el.textContent;
-    this.el.innerHTML = '';
+    this.name = this.name || uniGetCleanContent(this.el);
   }
 
   render(): VNode {
-    const UniIconTag = !isEmpty(this.name) ? `uni-bs-${this.name}` : null;
+    const UniIconTag = !isEmptyString(this.name) ? `uni-bs-${this.name}` : null;
 
     return <UniIconTag />;
   }

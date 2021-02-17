@@ -1,8 +1,8 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'uni-fa-styles-load',
+  tag: 'uni-fa-styles',
   styleUrl: './icons-fa.css',
 })
-export class UniFaStylesLoadComponent {
+export class UniFaStylesComponent {
 }

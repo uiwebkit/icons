@@ -30,7 +30,7 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el.firstElementChild);
+    this.name = this.name || uniGetCleanContent(this.el.firstElementChild as HTMLElement);
   }
 
   componentDidLoad(): void {

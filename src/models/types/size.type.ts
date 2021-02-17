@@ -1,1 +1,1 @@
-export type UniSize = 'lg' | 'md' | 'sm' | 'xs';
+export type UniSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl';

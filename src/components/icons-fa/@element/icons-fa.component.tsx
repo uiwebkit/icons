@@ -1,7 +1,7 @@
 import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
-import { uniFaTypeShort } from '../../../utils';
+import { uniFaTypeShort, uniGetCleanContent } from '../../../utils';
 
 @Component({ tag: 'uni-icons-fa' })
 export class UniIconsFaComponent implements ComponentInterface {
@@ -25,8 +25,7 @@ export class UniIconsFaComponent implements ComponentInterface {
   @Prop({ reflect: true }) steps: number;
 
   componentWillLoad(): Promise<void> | void {
-    this.name = this.name || this.el.textContent;
-    this.el.innerHTML = '';
+    this.name = this.name || uniGetCleanContent(this.el);
   }
 
   render(): VNode {

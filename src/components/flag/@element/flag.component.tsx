@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
-import { isEmpty } from '../../../utils';
+import { isEmptyString, uniGetCleanContent } from '../../../utils';
 
 @Component({
   tag: 'uni-flag',
@@ -17,12 +17,11 @@ export class UniFlagComponent implements ComponentInterface {
   @Prop({ reflect: true }) round: boolean = false;
 
   componentWillLoad(): Promise<void> | void {
-    this.name = this.name || this.el.textContent;
-    this.el.innerHTML = '';
+    this.name = this.name || uniGetCleanContent(this.el);
   }
 
   render(): VNode {
-    const UniFlagTag = !isEmpty(this.name) ? `uni-flag-${this.name}` : null;
+    const UniFlagTag = !isEmptyString(this.name) ? `uni-flag-${this.name}` : null;
 
     return <UniFlagTag square={this.square || this.round} round={this.round} />;
   }
