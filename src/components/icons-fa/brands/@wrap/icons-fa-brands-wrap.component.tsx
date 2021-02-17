@@ -29,15 +29,12 @@ export class UniIconsFaBrandsWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) all: boolean = false;
 
-  componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el.firstElementChild as HTMLElement);
-  }
-
   componentDidLoad(): void {
+    const name = this.name || uniGetCleanContent(this.el.firstElementChild as HTMLElement);
     const { el, color, angle, spin, speed, steps, selector, all } = this;
     const props = {
       el,
-      classes: `fab fa-${this.name}`,
+      classes: `fab fa-${name}`,
       color,
       fontSize: this.size,
       angle,

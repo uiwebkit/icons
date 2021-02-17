@@ -24,12 +24,9 @@ export class UniIconMatComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el);
-  }
-
   render(): VNode {
-    const UniIconTag = !isEmptyString(this.name) ? `uni-${uniIconsFaFontClass(this.type)}-${this.name}` : null;
+    const name = this.name || uniGetCleanContent(this.el);
+    const UniIconTag = !isEmptyString(name) ? `uni-${uniIconsFaFontClass(this.type)}-${name}` : null;
 
     return <UniIconTag />;
   }

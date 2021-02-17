@@ -16,12 +16,9 @@ export class UniFlagComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) round: boolean = false;
 
-  componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el);
-  }
-
   render(): VNode {
-    const UniFlagTag = !isEmptyString(this.name) ? `uni-flag-${this.name}` : null;
+    const name = this.name || uniGetCleanContent(this.el);
+    const UniFlagTag = !isEmptyString(name) ? `uni-flag-${name}` : null;
 
     return <UniFlagTag square={this.square || this.round} round={this.round} />;
   }

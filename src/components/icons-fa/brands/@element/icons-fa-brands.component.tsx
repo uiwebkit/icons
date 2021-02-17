@@ -25,12 +25,10 @@ export class UniIconsFaBrandsComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el);
-  }
-
   render(): VNode {
-    return <Host class={`fab fa-${this.name}`} />;
+    const name = this.name || uniGetCleanContent(this.el);
+
+    return <Host class={`fab fa-${name}`} />;
   }
 
   componentDidLoad(): void {

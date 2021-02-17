@@ -25,12 +25,10 @@ export class UniIconsFaSolidComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el);
-  }
-
   render(): VNode {
-    return <Host class={`fas fa-${this.name}`} />;
+    const name = this.name || uniGetCleanContent(this.el);
+
+    return <Host class={`fas fa-${name}`} />;
   }
 
   componentDidLoad(): void {

@@ -24,12 +24,9 @@ export class UniIconsFaComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  componentWillLoad(): Promise<void> | void {
-    this.name = this.name || uniGetCleanContent(this.el);
-  }
-
   render(): VNode {
-    const { name, color, size, angle, spin, speed, steps } = this;
+    const name = this.name || uniGetCleanContent(this.el);
+    const { color, size, angle, spin, speed, steps } = this;
     const props = { name, color, size, angle, spin, speed, steps };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}`;
 
