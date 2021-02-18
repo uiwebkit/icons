@@ -323,6 +323,8 @@ export namespace Components {
     }
     interface UniMatFAddShoppingCart {
     }
+    interface UniMatFAlbum {
+    }
     interface UniMatFArrowDropDown {
     }
     interface UniMatFArrowDropUp {
@@ -347,7 +349,11 @@ export namespace Components {
     }
     interface UniMatTtBuildCircle {
     }
+    interface UniMatTtCallToAction {
+    }
     interface UniMatTtChat {
+    }
+    interface UniMatTtCheckBox {
     }
     interface UniMatTtCode {
     }
@@ -355,33 +361,73 @@ export namespace Components {
     }
     interface UniMatTtDashboard {
     }
+    interface UniMatTtDynamicFeed {
+    }
     interface UniMatTtFavorite {
+    }
+    interface UniMatTtFiberSmartRecord {
+    }
+    interface UniMatTtFilterNone {
+    }
+    interface UniMatTtFormatListBulleted {
+    }
+    interface UniMatTtGridOn {
+    }
+    interface UniMatTtHighlightAlt {
     }
     interface UniMatTtHttp {
     }
     interface UniMatTtInfo {
     }
+    interface UniMatTtInput {
+    }
     interface UniMatTtLanguage {
     }
     interface UniMatTtLayers {
+    }
+    interface UniMatTtLens {
+    }
+    interface UniMatTtLink {
+    }
+    interface UniMatTtMenu {
+    }
+    interface UniMatTtOpenWith {
     }
     interface UniMatTtPersonAdd {
     }
     interface UniMatTtPlayCircle {
     }
+    interface UniMatTtPlaylistAddCheck {
+    }
+    interface UniMatTtRadioButtonChecked {
+    }
     interface UniMatTtRotateDegrees {
     }
     interface UniMatTtRouter {
     }
+    interface UniMatTtSmartButton {
+    }
     interface UniMatTtStorage {
+    }
+    interface UniMatTtTabUnselected {
     }
     interface UniMatTtTextFields {
     }
+    interface UniMatTtToggleOn {
+    }
+    interface UniMatTtViewSidebar {
+    }
     interface UniMatTtVisibility {
+    }
+    interface UniMatTtWaves {
     }
     interface UniMatTtWeb {
     }
+    interface UniMatTtWebAsset {
+    }
     interface UniMatTtWidgets {
+    }
+    interface UniMatTtWysiwyg {
     }
     interface UniSpinWrap {
         "all": boolean;
@@ -757,6 +803,12 @@ declare global {
         prototype: HTMLUniMatFAddShoppingCartElement;
         new (): HTMLUniMatFAddShoppingCartElement;
     };
+    interface HTMLUniMatFAlbumElement extends Components.UniMatFAlbum, HTMLStencilElement {
+    }
+    var HTMLUniMatFAlbumElement: {
+        prototype: HTMLUniMatFAlbumElement;
+        new (): HTMLUniMatFAlbumElement;
+    };
     interface HTMLUniMatFArrowDropDownElement extends Components.UniMatFArrowDropDown, HTMLStencilElement {
     }
     var HTMLUniMatFArrowDropDownElement: {
@@ -829,11 +881,23 @@ declare global {
         prototype: HTMLUniMatTtBuildCircleElement;
         new (): HTMLUniMatTtBuildCircleElement;
     };
+    interface HTMLUniMatTtCallToActionElement extends Components.UniMatTtCallToAction, HTMLStencilElement {
+    }
+    var HTMLUniMatTtCallToActionElement: {
+        prototype: HTMLUniMatTtCallToActionElement;
+        new (): HTMLUniMatTtCallToActionElement;
+    };
     interface HTMLUniMatTtChatElement extends Components.UniMatTtChat, HTMLStencilElement {
     }
     var HTMLUniMatTtChatElement: {
         prototype: HTMLUniMatTtChatElement;
         new (): HTMLUniMatTtChatElement;
+    };
+    interface HTMLUniMatTtCheckBoxElement extends Components.UniMatTtCheckBox, HTMLStencilElement {
+    }
+    var HTMLUniMatTtCheckBoxElement: {
+        prototype: HTMLUniMatTtCheckBoxElement;
+        new (): HTMLUniMatTtCheckBoxElement;
     };
     interface HTMLUniMatTtCodeElement extends Components.UniMatTtCode, HTMLStencilElement {
     }
@@ -853,11 +917,47 @@ declare global {
         prototype: HTMLUniMatTtDashboardElement;
         new (): HTMLUniMatTtDashboardElement;
     };
+    interface HTMLUniMatTtDynamicFeedElement extends Components.UniMatTtDynamicFeed, HTMLStencilElement {
+    }
+    var HTMLUniMatTtDynamicFeedElement: {
+        prototype: HTMLUniMatTtDynamicFeedElement;
+        new (): HTMLUniMatTtDynamicFeedElement;
+    };
     interface HTMLUniMatTtFavoriteElement extends Components.UniMatTtFavorite, HTMLStencilElement {
     }
     var HTMLUniMatTtFavoriteElement: {
         prototype: HTMLUniMatTtFavoriteElement;
         new (): HTMLUniMatTtFavoriteElement;
+    };
+    interface HTMLUniMatTtFiberSmartRecordElement extends Components.UniMatTtFiberSmartRecord, HTMLStencilElement {
+    }
+    var HTMLUniMatTtFiberSmartRecordElement: {
+        prototype: HTMLUniMatTtFiberSmartRecordElement;
+        new (): HTMLUniMatTtFiberSmartRecordElement;
+    };
+    interface HTMLUniMatTtFilterNoneElement extends Components.UniMatTtFilterNone, HTMLStencilElement {
+    }
+    var HTMLUniMatTtFilterNoneElement: {
+        prototype: HTMLUniMatTtFilterNoneElement;
+        new (): HTMLUniMatTtFilterNoneElement;
+    };
+    interface HTMLUniMatTtFormatListBulletedElement extends Components.UniMatTtFormatListBulleted, HTMLStencilElement {
+    }
+    var HTMLUniMatTtFormatListBulletedElement: {
+        prototype: HTMLUniMatTtFormatListBulletedElement;
+        new (): HTMLUniMatTtFormatListBulletedElement;
+    };
+    interface HTMLUniMatTtGridOnElement extends Components.UniMatTtGridOn, HTMLStencilElement {
+    }
+    var HTMLUniMatTtGridOnElement: {
+        prototype: HTMLUniMatTtGridOnElement;
+        new (): HTMLUniMatTtGridOnElement;
+    };
+    interface HTMLUniMatTtHighlightAltElement extends Components.UniMatTtHighlightAlt, HTMLStencilElement {
+    }
+    var HTMLUniMatTtHighlightAltElement: {
+        prototype: HTMLUniMatTtHighlightAltElement;
+        new (): HTMLUniMatTtHighlightAltElement;
     };
     interface HTMLUniMatTtHttpElement extends Components.UniMatTtHttp, HTMLStencilElement {
     }
@@ -871,6 +971,12 @@ declare global {
         prototype: HTMLUniMatTtInfoElement;
         new (): HTMLUniMatTtInfoElement;
     };
+    interface HTMLUniMatTtInputElement extends Components.UniMatTtInput, HTMLStencilElement {
+    }
+    var HTMLUniMatTtInputElement: {
+        prototype: HTMLUniMatTtInputElement;
+        new (): HTMLUniMatTtInputElement;
+    };
     interface HTMLUniMatTtLanguageElement extends Components.UniMatTtLanguage, HTMLStencilElement {
     }
     var HTMLUniMatTtLanguageElement: {
@@ -882,6 +988,30 @@ declare global {
     var HTMLUniMatTtLayersElement: {
         prototype: HTMLUniMatTtLayersElement;
         new (): HTMLUniMatTtLayersElement;
+    };
+    interface HTMLUniMatTtLensElement extends Components.UniMatTtLens, HTMLStencilElement {
+    }
+    var HTMLUniMatTtLensElement: {
+        prototype: HTMLUniMatTtLensElement;
+        new (): HTMLUniMatTtLensElement;
+    };
+    interface HTMLUniMatTtLinkElement extends Components.UniMatTtLink, HTMLStencilElement {
+    }
+    var HTMLUniMatTtLinkElement: {
+        prototype: HTMLUniMatTtLinkElement;
+        new (): HTMLUniMatTtLinkElement;
+    };
+    interface HTMLUniMatTtMenuElement extends Components.UniMatTtMenu, HTMLStencilElement {
+    }
+    var HTMLUniMatTtMenuElement: {
+        prototype: HTMLUniMatTtMenuElement;
+        new (): HTMLUniMatTtMenuElement;
+    };
+    interface HTMLUniMatTtOpenWithElement extends Components.UniMatTtOpenWith, HTMLStencilElement {
+    }
+    var HTMLUniMatTtOpenWithElement: {
+        prototype: HTMLUniMatTtOpenWithElement;
+        new (): HTMLUniMatTtOpenWithElement;
     };
     interface HTMLUniMatTtPersonAddElement extends Components.UniMatTtPersonAdd, HTMLStencilElement {
     }
@@ -895,6 +1025,18 @@ declare global {
         prototype: HTMLUniMatTtPlayCircleElement;
         new (): HTMLUniMatTtPlayCircleElement;
     };
+    interface HTMLUniMatTtPlaylistAddCheckElement extends Components.UniMatTtPlaylistAddCheck, HTMLStencilElement {
+    }
+    var HTMLUniMatTtPlaylistAddCheckElement: {
+        prototype: HTMLUniMatTtPlaylistAddCheckElement;
+        new (): HTMLUniMatTtPlaylistAddCheckElement;
+    };
+    interface HTMLUniMatTtRadioButtonCheckedElement extends Components.UniMatTtRadioButtonChecked, HTMLStencilElement {
+    }
+    var HTMLUniMatTtRadioButtonCheckedElement: {
+        prototype: HTMLUniMatTtRadioButtonCheckedElement;
+        new (): HTMLUniMatTtRadioButtonCheckedElement;
+    };
     interface HTMLUniMatTtRotateDegreesElement extends Components.UniMatTtRotateDegrees, HTMLStencilElement {
     }
     var HTMLUniMatTtRotateDegreesElement: {
@@ -907,11 +1049,23 @@ declare global {
         prototype: HTMLUniMatTtRouterElement;
         new (): HTMLUniMatTtRouterElement;
     };
+    interface HTMLUniMatTtSmartButtonElement extends Components.UniMatTtSmartButton, HTMLStencilElement {
+    }
+    var HTMLUniMatTtSmartButtonElement: {
+        prototype: HTMLUniMatTtSmartButtonElement;
+        new (): HTMLUniMatTtSmartButtonElement;
+    };
     interface HTMLUniMatTtStorageElement extends Components.UniMatTtStorage, HTMLStencilElement {
     }
     var HTMLUniMatTtStorageElement: {
         prototype: HTMLUniMatTtStorageElement;
         new (): HTMLUniMatTtStorageElement;
+    };
+    interface HTMLUniMatTtTabUnselectedElement extends Components.UniMatTtTabUnselected, HTMLStencilElement {
+    }
+    var HTMLUniMatTtTabUnselectedElement: {
+        prototype: HTMLUniMatTtTabUnselectedElement;
+        new (): HTMLUniMatTtTabUnselectedElement;
     };
     interface HTMLUniMatTtTextFieldsElement extends Components.UniMatTtTextFields, HTMLStencilElement {
     }
@@ -919,11 +1073,29 @@ declare global {
         prototype: HTMLUniMatTtTextFieldsElement;
         new (): HTMLUniMatTtTextFieldsElement;
     };
+    interface HTMLUniMatTtToggleOnElement extends Components.UniMatTtToggleOn, HTMLStencilElement {
+    }
+    var HTMLUniMatTtToggleOnElement: {
+        prototype: HTMLUniMatTtToggleOnElement;
+        new (): HTMLUniMatTtToggleOnElement;
+    };
+    interface HTMLUniMatTtViewSidebarElement extends Components.UniMatTtViewSidebar, HTMLStencilElement {
+    }
+    var HTMLUniMatTtViewSidebarElement: {
+        prototype: HTMLUniMatTtViewSidebarElement;
+        new (): HTMLUniMatTtViewSidebarElement;
+    };
     interface HTMLUniMatTtVisibilityElement extends Components.UniMatTtVisibility, HTMLStencilElement {
     }
     var HTMLUniMatTtVisibilityElement: {
         prototype: HTMLUniMatTtVisibilityElement;
         new (): HTMLUniMatTtVisibilityElement;
+    };
+    interface HTMLUniMatTtWavesElement extends Components.UniMatTtWaves, HTMLStencilElement {
+    }
+    var HTMLUniMatTtWavesElement: {
+        prototype: HTMLUniMatTtWavesElement;
+        new (): HTMLUniMatTtWavesElement;
     };
     interface HTMLUniMatTtWebElement extends Components.UniMatTtWeb, HTMLStencilElement {
     }
@@ -931,11 +1103,23 @@ declare global {
         prototype: HTMLUniMatTtWebElement;
         new (): HTMLUniMatTtWebElement;
     };
+    interface HTMLUniMatTtWebAssetElement extends Components.UniMatTtWebAsset, HTMLStencilElement {
+    }
+    var HTMLUniMatTtWebAssetElement: {
+        prototype: HTMLUniMatTtWebAssetElement;
+        new (): HTMLUniMatTtWebAssetElement;
+    };
     interface HTMLUniMatTtWidgetsElement extends Components.UniMatTtWidgets, HTMLStencilElement {
     }
     var HTMLUniMatTtWidgetsElement: {
         prototype: HTMLUniMatTtWidgetsElement;
         new (): HTMLUniMatTtWidgetsElement;
+    };
+    interface HTMLUniMatTtWysiwygElement extends Components.UniMatTtWysiwyg, HTMLStencilElement {
+    }
+    var HTMLUniMatTtWysiwygElement: {
+        prototype: HTMLUniMatTtWysiwygElement;
+        new (): HTMLUniMatTtWysiwygElement;
     };
     interface HTMLUniSpinWrapElement extends Components.UniSpinWrap, HTMLStencilElement {
     }
@@ -1020,6 +1204,7 @@ declare global {
         "uni-icons-mat-wrap": HTMLUniIconsMatWrapElement;
         "uni-mat-f-3d-rotation": HTMLUniMatF3dRotationElement;
         "uni-mat-f-add-shopping-cart": HTMLUniMatFAddShoppingCartElement;
+        "uni-mat-f-album": HTMLUniMatFAlbumElement;
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-mat-f-arrow-drop-up": HTMLUniMatFArrowDropUpElement;
         "uni-mat-f-close": HTMLUniMatFCloseElement;
@@ -1032,24 +1217,46 @@ declare global {
         "uni-mat-tt-album": HTMLUniMatTtAlbumElement;
         "uni-mat-tt-bubble-chart": HTMLUniMatTtBubbleChartElement;
         "uni-mat-tt-build-circle": HTMLUniMatTtBuildCircleElement;
+        "uni-mat-tt-call-to-action": HTMLUniMatTtCallToActionElement;
         "uni-mat-tt-chat": HTMLUniMatTtChatElement;
+        "uni-mat-tt-check-box": HTMLUniMatTtCheckBoxElement;
         "uni-mat-tt-code": HTMLUniMatTtCodeElement;
         "uni-mat-tt-compare-arrows": HTMLUniMatTtCompareArrowsElement;
         "uni-mat-tt-dashboard": HTMLUniMatTtDashboardElement;
+        "uni-mat-tt-dynamic-feed": HTMLUniMatTtDynamicFeedElement;
         "uni-mat-tt-favorite": HTMLUniMatTtFavoriteElement;
+        "uni-mat-tt-fiber-smart-record": HTMLUniMatTtFiberSmartRecordElement;
+        "uni-mat-tt-filter-none": HTMLUniMatTtFilterNoneElement;
+        "uni-mat-tt-format-list-bulleted": HTMLUniMatTtFormatListBulletedElement;
+        "uni-mat-tt-grid-on": HTMLUniMatTtGridOnElement;
+        "uni-mat-tt-highlight-alt": HTMLUniMatTtHighlightAltElement;
         "uni-mat-tt-http": HTMLUniMatTtHttpElement;
         "uni-mat-tt-info": HTMLUniMatTtInfoElement;
+        "uni-mat-tt-input": HTMLUniMatTtInputElement;
         "uni-mat-tt-language": HTMLUniMatTtLanguageElement;
         "uni-mat-tt-layers": HTMLUniMatTtLayersElement;
+        "uni-mat-tt-lens": HTMLUniMatTtLensElement;
+        "uni-mat-tt-link": HTMLUniMatTtLinkElement;
+        "uni-mat-tt-menu": HTMLUniMatTtMenuElement;
+        "uni-mat-tt-open-with": HTMLUniMatTtOpenWithElement;
         "uni-mat-tt-person-add": HTMLUniMatTtPersonAddElement;
         "uni-mat-tt-play-circle": HTMLUniMatTtPlayCircleElement;
+        "uni-mat-tt-playlist-add-check": HTMLUniMatTtPlaylistAddCheckElement;
+        "uni-mat-tt-radio-button-checked": HTMLUniMatTtRadioButtonCheckedElement;
         "uni-mat-tt-rotate-degrees": HTMLUniMatTtRotateDegreesElement;
         "uni-mat-tt-router": HTMLUniMatTtRouterElement;
+        "uni-mat-tt-smart-button": HTMLUniMatTtSmartButtonElement;
         "uni-mat-tt-storage": HTMLUniMatTtStorageElement;
+        "uni-mat-tt-tab-unselected": HTMLUniMatTtTabUnselectedElement;
         "uni-mat-tt-text-fields": HTMLUniMatTtTextFieldsElement;
+        "uni-mat-tt-toggle-on": HTMLUniMatTtToggleOnElement;
+        "uni-mat-tt-view-sidebar": HTMLUniMatTtViewSidebarElement;
         "uni-mat-tt-visibility": HTMLUniMatTtVisibilityElement;
+        "uni-mat-tt-waves": HTMLUniMatTtWavesElement;
         "uni-mat-tt-web": HTMLUniMatTtWebElement;
+        "uni-mat-tt-web-asset": HTMLUniMatTtWebAssetElement;
         "uni-mat-tt-widgets": HTMLUniMatTtWidgetsElement;
+        "uni-mat-tt-wysiwyg": HTMLUniMatTtWysiwygElement;
         "uni-spin-wrap": HTMLUniSpinWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
         "uni-tilt-wrap": HTMLUniTiltWrapElement;
@@ -1373,6 +1580,8 @@ declare namespace LocalJSX {
     }
     interface UniMatFAddShoppingCart {
     }
+    interface UniMatFAlbum {
+    }
     interface UniMatFArrowDropDown {
     }
     interface UniMatFArrowDropUp {
@@ -1397,7 +1606,11 @@ declare namespace LocalJSX {
     }
     interface UniMatTtBuildCircle {
     }
+    interface UniMatTtCallToAction {
+    }
     interface UniMatTtChat {
+    }
+    interface UniMatTtCheckBox {
     }
     interface UniMatTtCode {
     }
@@ -1405,33 +1618,73 @@ declare namespace LocalJSX {
     }
     interface UniMatTtDashboard {
     }
+    interface UniMatTtDynamicFeed {
+    }
     interface UniMatTtFavorite {
+    }
+    interface UniMatTtFiberSmartRecord {
+    }
+    interface UniMatTtFilterNone {
+    }
+    interface UniMatTtFormatListBulleted {
+    }
+    interface UniMatTtGridOn {
+    }
+    interface UniMatTtHighlightAlt {
     }
     interface UniMatTtHttp {
     }
     interface UniMatTtInfo {
     }
+    interface UniMatTtInput {
+    }
     interface UniMatTtLanguage {
     }
     interface UniMatTtLayers {
+    }
+    interface UniMatTtLens {
+    }
+    interface UniMatTtLink {
+    }
+    interface UniMatTtMenu {
+    }
+    interface UniMatTtOpenWith {
     }
     interface UniMatTtPersonAdd {
     }
     interface UniMatTtPlayCircle {
     }
+    interface UniMatTtPlaylistAddCheck {
+    }
+    interface UniMatTtRadioButtonChecked {
+    }
     interface UniMatTtRotateDegrees {
     }
     interface UniMatTtRouter {
     }
+    interface UniMatTtSmartButton {
+    }
     interface UniMatTtStorage {
+    }
+    interface UniMatTtTabUnselected {
     }
     interface UniMatTtTextFields {
     }
+    interface UniMatTtToggleOn {
+    }
+    interface UniMatTtViewSidebar {
+    }
     interface UniMatTtVisibility {
+    }
+    interface UniMatTtWaves {
     }
     interface UniMatTtWeb {
     }
+    interface UniMatTtWebAsset {
+    }
     interface UniMatTtWidgets {
+    }
+    interface UniMatTtWysiwyg {
     }
     interface UniSpinWrap {
         "all"?: boolean;
@@ -1516,6 +1769,7 @@ declare namespace LocalJSX {
         "uni-icons-mat-wrap": UniIconsMatWrap;
         "uni-mat-f-3d-rotation": UniMatF3dRotation;
         "uni-mat-f-add-shopping-cart": UniMatFAddShoppingCart;
+        "uni-mat-f-album": UniMatFAlbum;
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-mat-f-arrow-drop-up": UniMatFArrowDropUp;
         "uni-mat-f-close": UniMatFClose;
@@ -1528,24 +1782,46 @@ declare namespace LocalJSX {
         "uni-mat-tt-album": UniMatTtAlbum;
         "uni-mat-tt-bubble-chart": UniMatTtBubbleChart;
         "uni-mat-tt-build-circle": UniMatTtBuildCircle;
+        "uni-mat-tt-call-to-action": UniMatTtCallToAction;
         "uni-mat-tt-chat": UniMatTtChat;
+        "uni-mat-tt-check-box": UniMatTtCheckBox;
         "uni-mat-tt-code": UniMatTtCode;
         "uni-mat-tt-compare-arrows": UniMatTtCompareArrows;
         "uni-mat-tt-dashboard": UniMatTtDashboard;
+        "uni-mat-tt-dynamic-feed": UniMatTtDynamicFeed;
         "uni-mat-tt-favorite": UniMatTtFavorite;
+        "uni-mat-tt-fiber-smart-record": UniMatTtFiberSmartRecord;
+        "uni-mat-tt-filter-none": UniMatTtFilterNone;
+        "uni-mat-tt-format-list-bulleted": UniMatTtFormatListBulleted;
+        "uni-mat-tt-grid-on": UniMatTtGridOn;
+        "uni-mat-tt-highlight-alt": UniMatTtHighlightAlt;
         "uni-mat-tt-http": UniMatTtHttp;
         "uni-mat-tt-info": UniMatTtInfo;
+        "uni-mat-tt-input": UniMatTtInput;
         "uni-mat-tt-language": UniMatTtLanguage;
         "uni-mat-tt-layers": UniMatTtLayers;
+        "uni-mat-tt-lens": UniMatTtLens;
+        "uni-mat-tt-link": UniMatTtLink;
+        "uni-mat-tt-menu": UniMatTtMenu;
+        "uni-mat-tt-open-with": UniMatTtOpenWith;
         "uni-mat-tt-person-add": UniMatTtPersonAdd;
         "uni-mat-tt-play-circle": UniMatTtPlayCircle;
+        "uni-mat-tt-playlist-add-check": UniMatTtPlaylistAddCheck;
+        "uni-mat-tt-radio-button-checked": UniMatTtRadioButtonChecked;
         "uni-mat-tt-rotate-degrees": UniMatTtRotateDegrees;
         "uni-mat-tt-router": UniMatTtRouter;
+        "uni-mat-tt-smart-button": UniMatTtSmartButton;
         "uni-mat-tt-storage": UniMatTtStorage;
+        "uni-mat-tt-tab-unselected": UniMatTtTabUnselected;
         "uni-mat-tt-text-fields": UniMatTtTextFields;
+        "uni-mat-tt-toggle-on": UniMatTtToggleOn;
+        "uni-mat-tt-view-sidebar": UniMatTtViewSidebar;
         "uni-mat-tt-visibility": UniMatTtVisibility;
+        "uni-mat-tt-waves": UniMatTtWaves;
         "uni-mat-tt-web": UniMatTtWeb;
+        "uni-mat-tt-web-asset": UniMatTtWebAsset;
         "uni-mat-tt-widgets": UniMatTtWidgets;
+        "uni-mat-tt-wysiwyg": UniMatTtWysiwyg;
         "uni-spin-wrap": UniSpinWrap;
         "uni-theme-wrap": UniThemeWrap;
         "uni-tilt-wrap": UniTiltWrap;
@@ -1614,6 +1890,7 @@ declare module "@stencil/core" {
             "uni-icons-mat-wrap": LocalJSX.UniIconsMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatWrapElement>;
             "uni-mat-f-3d-rotation": LocalJSX.UniMatF3dRotation & JSXBase.HTMLAttributes<HTMLUniMatF3dRotationElement>;
             "uni-mat-f-add-shopping-cart": LocalJSX.UniMatFAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatFAddShoppingCartElement>;
+            "uni-mat-f-album": LocalJSX.UniMatFAlbum & JSXBase.HTMLAttributes<HTMLUniMatFAlbumElement>;
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-mat-f-arrow-drop-up": LocalJSX.UniMatFArrowDropUp & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropUpElement>;
             "uni-mat-f-close": LocalJSX.UniMatFClose & JSXBase.HTMLAttributes<HTMLUniMatFCloseElement>;
@@ -1626,24 +1903,46 @@ declare module "@stencil/core" {
             "uni-mat-tt-album": LocalJSX.UniMatTtAlbum & JSXBase.HTMLAttributes<HTMLUniMatTtAlbumElement>;
             "uni-mat-tt-bubble-chart": LocalJSX.UniMatTtBubbleChart & JSXBase.HTMLAttributes<HTMLUniMatTtBubbleChartElement>;
             "uni-mat-tt-build-circle": LocalJSX.UniMatTtBuildCircle & JSXBase.HTMLAttributes<HTMLUniMatTtBuildCircleElement>;
+            "uni-mat-tt-call-to-action": LocalJSX.UniMatTtCallToAction & JSXBase.HTMLAttributes<HTMLUniMatTtCallToActionElement>;
             "uni-mat-tt-chat": LocalJSX.UniMatTtChat & JSXBase.HTMLAttributes<HTMLUniMatTtChatElement>;
+            "uni-mat-tt-check-box": LocalJSX.UniMatTtCheckBox & JSXBase.HTMLAttributes<HTMLUniMatTtCheckBoxElement>;
             "uni-mat-tt-code": LocalJSX.UniMatTtCode & JSXBase.HTMLAttributes<HTMLUniMatTtCodeElement>;
             "uni-mat-tt-compare-arrows": LocalJSX.UniMatTtCompareArrows & JSXBase.HTMLAttributes<HTMLUniMatTtCompareArrowsElement>;
             "uni-mat-tt-dashboard": LocalJSX.UniMatTtDashboard & JSXBase.HTMLAttributes<HTMLUniMatTtDashboardElement>;
+            "uni-mat-tt-dynamic-feed": LocalJSX.UniMatTtDynamicFeed & JSXBase.HTMLAttributes<HTMLUniMatTtDynamicFeedElement>;
             "uni-mat-tt-favorite": LocalJSX.UniMatTtFavorite & JSXBase.HTMLAttributes<HTMLUniMatTtFavoriteElement>;
+            "uni-mat-tt-fiber-smart-record": LocalJSX.UniMatTtFiberSmartRecord & JSXBase.HTMLAttributes<HTMLUniMatTtFiberSmartRecordElement>;
+            "uni-mat-tt-filter-none": LocalJSX.UniMatTtFilterNone & JSXBase.HTMLAttributes<HTMLUniMatTtFilterNoneElement>;
+            "uni-mat-tt-format-list-bulleted": LocalJSX.UniMatTtFormatListBulleted & JSXBase.HTMLAttributes<HTMLUniMatTtFormatListBulletedElement>;
+            "uni-mat-tt-grid-on": LocalJSX.UniMatTtGridOn & JSXBase.HTMLAttributes<HTMLUniMatTtGridOnElement>;
+            "uni-mat-tt-highlight-alt": LocalJSX.UniMatTtHighlightAlt & JSXBase.HTMLAttributes<HTMLUniMatTtHighlightAltElement>;
             "uni-mat-tt-http": LocalJSX.UniMatTtHttp & JSXBase.HTMLAttributes<HTMLUniMatTtHttpElement>;
             "uni-mat-tt-info": LocalJSX.UniMatTtInfo & JSXBase.HTMLAttributes<HTMLUniMatTtInfoElement>;
+            "uni-mat-tt-input": LocalJSX.UniMatTtInput & JSXBase.HTMLAttributes<HTMLUniMatTtInputElement>;
             "uni-mat-tt-language": LocalJSX.UniMatTtLanguage & JSXBase.HTMLAttributes<HTMLUniMatTtLanguageElement>;
             "uni-mat-tt-layers": LocalJSX.UniMatTtLayers & JSXBase.HTMLAttributes<HTMLUniMatTtLayersElement>;
+            "uni-mat-tt-lens": LocalJSX.UniMatTtLens & JSXBase.HTMLAttributes<HTMLUniMatTtLensElement>;
+            "uni-mat-tt-link": LocalJSX.UniMatTtLink & JSXBase.HTMLAttributes<HTMLUniMatTtLinkElement>;
+            "uni-mat-tt-menu": LocalJSX.UniMatTtMenu & JSXBase.HTMLAttributes<HTMLUniMatTtMenuElement>;
+            "uni-mat-tt-open-with": LocalJSX.UniMatTtOpenWith & JSXBase.HTMLAttributes<HTMLUniMatTtOpenWithElement>;
             "uni-mat-tt-person-add": LocalJSX.UniMatTtPersonAdd & JSXBase.HTMLAttributes<HTMLUniMatTtPersonAddElement>;
             "uni-mat-tt-play-circle": LocalJSX.UniMatTtPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatTtPlayCircleElement>;
+            "uni-mat-tt-playlist-add-check": LocalJSX.UniMatTtPlaylistAddCheck & JSXBase.HTMLAttributes<HTMLUniMatTtPlaylistAddCheckElement>;
+            "uni-mat-tt-radio-button-checked": LocalJSX.UniMatTtRadioButtonChecked & JSXBase.HTMLAttributes<HTMLUniMatTtRadioButtonCheckedElement>;
             "uni-mat-tt-rotate-degrees": LocalJSX.UniMatTtRotateDegrees & JSXBase.HTMLAttributes<HTMLUniMatTtRotateDegreesElement>;
             "uni-mat-tt-router": LocalJSX.UniMatTtRouter & JSXBase.HTMLAttributes<HTMLUniMatTtRouterElement>;
+            "uni-mat-tt-smart-button": LocalJSX.UniMatTtSmartButton & JSXBase.HTMLAttributes<HTMLUniMatTtSmartButtonElement>;
             "uni-mat-tt-storage": LocalJSX.UniMatTtStorage & JSXBase.HTMLAttributes<HTMLUniMatTtStorageElement>;
+            "uni-mat-tt-tab-unselected": LocalJSX.UniMatTtTabUnselected & JSXBase.HTMLAttributes<HTMLUniMatTtTabUnselectedElement>;
             "uni-mat-tt-text-fields": LocalJSX.UniMatTtTextFields & JSXBase.HTMLAttributes<HTMLUniMatTtTextFieldsElement>;
+            "uni-mat-tt-toggle-on": LocalJSX.UniMatTtToggleOn & JSXBase.HTMLAttributes<HTMLUniMatTtToggleOnElement>;
+            "uni-mat-tt-view-sidebar": LocalJSX.UniMatTtViewSidebar & JSXBase.HTMLAttributes<HTMLUniMatTtViewSidebarElement>;
             "uni-mat-tt-visibility": LocalJSX.UniMatTtVisibility & JSXBase.HTMLAttributes<HTMLUniMatTtVisibilityElement>;
+            "uni-mat-tt-waves": LocalJSX.UniMatTtWaves & JSXBase.HTMLAttributes<HTMLUniMatTtWavesElement>;
             "uni-mat-tt-web": LocalJSX.UniMatTtWeb & JSXBase.HTMLAttributes<HTMLUniMatTtWebElement>;
+            "uni-mat-tt-web-asset": LocalJSX.UniMatTtWebAsset & JSXBase.HTMLAttributes<HTMLUniMatTtWebAssetElement>;
             "uni-mat-tt-widgets": LocalJSX.UniMatTtWidgets & JSXBase.HTMLAttributes<HTMLUniMatTtWidgetsElement>;
+            "uni-mat-tt-wysiwyg": LocalJSX.UniMatTtWysiwyg & JSXBase.HTMLAttributes<HTMLUniMatTtWysiwygElement>;
             "uni-spin-wrap": LocalJSX.UniSpinWrap & JSXBase.HTMLAttributes<HTMLUniSpinWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
             "uni-tilt-wrap": LocalJSX.UniTiltWrap & JSXBase.HTMLAttributes<HTMLUniTiltWrapElement>;

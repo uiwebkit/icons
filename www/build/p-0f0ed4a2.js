@@ -1,0 +1,1 @@
+import{i as n}from"./p-9f981772.js";function o(n){const o=t(n);return u(n),o||null}function t(n){return null==n?void 0:n.textContent.trim()}function u(o){n(o)&&(o.textContent="")}export{t as a,u as b,o as u}

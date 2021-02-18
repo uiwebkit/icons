@@ -1,0 +1,1 @@
+const t=t=>null!=t,n=t=>Array.isArray(t),a=t=>"object"==typeof t&&!n(t),e=t=>"string"==typeof t;function r(n){return t(n)&&e(n)&&""===n}function s(r){return t(r)&&(n(r)&&0===r.length||a(r)&&0===Object.keys(r).length||e(r)&&""===r)}export{n as a,a as b,e as c,r as d,s as e,t as i}
