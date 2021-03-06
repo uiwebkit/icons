@@ -3,7 +3,10 @@ import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil
 import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
 import { isEmptyString, uniGetCleanContent, uniMatTypeShort, uniSmartWrap } from '../../../utils';
 
-@Component({ tag: 'uni-icon-mat' })
+@Component({
+  tag: 'uni-icon-mat',
+  styles: 'uni-icon-mat {display: inherit}'
+})
 export class UniIconMatComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;

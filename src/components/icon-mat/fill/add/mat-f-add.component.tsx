@@ -1,12 +1,12 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
-import svg from '../../../../assets/svg/mat/close/filled.svg';
+import svg from '../../../../assets/svg/mat/add/filled.svg';
 
 @Component({
-  tag: 'uni-mat-f-close',
-  styles: 'uni-mat-f-close {display: inherit}'
+  tag: 'uni-mat-f-add',
+  styles: 'uni-mat-f-add {display: inherit}'
 })
-export class UniMatFCloseComponent implements ComponentInterface {
+export class UniMatFAddComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 

@@ -1,6 +1,6 @@
 {
   "name": "@uiwebkit/icn",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Uni Icons Kit",
   "license": "MIT",
   "author": "UiWebKit",
@@ -26,7 +26,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "pack": "npm pack",
-    "publish": "npm publish --public"
+    "publish": "npm publish uiwebkit-icn-1.0.0.tgz --public"
   },
   "dependencies": {
     "@stencil/core": "2.4.0",

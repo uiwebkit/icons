@@ -321,6 +321,8 @@ export namespace Components {
     }
     interface UniMatF3dRotation {
     }
+    interface UniMatFAdd {
+    }
     interface UniMatFAddShoppingCart {
     }
     interface UniMatFAlbum {
@@ -797,6 +799,12 @@ declare global {
         prototype: HTMLUniMatF3dRotationElement;
         new (): HTMLUniMatF3dRotationElement;
     };
+    interface HTMLUniMatFAddElement extends Components.UniMatFAdd, HTMLStencilElement {
+    }
+    var HTMLUniMatFAddElement: {
+        prototype: HTMLUniMatFAddElement;
+        new (): HTMLUniMatFAddElement;
+    };
     interface HTMLUniMatFAddShoppingCartElement extends Components.UniMatFAddShoppingCart, HTMLStencilElement {
     }
     var HTMLUniMatFAddShoppingCartElement: {
@@ -1203,6 +1211,7 @@ declare global {
         "uni-icons-mat-tt-wrap": HTMLUniIconsMatTtWrapElement;
         "uni-icons-mat-wrap": HTMLUniIconsMatWrapElement;
         "uni-mat-f-3d-rotation": HTMLUniMatF3dRotationElement;
+        "uni-mat-f-add": HTMLUniMatFAddElement;
         "uni-mat-f-add-shopping-cart": HTMLUniMatFAddShoppingCartElement;
         "uni-mat-f-album": HTMLUniMatFAlbumElement;
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
@@ -1578,6 +1587,8 @@ declare namespace LocalJSX {
     }
     interface UniMatF3dRotation {
     }
+    interface UniMatFAdd {
+    }
     interface UniMatFAddShoppingCart {
     }
     interface UniMatFAlbum {
@@ -1768,6 +1779,7 @@ declare namespace LocalJSX {
         "uni-icons-mat-tt-wrap": UniIconsMatTtWrap;
         "uni-icons-mat-wrap": UniIconsMatWrap;
         "uni-mat-f-3d-rotation": UniMatF3dRotation;
+        "uni-mat-f-add": UniMatFAdd;
         "uni-mat-f-add-shopping-cart": UniMatFAddShoppingCart;
         "uni-mat-f-album": UniMatFAlbum;
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
@@ -1889,6 +1901,7 @@ declare module "@stencil/core" {
             "uni-icons-mat-tt-wrap": LocalJSX.UniIconsMatTtWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatTtWrapElement>;
             "uni-icons-mat-wrap": LocalJSX.UniIconsMatWrap & JSXBase.HTMLAttributes<HTMLUniIconsMatWrapElement>;
             "uni-mat-f-3d-rotation": LocalJSX.UniMatF3dRotation & JSXBase.HTMLAttributes<HTMLUniMatF3dRotationElement>;
+            "uni-mat-f-add": LocalJSX.UniMatFAdd & JSXBase.HTMLAttributes<HTMLUniMatFAddElement>;
             "uni-mat-f-add-shopping-cart": LocalJSX.UniMatFAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatFAddShoppingCartElement>;
             "uni-mat-f-album": LocalJSX.UniMatFAlbum & JSXBase.HTMLAttributes<HTMLUniMatFAlbumElement>;
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
