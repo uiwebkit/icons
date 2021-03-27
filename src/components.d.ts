@@ -70,11 +70,35 @@ export namespace Components {
         "round": boolean;
         "square": boolean;
     }
+    interface UniFlagDe {
+        "round": boolean;
+        "square": boolean;
+    }
     interface UniFlagEs {
         "round": boolean;
         "square": boolean;
     }
+    interface UniFlagFr {
+        "round": boolean;
+        "square": boolean;
+    }
     interface UniFlagGb {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagIt {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagJp {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagKr {
+        "round": boolean;
+        "square": boolean;
+    }
+    interface UniFlagPt {
         "round": boolean;
         "square": boolean;
     }
@@ -335,11 +359,17 @@ export namespace Components {
     }
     interface UniMatFFavorite {
     }
+    interface UniMatFFingerprint {
+    }
     interface UniMatFHome {
+    }
+    interface UniMatFMenu {
     }
     interface UniMatFPlayCircle {
     }
     interface UniMatFRotateRight {
+    }
+    interface UniMatFTranslate {
     }
     interface UniMatOPlayCircle {
     }
@@ -631,17 +661,53 @@ declare global {
         prototype: HTMLUniFlagCnElement;
         new (): HTMLUniFlagCnElement;
     };
+    interface HTMLUniFlagDeElement extends Components.UniFlagDe, HTMLStencilElement {
+    }
+    var HTMLUniFlagDeElement: {
+        prototype: HTMLUniFlagDeElement;
+        new (): HTMLUniFlagDeElement;
+    };
     interface HTMLUniFlagEsElement extends Components.UniFlagEs, HTMLStencilElement {
     }
     var HTMLUniFlagEsElement: {
         prototype: HTMLUniFlagEsElement;
         new (): HTMLUniFlagEsElement;
     };
+    interface HTMLUniFlagFrElement extends Components.UniFlagFr, HTMLStencilElement {
+    }
+    var HTMLUniFlagFrElement: {
+        prototype: HTMLUniFlagFrElement;
+        new (): HTMLUniFlagFrElement;
+    };
     interface HTMLUniFlagGbElement extends Components.UniFlagGb, HTMLStencilElement {
     }
     var HTMLUniFlagGbElement: {
         prototype: HTMLUniFlagGbElement;
         new (): HTMLUniFlagGbElement;
+    };
+    interface HTMLUniFlagItElement extends Components.UniFlagIt, HTMLStencilElement {
+    }
+    var HTMLUniFlagItElement: {
+        prototype: HTMLUniFlagItElement;
+        new (): HTMLUniFlagItElement;
+    };
+    interface HTMLUniFlagJpElement extends Components.UniFlagJp, HTMLStencilElement {
+    }
+    var HTMLUniFlagJpElement: {
+        prototype: HTMLUniFlagJpElement;
+        new (): HTMLUniFlagJpElement;
+    };
+    interface HTMLUniFlagKrElement extends Components.UniFlagKr, HTMLStencilElement {
+    }
+    var HTMLUniFlagKrElement: {
+        prototype: HTMLUniFlagKrElement;
+        new (): HTMLUniFlagKrElement;
+    };
+    interface HTMLUniFlagPtElement extends Components.UniFlagPt, HTMLStencilElement {
+    }
+    var HTMLUniFlagPtElement: {
+        prototype: HTMLUniFlagPtElement;
+        new (): HTMLUniFlagPtElement;
     };
     interface HTMLUniFlagRuElement extends Components.UniFlagRu, HTMLStencilElement {
     }
@@ -841,11 +907,23 @@ declare global {
         prototype: HTMLUniMatFFavoriteElement;
         new (): HTMLUniMatFFavoriteElement;
     };
+    interface HTMLUniMatFFingerprintElement extends Components.UniMatFFingerprint, HTMLStencilElement {
+    }
+    var HTMLUniMatFFingerprintElement: {
+        prototype: HTMLUniMatFFingerprintElement;
+        new (): HTMLUniMatFFingerprintElement;
+    };
     interface HTMLUniMatFHomeElement extends Components.UniMatFHome, HTMLStencilElement {
     }
     var HTMLUniMatFHomeElement: {
         prototype: HTMLUniMatFHomeElement;
         new (): HTMLUniMatFHomeElement;
+    };
+    interface HTMLUniMatFMenuElement extends Components.UniMatFMenu, HTMLStencilElement {
+    }
+    var HTMLUniMatFMenuElement: {
+        prototype: HTMLUniMatFMenuElement;
+        new (): HTMLUniMatFMenuElement;
     };
     interface HTMLUniMatFPlayCircleElement extends Components.UniMatFPlayCircle, HTMLStencilElement {
     }
@@ -858,6 +936,12 @@ declare global {
     var HTMLUniMatFRotateRightElement: {
         prototype: HTMLUniMatFRotateRightElement;
         new (): HTMLUniMatFRotateRightElement;
+    };
+    interface HTMLUniMatFTranslateElement extends Components.UniMatFTranslate, HTMLStencilElement {
+    }
+    var HTMLUniMatFTranslateElement: {
+        prototype: HTMLUniMatFTranslateElement;
+        new (): HTMLUniMatFTranslateElement;
     };
     interface HTMLUniMatOPlayCircleElement extends Components.UniMatOPlayCircle, HTMLStencilElement {
     }
@@ -1183,8 +1267,14 @@ declare global {
         "uni-fas-user-secret": HTMLUniFasUserSecretElement;
         "uni-flag": HTMLUniFlagElement;
         "uni-flag-cn": HTMLUniFlagCnElement;
+        "uni-flag-de": HTMLUniFlagDeElement;
         "uni-flag-es": HTMLUniFlagEsElement;
+        "uni-flag-fr": HTMLUniFlagFrElement;
         "uni-flag-gb": HTMLUniFlagGbElement;
+        "uni-flag-it": HTMLUniFlagItElement;
+        "uni-flag-jp": HTMLUniFlagJpElement;
+        "uni-flag-kr": HTMLUniFlagKrElement;
+        "uni-flag-pt": HTMLUniFlagPtElement;
         "uni-flag-ru": HTMLUniFlagRuElement;
         "uni-flag-us": HTMLUniFlagUsElement;
         "uni-icon-bs": HTMLUniIconBsElement;
@@ -1218,9 +1308,12 @@ declare global {
         "uni-mat-f-arrow-drop-up": HTMLUniMatFArrowDropUpElement;
         "uni-mat-f-close": HTMLUniMatFCloseElement;
         "uni-mat-f-favorite": HTMLUniMatFFavoriteElement;
+        "uni-mat-f-fingerprint": HTMLUniMatFFingerprintElement;
         "uni-mat-f-home": HTMLUniMatFHomeElement;
+        "uni-mat-f-menu": HTMLUniMatFMenuElement;
         "uni-mat-f-play-circle": HTMLUniMatFPlayCircleElement;
         "uni-mat-f-rotate-right": HTMLUniMatFRotateRightElement;
+        "uni-mat-f-translate": HTMLUniMatFTranslateElement;
         "uni-mat-o-play-circle": HTMLUniMatOPlayCircleElement;
         "uni-mat-tt-add-shopping-cart": HTMLUniMatTtAddShoppingCartElement;
         "uni-mat-tt-album": HTMLUniMatTtAlbumElement;
@@ -1336,11 +1429,35 @@ declare namespace LocalJSX {
         "round"?: boolean;
         "square"?: boolean;
     }
+    interface UniFlagDe {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
     interface UniFlagEs {
         "round"?: boolean;
         "square"?: boolean;
     }
+    interface UniFlagFr {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
     interface UniFlagGb {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagIt {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagJp {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagKr {
+        "round"?: boolean;
+        "square"?: boolean;
+    }
+    interface UniFlagPt {
         "round"?: boolean;
         "square"?: boolean;
     }
@@ -1601,11 +1718,17 @@ declare namespace LocalJSX {
     }
     interface UniMatFFavorite {
     }
+    interface UniMatFFingerprint {
+    }
     interface UniMatFHome {
+    }
+    interface UniMatFMenu {
     }
     interface UniMatFPlayCircle {
     }
     interface UniMatFRotateRight {
+    }
+    interface UniMatFTranslate {
     }
     interface UniMatOPlayCircle {
     }
@@ -1751,8 +1874,14 @@ declare namespace LocalJSX {
         "uni-fas-user-secret": UniFasUserSecret;
         "uni-flag": UniFlag;
         "uni-flag-cn": UniFlagCn;
+        "uni-flag-de": UniFlagDe;
         "uni-flag-es": UniFlagEs;
+        "uni-flag-fr": UniFlagFr;
         "uni-flag-gb": UniFlagGb;
+        "uni-flag-it": UniFlagIt;
+        "uni-flag-jp": UniFlagJp;
+        "uni-flag-kr": UniFlagKr;
+        "uni-flag-pt": UniFlagPt;
         "uni-flag-ru": UniFlagRu;
         "uni-flag-us": UniFlagUs;
         "uni-icon-bs": UniIconBs;
@@ -1786,9 +1915,12 @@ declare namespace LocalJSX {
         "uni-mat-f-arrow-drop-up": UniMatFArrowDropUp;
         "uni-mat-f-close": UniMatFClose;
         "uni-mat-f-favorite": UniMatFFavorite;
+        "uni-mat-f-fingerprint": UniMatFFingerprint;
         "uni-mat-f-home": UniMatFHome;
+        "uni-mat-f-menu": UniMatFMenu;
         "uni-mat-f-play-circle": UniMatFPlayCircle;
         "uni-mat-f-rotate-right": UniMatFRotateRight;
+        "uni-mat-f-translate": UniMatFTranslate;
         "uni-mat-o-play-circle": UniMatOPlayCircle;
         "uni-mat-tt-add-shopping-cart": UniMatTtAddShoppingCart;
         "uni-mat-tt-album": UniMatTtAlbum;
@@ -1873,8 +2005,14 @@ declare module "@stencil/core" {
             "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
             "uni-flag": LocalJSX.UniFlag & JSXBase.HTMLAttributes<HTMLUniFlagElement>;
             "uni-flag-cn": LocalJSX.UniFlagCn & JSXBase.HTMLAttributes<HTMLUniFlagCnElement>;
+            "uni-flag-de": LocalJSX.UniFlagDe & JSXBase.HTMLAttributes<HTMLUniFlagDeElement>;
             "uni-flag-es": LocalJSX.UniFlagEs & JSXBase.HTMLAttributes<HTMLUniFlagEsElement>;
+            "uni-flag-fr": LocalJSX.UniFlagFr & JSXBase.HTMLAttributes<HTMLUniFlagFrElement>;
             "uni-flag-gb": LocalJSX.UniFlagGb & JSXBase.HTMLAttributes<HTMLUniFlagGbElement>;
+            "uni-flag-it": LocalJSX.UniFlagIt & JSXBase.HTMLAttributes<HTMLUniFlagItElement>;
+            "uni-flag-jp": LocalJSX.UniFlagJp & JSXBase.HTMLAttributes<HTMLUniFlagJpElement>;
+            "uni-flag-kr": LocalJSX.UniFlagKr & JSXBase.HTMLAttributes<HTMLUniFlagKrElement>;
+            "uni-flag-pt": LocalJSX.UniFlagPt & JSXBase.HTMLAttributes<HTMLUniFlagPtElement>;
             "uni-flag-ru": LocalJSX.UniFlagRu & JSXBase.HTMLAttributes<HTMLUniFlagRuElement>;
             "uni-flag-us": LocalJSX.UniFlagUs & JSXBase.HTMLAttributes<HTMLUniFlagUsElement>;
             "uni-icon-bs": LocalJSX.UniIconBs & JSXBase.HTMLAttributes<HTMLUniIconBsElement>;
@@ -1908,9 +2046,12 @@ declare module "@stencil/core" {
             "uni-mat-f-arrow-drop-up": LocalJSX.UniMatFArrowDropUp & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropUpElement>;
             "uni-mat-f-close": LocalJSX.UniMatFClose & JSXBase.HTMLAttributes<HTMLUniMatFCloseElement>;
             "uni-mat-f-favorite": LocalJSX.UniMatFFavorite & JSXBase.HTMLAttributes<HTMLUniMatFFavoriteElement>;
+            "uni-mat-f-fingerprint": LocalJSX.UniMatFFingerprint & JSXBase.HTMLAttributes<HTMLUniMatFFingerprintElement>;
             "uni-mat-f-home": LocalJSX.UniMatFHome & JSXBase.HTMLAttributes<HTMLUniMatFHomeElement>;
+            "uni-mat-f-menu": LocalJSX.UniMatFMenu & JSXBase.HTMLAttributes<HTMLUniMatFMenuElement>;
             "uni-mat-f-play-circle": LocalJSX.UniMatFPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatFPlayCircleElement>;
             "uni-mat-f-rotate-right": LocalJSX.UniMatFRotateRight & JSXBase.HTMLAttributes<HTMLUniMatFRotateRightElement>;
+            "uni-mat-f-translate": LocalJSX.UniMatFTranslate & JSXBase.HTMLAttributes<HTMLUniMatFTranslateElement>;
             "uni-mat-o-play-circle": LocalJSX.UniMatOPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatOPlayCircleElement>;
             "uni-mat-tt-add-shopping-cart": LocalJSX.UniMatTtAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatTtAddShoppingCartElement>;
             "uni-mat-tt-album": LocalJSX.UniMatTtAlbum & JSXBase.HTMLAttributes<HTMLUniMatTtAlbumElement>;
