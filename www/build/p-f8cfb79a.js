@@ -1,1 +1,0 @@
-function e(e){switch(e){case"filled":return"f";case"outlined":return"o";case"rounded":return"r";case"sharp":return"s";case"two-tone":return"tt";default:return"f"}}export{e as u}
