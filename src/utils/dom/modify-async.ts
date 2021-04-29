@@ -1,6 +1,6 @@
 import { isDefined, isEmpty, isTargetElement, uniModify } from '..';
 
-export function uniModifyAsync(context, data: any, cbFunction) {
+export function uniModifyAsync(context, data: any, cbFunction): void {
   if (isDefined(data) && !isEmpty(data)) {
     if (isTargetElement(context.el, context.selector)) {
       uniModify(context, data, cbFunction);

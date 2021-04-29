@@ -391,6 +391,8 @@ export namespace Components {
     }
     interface UniMatTtCompareArrows {
     }
+    interface UniMatTtContactSupport {
+    }
     interface UniMatTtDashboard {
     }
     interface UniMatTtDynamicFeed {
@@ -1003,6 +1005,12 @@ declare global {
         prototype: HTMLUniMatTtCompareArrowsElement;
         new (): HTMLUniMatTtCompareArrowsElement;
     };
+    interface HTMLUniMatTtContactSupportElement extends Components.UniMatTtContactSupport, HTMLStencilElement {
+    }
+    var HTMLUniMatTtContactSupportElement: {
+        prototype: HTMLUniMatTtContactSupportElement;
+        new (): HTMLUniMatTtContactSupportElement;
+    };
     interface HTMLUniMatTtDashboardElement extends Components.UniMatTtDashboard, HTMLStencilElement {
     }
     var HTMLUniMatTtDashboardElement: {
@@ -1324,6 +1332,7 @@ declare global {
         "uni-mat-tt-check-box": HTMLUniMatTtCheckBoxElement;
         "uni-mat-tt-code": HTMLUniMatTtCodeElement;
         "uni-mat-tt-compare-arrows": HTMLUniMatTtCompareArrowsElement;
+        "uni-mat-tt-contact-support": HTMLUniMatTtContactSupportElement;
         "uni-mat-tt-dashboard": HTMLUniMatTtDashboardElement;
         "uni-mat-tt-dynamic-feed": HTMLUniMatTtDynamicFeedElement;
         "uni-mat-tt-favorite": HTMLUniMatTtFavoriteElement;
@@ -1750,6 +1759,8 @@ declare namespace LocalJSX {
     }
     interface UniMatTtCompareArrows {
     }
+    interface UniMatTtContactSupport {
+    }
     interface UniMatTtDashboard {
     }
     interface UniMatTtDynamicFeed {
@@ -1931,6 +1942,7 @@ declare namespace LocalJSX {
         "uni-mat-tt-check-box": UniMatTtCheckBox;
         "uni-mat-tt-code": UniMatTtCode;
         "uni-mat-tt-compare-arrows": UniMatTtCompareArrows;
+        "uni-mat-tt-contact-support": UniMatTtContactSupport;
         "uni-mat-tt-dashboard": UniMatTtDashboard;
         "uni-mat-tt-dynamic-feed": UniMatTtDynamicFeed;
         "uni-mat-tt-favorite": UniMatTtFavorite;
@@ -2062,6 +2074,7 @@ declare module "@stencil/core" {
             "uni-mat-tt-check-box": LocalJSX.UniMatTtCheckBox & JSXBase.HTMLAttributes<HTMLUniMatTtCheckBoxElement>;
             "uni-mat-tt-code": LocalJSX.UniMatTtCode & JSXBase.HTMLAttributes<HTMLUniMatTtCodeElement>;
             "uni-mat-tt-compare-arrows": LocalJSX.UniMatTtCompareArrows & JSXBase.HTMLAttributes<HTMLUniMatTtCompareArrowsElement>;
+            "uni-mat-tt-contact-support": LocalJSX.UniMatTtContactSupport & JSXBase.HTMLAttributes<HTMLUniMatTtContactSupportElement>;
             "uni-mat-tt-dashboard": LocalJSX.UniMatTtDashboard & JSXBase.HTMLAttributes<HTMLUniMatTtDashboardElement>;
             "uni-mat-tt-dynamic-feed": LocalJSX.UniMatTtDynamicFeed & JSXBase.HTMLAttributes<HTMLUniMatTtDynamicFeedElement>;
             "uni-mat-tt-favorite": LocalJSX.UniMatTtFavorite & JSXBase.HTMLAttributes<HTMLUniMatTtFavoriteElement>;

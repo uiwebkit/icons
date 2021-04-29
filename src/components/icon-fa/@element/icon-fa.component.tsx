@@ -4,7 +4,7 @@ import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { isEmptyString, uniGetCleanContent, uniIconsFaFontClass, uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icon-fa' })
-export class UniIconMatComponent implements ComponentInterface {
+export class UniIconFaComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 

@@ -1,1 +1,0 @@
-System.register(["./p-c53ea3f0.system.js","./p-9a895e97.system.js"],(function(e){"use strict";var t,s;return{setters:[function(e){t=e.a},function(e){s=e.u}],execute:function(){e("u",n);function n(e,n){if(n){t({el:e,selector:"svg"},{"border-radius":"50%"},s)}}}}}));
