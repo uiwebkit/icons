@@ -2,15 +2,16 @@
 
 # Uni Icons Kit
 
-Uni Icons Kit is a set of Web Components (Custom Elements) to use Material Design Icons and FA Icons in declarative style.
+Uni Icons Kit is a set of Web Components & Custom Elements to use Material Design Icons, Bootstrap Icons, Font Awesome Icons and Country flags in the declarative style.
 
 Uni Icons Kit components have two modes:
-1. Custom Element with Uni template - `100%` convenience;
-2. Custom Element Wrapper for you own html template - `100%` customization;
+1. Custom Element - `100%` convenience;
+2. Web Component - `100%` security;
+3. Custom Element Wrapper - `100%` customization;
 
-Uni Icons Kit takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components (Custom Elements) that run in any browser supporting the Custom Elements v1 spec.
+Uni Icons Kit takes TypeScript, JSX, a tiny virtual DOM layer, efficient one-way data binding, an asynchronous rendering pipeline (similar to React Fiber), and lazy-loading out of the box, and generates 100% standards-based Web Components & Custom Elements that run in any browser supporting the Custom Elements v1 spec.
 
-Uni Icons Kit components are just Web Components (Custom Elements), so they work in any major framework or with no framework at all.
+Uni Icons Kit components are just HTML Web Components & Custom Elements, so they work in any major framework or with no framework at all.
 
 ## Getting Started
 
@@ -34,12 +35,12 @@ To build the component for production, run:
 npm run build:prod
 ```
 
-Check out our docs [here](https://uiwebkit.com/?category=icn).
+Check out our docs [here](https://uiwebkit.com/icn/1).
 
 
 ## Naming Components
 
-When creating new component tags, use `uni` in the component name (ex: `<uni-flag>`) or use a prefix that fits your company or any name for a group of related components. For example, all of the UiWebKit generated web components use the prefix `uni`.
+When creating new component tags, use `uni` in the component name (ex: `<uni-flag>`) or use a prefix that fits your company or any name for a group of related components. For example, all the UiWebKit generated Web Components & Custom Elements use the prefix `uni`.
 
 
 ## Using Components
