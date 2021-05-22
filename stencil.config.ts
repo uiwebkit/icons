@@ -149,6 +149,7 @@ export const config: Config = {
     },
     {
       type: 'www',
+      dir: 'docs',
       copy: [
         { src: 'assets/font', dest: 'assets/font', warn: true },
         { src: 'assets/svg', dest: 'assets/svg', warn: true },

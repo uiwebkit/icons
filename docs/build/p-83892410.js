@@ -1,0 +1,1 @@
+function n(n,o){o.forEach((o=>{n.forEach((n=>{n.classList.add(o)}))}))}export{n as u}

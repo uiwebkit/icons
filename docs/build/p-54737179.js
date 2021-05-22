@@ -1,0 +1,1 @@
+const t={height:"20",width:"20"};function o(t,o){for(const[c,n]of Object.entries(o))t.forEach((t=>{t.setAttribute(c,n)}))}export{o as a,t as u}
