@@ -11,9 +11,9 @@ export class UniSpinWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  @Prop({ reflect: true }) selector: string;
-
   @Prop({ reflect: true }) all: boolean = false;
+
+  @Prop({ reflect: true }) selector: string;
 
   componentWillLoad(): Promise<void> | void {
     const { el, speed, steps, selector, all } = this;

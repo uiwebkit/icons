@@ -482,11 +482,6 @@ export namespace Components {
         "angle": number;
         "selector": string;
     }
-    interface UniWrap {
-        "all": boolean;
-        "classes": string;
-        "selector": string;
-    }
 }
 declare global {
     interface HTMLUniBsAlarmElement extends Components.UniBsAlarm, HTMLStencilElement {
@@ -1239,12 +1234,6 @@ declare global {
         prototype: HTMLUniTiltWrapElement;
         new (): HTMLUniTiltWrapElement;
     };
-    interface HTMLUniWrapElement extends Components.UniWrap, HTMLStencilElement {
-    }
-    var HTMLUniWrapElement: {
-        prototype: HTMLUniWrapElement;
-        new (): HTMLUniWrapElement;
-    };
     interface HTMLElementTagNameMap {
         "uni-bs-alarm": HTMLUniBsAlarmElement;
         "uni-bs-alarm-fill": HTMLUniBsAlarmFillElement;
@@ -1371,7 +1360,6 @@ declare global {
         "uni-spin-wrap": HTMLUniSpinWrapElement;
         "uni-theme-wrap": HTMLUniThemeWrapElement;
         "uni-tilt-wrap": HTMLUniTiltWrapElement;
-        "uni-wrap": HTMLUniWrapElement;
     }
 }
 declare namespace LocalJSX {
@@ -1850,11 +1838,6 @@ declare namespace LocalJSX {
         "angle"?: number;
         "selector"?: string;
     }
-    interface UniWrap {
-        "all"?: boolean;
-        "classes"?: string;
-        "selector"?: string;
-    }
     interface IntrinsicElements {
         "uni-bs-alarm": UniBsAlarm;
         "uni-bs-alarm-fill": UniBsAlarmFill;
@@ -1981,7 +1964,6 @@ declare namespace LocalJSX {
         "uni-spin-wrap": UniSpinWrap;
         "uni-theme-wrap": UniThemeWrap;
         "uni-tilt-wrap": UniTiltWrap;
-        "uni-wrap": UniWrap;
     }
 }
 export { LocalJSX as JSX };
@@ -2113,7 +2095,6 @@ declare module "@stencil/core" {
             "uni-spin-wrap": LocalJSX.UniSpinWrap & JSXBase.HTMLAttributes<HTMLUniSpinWrapElement>;
             "uni-theme-wrap": LocalJSX.UniThemeWrap & JSXBase.HTMLAttributes<HTMLUniThemeWrapElement>;
             "uni-tilt-wrap": LocalJSX.UniTiltWrap & JSXBase.HTMLAttributes<HTMLUniTiltWrapElement>;
-            "uni-wrap": LocalJSX.UniWrap & JSXBase.HTMLAttributes<HTMLUniWrapElement>;
         }
     }
 }

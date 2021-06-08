@@ -16,9 +16,9 @@ export class UniThemeWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) fontSize: UniSize | number;
 
-  @Prop({ reflect: true }) selector: string;
-
   @Prop({ reflect: true }) all: boolean = false;
+
+  @Prop({ reflect: true }) selector: string;
 
   componentWillLoad(): Promise<void> | void {
     const { el, color, filter, size, fontSize, selector, all } = this;

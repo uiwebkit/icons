@@ -22,9 +22,9 @@ export class UniIconsFaWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  @Prop({ reflect: true }) selector: string;
-
   @Prop({ reflect: true }) all: boolean = false;
+
+  @Prop({ reflect: true }) selector: string;
 
   render(): VNode {
     const { name, color, size, angle, spin, speed, steps, selector, all } = this;

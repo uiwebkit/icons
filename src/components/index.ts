@@ -10,5 +10,3 @@ export * from './icons-mat';
 export * from './spin';
 export * from './theme';
 export * from './tilt';
-
-export * from './wrap/wrap.component';

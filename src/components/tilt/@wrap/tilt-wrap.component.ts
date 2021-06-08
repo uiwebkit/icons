@@ -9,9 +9,9 @@ export class UniTiltWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) angle: number;
 
-  @Prop({ reflect: true }) selector: string;
-
   @Prop({ reflect: true }) all: boolean = false;
+
+  @Prop({ reflect: true }) selector: string;
 
   componentWillLoad(): Promise<void> | void {
     const { el, angle, selector, all } = this;

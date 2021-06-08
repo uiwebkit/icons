@@ -1,0 +1,1 @@
+import{a as r,b as s}from"./p-99cfbc8e.js";function e(e,o){o&&r({el:e,selector:"svg"},{"border-radius":"50%"},s)}export{e as u}

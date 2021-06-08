@@ -25,9 +25,9 @@ export class UniIconsFaRegularWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  @Prop({ reflect: true }) selector: string;
-
   @Prop({ reflect: true }) all: boolean = false;
+
+  @Prop({ reflect: true }) selector: string;
 
   componentDidLoad(): void {
     const name = this.name || uniGetCleanContent(this.el.firstElementChild as HTMLElement);

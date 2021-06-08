@@ -25,9 +25,9 @@ export class UniIconsMatTwoToneWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) steps: number;
 
-  @Prop({ reflect: true }) selector: string;
-
   @Prop({ reflect: true }) all: boolean = false;
+
+  @Prop({ reflect: true }) selector: string;
 
   componentDidLoad(): void {
     const { el, angle, spin, speed, steps, selector, all } = this;
