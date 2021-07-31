@@ -7,15 +7,55 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { UniColor, UniIconsFaFont, UniIconsMatFont, UniSize } from "./models";
 export namespace Components {
-    interface UniBsAlarm {
+    interface UniBiAlarm {
     }
-    interface UniBsAlarmFill {
+    interface UniBiAlarmFill {
     }
-    interface UniBsStar {
+    interface UniBiBootstrap {
     }
-    interface UniBsStarFill {
+    interface UniBiBootstrapFill {
     }
-    interface UniBsStarHalf {
+    interface UniBiBug {
+    }
+    interface UniBiBugFill {
+    }
+    interface UniBiDownload {
+    }
+    interface UniBiEnvelope {
+    }
+    interface UniBiEnvelopeFill {
+    }
+    interface UniBiFacebook {
+    }
+    interface UniBiFiles {
+    }
+    interface UniBiGithub {
+    }
+    interface UniBiHandThumbsUp {
+    }
+    interface UniBiHandThumbsUpFill {
+    }
+    interface UniBiInstagram {
+    }
+    interface UniBiLightbulb {
+    }
+    interface UniBiLightbulbFill {
+    }
+    interface UniBiQuestionCircle {
+    }
+    interface UniBiQuestionCircleFill {
+    }
+    interface UniBiStar {
+    }
+    interface UniBiStarFill {
+    }
+    interface UniBiStarHalf {
+    }
+    interface UniBiStyles {
+    }
+    interface UniBiTwitter {
+    }
+    interface UniBiYoutube {
     }
     interface UniFaStyles {
     }
@@ -110,9 +150,11 @@ export namespace Components {
         "round": boolean;
         "square": boolean;
     }
-    interface UniIconBs {
+    interface UniIconBi {
+        "alter": string;
         "angle": number;
         "color": UniColor;
+        "img": boolean;
         "name": string;
         "size": UniSize | number;
         "speed": number;
@@ -138,6 +180,18 @@ export namespace Components {
         "spin": boolean;
         "steps": number;
         "type": UniIconsMatFont;
+    }
+    interface UniIconsBi {
+        "color": UniColor;
+        "name": string;
+        "size": UniSize | number;
+    }
+    interface UniIconsBiWrap {
+        "all": boolean;
+        "color": UniColor;
+        "name": string;
+        "selector": string;
+        "size": UniSize | number;
     }
     interface UniIconsFa {
         "angle": number;
@@ -484,35 +538,155 @@ export namespace Components {
     }
 }
 declare global {
-    interface HTMLUniBsAlarmElement extends Components.UniBsAlarm, HTMLStencilElement {
+    interface HTMLUniBiAlarmElement extends Components.UniBiAlarm, HTMLStencilElement {
     }
-    var HTMLUniBsAlarmElement: {
-        prototype: HTMLUniBsAlarmElement;
-        new (): HTMLUniBsAlarmElement;
+    var HTMLUniBiAlarmElement: {
+        prototype: HTMLUniBiAlarmElement;
+        new (): HTMLUniBiAlarmElement;
     };
-    interface HTMLUniBsAlarmFillElement extends Components.UniBsAlarmFill, HTMLStencilElement {
+    interface HTMLUniBiAlarmFillElement extends Components.UniBiAlarmFill, HTMLStencilElement {
     }
-    var HTMLUniBsAlarmFillElement: {
-        prototype: HTMLUniBsAlarmFillElement;
-        new (): HTMLUniBsAlarmFillElement;
+    var HTMLUniBiAlarmFillElement: {
+        prototype: HTMLUniBiAlarmFillElement;
+        new (): HTMLUniBiAlarmFillElement;
     };
-    interface HTMLUniBsStarElement extends Components.UniBsStar, HTMLStencilElement {
+    interface HTMLUniBiBootstrapElement extends Components.UniBiBootstrap, HTMLStencilElement {
     }
-    var HTMLUniBsStarElement: {
-        prototype: HTMLUniBsStarElement;
-        new (): HTMLUniBsStarElement;
+    var HTMLUniBiBootstrapElement: {
+        prototype: HTMLUniBiBootstrapElement;
+        new (): HTMLUniBiBootstrapElement;
     };
-    interface HTMLUniBsStarFillElement extends Components.UniBsStarFill, HTMLStencilElement {
+    interface HTMLUniBiBootstrapFillElement extends Components.UniBiBootstrapFill, HTMLStencilElement {
     }
-    var HTMLUniBsStarFillElement: {
-        prototype: HTMLUniBsStarFillElement;
-        new (): HTMLUniBsStarFillElement;
+    var HTMLUniBiBootstrapFillElement: {
+        prototype: HTMLUniBiBootstrapFillElement;
+        new (): HTMLUniBiBootstrapFillElement;
     };
-    interface HTMLUniBsStarHalfElement extends Components.UniBsStarHalf, HTMLStencilElement {
+    interface HTMLUniBiBugElement extends Components.UniBiBug, HTMLStencilElement {
     }
-    var HTMLUniBsStarHalfElement: {
-        prototype: HTMLUniBsStarHalfElement;
-        new (): HTMLUniBsStarHalfElement;
+    var HTMLUniBiBugElement: {
+        prototype: HTMLUniBiBugElement;
+        new (): HTMLUniBiBugElement;
+    };
+    interface HTMLUniBiBugFillElement extends Components.UniBiBugFill, HTMLStencilElement {
+    }
+    var HTMLUniBiBugFillElement: {
+        prototype: HTMLUniBiBugFillElement;
+        new (): HTMLUniBiBugFillElement;
+    };
+    interface HTMLUniBiDownloadElement extends Components.UniBiDownload, HTMLStencilElement {
+    }
+    var HTMLUniBiDownloadElement: {
+        prototype: HTMLUniBiDownloadElement;
+        new (): HTMLUniBiDownloadElement;
+    };
+    interface HTMLUniBiEnvelopeElement extends Components.UniBiEnvelope, HTMLStencilElement {
+    }
+    var HTMLUniBiEnvelopeElement: {
+        prototype: HTMLUniBiEnvelopeElement;
+        new (): HTMLUniBiEnvelopeElement;
+    };
+    interface HTMLUniBiEnvelopeFillElement extends Components.UniBiEnvelopeFill, HTMLStencilElement {
+    }
+    var HTMLUniBiEnvelopeFillElement: {
+        prototype: HTMLUniBiEnvelopeFillElement;
+        new (): HTMLUniBiEnvelopeFillElement;
+    };
+    interface HTMLUniBiFacebookElement extends Components.UniBiFacebook, HTMLStencilElement {
+    }
+    var HTMLUniBiFacebookElement: {
+        prototype: HTMLUniBiFacebookElement;
+        new (): HTMLUniBiFacebookElement;
+    };
+    interface HTMLUniBiFilesElement extends Components.UniBiFiles, HTMLStencilElement {
+    }
+    var HTMLUniBiFilesElement: {
+        prototype: HTMLUniBiFilesElement;
+        new (): HTMLUniBiFilesElement;
+    };
+    interface HTMLUniBiGithubElement extends Components.UniBiGithub, HTMLStencilElement {
+    }
+    var HTMLUniBiGithubElement: {
+        prototype: HTMLUniBiGithubElement;
+        new (): HTMLUniBiGithubElement;
+    };
+    interface HTMLUniBiHandThumbsUpElement extends Components.UniBiHandThumbsUp, HTMLStencilElement {
+    }
+    var HTMLUniBiHandThumbsUpElement: {
+        prototype: HTMLUniBiHandThumbsUpElement;
+        new (): HTMLUniBiHandThumbsUpElement;
+    };
+    interface HTMLUniBiHandThumbsUpFillElement extends Components.UniBiHandThumbsUpFill, HTMLStencilElement {
+    }
+    var HTMLUniBiHandThumbsUpFillElement: {
+        prototype: HTMLUniBiHandThumbsUpFillElement;
+        new (): HTMLUniBiHandThumbsUpFillElement;
+    };
+    interface HTMLUniBiInstagramElement extends Components.UniBiInstagram, HTMLStencilElement {
+    }
+    var HTMLUniBiInstagramElement: {
+        prototype: HTMLUniBiInstagramElement;
+        new (): HTMLUniBiInstagramElement;
+    };
+    interface HTMLUniBiLightbulbElement extends Components.UniBiLightbulb, HTMLStencilElement {
+    }
+    var HTMLUniBiLightbulbElement: {
+        prototype: HTMLUniBiLightbulbElement;
+        new (): HTMLUniBiLightbulbElement;
+    };
+    interface HTMLUniBiLightbulbFillElement extends Components.UniBiLightbulbFill, HTMLStencilElement {
+    }
+    var HTMLUniBiLightbulbFillElement: {
+        prototype: HTMLUniBiLightbulbFillElement;
+        new (): HTMLUniBiLightbulbFillElement;
+    };
+    interface HTMLUniBiQuestionCircleElement extends Components.UniBiQuestionCircle, HTMLStencilElement {
+    }
+    var HTMLUniBiQuestionCircleElement: {
+        prototype: HTMLUniBiQuestionCircleElement;
+        new (): HTMLUniBiQuestionCircleElement;
+    };
+    interface HTMLUniBiQuestionCircleFillElement extends Components.UniBiQuestionCircleFill, HTMLStencilElement {
+    }
+    var HTMLUniBiQuestionCircleFillElement: {
+        prototype: HTMLUniBiQuestionCircleFillElement;
+        new (): HTMLUniBiQuestionCircleFillElement;
+    };
+    interface HTMLUniBiStarElement extends Components.UniBiStar, HTMLStencilElement {
+    }
+    var HTMLUniBiStarElement: {
+        prototype: HTMLUniBiStarElement;
+        new (): HTMLUniBiStarElement;
+    };
+    interface HTMLUniBiStarFillElement extends Components.UniBiStarFill, HTMLStencilElement {
+    }
+    var HTMLUniBiStarFillElement: {
+        prototype: HTMLUniBiStarFillElement;
+        new (): HTMLUniBiStarFillElement;
+    };
+    interface HTMLUniBiStarHalfElement extends Components.UniBiStarHalf, HTMLStencilElement {
+    }
+    var HTMLUniBiStarHalfElement: {
+        prototype: HTMLUniBiStarHalfElement;
+        new (): HTMLUniBiStarHalfElement;
+    };
+    interface HTMLUniBiStylesElement extends Components.UniBiStyles, HTMLStencilElement {
+    }
+    var HTMLUniBiStylesElement: {
+        prototype: HTMLUniBiStylesElement;
+        new (): HTMLUniBiStylesElement;
+    };
+    interface HTMLUniBiTwitterElement extends Components.UniBiTwitter, HTMLStencilElement {
+    }
+    var HTMLUniBiTwitterElement: {
+        prototype: HTMLUniBiTwitterElement;
+        new (): HTMLUniBiTwitterElement;
+    };
+    interface HTMLUniBiYoutubeElement extends Components.UniBiYoutube, HTMLStencilElement {
+    }
+    var HTMLUniBiYoutubeElement: {
+        prototype: HTMLUniBiYoutubeElement;
+        new (): HTMLUniBiYoutubeElement;
     };
     interface HTMLUniFaStylesElement extends Components.UniFaStyles, HTMLStencilElement {
     }
@@ -718,11 +892,11 @@ declare global {
         prototype: HTMLUniFlagUsElement;
         new (): HTMLUniFlagUsElement;
     };
-    interface HTMLUniIconBsElement extends Components.UniIconBs, HTMLStencilElement {
+    interface HTMLUniIconBiElement extends Components.UniIconBi, HTMLStencilElement {
     }
-    var HTMLUniIconBsElement: {
-        prototype: HTMLUniIconBsElement;
-        new (): HTMLUniIconBsElement;
+    var HTMLUniIconBiElement: {
+        prototype: HTMLUniIconBiElement;
+        new (): HTMLUniIconBiElement;
     };
     interface HTMLUniIconFaElement extends Components.UniIconFa, HTMLStencilElement {
     }
@@ -735,6 +909,18 @@ declare global {
     var HTMLUniIconMatElement: {
         prototype: HTMLUniIconMatElement;
         new (): HTMLUniIconMatElement;
+    };
+    interface HTMLUniIconsBiElement extends Components.UniIconsBi, HTMLStencilElement {
+    }
+    var HTMLUniIconsBiElement: {
+        prototype: HTMLUniIconsBiElement;
+        new (): HTMLUniIconsBiElement;
+    };
+    interface HTMLUniIconsBiWrapElement extends Components.UniIconsBiWrap, HTMLStencilElement {
+    }
+    var HTMLUniIconsBiWrapElement: {
+        prototype: HTMLUniIconsBiWrapElement;
+        new (): HTMLUniIconsBiWrapElement;
     };
     interface HTMLUniIconsFaElement extends Components.UniIconsFa, HTMLStencilElement {
     }
@@ -1235,11 +1421,31 @@ declare global {
         new (): HTMLUniTiltWrapElement;
     };
     interface HTMLElementTagNameMap {
-        "uni-bs-alarm": HTMLUniBsAlarmElement;
-        "uni-bs-alarm-fill": HTMLUniBsAlarmFillElement;
-        "uni-bs-star": HTMLUniBsStarElement;
-        "uni-bs-star-fill": HTMLUniBsStarFillElement;
-        "uni-bs-star-half": HTMLUniBsStarHalfElement;
+        "uni-bi-alarm": HTMLUniBiAlarmElement;
+        "uni-bi-alarm-fill": HTMLUniBiAlarmFillElement;
+        "uni-bi-bootstrap": HTMLUniBiBootstrapElement;
+        "uni-bi-bootstrap-fill": HTMLUniBiBootstrapFillElement;
+        "uni-bi-bug": HTMLUniBiBugElement;
+        "uni-bi-bug-fill": HTMLUniBiBugFillElement;
+        "uni-bi-download": HTMLUniBiDownloadElement;
+        "uni-bi-envelope": HTMLUniBiEnvelopeElement;
+        "uni-bi-envelope-fill": HTMLUniBiEnvelopeFillElement;
+        "uni-bi-facebook": HTMLUniBiFacebookElement;
+        "uni-bi-files": HTMLUniBiFilesElement;
+        "uni-bi-github": HTMLUniBiGithubElement;
+        "uni-bi-hand-thumbs-up": HTMLUniBiHandThumbsUpElement;
+        "uni-bi-hand-thumbs-up-fill": HTMLUniBiHandThumbsUpFillElement;
+        "uni-bi-instagram": HTMLUniBiInstagramElement;
+        "uni-bi-lightbulb": HTMLUniBiLightbulbElement;
+        "uni-bi-lightbulb-fill": HTMLUniBiLightbulbFillElement;
+        "uni-bi-question-circle": HTMLUniBiQuestionCircleElement;
+        "uni-bi-question-circle-fill": HTMLUniBiQuestionCircleFillElement;
+        "uni-bi-star": HTMLUniBiStarElement;
+        "uni-bi-star-fill": HTMLUniBiStarFillElement;
+        "uni-bi-star-half": HTMLUniBiStarHalfElement;
+        "uni-bi-styles": HTMLUniBiStylesElement;
+        "uni-bi-twitter": HTMLUniBiTwitterElement;
+        "uni-bi-youtube": HTMLUniBiYoutubeElement;
         "uni-fa-styles": HTMLUniFaStylesElement;
         "uni-fab-bootstrap": HTMLUniFabBootstrapElement;
         "uni-fab-facebook": HTMLUniFabFacebookElement;
@@ -1274,9 +1480,11 @@ declare global {
         "uni-flag-pt": HTMLUniFlagPtElement;
         "uni-flag-ru": HTMLUniFlagRuElement;
         "uni-flag-us": HTMLUniFlagUsElement;
-        "uni-icon-bs": HTMLUniIconBsElement;
+        "uni-icon-bi": HTMLUniIconBiElement;
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
+        "uni-icons-bi": HTMLUniIconsBiElement;
+        "uni-icons-bi-wrap": HTMLUniIconsBiWrapElement;
         "uni-icons-fa": HTMLUniIconsFaElement;
         "uni-icons-fa-b": HTMLUniIconsFaBElement;
         "uni-icons-fa-b-wrap": HTMLUniIconsFaBWrapElement;
@@ -1363,15 +1571,55 @@ declare global {
     }
 }
 declare namespace LocalJSX {
-    interface UniBsAlarm {
+    interface UniBiAlarm {
     }
-    interface UniBsAlarmFill {
+    interface UniBiAlarmFill {
     }
-    interface UniBsStar {
+    interface UniBiBootstrap {
     }
-    interface UniBsStarFill {
+    interface UniBiBootstrapFill {
     }
-    interface UniBsStarHalf {
+    interface UniBiBug {
+    }
+    interface UniBiBugFill {
+    }
+    interface UniBiDownload {
+    }
+    interface UniBiEnvelope {
+    }
+    interface UniBiEnvelopeFill {
+    }
+    interface UniBiFacebook {
+    }
+    interface UniBiFiles {
+    }
+    interface UniBiGithub {
+    }
+    interface UniBiHandThumbsUp {
+    }
+    interface UniBiHandThumbsUpFill {
+    }
+    interface UniBiInstagram {
+    }
+    interface UniBiLightbulb {
+    }
+    interface UniBiLightbulbFill {
+    }
+    interface UniBiQuestionCircle {
+    }
+    interface UniBiQuestionCircleFill {
+    }
+    interface UniBiStar {
+    }
+    interface UniBiStarFill {
+    }
+    interface UniBiStarHalf {
+    }
+    interface UniBiStyles {
+    }
+    interface UniBiTwitter {
+    }
+    interface UniBiYoutube {
     }
     interface UniFaStyles {
     }
@@ -1466,9 +1714,11 @@ declare namespace LocalJSX {
         "round"?: boolean;
         "square"?: boolean;
     }
-    interface UniIconBs {
+    interface UniIconBi {
+        "alter"?: string;
         "angle"?: number;
         "color"?: UniColor;
+        "img"?: boolean;
         "name"?: string;
         "size"?: UniSize | number;
         "speed"?: number;
@@ -1494,6 +1744,18 @@ declare namespace LocalJSX {
         "spin"?: boolean;
         "steps"?: number;
         "type"?: UniIconsMatFont;
+    }
+    interface UniIconsBi {
+        "color"?: UniColor;
+        "name": string;
+        "size"?: UniSize | number;
+    }
+    interface UniIconsBiWrap {
+        "all"?: boolean;
+        "color"?: UniColor;
+        "name"?: string;
+        "selector"?: string;
+        "size"?: UniSize | number;
     }
     interface UniIconsFa {
         "angle"?: number;
@@ -1839,11 +2101,31 @@ declare namespace LocalJSX {
         "selector"?: string;
     }
     interface IntrinsicElements {
-        "uni-bs-alarm": UniBsAlarm;
-        "uni-bs-alarm-fill": UniBsAlarmFill;
-        "uni-bs-star": UniBsStar;
-        "uni-bs-star-fill": UniBsStarFill;
-        "uni-bs-star-half": UniBsStarHalf;
+        "uni-bi-alarm": UniBiAlarm;
+        "uni-bi-alarm-fill": UniBiAlarmFill;
+        "uni-bi-bootstrap": UniBiBootstrap;
+        "uni-bi-bootstrap-fill": UniBiBootstrapFill;
+        "uni-bi-bug": UniBiBug;
+        "uni-bi-bug-fill": UniBiBugFill;
+        "uni-bi-download": UniBiDownload;
+        "uni-bi-envelope": UniBiEnvelope;
+        "uni-bi-envelope-fill": UniBiEnvelopeFill;
+        "uni-bi-facebook": UniBiFacebook;
+        "uni-bi-files": UniBiFiles;
+        "uni-bi-github": UniBiGithub;
+        "uni-bi-hand-thumbs-up": UniBiHandThumbsUp;
+        "uni-bi-hand-thumbs-up-fill": UniBiHandThumbsUpFill;
+        "uni-bi-instagram": UniBiInstagram;
+        "uni-bi-lightbulb": UniBiLightbulb;
+        "uni-bi-lightbulb-fill": UniBiLightbulbFill;
+        "uni-bi-question-circle": UniBiQuestionCircle;
+        "uni-bi-question-circle-fill": UniBiQuestionCircleFill;
+        "uni-bi-star": UniBiStar;
+        "uni-bi-star-fill": UniBiStarFill;
+        "uni-bi-star-half": UniBiStarHalf;
+        "uni-bi-styles": UniBiStyles;
+        "uni-bi-twitter": UniBiTwitter;
+        "uni-bi-youtube": UniBiYoutube;
         "uni-fa-styles": UniFaStyles;
         "uni-fab-bootstrap": UniFabBootstrap;
         "uni-fab-facebook": UniFabFacebook;
@@ -1878,9 +2160,11 @@ declare namespace LocalJSX {
         "uni-flag-pt": UniFlagPt;
         "uni-flag-ru": UniFlagRu;
         "uni-flag-us": UniFlagUs;
-        "uni-icon-bs": UniIconBs;
+        "uni-icon-bi": UniIconBi;
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
+        "uni-icons-bi": UniIconsBi;
+        "uni-icons-bi-wrap": UniIconsBiWrap;
         "uni-icons-fa": UniIconsFa;
         "uni-icons-fa-b": UniIconsFaB;
         "uni-icons-fa-b-wrap": UniIconsFaBWrap;
@@ -1970,11 +2254,31 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "uni-bs-alarm": LocalJSX.UniBsAlarm & JSXBase.HTMLAttributes<HTMLUniBsAlarmElement>;
-            "uni-bs-alarm-fill": LocalJSX.UniBsAlarmFill & JSXBase.HTMLAttributes<HTMLUniBsAlarmFillElement>;
-            "uni-bs-star": LocalJSX.UniBsStar & JSXBase.HTMLAttributes<HTMLUniBsStarElement>;
-            "uni-bs-star-fill": LocalJSX.UniBsStarFill & JSXBase.HTMLAttributes<HTMLUniBsStarFillElement>;
-            "uni-bs-star-half": LocalJSX.UniBsStarHalf & JSXBase.HTMLAttributes<HTMLUniBsStarHalfElement>;
+            "uni-bi-alarm": LocalJSX.UniBiAlarm & JSXBase.HTMLAttributes<HTMLUniBiAlarmElement>;
+            "uni-bi-alarm-fill": LocalJSX.UniBiAlarmFill & JSXBase.HTMLAttributes<HTMLUniBiAlarmFillElement>;
+            "uni-bi-bootstrap": LocalJSX.UniBiBootstrap & JSXBase.HTMLAttributes<HTMLUniBiBootstrapElement>;
+            "uni-bi-bootstrap-fill": LocalJSX.UniBiBootstrapFill & JSXBase.HTMLAttributes<HTMLUniBiBootstrapFillElement>;
+            "uni-bi-bug": LocalJSX.UniBiBug & JSXBase.HTMLAttributes<HTMLUniBiBugElement>;
+            "uni-bi-bug-fill": LocalJSX.UniBiBugFill & JSXBase.HTMLAttributes<HTMLUniBiBugFillElement>;
+            "uni-bi-download": LocalJSX.UniBiDownload & JSXBase.HTMLAttributes<HTMLUniBiDownloadElement>;
+            "uni-bi-envelope": LocalJSX.UniBiEnvelope & JSXBase.HTMLAttributes<HTMLUniBiEnvelopeElement>;
+            "uni-bi-envelope-fill": LocalJSX.UniBiEnvelopeFill & JSXBase.HTMLAttributes<HTMLUniBiEnvelopeFillElement>;
+            "uni-bi-facebook": LocalJSX.UniBiFacebook & JSXBase.HTMLAttributes<HTMLUniBiFacebookElement>;
+            "uni-bi-files": LocalJSX.UniBiFiles & JSXBase.HTMLAttributes<HTMLUniBiFilesElement>;
+            "uni-bi-github": LocalJSX.UniBiGithub & JSXBase.HTMLAttributes<HTMLUniBiGithubElement>;
+            "uni-bi-hand-thumbs-up": LocalJSX.UniBiHandThumbsUp & JSXBase.HTMLAttributes<HTMLUniBiHandThumbsUpElement>;
+            "uni-bi-hand-thumbs-up-fill": LocalJSX.UniBiHandThumbsUpFill & JSXBase.HTMLAttributes<HTMLUniBiHandThumbsUpFillElement>;
+            "uni-bi-instagram": LocalJSX.UniBiInstagram & JSXBase.HTMLAttributes<HTMLUniBiInstagramElement>;
+            "uni-bi-lightbulb": LocalJSX.UniBiLightbulb & JSXBase.HTMLAttributes<HTMLUniBiLightbulbElement>;
+            "uni-bi-lightbulb-fill": LocalJSX.UniBiLightbulbFill & JSXBase.HTMLAttributes<HTMLUniBiLightbulbFillElement>;
+            "uni-bi-question-circle": LocalJSX.UniBiQuestionCircle & JSXBase.HTMLAttributes<HTMLUniBiQuestionCircleElement>;
+            "uni-bi-question-circle-fill": LocalJSX.UniBiQuestionCircleFill & JSXBase.HTMLAttributes<HTMLUniBiQuestionCircleFillElement>;
+            "uni-bi-star": LocalJSX.UniBiStar & JSXBase.HTMLAttributes<HTMLUniBiStarElement>;
+            "uni-bi-star-fill": LocalJSX.UniBiStarFill & JSXBase.HTMLAttributes<HTMLUniBiStarFillElement>;
+            "uni-bi-star-half": LocalJSX.UniBiStarHalf & JSXBase.HTMLAttributes<HTMLUniBiStarHalfElement>;
+            "uni-bi-styles": LocalJSX.UniBiStyles & JSXBase.HTMLAttributes<HTMLUniBiStylesElement>;
+            "uni-bi-twitter": LocalJSX.UniBiTwitter & JSXBase.HTMLAttributes<HTMLUniBiTwitterElement>;
+            "uni-bi-youtube": LocalJSX.UniBiYoutube & JSXBase.HTMLAttributes<HTMLUniBiYoutubeElement>;
             "uni-fa-styles": LocalJSX.UniFaStyles & JSXBase.HTMLAttributes<HTMLUniFaStylesElement>;
             "uni-fab-bootstrap": LocalJSX.UniFabBootstrap & JSXBase.HTMLAttributes<HTMLUniFabBootstrapElement>;
             "uni-fab-facebook": LocalJSX.UniFabFacebook & JSXBase.HTMLAttributes<HTMLUniFabFacebookElement>;
@@ -2009,9 +2313,11 @@ declare module "@stencil/core" {
             "uni-flag-pt": LocalJSX.UniFlagPt & JSXBase.HTMLAttributes<HTMLUniFlagPtElement>;
             "uni-flag-ru": LocalJSX.UniFlagRu & JSXBase.HTMLAttributes<HTMLUniFlagRuElement>;
             "uni-flag-us": LocalJSX.UniFlagUs & JSXBase.HTMLAttributes<HTMLUniFlagUsElement>;
-            "uni-icon-bs": LocalJSX.UniIconBs & JSXBase.HTMLAttributes<HTMLUniIconBsElement>;
+            "uni-icon-bi": LocalJSX.UniIconBi & JSXBase.HTMLAttributes<HTMLUniIconBiElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;
+            "uni-icons-bi": LocalJSX.UniIconsBi & JSXBase.HTMLAttributes<HTMLUniIconsBiElement>;
+            "uni-icons-bi-wrap": LocalJSX.UniIconsBiWrap & JSXBase.HTMLAttributes<HTMLUniIconsBiWrapElement>;
             "uni-icons-fa": LocalJSX.UniIconsFa & JSXBase.HTMLAttributes<HTMLUniIconsFaElement>;
             "uni-icons-fa-b": LocalJSX.UniIconsFaB & JSXBase.HTMLAttributes<HTMLUniIconsFaBElement>;
             "uni-icons-fa-b-wrap": LocalJSX.UniIconsFaBWrap & JSXBase.HTMLAttributes<HTMLUniIconsFaBWrapElement>;

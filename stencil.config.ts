@@ -131,7 +131,7 @@ export const config: Config = {
       type: 'dist',
       copy: [
         { src: 'assets/font', dest: '../assets/font', warn: true },
-        { src: 'assets/svg', dest: 'assets/svg', warn: true },
+        { src: 'assets/svg', dest: '../assets/svg', warn: true },
       ],
       esmLoaderPath: '../loader',
       polyfills: true,

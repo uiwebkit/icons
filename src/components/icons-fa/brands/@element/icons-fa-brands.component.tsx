@@ -31,7 +31,7 @@ export class UniIconsFaBrandsComponent implements ComponentInterface {
     return <Host class={`fab fa-${name}`} />;
   }
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, color, angle, spin, speed, steps } = this;
     const props = { el, color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 

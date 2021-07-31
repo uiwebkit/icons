@@ -1,4 +1,12 @@
 export const UniFontSizeCSS = `
+.uni-font-size-xxl {
+  font-size: 72px;
+  font-size: var(--uni-size-xxl, 72px);
+}
+.uni-font-size-xl {
+  font-size: 60px;
+  font-size: var(--uni-size-xl, 60px);
+}
 .uni-font-size-lg {
   font-size: 48px;
   font-size: var(--uni-size-lg, 48px);

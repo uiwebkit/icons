@@ -1,6 +1,6 @@
 export function uniGetTheme({ color, filter, size, fontSize }) {
   const colors = ['primary', 'success', 'accent', 'warn'];
-  const sizes = ['lg', 'md', 'sm', 'xs'];
+  const sizes = ['xxl', 'xl', 'lg', 'md', 'sm', 'xs'];
 
   let classes: string[] = [];
   let styles: any = {};

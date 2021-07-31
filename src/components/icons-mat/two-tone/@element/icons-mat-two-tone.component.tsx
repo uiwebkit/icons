@@ -34,7 +34,7 @@ export class UniIconsMatTwoToneComponent implements ComponentInterface {
     );
   }
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, angle, spin, speed, steps } = this;
     const props = { el, filter: this.color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 

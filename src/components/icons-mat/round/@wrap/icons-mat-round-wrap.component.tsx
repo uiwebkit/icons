@@ -29,7 +29,7 @@ export class UniIconsMatRoundWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) selector: string;
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, color, angle, spin, speed, steps, selector, all } = this;
     const props = {
       el,

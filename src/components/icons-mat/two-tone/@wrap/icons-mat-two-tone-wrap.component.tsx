@@ -29,7 +29,7 @@ export class UniIconsMatTwoToneWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) selector: string;
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, angle, spin, speed, steps, selector, all } = this;
     const props = {
       el,

@@ -10,6 +10,8 @@
   --uni-color-warn: #f44336;
   --uni-color-warn-fix: invert(42%) sepia(40%) saturate(3627%) hue-rotate(336deg) brightness(93%) contrast(107%);
   --uni-size: 24px;
+  --uni-size-xxl: 72px;
+  --uni-size-xl: 60px;
   --uni-size-lg: 48px;
   --uni-size-md: 36px;
   --uni-size-sm: 24px;

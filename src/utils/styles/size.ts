@@ -1,4 +1,16 @@
 export const UniSizeCSS = `
+.uni-size-xxl {
+  height: 72px;
+  height: var(--uni-size-xxl, 72px);
+  width: 72px;
+  width: var(--uni-size-xxl, 72px);
+}
+.uni-size-xl {
+  height: 60px;
+  height: var(--uni-size-xl, 60px);
+  width: 60px;
+  width: var(--uni-size-xl, 60px);
+}
 .uni-size-lg {
   height: 48px;
   height: var(--uni-size-lg, 48px);

@@ -31,7 +31,7 @@ export class UniIconsFaSolidComponent implements ComponentInterface {
     return <Host class={`fas fa-${name}`} />;
   }
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, color, angle, spin, speed, steps } = this;
     const props = { el, color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 

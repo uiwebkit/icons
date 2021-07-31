@@ -34,7 +34,7 @@ export class UniIconsMatOutlineComponent implements ComponentInterface {
     );
   }
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, color, angle, spin, speed, steps } = this;
     const props = { el, color, fontSize: this.size, angle, spin, speed, steps, selector: `Host` };
 

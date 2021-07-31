@@ -29,7 +29,7 @@ export class UniIconsFaSolidWrapComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) selector: string;
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const name = this.name || uniGetCleanContent(this.el.firstElementChild as HTMLElement);
     const { el, color, angle, spin, speed, steps, selector, all } = this;
     const props = {

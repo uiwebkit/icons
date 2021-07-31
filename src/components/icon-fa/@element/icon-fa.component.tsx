@@ -31,7 +31,7 @@ export class UniIconFaComponent implements ComponentInterface {
     return <UniIconTag />;
   }
 
-  componentDidLoad(): void {
+  componentDidRender(): void {
     const { el, color, size, angle, spin, speed, steps } = this;
     const props = { el, color, size, angle, spin, speed, steps, selector: 'svg' };
 

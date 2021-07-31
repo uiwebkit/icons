@@ -2,8 +2,8 @@
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
-  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.0.8/dist/assets/font/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff) format('woff');
+  src: url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.1.0/dist/assets/font/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
+  url(https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.1.0/dist/assets/font/mat/flUhRq6tzZclQEJ-Vdg-IuiaDsNa.woff) format('woff');
 }
 
 .material-icons {
