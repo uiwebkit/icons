@@ -10,6 +10,10 @@ export class UniIconBiComponent implements ComponentInterface {
 
   @Prop({ reflect: true }) img: boolean = false;
 
+  @Prop({ reflect: true }) url: string = 'https://cdn.jsdelivr.net/npm/@uiwebkit/icn';
+
+  @Prop({ reflect: true }) version: string = '0.1.0';
+
   @Prop({ reflect: true }) alter: string = 'uni-icon-bi';
 
   @Prop({ reflect: true }) name: string;
@@ -31,7 +35,7 @@ export class UniIconBiComponent implements ComponentInterface {
     const UniIconTag = !isEmptyString(name) ? `uni-bi-${name}` : null;
 
     return this.img
-      ? <img src={`https://cdn.jsdelivr.net/npm/@uiwebkit/icn@0.1.0/dist/assets/svg/bi/${name}.svg`} alt={this.alter} />
+      ? <img src={`${this.url}@${this.version}/dist/assets/svg/bi/${name}.svg`} alt={this.alter} />
       : <UniIconTag />;
   }
 
