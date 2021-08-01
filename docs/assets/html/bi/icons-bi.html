@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+  <title>UiWebKit Icons</title>
+
+  <link rel="stylesheet" type="text/css" href="../../css/variables.css" />
+
+  <script type="module" src="../../../build/icn.esm.js"></script>
+  <script nomodule src="../../../build/icn.js"></script>
+</head>
+<body>
+<a href="../../../">Home</a>
+<uni-bi-styles></uni-bi-styles>
+
+<h4>Custom Element:</h4>
+<uni-icons-bi>star</uni-icons-bi>
+<uni-icons-bi>star-half</uni-icons-bi>
+<uni-icons-bi>star-fill</uni-icons-bi>
+
+<h4>Custom Element + prop 'name':</h4>
+<uni-icons-bi name="star"></uni-icons-bi>
+<uni-icons-bi name="star-half"></uni-icons-bi>
+<uni-icons-bi name="star-fill"></uni-icons-bi>
+
+<h4>Wrapper + first child:</h4>
+<uni-icons-bi-wrap>
+  <i>star</i>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap>
+  <i>star-half</i>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap>
+  <i>star-fill</i>
+</uni-icons-bi-wrap>
+
+<h4>Wrapper + prop 'name' + first child:</h4>
+<uni-icons-bi-wrap name="star">
+  <i></i>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap name="star-half">
+  <i></i>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap name="star-fill">
+  <i></i>
+</uni-icons-bi-wrap>
+
+<h4>Wrapper + selector (all):</h4>
+<uni-icons-bi-wrap selector=".test" all>
+  <span class="test">star</span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap selector=".test" all>
+  <span class="test">star-half</span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap selector=".test" all>
+  <span class="test">star-fill</span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-bi-wrap>
+
+<h4>Wrapper + prop 'name' + selector (all):</h4>
+<uni-icons-bi-wrap name="star" selector=".test" all>
+  <span class="test"></span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap name="star-half" selector=".test" all>
+  <span class="test"></span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-bi-wrap>
+<uni-icons-bi-wrap name="star-fill" selector=".test" all>
+  <span class="test"></span>
+  <span>
+    <i class="test"></i>
+  </span>
+</uni-icons-bi-wrap>
+</body>
+</html>
