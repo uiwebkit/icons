@@ -26,7 +26,7 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "pack": "npm pack",
-    "publish": "npm publish uiwebkit-icn-0.1.0.tgz --access public"
+    "publish": "npm publish uiwebkit-icn-0.1.1.tgz --access public"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",

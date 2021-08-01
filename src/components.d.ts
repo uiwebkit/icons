@@ -160,6 +160,8 @@ export namespace Components {
         "speed": number;
         "spin": boolean;
         "steps": number;
+        "url": string;
+        "version": string;
     }
     interface UniIconFa {
         "angle": number;
@@ -1724,6 +1726,8 @@ declare namespace LocalJSX {
         "speed"?: number;
         "spin"?: boolean;
         "steps"?: number;
+        "url"?: string;
+        "version"?: string;
     }
     interface UniIconFa {
         "angle"?: number;
