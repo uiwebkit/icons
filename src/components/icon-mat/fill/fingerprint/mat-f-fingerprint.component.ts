@@ -8,7 +8,6 @@ export class UniMatFFingerprintComponent implements ComponentInterface {
   @Element() el!: HTMLElement;
 
   componentWillLoad(): Promise<void> | void {
-    this.el.style.display = 'inherit';
     this.el.innerHTML = svg;
   }
 }

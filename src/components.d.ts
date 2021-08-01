@@ -413,6 +413,8 @@ export namespace Components {
     }
     interface UniMatFClose {
     }
+    interface UniMatFContactMail {
+    }
     interface UniMatFFavorite {
     }
     interface UniMatFFingerprint {
@@ -424,6 +426,10 @@ export namespace Components {
     interface UniMatFPlayCircle {
     }
     interface UniMatFRotateRight {
+    }
+    interface UniMatFSend {
+    }
+    interface UniMatFSettings {
     }
     interface UniMatFTranslate {
     }
@@ -1086,6 +1092,12 @@ declare global {
         prototype: HTMLUniMatFCloseElement;
         new (): HTMLUniMatFCloseElement;
     };
+    interface HTMLUniMatFContactMailElement extends Components.UniMatFContactMail, HTMLStencilElement {
+    }
+    var HTMLUniMatFContactMailElement: {
+        prototype: HTMLUniMatFContactMailElement;
+        new (): HTMLUniMatFContactMailElement;
+    };
     interface HTMLUniMatFFavoriteElement extends Components.UniMatFFavorite, HTMLStencilElement {
     }
     var HTMLUniMatFFavoriteElement: {
@@ -1121,6 +1133,18 @@ declare global {
     var HTMLUniMatFRotateRightElement: {
         prototype: HTMLUniMatFRotateRightElement;
         new (): HTMLUniMatFRotateRightElement;
+    };
+    interface HTMLUniMatFSendElement extends Components.UniMatFSend, HTMLStencilElement {
+    }
+    var HTMLUniMatFSendElement: {
+        prototype: HTMLUniMatFSendElement;
+        new (): HTMLUniMatFSendElement;
+    };
+    interface HTMLUniMatFSettingsElement extends Components.UniMatFSettings, HTMLStencilElement {
+    }
+    var HTMLUniMatFSettingsElement: {
+        prototype: HTMLUniMatFSettingsElement;
+        new (): HTMLUniMatFSettingsElement;
     };
     interface HTMLUniMatFTranslateElement extends Components.UniMatFTranslate, HTMLStencilElement {
     }
@@ -1514,12 +1538,15 @@ declare global {
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-mat-f-arrow-drop-up": HTMLUniMatFArrowDropUpElement;
         "uni-mat-f-close": HTMLUniMatFCloseElement;
+        "uni-mat-f-contact-mail": HTMLUniMatFContactMailElement;
         "uni-mat-f-favorite": HTMLUniMatFFavoriteElement;
         "uni-mat-f-fingerprint": HTMLUniMatFFingerprintElement;
         "uni-mat-f-home": HTMLUniMatFHomeElement;
         "uni-mat-f-menu": HTMLUniMatFMenuElement;
         "uni-mat-f-play-circle": HTMLUniMatFPlayCircleElement;
         "uni-mat-f-rotate-right": HTMLUniMatFRotateRightElement;
+        "uni-mat-f-send": HTMLUniMatFSendElement;
+        "uni-mat-f-settings": HTMLUniMatFSettingsElement;
         "uni-mat-f-translate": HTMLUniMatFTranslateElement;
         "uni-mat-o-play-circle": HTMLUniMatOPlayCircleElement;
         "uni-mat-tt-add-shopping-cart": HTMLUniMatTtAddShoppingCartElement;
@@ -1979,6 +2006,8 @@ declare namespace LocalJSX {
     }
     interface UniMatFClose {
     }
+    interface UniMatFContactMail {
+    }
     interface UniMatFFavorite {
     }
     interface UniMatFFingerprint {
@@ -1990,6 +2019,10 @@ declare namespace LocalJSX {
     interface UniMatFPlayCircle {
     }
     interface UniMatFRotateRight {
+    }
+    interface UniMatFSend {
+    }
+    interface UniMatFSettings {
     }
     interface UniMatFTranslate {
     }
@@ -2196,12 +2229,15 @@ declare namespace LocalJSX {
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-mat-f-arrow-drop-up": UniMatFArrowDropUp;
         "uni-mat-f-close": UniMatFClose;
+        "uni-mat-f-contact-mail": UniMatFContactMail;
         "uni-mat-f-favorite": UniMatFFavorite;
         "uni-mat-f-fingerprint": UniMatFFingerprint;
         "uni-mat-f-home": UniMatFHome;
         "uni-mat-f-menu": UniMatFMenu;
         "uni-mat-f-play-circle": UniMatFPlayCircle;
         "uni-mat-f-rotate-right": UniMatFRotateRight;
+        "uni-mat-f-send": UniMatFSend;
+        "uni-mat-f-settings": UniMatFSettings;
         "uni-mat-f-translate": UniMatFTranslate;
         "uni-mat-o-play-circle": UniMatOPlayCircle;
         "uni-mat-tt-add-shopping-cart": UniMatTtAddShoppingCart;
@@ -2349,12 +2385,15 @@ declare module "@stencil/core" {
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-mat-f-arrow-drop-up": LocalJSX.UniMatFArrowDropUp & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropUpElement>;
             "uni-mat-f-close": LocalJSX.UniMatFClose & JSXBase.HTMLAttributes<HTMLUniMatFCloseElement>;
+            "uni-mat-f-contact-mail": LocalJSX.UniMatFContactMail & JSXBase.HTMLAttributes<HTMLUniMatFContactMailElement>;
             "uni-mat-f-favorite": LocalJSX.UniMatFFavorite & JSXBase.HTMLAttributes<HTMLUniMatFFavoriteElement>;
             "uni-mat-f-fingerprint": LocalJSX.UniMatFFingerprint & JSXBase.HTMLAttributes<HTMLUniMatFFingerprintElement>;
             "uni-mat-f-home": LocalJSX.UniMatFHome & JSXBase.HTMLAttributes<HTMLUniMatFHomeElement>;
             "uni-mat-f-menu": LocalJSX.UniMatFMenu & JSXBase.HTMLAttributes<HTMLUniMatFMenuElement>;
             "uni-mat-f-play-circle": LocalJSX.UniMatFPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatFPlayCircleElement>;
             "uni-mat-f-rotate-right": LocalJSX.UniMatFRotateRight & JSXBase.HTMLAttributes<HTMLUniMatFRotateRightElement>;
+            "uni-mat-f-send": LocalJSX.UniMatFSend & JSXBase.HTMLAttributes<HTMLUniMatFSendElement>;
+            "uni-mat-f-settings": LocalJSX.UniMatFSettings & JSXBase.HTMLAttributes<HTMLUniMatFSettingsElement>;
             "uni-mat-f-translate": LocalJSX.UniMatFTranslate & JSXBase.HTMLAttributes<HTMLUniMatFTranslateElement>;
             "uni-mat-o-play-circle": LocalJSX.UniMatOPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatOPlayCircleElement>;
             "uni-mat-tt-add-shopping-cart": LocalJSX.UniMatTtAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatTtAddShoppingCartElement>;
