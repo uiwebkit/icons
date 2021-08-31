@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
 import svg from '../../../../assets/svg/mat/view-sidebar/two-tone.svg';
+import { uniSetDefaultStyles } from '../../../../utils';
 
 @Component({ tag: 'uni-mat-tt-view-sidebar' })
 export class UniMatTtViewSidebarComponent implements ComponentInterface {
@@ -9,5 +10,6 @@ export class UniMatTtViewSidebarComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     this.el.innerHTML = svg;
+    uniSetDefaultStyles(this.el);
   }
 }

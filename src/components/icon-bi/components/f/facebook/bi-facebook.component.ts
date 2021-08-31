@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
 import svg from '../../../../../assets/svg/bi/facebook.svg';
+import { uniSetDefaultStyles } from '../../../../../utils';
 
 @Component({ tag: 'uni-bi-facebook' })
 export class UniBiFacebookComponent implements ComponentInterface {
@@ -9,5 +10,6 @@ export class UniBiFacebookComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     this.el.innerHTML = svg;
+    uniSetDefaultStyles(this.el);
   }
 }

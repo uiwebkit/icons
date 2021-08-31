@@ -22,8 +22,4 @@ export class UniFlagComponent implements ComponentInterface {
 
     return <UniFlagTag square={this.square || this.round} round={this.round} />;
   }
-
-  componentDidLoad() {
-    this.el.style.display = 'inherit';
-  }
 }

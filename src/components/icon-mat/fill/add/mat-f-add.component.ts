@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
 import svg from '../../../../assets/svg/mat/add/filled.svg';
+import { uniSetDefaultStyles } from '../../../../utils';
 
 @Component({ tag: 'uni-mat-f-add' })
 export class UniMatFAddComponent implements ComponentInterface {
@@ -9,5 +10,6 @@ export class UniMatFAddComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     this.el.innerHTML = svg;
+    uniSetDefaultStyles(this.el);
   }
 }

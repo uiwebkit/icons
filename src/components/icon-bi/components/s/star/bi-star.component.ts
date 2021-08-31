@@ -1,6 +1,7 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
 import svg from '../../../../../assets/svg/bi/star.svg';
+import { uniSetDefaultStyles } from '../../../../../utils';
 
 @Component({ tag: 'uni-bi-star' })
 export class UniBiStarComponent implements ComponentInterface {
@@ -9,5 +10,6 @@ export class UniBiStarComponent implements ComponentInterface {
 
   componentWillLoad(): Promise<void> | void {
     this.el.innerHTML = svg;
+    uniSetDefaultStyles(this.el);
   }
 }
