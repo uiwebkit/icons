@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Element, Prop, Watch } from '@stencil/core';
 
 import svg from '../../../../assets/svg/flag/4x3/us.svg';
 import squareSvg from '../../../../assets/svg/flag/1x1/us.svg';
@@ -13,6 +13,16 @@ export class UniFlagUsComponent implements ComponentInterface {
   @Prop({ reflect: true }) square: boolean = false;
 
   @Prop({ reflect: true }) round: boolean = false;
+
+  @Watch('square')
+  onSquare(newValue: boolean): void {
+    this.el.innerHTML = newValue ? squareSvg : svg;
+  }
+
+  @Watch('round')
+  onRound(newValue: boolean): void {
+    uniSetRound(this.el, newValue);
+  }
 
   componentWillLoad(): Promise<void> | void {
     this.el.innerHTML = this.square ? squareSvg : svg;
