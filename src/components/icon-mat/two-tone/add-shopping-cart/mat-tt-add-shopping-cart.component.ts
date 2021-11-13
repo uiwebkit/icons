@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../assets/svg/mat/add-shopping-cart/two-tone.svg';
-import { uniSetDefaultStyles } from '../../../../utils';
 
 @Component({ tag: 'uni-mat-tt-add-shopping-cart' })
 export class UniMatTtAddShoppingCartComponent implements ComponentInterface {

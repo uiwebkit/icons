@@ -1,7 +1,9 @@
 import { Component, ComponentInterface, h, Host, VNode, Prop, Element } from '@stencil/core';
 
+import { uniGetCleanContent } from '@uiwebkit/flag';
+
 import { UniColor, UniSize } from '../../../../models';
-import { uniGetCleanContent, uniSmartWrap } from '../../../../utils';
+import { uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-fa-r',

@@ -1,3 +1,5 @@
+import { uniModifyAsync, uniModifyStyle } from '@uiwebkit/flag';
+
 import { uniGetTheme } from './get-theme';
 import { uniGetRotation } from './get-rotation';
 import {
@@ -6,10 +8,8 @@ import {
   UniFilterCSS,
   UniFontSizeCSS,
   uniGetAngle,
-  uniModifyAsync,
   uniModifyClass,
   uniModifyContent,
-  uniModifyStyle,
   UniRotateCSS,
   UniSizeCSS,
 } from '..';

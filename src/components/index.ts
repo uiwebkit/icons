@@ -1,5 +1,3 @@
-export * from './flag';
-
 export * from './icon-bi';
 export * from './icon-fa';
 export * from './icon-mat';

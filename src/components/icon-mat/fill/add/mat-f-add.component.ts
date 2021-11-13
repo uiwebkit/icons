@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../assets/svg/mat/add/filled.svg';
-import { uniSetDefaultStyles } from '../../../../utils';
 
 @Component({ tag: 'uni-mat-f-add' })
 export class UniMatFAddComponent implements ComponentInterface {

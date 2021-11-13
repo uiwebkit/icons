@@ -1,7 +1,11 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
+import { isEmptyString } from '@uiwebkit/flag';
+
+import { uniGetCleanContent } from '@uiwebkit/flag';
+
 import { UniColor, UniSize } from '../../../models';
-import { isEmptyString, uniGetCleanContent, uniSmartWrap } from '../../../utils';
+import { uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icon-bi' })
 export class UniIconBiComponent implements ComponentInterface {

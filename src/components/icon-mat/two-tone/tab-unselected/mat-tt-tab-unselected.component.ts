@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../assets/svg/mat/tab-unselected/two-tone.svg';
-import { uniSetDefaultStyles } from '../../../../utils';
 
 @Component({ tag: 'uni-mat-tt-tab-unselected' })
 export class UniMatTtTabUnselectedComponent implements ComponentInterface {

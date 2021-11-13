@@ -1,7 +1,9 @@
 import { Component, ComponentInterface, Prop, Element } from '@stencil/core';
 
+import { uniGetCleanContent } from '@uiwebkit/flag';
+
 import { UniColor, UniSize } from '../../../models';
-import { uniGetCleanContent, uniSmartWrap } from '../../../utils';
+import { uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icons-bi-wrap' })
 export class UniIconsBsWrapComponent implements ComponentInterface {

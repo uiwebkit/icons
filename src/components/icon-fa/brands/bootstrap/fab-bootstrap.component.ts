@@ -1,8 +1,11 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../assets/svg/fa/brands/bootstrap.svg';
-import { uniModifyAttr, uniSetDefaultStyles } from '../../../../utils';
+
 import { uniIconFaDimensions } from '../../../../models';
+import { uniModifyAttr } from '../../../../utils';
 
 @Component({ tag: 'uni-fab-bootstrap' })
 export class UniFabBootstrapComponent implements ComponentInterface {

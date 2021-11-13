@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../../assets/svg/bi/github.svg';
-import { uniSetDefaultStyles } from '../../../../../utils';
 
 @Component({ tag: 'uni-bi-github' })
 export class UniBiGithubComponent implements ComponentInterface {

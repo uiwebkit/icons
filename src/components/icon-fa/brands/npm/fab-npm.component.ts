@@ -1,7 +1,9 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../assets/svg/fa/brands/npm.svg';
-import { uniModifyAttr, uniSetDefaultStyles } from '../../../../utils';
+import { uniModifyAttr } from '../../../../utils';
 import { uniIconFaDimensions } from '../../../../models';
 
 @Component({ tag: 'uni-fab-npm' })

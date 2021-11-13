@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../../assets/svg/bi/files.svg';
-import { uniSetDefaultStyles } from '../../../../../utils';
 
 @Component({ tag: 'uni-bi-files' })
 export class UniBiFilesComponent implements ComponentInterface {

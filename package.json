@@ -1,6 +1,6 @@
 {
   "name": "@uiwebkit/icn",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Uni Icons Kit",
   "license": "MIT",
   "author": "Vitali Havryliuk",
@@ -26,16 +26,17 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "pack": "npm pack",
-    "publish": "npm publish uiwebkit-icn-1.0.1.tgz --access public"
+    "publish": "npm publish uiwebkit-icn-1.1.0.tgz --access public"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.15.2",
-    "@stencil/core": "2.4.0",
-    "bootstrap-icons": "1.5.0",
+    "@fortawesome/fontawesome-free": "5.15.4",
+    "@uiwebkit/flag": "0.0.1",
+    "bootstrap-icons": "1.7.0",
     "material-design-icons": "3.0.1"
   },
   "devDependencies": {
-    "stencil-inline-svg": "1.0.1"
+    "@stencil/core": "2.10.0",
+    "stencil-inline-svg": "1.1.0"
   },
   "repository": {
     "type": "git",

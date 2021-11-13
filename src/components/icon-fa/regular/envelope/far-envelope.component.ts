@@ -1,7 +1,9 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../assets/svg/fa/regular/envelope.svg';
-import { uniModifyAttr, uniSetDefaultStyles } from '../../../../utils';
+import { uniModifyAttr } from '../../../../utils';
 import { uniIconFaDimensions } from '../../../../models';
 
 @Component({ tag: 'uni-far-envelope' })

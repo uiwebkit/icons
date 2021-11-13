@@ -101,55 +101,6 @@ export namespace Components {
     }
     interface UniFasUserSecret {
     }
-    interface UniFlag {
-        "name": string;
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagCn {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagDe {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagEs {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagFr {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagGb {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagIt {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagJp {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagKr {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagPt {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagRu {
-        "round": boolean;
-        "square": boolean;
-    }
-    interface UniFlagUs {
-        "round": boolean;
-        "square": boolean;
-    }
     interface UniIconBi {
         "alter": string;
         "angle": number;
@@ -828,78 +779,6 @@ declare global {
         prototype: HTMLUniFasUserSecretElement;
         new (): HTMLUniFasUserSecretElement;
     };
-    interface HTMLUniFlagElement extends Components.UniFlag, HTMLStencilElement {
-    }
-    var HTMLUniFlagElement: {
-        prototype: HTMLUniFlagElement;
-        new (): HTMLUniFlagElement;
-    };
-    interface HTMLUniFlagCnElement extends Components.UniFlagCn, HTMLStencilElement {
-    }
-    var HTMLUniFlagCnElement: {
-        prototype: HTMLUniFlagCnElement;
-        new (): HTMLUniFlagCnElement;
-    };
-    interface HTMLUniFlagDeElement extends Components.UniFlagDe, HTMLStencilElement {
-    }
-    var HTMLUniFlagDeElement: {
-        prototype: HTMLUniFlagDeElement;
-        new (): HTMLUniFlagDeElement;
-    };
-    interface HTMLUniFlagEsElement extends Components.UniFlagEs, HTMLStencilElement {
-    }
-    var HTMLUniFlagEsElement: {
-        prototype: HTMLUniFlagEsElement;
-        new (): HTMLUniFlagEsElement;
-    };
-    interface HTMLUniFlagFrElement extends Components.UniFlagFr, HTMLStencilElement {
-    }
-    var HTMLUniFlagFrElement: {
-        prototype: HTMLUniFlagFrElement;
-        new (): HTMLUniFlagFrElement;
-    };
-    interface HTMLUniFlagGbElement extends Components.UniFlagGb, HTMLStencilElement {
-    }
-    var HTMLUniFlagGbElement: {
-        prototype: HTMLUniFlagGbElement;
-        new (): HTMLUniFlagGbElement;
-    };
-    interface HTMLUniFlagItElement extends Components.UniFlagIt, HTMLStencilElement {
-    }
-    var HTMLUniFlagItElement: {
-        prototype: HTMLUniFlagItElement;
-        new (): HTMLUniFlagItElement;
-    };
-    interface HTMLUniFlagJpElement extends Components.UniFlagJp, HTMLStencilElement {
-    }
-    var HTMLUniFlagJpElement: {
-        prototype: HTMLUniFlagJpElement;
-        new (): HTMLUniFlagJpElement;
-    };
-    interface HTMLUniFlagKrElement extends Components.UniFlagKr, HTMLStencilElement {
-    }
-    var HTMLUniFlagKrElement: {
-        prototype: HTMLUniFlagKrElement;
-        new (): HTMLUniFlagKrElement;
-    };
-    interface HTMLUniFlagPtElement extends Components.UniFlagPt, HTMLStencilElement {
-    }
-    var HTMLUniFlagPtElement: {
-        prototype: HTMLUniFlagPtElement;
-        new (): HTMLUniFlagPtElement;
-    };
-    interface HTMLUniFlagRuElement extends Components.UniFlagRu, HTMLStencilElement {
-    }
-    var HTMLUniFlagRuElement: {
-        prototype: HTMLUniFlagRuElement;
-        new (): HTMLUniFlagRuElement;
-    };
-    interface HTMLUniFlagUsElement extends Components.UniFlagUs, HTMLStencilElement {
-    }
-    var HTMLUniFlagUsElement: {
-        prototype: HTMLUniFlagUsElement;
-        new (): HTMLUniFlagUsElement;
-    };
     interface HTMLUniIconBiElement extends Components.UniIconBi, HTMLStencilElement {
     }
     var HTMLUniIconBiElement: {
@@ -1494,18 +1373,6 @@ declare global {
         "uni-fas-question-circle": HTMLUniFasQuestionCircleElement;
         "uni-fas-rocket": HTMLUniFasRocketElement;
         "uni-fas-user-secret": HTMLUniFasUserSecretElement;
-        "uni-flag": HTMLUniFlagElement;
-        "uni-flag-cn": HTMLUniFlagCnElement;
-        "uni-flag-de": HTMLUniFlagDeElement;
-        "uni-flag-es": HTMLUniFlagEsElement;
-        "uni-flag-fr": HTMLUniFlagFrElement;
-        "uni-flag-gb": HTMLUniFlagGbElement;
-        "uni-flag-it": HTMLUniFlagItElement;
-        "uni-flag-jp": HTMLUniFlagJpElement;
-        "uni-flag-kr": HTMLUniFlagKrElement;
-        "uni-flag-pt": HTMLUniFlagPtElement;
-        "uni-flag-ru": HTMLUniFlagRuElement;
-        "uni-flag-us": HTMLUniFlagUsElement;
         "uni-icon-bi": HTMLUniIconBiElement;
         "uni-icon-fa": HTMLUniIconFaElement;
         "uni-icon-mat": HTMLUniIconMatElement;
@@ -1693,55 +1560,6 @@ declare namespace LocalJSX {
     interface UniFasRocket {
     }
     interface UniFasUserSecret {
-    }
-    interface UniFlag {
-        "name"?: string;
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagCn {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagDe {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagEs {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagFr {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagGb {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagIt {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagJp {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagKr {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagPt {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagRu {
-        "round"?: boolean;
-        "square"?: boolean;
-    }
-    interface UniFlagUs {
-        "round"?: boolean;
-        "square"?: boolean;
     }
     interface UniIconBi {
         "alter"?: string;
@@ -2185,18 +2003,6 @@ declare namespace LocalJSX {
         "uni-fas-question-circle": UniFasQuestionCircle;
         "uni-fas-rocket": UniFasRocket;
         "uni-fas-user-secret": UniFasUserSecret;
-        "uni-flag": UniFlag;
-        "uni-flag-cn": UniFlagCn;
-        "uni-flag-de": UniFlagDe;
-        "uni-flag-es": UniFlagEs;
-        "uni-flag-fr": UniFlagFr;
-        "uni-flag-gb": UniFlagGb;
-        "uni-flag-it": UniFlagIt;
-        "uni-flag-jp": UniFlagJp;
-        "uni-flag-kr": UniFlagKr;
-        "uni-flag-pt": UniFlagPt;
-        "uni-flag-ru": UniFlagRu;
-        "uni-flag-us": UniFlagUs;
         "uni-icon-bi": UniIconBi;
         "uni-icon-fa": UniIconFa;
         "uni-icon-mat": UniIconMat;
@@ -2341,18 +2147,6 @@ declare module "@stencil/core" {
             "uni-fas-question-circle": LocalJSX.UniFasQuestionCircle & JSXBase.HTMLAttributes<HTMLUniFasQuestionCircleElement>;
             "uni-fas-rocket": LocalJSX.UniFasRocket & JSXBase.HTMLAttributes<HTMLUniFasRocketElement>;
             "uni-fas-user-secret": LocalJSX.UniFasUserSecret & JSXBase.HTMLAttributes<HTMLUniFasUserSecretElement>;
-            "uni-flag": LocalJSX.UniFlag & JSXBase.HTMLAttributes<HTMLUniFlagElement>;
-            "uni-flag-cn": LocalJSX.UniFlagCn & JSXBase.HTMLAttributes<HTMLUniFlagCnElement>;
-            "uni-flag-de": LocalJSX.UniFlagDe & JSXBase.HTMLAttributes<HTMLUniFlagDeElement>;
-            "uni-flag-es": LocalJSX.UniFlagEs & JSXBase.HTMLAttributes<HTMLUniFlagEsElement>;
-            "uni-flag-fr": LocalJSX.UniFlagFr & JSXBase.HTMLAttributes<HTMLUniFlagFrElement>;
-            "uni-flag-gb": LocalJSX.UniFlagGb & JSXBase.HTMLAttributes<HTMLUniFlagGbElement>;
-            "uni-flag-it": LocalJSX.UniFlagIt & JSXBase.HTMLAttributes<HTMLUniFlagItElement>;
-            "uni-flag-jp": LocalJSX.UniFlagJp & JSXBase.HTMLAttributes<HTMLUniFlagJpElement>;
-            "uni-flag-kr": LocalJSX.UniFlagKr & JSXBase.HTMLAttributes<HTMLUniFlagKrElement>;
-            "uni-flag-pt": LocalJSX.UniFlagPt & JSXBase.HTMLAttributes<HTMLUniFlagPtElement>;
-            "uni-flag-ru": LocalJSX.UniFlagRu & JSXBase.HTMLAttributes<HTMLUniFlagRuElement>;
-            "uni-flag-us": LocalJSX.UniFlagUs & JSXBase.HTMLAttributes<HTMLUniFlagUsElement>;
             "uni-icon-bi": LocalJSX.UniIconBi & JSXBase.HTMLAttributes<HTMLUniIconBiElement>;
             "uni-icon-fa": LocalJSX.UniIconFa & JSXBase.HTMLAttributes<HTMLUniIconFaElement>;
             "uni-icon-mat": LocalJSX.UniIconMat & JSXBase.HTMLAttributes<HTMLUniIconMatElement>;

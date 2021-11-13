@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
+import { uniSetDefaultStyles } from '@uiwebkit/flag';
+
 import svg from '../../../../../assets/svg/bi/star.svg';
-import { uniSetDefaultStyles } from '../../../../../utils';
 
 @Component({ tag: 'uni-bi-star' })
 export class UniBiStarComponent implements ComponentInterface {
