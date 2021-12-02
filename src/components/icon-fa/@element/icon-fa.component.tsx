@@ -32,7 +32,11 @@ export class UniIconFaComponent implements ComponentInterface {
     const name = this.name || uniGetCleanContent(this.el);
     const UniIconTag = !isEmptyString(name) ? `uni-${uniIconsFaFontClass(this.type)}-${name}` : null;
 
-    return <UniIconTag />;
+    return (
+      <UniIconTag>
+        <slot/>
+      </UniIconTag>
+    );
   }
 
   componentDidRender(): void {

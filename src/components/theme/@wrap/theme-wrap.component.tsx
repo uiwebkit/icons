@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Element, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
 import { UniColor, UniSize } from '../../../models';
 import { uniSmartWrap } from '../../../utils';
@@ -25,5 +25,9 @@ export class UniThemeWrapComponent implements ComponentInterface {
     const props = { el, color, filter, size, fontSize, selector, all };
 
     uniSmartWrap(props);
+  }
+
+  render(): VNode {
+    return <slot/>;
   }
 }

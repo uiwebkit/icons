@@ -40,7 +40,11 @@ export class UniIconBiComponent implements ComponentInterface {
 
     return this.img
       ? <img src={`${this.url}@${this.version}/dist/assets/svg/bi/${name}.svg`} alt={this.alter} />
-      : <UniIconTag />;
+      : (
+        <UniIconTag>
+          <slot />
+        </UniIconTag>
+      );
   }
 
   componentDidRender(): void {

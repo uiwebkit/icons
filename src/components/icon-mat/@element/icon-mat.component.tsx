@@ -5,7 +5,7 @@ import { isEmptyString } from '@uiwebkit/flag';
 import { uniGetCleanContent } from '@uiwebkit/flag';
 
 import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
-import {  uniMatTypeShort, uniSmartWrap } from '../../../utils';
+import { uniMatTypeShort, uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icon-mat' })
 export class UniIconMatComponent implements ComponentInterface {
@@ -32,7 +32,11 @@ export class UniIconMatComponent implements ComponentInterface {
     const name = this.name || uniGetCleanContent(this.el);
     const UniIconTag = !isEmptyString(name) ? `uni-mat-${uniMatTypeShort(this.type)}-${name}` : null;
 
-    return <UniIconTag />;
+    return (
+      <UniIconTag>
+        <slot />
+      </UniIconTag>
+    );
   }
 
   componentDidRender(): void {

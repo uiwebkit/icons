@@ -27,7 +27,11 @@ export class UniIconsBsComponent implements ComponentInterface {
   render(): VNode {
     const name = this.name || uniGetCleanContent(this.el);
 
-    return <Host class={`bi-${name}`} />;
+    return (
+      <Host class={`bi-${name}`}>
+        <slot />
+      </Host>
+    );
   }
 
   componentDidRender(): void {

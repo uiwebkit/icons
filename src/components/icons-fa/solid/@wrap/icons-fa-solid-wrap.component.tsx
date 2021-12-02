@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Prop, Element } from '@stencil/core';
+import { Component, ComponentInterface, Prop, Element, h, VNode } from '@stencil/core';
 
 import { uniGetCleanContent } from '@uiwebkit/flag';
 
@@ -30,6 +30,10 @@ export class UniIconsFaSolidWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) all: boolean = false;
 
   @Prop({ reflect: true }) selector: string;
+
+  render(): VNode {
+    return <slot/>;
+  }
 
   componentDidRender(): void {
     const name = this.name || uniGetCleanContent(this.el.firstElementChild as HTMLElement);

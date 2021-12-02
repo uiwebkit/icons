@@ -30,7 +30,11 @@ export class UniIconsFaRegularComponent implements ComponentInterface {
   render(): VNode {
     const name = this.name || uniGetCleanContent(this.el);
 
-    return <Host class={`far fa-${name}`} />;
+    return (
+      <Host class={`far fa-${name}`}>
+        <slot />
+      </Host>
+    );
   }
 
   componentDidRender(): void {

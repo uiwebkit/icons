@@ -32,6 +32,10 @@ export class UniIconsFaComponent implements ComponentInterface {
     const props = { name, color, size, angle, spin, speed, steps };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}`;
 
-    return <UniIconsFaTag {...props} />;
+    return (
+      <UniIconsFaTag {...props}>
+        <slot />
+      </UniIconsFaTag>
+    );
   }
 }

@@ -30,7 +30,11 @@ export class UniIconsFaBrandsComponent implements ComponentInterface {
   render(): VNode {
     const name = this.name || uniGetCleanContent(this.el);
 
-    return <Host class={`fab fa-${name}`} />;
+    return (
+      <Host class={`fab fa-${name}`}>
+        <slot />
+      </Host>
+    );
   }
 
   componentDidRender(): void {
