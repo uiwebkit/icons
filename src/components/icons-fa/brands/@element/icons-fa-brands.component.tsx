@@ -1,9 +1,8 @@
-import { Component, ComponentInterface, h, Host, VNode, Prop, Element } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
-import { uniGetCleanContent } from '@uiwebkit/flag';
+import { uniGetCleanContent, UniHostTemplate, uniSmartWrap } from '@uiwebkit/common';
 
 import { UniColor, UniSize } from '../../../../models';
-import { uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-fa-b',
@@ -30,11 +29,7 @@ export class UniIconsFaBrandsComponent implements ComponentInterface {
   render(): VNode {
     const name = this.name || uniGetCleanContent(this.el);
 
-    return (
-      <Host class={`fab fa-${name}`}>
-        <slot />
-      </Host>
-    );
+    return UniHostTemplate({ classes: `fab fa-${name}` }, <slot />);
   }
 
   componentDidRender(): void {

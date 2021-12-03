@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
-import { uniSetDefaultStyles } from '@uiwebkit/flag';
+import { uniSetDefaultStyles } from '@uiwebkit/common';
 
 import svg from '../../../../assets/svg/mat/radio-button-checked/two-tone.svg';
 

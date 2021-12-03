@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
-import { uniSetDefaultStyles } from '@uiwebkit/flag';
+import { uniSetDefaultStyles } from '@uiwebkit/common';
 
 import svg from '../../../../assets/svg/mat/wysiwyg/two-tone.svg';
 

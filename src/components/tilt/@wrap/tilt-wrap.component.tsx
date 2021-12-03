@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
-import { uniSmartWrap } from '../../../utils';
+import { uniSmartWrap, UniTemplate } from '@uiwebkit/common';
 
 @Component({ tag: 'uni-tilt-wrap' })
 export class UniTiltWrapComponent implements ComponentInterface {
@@ -21,6 +21,6 @@ export class UniTiltWrapComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    return <slot/>;
+    return UniTemplate(<slot/>);
   }
 }

@@ -1,9 +1,8 @@
 import { Component, ComponentInterface, Element } from '@stencil/core';
 
-import { uniSetDefaultStyles } from '@uiwebkit/flag';
+import { uniModifyAttr, uniSetDefaultStyles } from '@uiwebkit/common';
 
 import svg from '../../../../assets/svg/fa/regular/file-alt.svg';
-import { uniModifyAttr } from '../../../../utils';
 import { uniIconFaDimensions } from '../../../../models';
 
 @Component({ tag: 'uni-far-file-alt' })

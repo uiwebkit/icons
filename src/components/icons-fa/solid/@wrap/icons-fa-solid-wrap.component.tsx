@@ -1,9 +1,8 @@
 import { Component, ComponentInterface, Prop, Element, h, VNode } from '@stencil/core';
 
-import { uniGetCleanContent } from '@uiwebkit/flag';
+import { uniGetCleanContent, uniSmartWrap, UniTemplate } from '@uiwebkit/common';
 
 import { UniColor, UniSize } from '../../../../models';
-import { uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-fa-s-wrap',
@@ -32,7 +31,7 @@ export class UniIconsFaSolidWrapComponent implements ComponentInterface {
   @Prop({ reflect: true }) selector: string;
 
   render(): VNode {
-    return <slot/>;
+    return UniTemplate(<slot/>);
   }
 
   componentDidRender(): void {

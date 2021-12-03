@@ -1,6 +1,6 @@
 import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
-import { uniGetCleanContent } from '@uiwebkit/flag';
+import { uniGetCleanContent, UniTemplate } from '@uiwebkit/common';
 
 import { UniColor, UniIconsFaFont, UniSize } from '../../../models';
 import { uniFaTypeShort } from '../../../utils';
@@ -32,7 +32,7 @@ export class UniIconsFaComponent implements ComponentInterface {
     const props = { name, color, size, angle, spin, speed, steps };
     const UniIconsFaTag = `uni-icons-fa-${uniFaTypeShort(this.type)}`;
 
-    return (
+    return UniTemplate(
       <UniIconsFaTag {...props}>
         <slot />
       </UniIconsFaTag>

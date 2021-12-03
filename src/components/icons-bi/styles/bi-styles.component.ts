@@ -4,5 +4,5 @@ import { Component } from '@stencil/core';
   tag: 'uni-bi-styles',
   styleUrl: './bootstrap-icons.css',
 })
-export class UniBsStylesComponent {
+export class UniBiStylesComponent {
 }

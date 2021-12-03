@@ -1,12 +1,11 @@
-import { Component, ComponentInterface, h, VNode, Prop, Element, Host } from '@stencil/core';
+import { Component, ComponentInterface, h, VNode, Prop, Element } from '@stencil/core';
 
-import { uniGetCleanContent } from '@uiwebkit/flag';
+import { uniGetCleanContent, UniHostTemplate, uniSmartWrap } from '@uiwebkit/common';
 
 import { UniColor, UniSize } from '../../../models';
-import { uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-icons-bi' })
-export class UniIconsBsComponent implements ComponentInterface {
+export class UniIconsBiComponent implements ComponentInterface {
 
   @Element() el!: HTMLElement;
 
@@ -27,11 +26,7 @@ export class UniIconsBsComponent implements ComponentInterface {
   render(): VNode {
     const name = this.name || uniGetCleanContent(this.el);
 
-    return (
-      <Host class={`bi-${name}`}>
-        <slot />
-      </Host>
-    );
+    return UniHostTemplate({ classes: `bi-${name}` }, <slot />);
   }
 
   componentDidRender(): void {

@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
+import { uniSmartWrap, UniTemplate } from '@uiwebkit/common';
+
 import { UniColor, UniSize } from '../../../models';
-import { uniSmartWrap } from '../../../utils';
 
 @Component({ tag: 'uni-theme-wrap' })
 export class UniThemeWrapComponent implements ComponentInterface {
@@ -28,6 +29,6 @@ export class UniThemeWrapComponent implements ComponentInterface {
   }
 
   render(): VNode {
-    return <slot/>;
+    return UniTemplate(<slot/>);
   }
 }

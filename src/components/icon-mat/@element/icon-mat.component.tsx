@@ -1,11 +1,9 @@
 import { Component, ComponentInterface, Element, h, Prop, VNode } from '@stencil/core';
 
-import { isEmptyString } from '@uiwebkit/flag';
-
-import { uniGetCleanContent } from '@uiwebkit/flag';
+import { isEmptyString, uniGetCleanContent, uniSmartWrap, UniTemplate } from '@uiwebkit/common';
 
 import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
-import { uniMatTypeShort, uniSmartWrap } from '../../../utils';
+import { uniMatTypeShort } from '../../../utils';
 
 @Component({ tag: 'uni-icon-mat' })
 export class UniIconMatComponent implements ComponentInterface {
@@ -32,7 +30,7 @@ export class UniIconMatComponent implements ComponentInterface {
     const name = this.name || uniGetCleanContent(this.el);
     const UniIconTag = !isEmptyString(name) ? `uni-mat-${uniMatTypeShort(this.type)}-${name}` : null;
 
-    return (
+    return UniTemplate(
       <UniIconTag>
         <slot />
       </UniIconTag>

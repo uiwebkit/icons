@@ -1,5 +1,7 @@
 import { Component, ComponentInterface, h, VNode, Prop } from '@stencil/core';
 
+import { UniTemplate } from '@uiwebkit/common';
+
 import { UniColor, UniIconsMatFont, UniSize } from '../../../models';
 import { uniMatTypeShort } from '../../../utils';
 
@@ -31,7 +33,7 @@ export class UniIconsMatWrapComponent implements ComponentInterface {
     const props = { name, color, size, angle, spin, speed, steps, selector, all };
     const UniIconsMatTag = `uni-icons-mat-${uniMatTypeShort(this.type)}-wrap`;
 
-    return (
+    return UniTemplate(
       <UniIconsMatTag {...props}>
         <slot/>
       </UniIconsMatTag>

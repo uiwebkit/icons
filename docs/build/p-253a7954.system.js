@@ -1,0 +1,1 @@
+System.register([],(function(t){"use strict";return{execute:function(){t("u",e);function e(t,e){var n=function(e,n){t.forEach((function(t){t.setAttribute(e,n)}))};for(var r=0,u=Object.entries(e);r<u.length;r++){var c=u[r],i=c[0],f=c[1];n(i,f)}}}}}));

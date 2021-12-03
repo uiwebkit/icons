@@ -1,7 +1,8 @@
 import { Component, ComponentInterface, h, VNode, Prop, Element, Host } from '@stencil/core';
 
+import { uniSmartWrap, UniTemplate } from '@uiwebkit/common';
+
 import { UniColor, UniSize } from '../../../../models';
-import { uniSmartWrap } from '../../../../utils';
 
 @Component({
   tag: 'uni-icons-mat-f',
@@ -26,7 +27,7 @@ export class UniIconsMatBaseComponent implements ComponentInterface {
   @Prop({ reflect: true }) steps: number;
 
   render(): VNode {
-    return (
+    return UniTemplate(
       <Host class={'material-icons'}>
         <slot />
         {this.name}
