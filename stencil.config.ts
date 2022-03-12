@@ -11,14 +11,6 @@ export const config: Config = {
    */
   namespace: 'icn',
   /**
-   * Sets if the ES5 build should be generated or not. Stencil generates a modern build without ES5,
-   * whereas this setting to `true` will also create es5 builds for both dev and prod modes. Setting
-   * `buildEs5` to `prod` will only build ES5 in prod mode. Basically if the app does not need to run
-   * on legacy browsers (IE11 and Edge 18 and below), it's safe to not build ES5, which will also speed
-   * up build times. Defaults to `false`.
-   */
-  buildEs5: 'prod',
-  /**
    * Stencil will cache build results in order to speed up rebuilds.
    * To disable this feature, set enableCache to false.
    */
@@ -133,12 +125,11 @@ export const config: Config = {
         { src: 'assets/font', dest: '../assets/font', warn: true },
         { src: 'assets/svg', dest: '../assets/svg', warn: true },
       ],
-      esmLoaderPath: '../loader',
       polyfills: true,
       empty: true,
     },
     {
-      type: 'dist-custom-elements-bundle',
+      type: 'dist-custom-elements',
       empty: true,
     },
     {
