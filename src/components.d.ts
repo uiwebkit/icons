@@ -384,7 +384,17 @@ export namespace Components {
     }
     interface UniMatFTranslate {
     }
+    interface UniMatFVisibility {
+    }
+    interface UniMatFVisibilityOff {
+    }
     interface UniMatOPlayCircle {
+    }
+    interface UniMatRDone {
+    }
+    interface UniMatRDoneAll {
+    }
+    interface UniMatRDoneOutline {
     }
     interface UniMatTtAddShoppingCart {
     }
@@ -1031,11 +1041,41 @@ declare global {
         prototype: HTMLUniMatFTranslateElement;
         new (): HTMLUniMatFTranslateElement;
     };
+    interface HTMLUniMatFVisibilityElement extends Components.UniMatFVisibility, HTMLStencilElement {
+    }
+    var HTMLUniMatFVisibilityElement: {
+        prototype: HTMLUniMatFVisibilityElement;
+        new (): HTMLUniMatFVisibilityElement;
+    };
+    interface HTMLUniMatFVisibilityOffElement extends Components.UniMatFVisibilityOff, HTMLStencilElement {
+    }
+    var HTMLUniMatFVisibilityOffElement: {
+        prototype: HTMLUniMatFVisibilityOffElement;
+        new (): HTMLUniMatFVisibilityOffElement;
+    };
     interface HTMLUniMatOPlayCircleElement extends Components.UniMatOPlayCircle, HTMLStencilElement {
     }
     var HTMLUniMatOPlayCircleElement: {
         prototype: HTMLUniMatOPlayCircleElement;
         new (): HTMLUniMatOPlayCircleElement;
+    };
+    interface HTMLUniMatRDoneElement extends Components.UniMatRDone, HTMLStencilElement {
+    }
+    var HTMLUniMatRDoneElement: {
+        prototype: HTMLUniMatRDoneElement;
+        new (): HTMLUniMatRDoneElement;
+    };
+    interface HTMLUniMatRDoneAllElement extends Components.UniMatRDoneAll, HTMLStencilElement {
+    }
+    var HTMLUniMatRDoneAllElement: {
+        prototype: HTMLUniMatRDoneAllElement;
+        new (): HTMLUniMatRDoneAllElement;
+    };
+    interface HTMLUniMatRDoneOutlineElement extends Components.UniMatRDoneOutline, HTMLStencilElement {
+    }
+    var HTMLUniMatRDoneOutlineElement: {
+        prototype: HTMLUniMatRDoneOutlineElement;
+        new (): HTMLUniMatRDoneOutlineElement;
     };
     interface HTMLUniMatTtAddShoppingCartElement extends Components.UniMatTtAddShoppingCart, HTMLStencilElement {
     }
@@ -1415,7 +1455,12 @@ declare global {
         "uni-mat-f-send": HTMLUniMatFSendElement;
         "uni-mat-f-settings": HTMLUniMatFSettingsElement;
         "uni-mat-f-translate": HTMLUniMatFTranslateElement;
+        "uni-mat-f-visibility": HTMLUniMatFVisibilityElement;
+        "uni-mat-f-visibility-off": HTMLUniMatFVisibilityOffElement;
         "uni-mat-o-play-circle": HTMLUniMatOPlayCircleElement;
+        "uni-mat-r-done": HTMLUniMatRDoneElement;
+        "uni-mat-r-done-all": HTMLUniMatRDoneAllElement;
+        "uni-mat-r-done-outline": HTMLUniMatRDoneOutlineElement;
         "uni-mat-tt-add-shopping-cart": HTMLUniMatTtAddShoppingCartElement;
         "uni-mat-tt-album": HTMLUniMatTtAlbumElement;
         "uni-mat-tt-bubble-chart": HTMLUniMatTtBubbleChartElement;
@@ -1844,7 +1889,17 @@ declare namespace LocalJSX {
     }
     interface UniMatFTranslate {
     }
+    interface UniMatFVisibility {
+    }
+    interface UniMatFVisibilityOff {
+    }
     interface UniMatOPlayCircle {
+    }
+    interface UniMatRDone {
+    }
+    interface UniMatRDoneAll {
+    }
+    interface UniMatRDoneOutline {
     }
     interface UniMatTtAddShoppingCart {
     }
@@ -2045,7 +2100,12 @@ declare namespace LocalJSX {
         "uni-mat-f-send": UniMatFSend;
         "uni-mat-f-settings": UniMatFSettings;
         "uni-mat-f-translate": UniMatFTranslate;
+        "uni-mat-f-visibility": UniMatFVisibility;
+        "uni-mat-f-visibility-off": UniMatFVisibilityOff;
         "uni-mat-o-play-circle": UniMatOPlayCircle;
+        "uni-mat-r-done": UniMatRDone;
+        "uni-mat-r-done-all": UniMatRDoneAll;
+        "uni-mat-r-done-outline": UniMatRDoneOutline;
         "uni-mat-tt-add-shopping-cart": UniMatTtAddShoppingCart;
         "uni-mat-tt-album": UniMatTtAlbum;
         "uni-mat-tt-bubble-chart": UniMatTtBubbleChart;
@@ -2189,7 +2249,12 @@ declare module "@stencil/core" {
             "uni-mat-f-send": LocalJSX.UniMatFSend & JSXBase.HTMLAttributes<HTMLUniMatFSendElement>;
             "uni-mat-f-settings": LocalJSX.UniMatFSettings & JSXBase.HTMLAttributes<HTMLUniMatFSettingsElement>;
             "uni-mat-f-translate": LocalJSX.UniMatFTranslate & JSXBase.HTMLAttributes<HTMLUniMatFTranslateElement>;
+            "uni-mat-f-visibility": LocalJSX.UniMatFVisibility & JSXBase.HTMLAttributes<HTMLUniMatFVisibilityElement>;
+            "uni-mat-f-visibility-off": LocalJSX.UniMatFVisibilityOff & JSXBase.HTMLAttributes<HTMLUniMatFVisibilityOffElement>;
             "uni-mat-o-play-circle": LocalJSX.UniMatOPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatOPlayCircleElement>;
+            "uni-mat-r-done": LocalJSX.UniMatRDone & JSXBase.HTMLAttributes<HTMLUniMatRDoneElement>;
+            "uni-mat-r-done-all": LocalJSX.UniMatRDoneAll & JSXBase.HTMLAttributes<HTMLUniMatRDoneAllElement>;
+            "uni-mat-r-done-outline": LocalJSX.UniMatRDoneOutline & JSXBase.HTMLAttributes<HTMLUniMatRDoneOutlineElement>;
             "uni-mat-tt-add-shopping-cart": LocalJSX.UniMatTtAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatTtAddShoppingCartElement>;
             "uni-mat-tt-album": LocalJSX.UniMatTtAlbum & JSXBase.HTMLAttributes<HTMLUniMatTtAlbumElement>;
             "uni-mat-tt-bubble-chart": LocalJSX.UniMatTtBubbleChart & JSXBase.HTMLAttributes<HTMLUniMatTtBubbleChartElement>;

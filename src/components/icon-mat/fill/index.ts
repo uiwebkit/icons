@@ -15,3 +15,5 @@ export * from './rotate-right/mat-f-rotate-right.component';
 export * from './send/mat-f-send.component';
 export * from './settings/mat-f-settings.component';
 export * from './translate/mat-f-add.component';
+export * from './visibility/mat-f-visibility.component';
+export * from './visibility-off/mat-f-visibility-off.component';

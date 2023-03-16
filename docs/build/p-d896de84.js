@@ -1,1 +1,0 @@
-import{u as r,a as s}from"./p-b762a5cc.js";function a(a,o){o&&r({el:a,selector:"svg"},{"border-radius":"50%"},s)}export{a as u}
