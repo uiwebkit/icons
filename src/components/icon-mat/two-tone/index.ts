@@ -17,6 +17,7 @@ export * from './format-list-bulleted/mat-tt-format-list-bulleted.component';
 export * from './grid-on/mat-tt-grid-on.component';
 export * from './highlight-alt/mat-tt-highlight-alt.component';
 export * from './http/mat-tt-http.component';
+export * from './how-to-reg/mat-tt-how-to-reg.component';
 export * from './info/mat-tt-info.component';
 export * from './input/mat-tt-input.component';
 export * from './language/mat-tt-language.component';

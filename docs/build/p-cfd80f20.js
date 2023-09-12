@@ -1,1 +1,0 @@
-const n=function(n){return n};export{n as U}

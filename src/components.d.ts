@@ -432,6 +432,8 @@ export namespace Components {
     }
     interface UniMatTtHighlightAlt {
     }
+    interface UniMatTtHowToReg {
+    }
     interface UniMatTtHttp {
     }
     interface UniMatTtInfo {
@@ -1185,6 +1187,12 @@ declare global {
         prototype: HTMLUniMatTtHighlightAltElement;
         new (): HTMLUniMatTtHighlightAltElement;
     };
+    interface HTMLUniMatTtHowToRegElement extends Components.UniMatTtHowToReg, HTMLStencilElement {
+    }
+    var HTMLUniMatTtHowToRegElement: {
+        prototype: HTMLUniMatTtHowToRegElement;
+        new (): HTMLUniMatTtHowToRegElement;
+    };
     interface HTMLUniMatTtHttpElement extends Components.UniMatTtHttp, HTMLStencilElement {
     }
     var HTMLUniMatTtHttpElement: {
@@ -1479,6 +1487,7 @@ declare global {
         "uni-mat-tt-format-list-bulleted": HTMLUniMatTtFormatListBulletedElement;
         "uni-mat-tt-grid-on": HTMLUniMatTtGridOnElement;
         "uni-mat-tt-highlight-alt": HTMLUniMatTtHighlightAltElement;
+        "uni-mat-tt-how-to-reg": HTMLUniMatTtHowToRegElement;
         "uni-mat-tt-http": HTMLUniMatTtHttpElement;
         "uni-mat-tt-info": HTMLUniMatTtInfoElement;
         "uni-mat-tt-input": HTMLUniMatTtInputElement;
@@ -1937,6 +1946,8 @@ declare namespace LocalJSX {
     }
     interface UniMatTtHighlightAlt {
     }
+    interface UniMatTtHowToReg {
+    }
     interface UniMatTtHttp {
     }
     interface UniMatTtInfo {
@@ -2124,6 +2135,7 @@ declare namespace LocalJSX {
         "uni-mat-tt-format-list-bulleted": UniMatTtFormatListBulleted;
         "uni-mat-tt-grid-on": UniMatTtGridOn;
         "uni-mat-tt-highlight-alt": UniMatTtHighlightAlt;
+        "uni-mat-tt-how-to-reg": UniMatTtHowToReg;
         "uni-mat-tt-http": UniMatTtHttp;
         "uni-mat-tt-info": UniMatTtInfo;
         "uni-mat-tt-input": UniMatTtInput;
@@ -2273,6 +2285,7 @@ declare module "@stencil/core" {
             "uni-mat-tt-format-list-bulleted": LocalJSX.UniMatTtFormatListBulleted & JSXBase.HTMLAttributes<HTMLUniMatTtFormatListBulletedElement>;
             "uni-mat-tt-grid-on": LocalJSX.UniMatTtGridOn & JSXBase.HTMLAttributes<HTMLUniMatTtGridOnElement>;
             "uni-mat-tt-highlight-alt": LocalJSX.UniMatTtHighlightAlt & JSXBase.HTMLAttributes<HTMLUniMatTtHighlightAltElement>;
+            "uni-mat-tt-how-to-reg": LocalJSX.UniMatTtHowToReg & JSXBase.HTMLAttributes<HTMLUniMatTtHowToRegElement>;
             "uni-mat-tt-http": LocalJSX.UniMatTtHttp & JSXBase.HTMLAttributes<HTMLUniMatTtHttpElement>;
             "uni-mat-tt-info": LocalJSX.UniMatTtInfo & JSXBase.HTMLAttributes<HTMLUniMatTtInfoElement>;
             "uni-mat-tt-input": LocalJSX.UniMatTtInput & JSXBase.HTMLAttributes<HTMLUniMatTtInputElement>;

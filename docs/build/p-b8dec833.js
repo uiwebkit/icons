@@ -1,1 +1,0 @@
-function o(o,t){for(const[c,f]of Object.entries(t))o.forEach((o=>{o.setAttribute(c,f)}))}export{o as u}

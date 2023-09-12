@@ -1,1 +1,0 @@
-import{a as n}from"./p-2e6e929d.js";function t(t){const o=function(n){return null==n?void 0:n.textContent.trim()}(t);return function(t){n(t)&&(t.textContent="")}(t),o||null}const o=function(n){return n};export{o as U,t as u}

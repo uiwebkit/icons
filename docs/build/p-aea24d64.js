@@ -1,1 +1,0 @@
-const t=t=>void 0!==t,n=t=>Array.isArray(t),o=t=>"string"==typeof t;function r(n){return t(n)&&o(n)&&""===n}function e(r){return t(r)&&(n(r)&&0===r.length||(t=>"object"==typeof t&&null!==t&&!n(t))(r)&&0===Object.keys(r).length||o(r)&&""===r||(t=>null===t)(r))}export{t as a,e as b,r as i}
