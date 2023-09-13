@@ -1,17 +1,1 @@
-import './flag.component-2c691490.js';
-import './flag-cn.component-8638796d.js';
-import './flag-de.component-880a320d.js';
-import './flag-es.component-8d2b8be8.js';
-import './flag-fr.component-e97716e9.js';
-import './flag-gb.component-3e2d8915.js';
-import './flag-it.component-a255c7dc.js';
-import './flag-jp.component-566a08bb.js';
-import './flag-kr.component-a0ffe03a.js';
-import './flag-pt.component-1a67658d.js';
-import './flag-ru.component-9b7e1981.js';
-import './flag-ua.component-76f2c476.js';
-import './flag-us.component-ee8b25e9.js';
-export { u as uniIconFaDimensions } from './index-5990fa6c.js';
-export { a as uniFaTypeShort, u as uniIconsFaFontClass, b as uniMatTypeShort } from './index-35f37625.js';
-import './index-0ff8f39d.js';
-import './index-6b825bea.js';
+import"./p-3f483e19.js";export{u as uniIconFaDimensions}from"./p-2285c476.js";export{u as uniIconsFaFontClass}from"./p-d07d3ff0.js";export{u as uniFaTypeShort}from"./p-62a78e48.js";export{u as uniMatTypeShort}from"./p-de7dc7fa.js";import"./p-e4f31653.js";import"./p-2e6e929d.js";import"./p-30315831.js";

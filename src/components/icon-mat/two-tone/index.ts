@@ -29,6 +29,7 @@ export * from './open-with/mat-tt-open-with.component';
 export * from './person-add/mat-tt-person-add.component';
 export * from './play-circle/mat-tt-play-circle.component';
 export * from './playlist-add-check/mat-tt-playlist-add-check.component';
+export * from './price-change/mat-tt-price-change.component';
 export * from './radio-button-checked/mat-tt-radio-button-checked.component';
 export * from './rotate-degrees/mat-tt-rotate-degrees.component';
 export * from './router/mat-tt-router.component';

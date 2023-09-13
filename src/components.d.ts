@@ -356,6 +356,8 @@ export namespace Components {
     }
     interface UniMatFAddShoppingCart {
     }
+    interface UniMatFAdsClick {
+    }
     interface UniMatFAlbum {
     }
     interface UniMatFArrowDropDown {
@@ -365,6 +367,8 @@ export namespace Components {
     interface UniMatFClose {
     }
     interface UniMatFContactMail {
+    }
+    interface UniMatFContentCut {
     }
     interface UniMatFFavorite {
     }
@@ -457,6 +461,8 @@ export namespace Components {
     interface UniMatTtPlayCircle {
     }
     interface UniMatTtPlaylistAddCheck {
+    }
+    interface UniMatTtPriceChange {
     }
     interface UniMatTtRadioButtonChecked {
     }
@@ -959,6 +965,12 @@ declare global {
         prototype: HTMLUniMatFAddShoppingCartElement;
         new (): HTMLUniMatFAddShoppingCartElement;
     };
+    interface HTMLUniMatFAdsClickElement extends Components.UniMatFAdsClick, HTMLStencilElement {
+    }
+    var HTMLUniMatFAdsClickElement: {
+        prototype: HTMLUniMatFAdsClickElement;
+        new (): HTMLUniMatFAdsClickElement;
+    };
     interface HTMLUniMatFAlbumElement extends Components.UniMatFAlbum, HTMLStencilElement {
     }
     var HTMLUniMatFAlbumElement: {
@@ -988,6 +1000,12 @@ declare global {
     var HTMLUniMatFContactMailElement: {
         prototype: HTMLUniMatFContactMailElement;
         new (): HTMLUniMatFContactMailElement;
+    };
+    interface HTMLUniMatFContentCutElement extends Components.UniMatFContentCut, HTMLStencilElement {
+    }
+    var HTMLUniMatFContentCutElement: {
+        prototype: HTMLUniMatFContentCutElement;
+        new (): HTMLUniMatFContentCutElement;
     };
     interface HTMLUniMatFFavoriteElement extends Components.UniMatFFavorite, HTMLStencilElement {
     }
@@ -1265,6 +1283,12 @@ declare global {
         prototype: HTMLUniMatTtPlaylistAddCheckElement;
         new (): HTMLUniMatTtPlaylistAddCheckElement;
     };
+    interface HTMLUniMatTtPriceChangeElement extends Components.UniMatTtPriceChange, HTMLStencilElement {
+    }
+    var HTMLUniMatTtPriceChangeElement: {
+        prototype: HTMLUniMatTtPriceChangeElement;
+        new (): HTMLUniMatTtPriceChangeElement;
+    };
     interface HTMLUniMatTtRadioButtonCheckedElement extends Components.UniMatTtRadioButtonChecked, HTMLStencilElement {
     }
     var HTMLUniMatTtRadioButtonCheckedElement: {
@@ -1449,11 +1473,13 @@ declare global {
         "uni-mat-f-3d-rotation": HTMLUniMatF3dRotationElement;
         "uni-mat-f-add": HTMLUniMatFAddElement;
         "uni-mat-f-add-shopping-cart": HTMLUniMatFAddShoppingCartElement;
+        "uni-mat-f-ads-click": HTMLUniMatFAdsClickElement;
         "uni-mat-f-album": HTMLUniMatFAlbumElement;
         "uni-mat-f-arrow-drop-down": HTMLUniMatFArrowDropDownElement;
         "uni-mat-f-arrow-drop-up": HTMLUniMatFArrowDropUpElement;
         "uni-mat-f-close": HTMLUniMatFCloseElement;
         "uni-mat-f-contact-mail": HTMLUniMatFContactMailElement;
+        "uni-mat-f-content-cut": HTMLUniMatFContentCutElement;
         "uni-mat-f-favorite": HTMLUniMatFFavoriteElement;
         "uni-mat-f-fingerprint": HTMLUniMatFFingerprintElement;
         "uni-mat-f-home": HTMLUniMatFHomeElement;
@@ -1500,6 +1526,7 @@ declare global {
         "uni-mat-tt-person-add": HTMLUniMatTtPersonAddElement;
         "uni-mat-tt-play-circle": HTMLUniMatTtPlayCircleElement;
         "uni-mat-tt-playlist-add-check": HTMLUniMatTtPlaylistAddCheckElement;
+        "uni-mat-tt-price-change": HTMLUniMatTtPriceChangeElement;
         "uni-mat-tt-radio-button-checked": HTMLUniMatTtRadioButtonCheckedElement;
         "uni-mat-tt-rotate-degrees": HTMLUniMatTtRotateDegreesElement;
         "uni-mat-tt-router": HTMLUniMatTtRouterElement;
@@ -1870,6 +1897,8 @@ declare namespace LocalJSX {
     }
     interface UniMatFAddShoppingCart {
     }
+    interface UniMatFAdsClick {
+    }
     interface UniMatFAlbum {
     }
     interface UniMatFArrowDropDown {
@@ -1879,6 +1908,8 @@ declare namespace LocalJSX {
     interface UniMatFClose {
     }
     interface UniMatFContactMail {
+    }
+    interface UniMatFContentCut {
     }
     interface UniMatFFavorite {
     }
@@ -1971,6 +2002,8 @@ declare namespace LocalJSX {
     interface UniMatTtPlayCircle {
     }
     interface UniMatTtPlaylistAddCheck {
+    }
+    interface UniMatTtPriceChange {
     }
     interface UniMatTtRadioButtonChecked {
     }
@@ -2097,11 +2130,13 @@ declare namespace LocalJSX {
         "uni-mat-f-3d-rotation": UniMatF3dRotation;
         "uni-mat-f-add": UniMatFAdd;
         "uni-mat-f-add-shopping-cart": UniMatFAddShoppingCart;
+        "uni-mat-f-ads-click": UniMatFAdsClick;
         "uni-mat-f-album": UniMatFAlbum;
         "uni-mat-f-arrow-drop-down": UniMatFArrowDropDown;
         "uni-mat-f-arrow-drop-up": UniMatFArrowDropUp;
         "uni-mat-f-close": UniMatFClose;
         "uni-mat-f-contact-mail": UniMatFContactMail;
+        "uni-mat-f-content-cut": UniMatFContentCut;
         "uni-mat-f-favorite": UniMatFFavorite;
         "uni-mat-f-fingerprint": UniMatFFingerprint;
         "uni-mat-f-home": UniMatFHome;
@@ -2148,6 +2183,7 @@ declare namespace LocalJSX {
         "uni-mat-tt-person-add": UniMatTtPersonAdd;
         "uni-mat-tt-play-circle": UniMatTtPlayCircle;
         "uni-mat-tt-playlist-add-check": UniMatTtPlaylistAddCheck;
+        "uni-mat-tt-price-change": UniMatTtPriceChange;
         "uni-mat-tt-radio-button-checked": UniMatTtRadioButtonChecked;
         "uni-mat-tt-rotate-degrees": UniMatTtRotateDegrees;
         "uni-mat-tt-router": UniMatTtRouter;
@@ -2247,11 +2283,13 @@ declare module "@stencil/core" {
             "uni-mat-f-3d-rotation": LocalJSX.UniMatF3dRotation & JSXBase.HTMLAttributes<HTMLUniMatF3dRotationElement>;
             "uni-mat-f-add": LocalJSX.UniMatFAdd & JSXBase.HTMLAttributes<HTMLUniMatFAddElement>;
             "uni-mat-f-add-shopping-cart": LocalJSX.UniMatFAddShoppingCart & JSXBase.HTMLAttributes<HTMLUniMatFAddShoppingCartElement>;
+            "uni-mat-f-ads-click": LocalJSX.UniMatFAdsClick & JSXBase.HTMLAttributes<HTMLUniMatFAdsClickElement>;
             "uni-mat-f-album": LocalJSX.UniMatFAlbum & JSXBase.HTMLAttributes<HTMLUniMatFAlbumElement>;
             "uni-mat-f-arrow-drop-down": LocalJSX.UniMatFArrowDropDown & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropDownElement>;
             "uni-mat-f-arrow-drop-up": LocalJSX.UniMatFArrowDropUp & JSXBase.HTMLAttributes<HTMLUniMatFArrowDropUpElement>;
             "uni-mat-f-close": LocalJSX.UniMatFClose & JSXBase.HTMLAttributes<HTMLUniMatFCloseElement>;
             "uni-mat-f-contact-mail": LocalJSX.UniMatFContactMail & JSXBase.HTMLAttributes<HTMLUniMatFContactMailElement>;
+            "uni-mat-f-content-cut": LocalJSX.UniMatFContentCut & JSXBase.HTMLAttributes<HTMLUniMatFContentCutElement>;
             "uni-mat-f-favorite": LocalJSX.UniMatFFavorite & JSXBase.HTMLAttributes<HTMLUniMatFFavoriteElement>;
             "uni-mat-f-fingerprint": LocalJSX.UniMatFFingerprint & JSXBase.HTMLAttributes<HTMLUniMatFFingerprintElement>;
             "uni-mat-f-home": LocalJSX.UniMatFHome & JSXBase.HTMLAttributes<HTMLUniMatFHomeElement>;
@@ -2298,6 +2336,7 @@ declare module "@stencil/core" {
             "uni-mat-tt-person-add": LocalJSX.UniMatTtPersonAdd & JSXBase.HTMLAttributes<HTMLUniMatTtPersonAddElement>;
             "uni-mat-tt-play-circle": LocalJSX.UniMatTtPlayCircle & JSXBase.HTMLAttributes<HTMLUniMatTtPlayCircleElement>;
             "uni-mat-tt-playlist-add-check": LocalJSX.UniMatTtPlaylistAddCheck & JSXBase.HTMLAttributes<HTMLUniMatTtPlaylistAddCheckElement>;
+            "uni-mat-tt-price-change": LocalJSX.UniMatTtPriceChange & JSXBase.HTMLAttributes<HTMLUniMatTtPriceChangeElement>;
             "uni-mat-tt-radio-button-checked": LocalJSX.UniMatTtRadioButtonChecked & JSXBase.HTMLAttributes<HTMLUniMatTtRadioButtonCheckedElement>;
             "uni-mat-tt-rotate-degrees": LocalJSX.UniMatTtRotateDegrees & JSXBase.HTMLAttributes<HTMLUniMatTtRotateDegreesElement>;
             "uni-mat-tt-router": LocalJSX.UniMatTtRouter & JSXBase.HTMLAttributes<HTMLUniMatTtRouterElement>;

@@ -1,0 +1,1 @@
+import{a as n}from"./p-aea24d64.js";function o(o){const t=function(n){return null==n?void 0:n.textContent.trim()}(o);return function(o){n(o)&&(o.textContent="")}(o),t||null}export{o as u}
